@@ -1,0 +1,17 @@
+{
+	"name": "@hyewon/design-system",
+	"private": true,
+	"version": "0.0.1",
+	"main": "index.ts",
+	"types": "index.ts",
+	"exports": {
+		".": "./index.ts",
+		"./tailwind-config": "./tailwind-config/index.ts"
+	},
+	"peerDependencies": {
+		"next": "*",
+		"react": "*",
+		"react-dom": "*",
+		"tailwindcss": "*"
+	}
+}

@@ -1,0 +1,216 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto&display=swap');
+@import 'tailwindcss';
+
+@tailwind utilities;
+
+@source "../../../../packages/design-system/**/*.{js,ts,jsx,tsx}";
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+
+	/* font weight */
+	--extra-bold: 800;
+	--bold: 700;
+	--semi-bold: 600;
+	--medium: 500;
+	--regular: 400;
+
+	/* font size */
+	--display-l: 48px;
+	--display-m: 40px;
+	--display-s: 36px;
+	--heading-l: 32px;
+	--heading-m: 24px;
+	--heading-s: 24px;
+	--body-l-strong: 20px;
+	--body-l: 20px;
+	--body-m-strong: 16px;
+	--body-m: 16px;
+	--body-s-strong: 14px;
+	--body-s: 14px;
+	--body-xs-strong: 13px;
+	--label-xl: 18px;
+	--label-l: 16px;
+	--label-m: 14px;
+	--label-s: 13px;
+
+	/* color */
+	/* chosun-core-color */
+	--core-yangram: #9281cd;
+	--core-beokja: #8c9ed9;
+	--core-jangdan: #d8634f;
+	--core-gold: #ffd400;
+	--core-choonyurok: #dceaa2;
+	--core-chooiram: #68c7c1;
+	--core-cheonghyeon: #566a8e;
+	--core-choohyang: #cc9473;
+
+	/* core-green */
+	--core-green-900: #14281a;
+	--core-green-800: #1b3d2a;
+	--core-green-700: #225239;
+	--core-green-600: #296849;
+	--core-green-500: #307d58;
+	--core-green-400: #5a9a7a;
+	--core-green-300: #84b89d;
+	--core-green-200: #b9deca;
+	--core-green-100: #d7f2e1;
+	--core-green-50: #e9f4ee;
+
+	/* core-gray */
+	--core-gray-900: #202020;
+	--core-gray-800: #333333;
+	--core-gray-700: #4f4f4f;
+	--core-gray-600: #686868;
+	--core-gray-500: #878787;
+	--core-gray-400: #a3a3a3;
+	--core-gray-300: #bebebe;
+	--core-gray-200: #dadada;
+	--core-gray-100: #f5f5f5;
+	--core-gray-50: #fafafa;
+
+	/* neutral */
+	--core-neutral-900: #1e2223;
+	--core-neutral-800: #2f3435;
+	--core-neutral-700: #454b4c;
+	--core-neutral-600: #5a6263;
+	--core-neutral-500: #737c7f;
+	--core-neutral-400: #8e9799;
+	--core-neutral-300: #a9b1b3;
+	--core-neutral-200: #c4ccce;
+	--core-neutral-100: #dfe6e8;
+	--core-neutral-50: #eff2f4;
+
+	/* core-red */
+	--core-red-900: #3f0c0c;
+	--core-red-800: #671010;
+	--core-red-700: #901515;
+	--core-red-600: #b81a1a;
+	--core-red-500: #e01e1e;
+	--core-red-400: #e64d4d;
+	--core-red-300: #ed7c7c;
+	--core-red-200: #f3aaaa;
+	--core-red-100: #f9d9d9;
+	--core-red-50: #f9e8e8;
+
+	/* color text(typo) */
+	--core-typo-primary: #202020;
+	--core-typo-second: #878787;
+	--core-typo-third: #bebebe;
+	--core-typo-error: #e64d4d;
+	--core-typo-brand: #68c7c1;
+	--core-typo-normal: #307d58;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: 'Nanum Myeongjo', 'Roboto', serif;
+
+	/* font weight */
+	--font-weight-extrabold: var(--extra-bold);
+	--font-weight-bold: var(--bold);
+	--font-weight-semibold: var(--semi-bold);
+	--font-weight-medium: var(--medium);
+	--font-weight-regular: var(--regular);
+
+	/* font size */
+	--text-display-l: var(--display-l);
+	--text-display-m: var(--display-m);
+	--text-display-s: var(--display-s);
+	--text-heading-l: var(--heading-l);
+	--text-heading-m: var(--heading-m);
+	--text-heading-s: var(--heading-s);
+	--text-body-l-strong: var(--body-l-strong);
+	--text-body-l: var(--body-l);
+	--text-body-m-strong: var(--body-m-strong);
+	--text-body-m: var(--body-m);
+	--text-body-s-strong: var(--body-s-strong);
+	--text-body-s: var(--body-s);
+	--text-body-xs-strong: var(--body-xs-strong);
+	--text-label-xl: var(--label-xl);
+	--text-label-l: var(--label-l);
+	--text-label-m: var(--label-m);
+	--text-label-s: var(--label-s);
+
+	/* line-height */
+	--leading-title-lg: var(--leading-title-lg);
+	--leading-title-md: var(--leading-title-md);
+	--leading-body-lg: var(--leading-body-lg);
+	--leading-body-md: var(--leading-body-md);
+	--leading-body-sm: var(--leading-body-sm);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+
+	/* Tailwind v4 color tokens */
+	--color-core-korea-yangram: var(--core-yangram);
+	--color-core-korea-beokja: var(--core-beokja);
+	--color-core-korea-jangdan: var(--core-jangdan);
+	--color-core-korea-choonyurok: var(--core-choonyurok);
+	--color-core-korea-chooiram: var(--core-chooiram);
+	--color-core-korea-cheonghyeon: var(--core-cheonghyeon);
+	--color-core-korea-choohyang: var(--core-choohyang);
+	--color-core-korea-gold: var(--core-gold);
+
+	--color-core-green-900: var(--core-green-900);
+	--color-core-green-800: var(--core-green-800);
+	--color-core-green-700: var(--core-green-700);
+	--color-core-green-600: var(--core-green-600);
+	--color-core-green-500: var(--core-green-500);
+	--color-core-green-400: var(--core-green-400);
+	--color-core-green-300: var(--core-green-300);
+	--color-core-green-200: var(--core-green-200);
+	--color-core-green-100: var(--core-green-100);
+	--color-core-green-50: var(--core-green-50);
+
+	--color-core-gray-900: var(--core-gray-900);
+	--color-core-gray-800: var(--core-gray-800);
+	--color-core-gray-700: var(--core-gray-700);
+	--color-core-gray-600: var(--core-gray-600);
+	--color-core-gray-500: var(--core-gray-500);
+	--color-core-gray-400: var(--core-gray-400);
+	--color-core-gray-300: var(--core-gray-300);
+	--color-core-gray-200: var(--core-gray-200);
+	--color-core-gray-100: var(--core-gray-100);
+	--color-core-gray-50: var(--core-gray-50);
+
+	--color-core-neutral-900: var(--core-neutral-900);
+	--color-core-neutral-800: var(--core-neutral-800);
+	--color-core-neutral-700: var(--core-neutral-700);
+	--color-core-neutral-600: var(--core-neutral-600);
+	--color-core-neutral-500: var(--core-neutral-500);
+	--color-core-neutral-400: var(--core-neutral-400);
+	--color-core-neutral-300: var(--core-neutral-300);
+	--color-core-neutral-200: var(--core-neutral-200);
+	--color-core-neutral-100: var(--core-neutral-100);
+	--color-core-neutral-50: var(--core-neutral-50);
+
+	--color-core-red-900: var(--core-red-900);
+	--color-core-red-800: var(--core-red-800);
+	--color-core-red-700: var(--core-red-700);
+	--color-core-red-600: var(--core-red-600);
+	--color-core-red-500: var(--core-red-500);
+	--color-core-red-400: var(--core-red-400);
+	--color-core-red-300: var(--core-red-300);
+	--color-core-red-200: var(--core-red-200);
+	--color-core-red-100: var(--core-red-100);
+	--color-core-red-50: var(--core-red-50);
+
+	--color-core-typo-primary: var(--core-typo-primary);
+	--color-core-typo-second: var(--core-typo-second);
+	--color-core-typo-third: var(--core-typo-third);
+	--color-core-typo-error: var(--core-typo-error);
+	--color-core-typo-brand: var(--core-typo-brand);
+	--color-core-typo-normal: var(--core-typo-normal);
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: 'Nanum Myeongjo', 'Roboto', serif;
+}
