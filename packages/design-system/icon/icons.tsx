@@ -1,7 +1,8 @@
 /** @format */
 
 import React from 'react';
-import DancheongFlower from './dancheong';
+import DancheongFlowerIcon from './dancheong';
+import GithubIcon from './github';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -10,7 +11,7 @@ interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	[key: string]: any;
 }
 
-const iconComponents: { [key: string]: React.ComponentType<any> } = { DancheongFlower };
+const iconComponents: { [key: string]: React.ComponentType<any> } = { DancheongFlowerIcon, GithubIcon };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
 	const IconComponent = iconComponents[iconName];
@@ -19,11 +20,7 @@ const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
 		return null;
 	}
 
-	return (
-		<div className={`w-[${size}] h-[${size}]`}>
-			<IconComponent width={size} height={size} {...props} />
-		</div>
-	);
+	return <IconComponent width={size} height={size} {...props} />;
 };
 
 export default Icons;

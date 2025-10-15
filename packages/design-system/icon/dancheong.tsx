@@ -5,7 +5,7 @@
 
 import * as React from 'react';
 
-const DancheongFlower = (props: React.SVGProps<SVGSVGElement>) => (
+const DancheongFlowerIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		viewBox='0 0 128 128'
@@ -57,4 +57,4 @@ const DancheongFlower = (props: React.SVGProps<SVGSVGElement>) => (
 	</svg>
 );
 
-export default DancheongFlower;
+export default DancheongFlowerIcon;
