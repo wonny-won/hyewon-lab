@@ -21,7 +21,7 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 					<>
 						{i?.children ? (
 							<div>
-								<Typography variants='body-m' className='flex gap-1'>
+								<Typography variants='body-m' className='flex gap-2'>
 									{isNeedIcon && <Icons iconName='DancheongFlowerIcon' size='20px' />}
 									{i.main}
 								</Typography>

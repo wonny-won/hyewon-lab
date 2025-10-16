@@ -9,7 +9,7 @@ export type btnVariants =
 	| 'chips'
 	| 'chipsOutline';
 export type btnStatus = 'default' | 'active' | 'disabled';
-export type btnSize = 'large' | 'default' | 'small';
+export type btnSize = 'xlarge' | 'large' | 'default' | 'small' | 'xsmall';
 
 export const makeBtnFn = ({
 	variants,
@@ -32,9 +32,11 @@ export const makeBtnFn = ({
 };
 
 export const btnSize = {
-	large: 'px-4 text-label-xl h-12',
-	default: 'px-4 text-label-l h-10',
-	small: 'px-4 text-label-m h-8',
+	xlarge: 'px-6 text-label-xl h-13',
+	large: 'px-5 text-label-l h-12',
+	default: 'px-4 text-label-m h-10',
+	small: 'px-2 text-label-s h-8',
+	xsmall: 'px-2 text-body-xs-strong h-6',
 };
 
 export const btnBorder = {
