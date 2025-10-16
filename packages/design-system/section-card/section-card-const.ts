@@ -2,9 +2,9 @@
 
 const commonStyle = {
 	sectionCardStyle: {
-		record: 'w-[85%] bg-core-gray-50 rounded-[20px] p-10 flex flex-col gap-5',
-		about: 'w-[85%] bg-core-gray-50 rounded-[20px] p-10 flex flex-col',
-		default: 'w-[90%] bg-core-gray-50 rounded-[20px] p-10 flex flex-col',
+		record: 'w-full bg-core-gray-50 rounded-[20px] p-10 flex flex-col gap-5 overflow-hidden transition-[max-height] duration-600 ease-in-out',
+		about: 'w-full bg-core-gray-50 rounded-[20px] p-10 flex flex-col',
+		default: 'w-full bg-core-gray-50 rounded-[20px] p-10 flex flex-col',
 	},
 	contentStyle: {
 		record: 'flex gap-15',
@@ -20,7 +20,7 @@ const commonStyle = {
 
 export const openClassStyle = {
 	sectionCardStyle: {
-		record: `${commonStyle.sectionCardStyle.record} h-fit`,
+		record: `${commonStyle.sectionCardStyle.record} max-h-[2000px]`,
 		about: `${commonStyle.sectionCardStyle.about} h-fit`,
 		default: `${commonStyle.sectionCardStyle.default} h-fit`,
 	},
@@ -38,7 +38,7 @@ export const openClassStyle = {
 
 export const notOpenClassStyle = {
 	sectionCardStyle: {
-		record: `${commonStyle.sectionCardStyle.record} h-[300px]`,
+		record: `${commonStyle.sectionCardStyle.record} max-h-[300px]`,
 		about: `${commonStyle.sectionCardStyle.about} h-fit`,
 		default: `${commonStyle.sectionCardStyle.default} h-fit`,
 	},

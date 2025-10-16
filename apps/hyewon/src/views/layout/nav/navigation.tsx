@@ -5,7 +5,7 @@ import { navList } from './nav-const';
 
 const Navigation = () => {
 	return (
-		<nav className='fixed z-10'>
+		<nav className='fixed z-10 pl-40'>
 			<ul className='flex gap-4 py-5'>
 				{navList.map((i, idx) => (
 					<li key={idx}>

@@ -10,12 +10,12 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
 	return (
 		<div
-			className="h-screen w-full overflow-hidden flex gap-25 bg-[url('/main-bg.png')] bg-cover bg-fixed"
+			className="h-screen w-full overflow-hidden flex bg-[url('/main-bg.png')] bg-cover bg-fixed"
 			style={{ backgroundPosition: 'left 80% bottom 50%' }}>
 			<Intro />
-			<div className='ml-[590px] w-full'>
+			<div className='w-full h-full'>
 				<Navigation />
-				<main className='w-full h-full py-25 overflow-auto'>{children}</main>
+				<main className='w-full h-full py-25 px-40 overflow-auto'>{children}</main>
 			</div>
 		</div>
 	);
