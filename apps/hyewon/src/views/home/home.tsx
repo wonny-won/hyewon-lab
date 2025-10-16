@@ -5,7 +5,7 @@ import { aboutMyProfile } from './const';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col gap-4'>
+		<div className='flex flex-col gap-6'>
 			<SectionCard type='about' title='타이틀'>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} />
 			</SectionCard>

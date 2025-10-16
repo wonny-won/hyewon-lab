@@ -7,7 +7,7 @@ import ListUI from '@/components/list-ui/list-ui';
 
 const Intro = () => {
 	return (
-		<div className="w-[460px] h-screen fixed py-26 px-30 flex flex-col gap-7 bg-[url('/side-panel-bg.png')]">
+		<header className="w-[460px] h-screen fixed py-26 px-30 flex flex-col gap-7 bg-[url('/side-panel-bg.png')]">
 			<Image src={aboutMyProfile.profile} alt='profile img' width={200} height={250} />
 
 			<div className='flex flex-col gap-1'>
@@ -20,7 +20,7 @@ const Intro = () => {
 			</div>
 			<ListUI direction='virtical' listMap={aboutMyProfile.summaryTxt} isNeedIcon />
 			<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
-		</div>
+		</header>
 	);
 };
 export default Intro;
