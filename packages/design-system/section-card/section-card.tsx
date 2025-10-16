@@ -48,9 +48,9 @@ const SectionCard = ({
 					variants='chipsOutline'
 					status='active'
 					size='xsmall'
-					className='w-fit m-auto'
+					className='w-fit m-auto align-middle py-1 h-8'
 					onClick={onClickOpenCard}>
-					자세히 보기
+					{isOpen ? '간략히 보기' : '자세히 보기'}
 				</Button>
 			)}
 		</section>
