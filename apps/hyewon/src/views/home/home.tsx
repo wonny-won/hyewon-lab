@@ -9,16 +9,16 @@ const Home = () => {
 			<SectionCard type='about' title='타이틀'>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} />
 			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025'>
+			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn titleAs='h2' subtitleAs='h3'>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
 			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025'>
+			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
 			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025'>
+			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
 			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025'>
+			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
 			</SectionCard>
 		</div>
