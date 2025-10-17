@@ -27,9 +27,9 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 								</Typography>
 								{i?.children?.map((item, idx) => (
 									<li key={idx} className='pl-12.5'>
-										<Typography as='p' variants='body-m' className='flex gap-1 items-center py-2'>
+										<Typography as='p' variants='body-s' className='flex gap-1 items-center py-1'>
 											{/* {isNeedIcon && <Icons iconName='DancheongFlowerIcon' size='20px' />} */}
-											{item}
+											{idx + 1}. {item}
 										</Typography>
 									</li>
 								))}

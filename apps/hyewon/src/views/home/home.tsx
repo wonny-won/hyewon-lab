@@ -6,7 +6,7 @@ import { aboutMyProfile } from './const';
 const Home = () => {
 	return (
 		<div className='flex flex-col gap-6'>
-			<SectionCard type='about' title='타이틀'>
+			<SectionCard type='about'>
 				<ListUI direction='virtical' listMap={aboutMyProfile.record} />
 			</SectionCard>
 			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn titleAs='h2' subtitleAs='h3'>

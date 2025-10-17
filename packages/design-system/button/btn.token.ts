@@ -76,7 +76,8 @@ export const btnBorder = {
 		disabled: 'rounded-[30px]',
 	},
 	chipsOutline: {
-		default: 'rounded-[20px] border-[1px] border-solid border-core-gray-200',
+		default:
+			'rounded-[20px] border-[1px] border-solid border-core-green-500 hover:bg-core-green-50 hover:cursor-pointer',
 		active: 'rounded-[20px] border-[1px] border-core-green-500',
 		disabled: 'rounded-[20px] border-[1px] border-solid border-core-gray-200',
 	},
@@ -121,7 +122,7 @@ export const btnColor = {
 	},
 
 	chipsOutline: {
-		default: 'text-core-typo-primary',
+		default: 'text-core-typo-normal',
 		active: 'text-core-typo-normal',
 		disabled: 'text-core-typo-third',
 	},
