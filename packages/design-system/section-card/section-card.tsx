@@ -6,7 +6,7 @@ import { openClassStyle, notOpenClassStyle } from './section-card-const';
 
 interface SectionCardProps {
 	type: 'record' | 'about' | 'default';
-	title: string;
+	title?: string;
 	titleAs?: keyof JSX.IntrinsicElements;
 	subtitle?: string;
 	subtitleAs?: keyof JSX.IntrinsicElements;
@@ -46,7 +46,7 @@ const SectionCard = ({
 			{isNeedMoreBtn && (
 				<Button
 					variants='chipsOutline'
-					status='active'
+					status='default'
 					size='xsmall'
 					className='w-fit m-auto align-middle py-1 h-8'
 					onClick={onClickOpenCard}>

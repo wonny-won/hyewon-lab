@@ -7,7 +7,7 @@ import ListUI from '@/components/list-ui/list-ui';
 
 const Intro = () => {
 	return (
-		<header className="w-[650px] h-screen py-26 px-30 flex flex-col gap-7 bg-[url('/side-panel-bg.png')]">
+		<header className="w-[700px] h-screen py-26 flex flex-col items-center gap-7 bg-[url('/side-panel-bg.png')]">
 			<Image src={aboutMyProfile.profile} alt='profile img' width={200} height={250} />
 
 			<div className='flex flex-col gap-1'>
