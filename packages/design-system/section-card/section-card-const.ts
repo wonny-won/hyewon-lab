@@ -12,7 +12,7 @@ const commonStyle = {
 		default: '',
 	},
 	subTitleSideStyle: {
-		record: 'w-[20%]',
+		record: 'w-[25%]',
 		about: '',
 		default: '',
 	},

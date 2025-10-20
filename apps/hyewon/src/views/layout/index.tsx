@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
 			<Intro />
 			<div className='w-full h-full'>
 				<Navigation />
-				<main className='w-full h-full py-25 px-40 overflow-auto'>{children}</main>
+				<main className='w-full h-full py-25 px-30 overflow-auto'>{children}</main>
 			</div>
 		</div>
 	);
