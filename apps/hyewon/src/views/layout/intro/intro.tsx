@@ -1,9 +1,9 @@
 /** @format */
 
 import { Typography } from '@hyewon/design-system';
-import { aboutMyProfile } from './intro-const';
 import Image from 'next/image';
 import ListUI from '@/components/list-ui/list-ui';
+import { aboutMyProfile } from '@/commons/apis/intro';
 
 const Intro = () => {
 	return (

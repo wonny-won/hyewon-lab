@@ -1,6 +1,6 @@
 /** @format */
-import { Icons, Typography } from '@hyewon/design-system';
 import React from 'react';
+import ListItem from './list-item';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';
@@ -16,35 +16,57 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 
 	return (
 		<ul className={classStyle[direction]}>
-			{listMap?.map((i: any, idx) => {
+			{listMap?.map((i: any) => {
 				return (
 					<>
-						{i?.children ? (
-							<div>
-								<Typography variants='body-m' className='flex gap-2'>
-									{isNeedIcon && <Icons iconName='DancheongFlowerIcon' size='20px' />}
-									{i.main}
-								</Typography>
-								{i?.children?.map((item, idx) => (
-									<li key={idx} className='pl-12.5'>
-										<Typography as='p' variants='body-s' className='flex gap-1 items-center py-1'>
-											{/* {isNeedIcon && <Icons iconName='DancheongFlowerIcon' size='20px' />} */}
-											{idx + 1}. {item}
-										</Typography>
-									</li>
-								))}
-							</div>
+						{direction === 'virtical' ? (
+							<>
+								<ListItem key={i.id} isNeedIcon={false} listItem={i?.title || i} />
+								{i.subtitle &&
+									i.subtitle?.map((item, idx) => {
+										console.log(item);
+										return (
+											<div key={item.id} className='pl-10'>
+												<div className='flex items-center'>
+													{idx + 1}. &nbsp;
+													<ListItem isNeedIcon={false} listItem={item?.txt} />
+												</div>
+												{item?.children &&
+													item?.children?.map((child, idx) => {
+														return (
+															<div key={item.id + 'child' + idx} className='pl-10'>
+																<div className='flex items-center'>
+																	▸ &nbsp;
+																	<ListItem
+																		key={item.id + idx}
+																		isNeedIcon={false}
+																		listItem={child.childTxt}
+																	/>
+																</div>
+																{child?.desc &&
+																	child?.desc?.map((descItem, idx) => {
+																		return (
+																			<div
+																				key={item.id + 'descItem' + idx}
+																				className='pl-10 flex items-center'>
+																				‣ &nbsp;
+																				<ListItem
+																					key={descItem.id + idx}
+																					isNeedIcon={false}
+																					listItem={descItem}
+																				/>
+																			</div>
+																		);
+																	})}
+															</div>
+														);
+													})}
+											</div>
+										);
+									})}
+							</>
 						) : (
-							<li key={idx}>
-								{direction === 'virtical' ? (
-									<Typography as='p' variants='body-m' className='flex gap-1 items-center py-2'>
-										<Icons iconName='DancheongFlowerIcon' size='20px' />
-										{i}
-									</Typography>
-								) : (
-									<a href={i?.onClick}>{i?.icon}</a>
-								)}
-							</li>
+							<a href={i?.onClick}>{i?.icon}</a>
 						)}
 					</>
 				);

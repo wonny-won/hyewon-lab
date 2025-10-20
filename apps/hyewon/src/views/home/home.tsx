@@ -1,26 +1,24 @@
 /** @format */
 import ListUI from '@/components/list-ui/list-ui';
 import { SectionCard } from '@hyewon/design-system';
-import { aboutMyProfile } from './const';
+import { aboutMe } from '@/commons/apis/about';
+import { record } from '@/commons/apis/record';
 
 const Home = () => {
 	return (
 		<div className='flex flex-col gap-6'>
 			<SectionCard type='about'>
-				<ListUI direction='virtical' listMap={aboutMyProfile.record} />
+				<ListUI direction='virtical' listMap={aboutMe} isNeedIcon={false} />
 			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn titleAs='h2' subtitleAs='h3'>
-				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
-			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
-				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
-			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
-				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
-			</SectionCard>
-			<SectionCard type='record' title='타이틀' subtitle='2024 - 2025' isNeedMoreBtn>
-				<ListUI direction='virtical' listMap={aboutMyProfile.record} isNeedIcon />
-			</SectionCard>
+			{record.map((i, idx) => {
+				return (
+					<div key={idx}>
+						<SectionCard type='record' title={i.company} subtitle={i.period} isNeedMoreBtn>
+							<ListUI direction='virtical' listMap={i.main} isNeedIcon />
+						</SectionCard>
+					</div>
+				);
+			})}
 		</div>
 	);
 };

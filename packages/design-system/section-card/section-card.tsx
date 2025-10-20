@@ -32,7 +32,7 @@ const SectionCard = ({
 		<section className={isOpen ? openClassStyle.sectionCardStyle[type] : notOpenClassStyle.sectionCardStyle[type]}>
 			<div className={openClassStyle.contentStyle[type]}>
 				<div className={openClassStyle.subTitleSideStyle[type]}>
-					<Typography as={subtitleAs} variants='body-m-strong' color='text-core-green-400'>
+					<Typography as={subtitleAs} variants='body-s-strong' color='text-core-green-400'>
 						{subtitle}
 					</Typography>
 				</div>
