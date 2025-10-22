@@ -6,11 +6,12 @@ interface LstProps {
 	direction?: 'horizontal' | 'virtical';
 	listMap: any;
 	isNeedIcon?: boolean;
+	color?: string;
 }
 
-const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProps) => {
+const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 	const classStyle = {
-		horizontal: 'flex gap-2.5 mt-auto',
+		horizontal: 'flex gap-5 mt-auto',
 		virtical: '',
 	};
 
@@ -21,13 +22,17 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 					<>
 						{direction === 'virtical' ? (
 							<>
-								<ListItem key={i.id} isNeedIcon={false} listItem={i?.title || i} />
+								<ListItem
+									key={i.id}
+									isNeedIcon={false}
+									listItem={i?.title || i}
+									typoClassName={['font-semibold', color ?? ''].join(' ')}
+								/>
 								{i.subtitle &&
 									i.subtitle?.map((item, idx) => {
-										console.log(item);
 										return (
 											<div key={item.id} className='pl-10'>
-												<div className='flex items-center'>
+												<div className='flex items-center text-white py-1'>
 													{idx + 1}. &nbsp;
 													<ListItem isNeedIcon={false} listItem={item?.txt} />
 												</div>
@@ -36,11 +41,12 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 														return (
 															<div key={item.id + 'child' + idx} className='pl-10'>
 																<div className='flex items-center'>
-																	▸ &nbsp;
+																	‣ &nbsp;
 																	<ListItem
 																		key={item.id + idx}
 																		isNeedIcon={false}
 																		listItem={child.childTxt}
+																		typoClassName='text-body-s'
 																	/>
 																</div>
 																{child?.desc &&
@@ -54,6 +60,7 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedIcon = false }: LstProp
 																					key={descItem.id + idx}
 																					isNeedIcon={false}
 																					listItem={descItem}
+																					typoClassName='text-body-s'
 																				/>
 																			</div>
 																		);

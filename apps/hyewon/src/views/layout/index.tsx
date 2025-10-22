@@ -9,13 +9,11 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
 	return (
-		<div
-			className="h-screen w-full overflow-hidden flex bg-[url('/main-bg.png')] bg-cover bg-fixed"
-			style={{ backgroundPosition: 'left 80% bottom 50%' }}>
+		<div className='h-screen w-full overflow-hidden flex pt-5 py-20'>
 			<Intro />
-			<div className='w-full h-full'>
+			<div className='w-full h-full px-20 overflow-auto'>
 				<Navigation />
-				<main className='w-full h-full py-25 px-30 overflow-auto'>{children}</main>
+				<main className='w-full h-full py-20'>{children}</main>
 			</div>
 		</div>
 	);

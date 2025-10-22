@@ -30,7 +30,7 @@ export const variant = {
 	'body-m-strong': 'text-body-m-strong font-semibold',
 	'body-m': 'text-body-m font-regular',
 
-	'body-s-strong': 'text-body-s-strong font-semibold',
+	'body-s-strong': 'text-body-s-strong font-extrabold',
 	'body-s': 'text-body-s font-regular',
 
 	'body-xs-strong': 'text-body-xs-strong font-semibold',

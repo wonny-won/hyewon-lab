@@ -6,15 +6,21 @@ import { record } from '@/commons/apis/record';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col gap-6'>
+		<div className='flex flex-col gap-20'>
 			<SectionCard type='about'>
 				<ListUI direction='virtical' listMap={aboutMe} isNeedIcon={false} />
 			</SectionCard>
 			{record.map((i, idx) => {
 				return (
 					<div key={idx}>
-						<SectionCard type='record' title={i.company} subtitle={i.period} isNeedMoreBtn>
-							<ListUI direction='virtical' listMap={i.main} isNeedIcon />
+						<SectionCard
+							type='record'
+							styleType='line'
+							title={i.company}
+							subtitle={i.period}
+							isNeedMoreBtn
+							titleColor='text-white'>
+							<ListUI direction='virtical' listMap={i.main} isNeedIcon color='text-white' />
 						</SectionCard>
 					</div>
 				);
