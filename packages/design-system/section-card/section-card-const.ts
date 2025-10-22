@@ -8,7 +8,7 @@ const commonStyle = {
 			default: 'w-full bg-core-gray-50 rounded-[20px] flex flex-col',
 		},
 		line: {
-			record: 'w-full flex flex-col gap-4 overflow-hidden transition-[max-height] py-10 duration-600 ease-in-out border-y-[1px] border-solid border-core-neutral-700',
+			record: 'w-full flex flex-col gap-4 overflow-hidden transition-[max-height] py-10 duration-600 ease-in-out border-t-[1px] border-solid border-core-neutral-700',
 			about: 'w-full flex flex-col',
 			default: 'w-full bg-core-gray-50 rounded-[20px] flex flex-col',
 		},
