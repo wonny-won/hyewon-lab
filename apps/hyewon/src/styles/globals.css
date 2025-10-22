@@ -1,6 +1,7 @@
 /** @format */
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto&display=swap'); */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import 'tailwindcss';
 
 @tailwind utilities;
@@ -8,8 +9,8 @@
 @source "../../../../packages/design-system/**/*.{js,ts,jsx,tsx}";
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #141e3c;
+	--foreground: #c4ccce;
 
 	/* font weight */
 	--extra-bold: 800;
@@ -212,5 +213,5 @@
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: 'Nanum Myeongjo', 'Roboto', serif;
+	font-family: 'nanumsquare', 'Roboto', serif;
 }

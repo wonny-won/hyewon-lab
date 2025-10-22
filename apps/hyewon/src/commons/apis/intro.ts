@@ -17,5 +17,13 @@ export const aboutMyProfile = {
 			icon: Icons({ iconName: 'GithubIcon' }),
 			onClick: 'https://github.com/wonny-won',
 		},
+		{
+			icon: Icons({ iconName: 'GithubIcon' }),
+			onClick: 'https://github.com/wonny-won',
+		},
+		{
+			icon: Icons({ iconName: 'GithubIcon' }),
+			onClick: 'https://github.com/wonny-won',
+		},
 	],
 };

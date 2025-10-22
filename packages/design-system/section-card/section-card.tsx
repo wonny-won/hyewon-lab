@@ -6,7 +6,9 @@ import { openClassStyle, notOpenClassStyle } from './section-card-const';
 
 interface SectionCardProps {
 	type: 'record' | 'about' | 'default';
+	styleType?: 'line' | 'normal';
 	title?: string;
+	titleColor?: string;
 	titleAs?: keyof JSX.IntrinsicElements;
 	subtitle?: string;
 	subtitleAs?: keyof JSX.IntrinsicElements;
@@ -16,7 +18,9 @@ interface SectionCardProps {
 
 const SectionCard = ({
 	type = 'record',
+	styleType = 'normal',
 	title,
+	titleColor,
 	titleAs = 'h1',
 	children,
 	subtitle,
@@ -29,15 +33,20 @@ const SectionCard = ({
 	};
 
 	return (
-		<section className={isOpen ? openClassStyle.sectionCardStyle[type] : notOpenClassStyle.sectionCardStyle[type]}>
-			<div className={openClassStyle.contentStyle[type]}>
-				<div className={openClassStyle.subTitleSideStyle[type]}>
-					<Typography as={subtitleAs} variants='body-s-strong' color='text-core-green-400'>
+		<section
+			className={
+				isOpen
+					? openClassStyle.sectionCardStyle?.[styleType]?.[type]
+					: notOpenClassStyle.sectionCardStyle?.[styleType]?.[type]
+			}>
+			<div className={openClassStyle.contentStyle?.[styleType]?.[type]}>
+				<div className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
+					<Typography as={subtitleAs} variants='body-s-strong'>
 						{subtitle}
 					</Typography>
 				</div>
-				<div className='w-[full] flex flex-col gap-1'>
-					<Typography as={titleAs} variants='body-l-strong'>
+				<div className='w-[full] flex flex-col'>
+					<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
 						{title}
 					</Typography>
 					{children}
