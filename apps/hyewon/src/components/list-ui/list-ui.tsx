@@ -26,6 +26,7 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 									key={i.id}
 									isNeedIcon={false}
 									listItem={i?.title || i}
+									listClassName='pt-2.5'
 									typoClassName={['font-semibold', color ?? ''].join(' ')}
 								/>
 								{i.subtitle &&
@@ -33,7 +34,7 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 										return (
 											<div key={item.id} className='pl-10'>
 												<div className='flex items-center text-white py-1'>
-													{idx + 1}. &nbsp;
+													{item?.txt && `${idx + 1}. `} &nbsp;
 													<ListItem isNeedIcon={false} listItem={item?.txt} />
 												</div>
 												{item?.children &&
