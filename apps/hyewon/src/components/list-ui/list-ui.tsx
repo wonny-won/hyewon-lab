@@ -11,7 +11,7 @@ interface LstProps {
 
 const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 	const classStyle = {
-		horizontal: 'flex gap-5 mt-auto',
+		horizontal: 'flex gap-5 flex-wrap justify-center',
 		virtical: '',
 	};
 

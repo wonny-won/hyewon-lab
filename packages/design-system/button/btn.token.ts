@@ -7,7 +7,8 @@ export type btnVariants =
 	| 'neutral'
 	| 'outline'
 	| 'chips'
-	| 'chipsOutline';
+	| 'chipsOutline'
+	| 'liquidChips';
 export type btnStatus = 'default' | 'active' | 'disabled';
 export type btnSize = 'xlarge' | 'large' | 'default' | 'small' | 'xsmall';
 
@@ -66,9 +67,9 @@ export const btnBorder = {
 		disabled: 'rounded-[8px]',
 	},
 	outline: {
-		default: `rounded-[8px] border-[1px] border-solid border-core-gray-200`,
-		active: `rounded-[8px] border-[1px] border-core-green-500`,
-		disabled: `rounded-[8px] border-[1px] border-solid border-core-gray-200`,
+		default: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
+		active: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
+		disabled: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
 	},
 	chips: {
 		default: 'rounded-[30px]',
@@ -77,9 +78,16 @@ export const btnBorder = {
 	},
 	chipsOutline: {
 		default:
-			'rounded-[20px] border-[1px] border-solid border-core-green-500 hover:bg-core-green-50 hover:cursor-pointer',
-		active: 'rounded-[20px] border-[1px] border-core-green-500',
-		disabled: 'rounded-[20px] border-[1px] border-solid border-core-gray-200',
+			'rounded-[30px] border-[1px] border-solid border-core-green-500 hover:bg-core-green-50 hover:cursor-pointer',
+		active: 'rounded-[30px] border-[1px] border-core-green-500',
+		disabled: 'rounded-[30px] border-[1px] border-solid border-core-gray-200',
+	},
+	liquidChips: {
+		default:
+			'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
+		active: 'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
+		disabled:
+			'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
 	},
 };
 
@@ -126,6 +134,11 @@ export const btnColor = {
 		active: 'text-core-typo-normal',
 		disabled: 'text-core-typo-third',
 	},
+	liquidChips: {
+		default: 'text-white',
+		active: 'text-white',
+		disabled: 'text-typo-third',
+	},
 };
 
 export const btnBgColor = {
@@ -160,14 +173,20 @@ export const btnBgColor = {
 		disabled: 'bg-transparents',
 	},
 	chips: {
-		default: 'bg-core-neutral-50',
+		default: 'bg-core-neutral-50/50 backdrop-blur-[5px]',
 		active: 'bg-core-green-200',
 		disabled: 'bg-core-neutral-50',
 	},
-
 	chipsOutline: {
 		default: 'bg-transparents',
 		active: 'bg-transparents',
 		disabled: 'bg-transparents',
+	},
+	liquidChips: {
+		default:
+			'bg-[linear-gradient(290deg,rgba(255,255,255,0.1),transparent)] backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
+		active: 'bg-[linear-gradient(290deg,rgba(255,255,255,0.15),transparent)] backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
+		disabled:
+			'bg-[linear-gradient(290deg,rgba(255,255,255,0.1),transparent)]backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
 	},
 };

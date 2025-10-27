@@ -54,10 +54,10 @@ const SectionCard = ({
 			</div>
 			{isNeedMoreBtn && (
 				<Button
-					variants='chipsOutline'
+					variants='liquidChips'
 					status='default'
 					size='xsmall'
-					className='w-fit m-auto align-middle py-1 h-8'
+					className='w-fit m-auto py-1 h-8'
 					onClick={onClickOpenCard}>
 					{isOpen ? '간략히 보기' : '자세히 보기'}
 				</Button>
