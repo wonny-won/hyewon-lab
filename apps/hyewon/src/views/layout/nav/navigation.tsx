@@ -2,16 +2,18 @@
 
 import { Button, Typography } from '@hyewon/design-system';
 import { navList } from './nav-const';
+interface NavigationProps {
+	onClick: (id: string) => void;
+}
 
-//inset-0 bg-core-neutral-50/50 backdrop-blur-sm
-const Navigation = () => {
+const Navigation = ({ onClick }: NavigationProps) => {
 	return (
 		<nav className='fixed z-10'>
 			<ul className='flex gap-4'>
-				{navList.map((i, idx) => (
-					<li key={idx}>
-						<Button variants='chips' size='large' status='active'>
-							<Typography variants='body-s-strong'>{i}</Typography>
+				{navList.map((i) => (
+					<li key={i.id}>
+						<Button variants='liquidChips' size='large' status='active' onClick={() => onClick(i.id)}>
+							<Typography variants='body-s-strong'>{i.name}</Typography>
 						</Button>
 					</li>
 				))}
