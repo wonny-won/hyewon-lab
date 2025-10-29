@@ -21,7 +21,7 @@ const LiquidSection = ({
 	currNavIdx = '',
 }: LiquidSectionProps) => {
 	const defaultClass =
-		'pointer-events-none p-4 inset-0 rounded-[30px] mix-blend-screen bg-[radial-gradient(470px_650px_at_-20%_45%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(600px_600px_at_0%_100%,rgba(120,180,255,0.38),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.38),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.38),transparent_1%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat opacity-90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_10px_20px_rgba(0,0,0,0.35)] backdrop-blur-[15px] backdrop-brightness-[1.1]';
+		'pointer-events-none p-4 inset-0 rounded-[30px] mix-blend-screen bg-[radial-gradient(600px_600px_at_-30%_40%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(600px_600px_at_0%_100%,rgba(120,180,255,0.38),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.38),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.38),transparent_1%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat opacity-100 shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_10px_20px_rgba(0,0,0,0.35)] backdrop-blur-[15px] backdrop-brightness-[1.1]';
 
 	const typeClass = {
 		imgCard: 'flex gap-5 items-center',
