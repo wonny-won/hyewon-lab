@@ -2,7 +2,6 @@
 import React, { ReactNode } from 'react';
 import Intro from './intro/intro';
 import Navigation from './nav/navigation';
-import { onClickMoveScroll } from '@/commons/utils/scroll-util';
 import { useScrollContext } from '@/commons/context/scroll-context';
 
 interface LayoutProps {
@@ -10,20 +9,12 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-	const { aboutSectionRef, recordSectionRef } = useScrollContext();
-
-	const handleNavClick = (id: string) => {
-		if (id === 'about' && aboutSectionRef.current) {
-			onClickMoveScroll(aboutSectionRef);
-		} else if (id === 'record' && recordSectionRef.current) {
-			onClickMoveScroll(recordSectionRef);
-		}
-	};
+	const { handleNavClick } = useScrollContext();
 
 	return (
-		<div className='h-screen w-full overflow-hidden flex pt-5 py-20'>
+		<div className='h-screen w-full overflow-hidden flex py-5'>
 			<Intro />
-			<div className='w-full h-full px-20 overflow-auto'>
+			<div className='w-full h-full overflow-auto px-20'>
 				<Navigation onClick={handleNavClick} />
 				<main className='w-full h-full py-20'>{children}</main>
 			</div>

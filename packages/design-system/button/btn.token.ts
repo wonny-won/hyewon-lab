@@ -83,11 +83,9 @@ export const btnBorder = {
 		disabled: 'rounded-[30px] border-[1px] border-solid border-core-gray-200',
 	},
 	liquidChips: {
-		default:
-			'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
-		active: 'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
-		disabled:
-			'rounded-[30px] border-[0.5px] border-solid border-white/20 shadow-[0_5px_9px_rgba(0,0,0,0.35),0_-10px_36px_inset_rgba(0,0,0,0.35),0_-1px_5px_2px_inset_rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.05)]',
+		default: 'rounded-[30px]',
+		active: 'rounded-[30px]',
+		disabled: 'rounded-[30px]',
 	},
 };
 
@@ -184,9 +182,9 @@ export const btnBgColor = {
 	},
 	liquidChips: {
 		default:
-			'bg-[linear-gradient(290deg,rgba(255,255,255,0.1),transparent)] backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
-		active: 'bg-[linear-gradient(290deg,rgba(255,255,255,0.15),transparent)] backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
+			'pointer-events-none mix-blend-screen p-4 inset-0 mix-blend-screen bg-[radial-gradient(180px_280px_at_10%_-100%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.18),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.38),transparent_2%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat opacity-90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.5]',
+		active: 'pointer-events-none mix-blend-screen p-4 inset-0 mix-blend-screen bg-[radial-gradient(180px_280px_at_10%_-100%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.18),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.38),transparent_2%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat opacity-90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.5]',
 		disabled:
-			'bg-[linear-gradient(290deg,rgba(255,255,255,0.1),transparent)]backdrop-blur-[5px] backdrop-brightness-[1.5] backdrop-saturate-110',
+			'pointer-events-none mix-blend-screen p-4 inset-0 mix-blend-screen bg-[radial-gradient(180px_280px_at_10%_-100%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.18),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.38),transparent_2%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat opacity-90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.5]',
 	},
 };
