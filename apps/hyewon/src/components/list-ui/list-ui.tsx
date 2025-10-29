@@ -1,17 +1,17 @@
 /** @format */
 import React from 'react';
 import ListItem from './list-item';
+import { Button } from '@hyewon/design-system';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';
 	listMap: any;
-	isNeedIcon?: boolean;
 	color?: string;
 }
 
 const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 	const classStyle = {
-		horizontal: 'flex gap-5 flex-wrap justify-center',
+		horizontal: 'flex gap-5 flex-wrap justify-center items-center',
 		virtical: '',
 	};
 
@@ -24,7 +24,6 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 							<>
 								<ListItem
 									key={i.id}
-									isNeedIcon={false}
 									listItem={i?.title || i}
 									listClassName='pt-2.5'
 									typoClassName={['font-semibold', color ?? ''].join(' ')}
@@ -35,7 +34,7 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 											<div key={item.id} className='pl-10'>
 												<div className='flex items-center text-white py-1'>
 													{item?.txt && `${idx + 1}. `} &nbsp;
-													<ListItem isNeedIcon={false} listItem={item?.txt} />
+													<ListItem listItem={item?.txt} />
 												</div>
 												{item?.children &&
 													item?.children?.map((child, idx) => {
@@ -45,7 +44,6 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 																	‣ &nbsp;
 																	<ListItem
 																		key={item.id + idx}
-																		isNeedIcon={false}
 																		listItem={child.childTxt}
 																		typoClassName='text-body-s'
 																	/>
@@ -59,7 +57,6 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 																				‣ &nbsp;
 																				<ListItem
 																					key={descItem.id + idx}
-																					isNeedIcon={false}
 																					listItem={descItem}
 																					typoClassName='text-body-s'
 																				/>
@@ -74,7 +71,9 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 									})}
 							</>
 						) : (
-							<a href={i?.onClick}>{i?.icon}</a>
+							<li className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20'>
+								<a href={i?.onClick}>{i?.icon}</a>
+							</li>
 						)}
 					</>
 				);

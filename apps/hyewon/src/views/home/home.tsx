@@ -4,14 +4,17 @@ import { SectionCard } from '@hyewon/design-system';
 import { aboutMe } from '@/commons/apis/about';
 import { record } from '@/commons/apis/record';
 import { useScrollContext } from '@/commons/context/scroll-context';
+import { sideProjects } from '@/commons/apis/sideProject';
 
 const Home = () => {
-	const { aboutSectionRef, recordSectionRef } = useScrollContext();
+	const { aboutSectionRef, recordSectionRef, sideProjectSectionRef } = useScrollContext();
 	return (
-		<div className='flex flex-col' ref={aboutSectionRef}>
-			<SectionCard type='about'>
-				<ListUI direction='virtical' listMap={aboutMe} isNeedIcon={false} />
-			</SectionCard>
+		<div className='flex flex-col'>
+			<div ref={aboutSectionRef}>
+				<SectionCard type='about'>
+					<ListUI direction='virtical' listMap={aboutMe} />
+				</SectionCard>
+			</div>
 			<div className='pt-25' ref={recordSectionRef}>
 				{record.map((i, idx) => {
 					const isLast = idx === record.length - 1;
@@ -24,7 +27,25 @@ const Home = () => {
 								subtitle={i.period}
 								isNeedMoreBtn
 								titleColor='text-white'>
-								<ListUI direction='virtical' listMap={i.main} isNeedIcon color='text-white' />
+								<ListUI direction='virtical' listMap={i.main} color='text-white' />
+							</SectionCard>
+						</div>
+					);
+				})}
+			</div>
+			<div className='pt-25' ref={sideProjectSectionRef}>
+				{sideProjects.map((i, idx) => {
+					const isLast = idx === record.length - 1;
+					return (
+						<div key={idx} className={isLast ? 'border-b-[1px] border-solid border-core-neutral-700' : ''}>
+							<SectionCard
+								type='record'
+								styleType='line'
+								title={i.company}
+								subtitle={i.period}
+								isNeedMoreBtn
+								titleColor='text-white'>
+								<ListUI direction='virtical' listMap={i.main} color='text-white' />
 							</SectionCard>
 						</div>
 					);

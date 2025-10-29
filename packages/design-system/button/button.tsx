@@ -8,7 +8,7 @@ interface BtnProps {
 	size: btnSize;
 	status: btnStatus;
 	children?: ReactNode;
-	onClick?: () => void;
+	onClick?: (param?: any) => void;
 	className?: string;
 }
 

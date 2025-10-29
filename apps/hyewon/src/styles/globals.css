@@ -9,7 +9,7 @@
 @source "../../../../packages/design-system/**/*.{js,ts,jsx,tsx}";
 
 :root {
-	--background: linear-gradient(90deg, #030b23 0%, #162842 80%, #271d68 100%);
+	--background: radial-gradient(circle at 95% 5%, #112b4a 0%, #0a1831 40%, #0b101c 100%);
 	--foreground: #c4ccce;
 
 	/* font weight */

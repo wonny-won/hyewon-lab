@@ -14,15 +14,15 @@ export const aboutMyProfile = {
 			onClick: 'https://github.com/wonny-won',
 		},
 		{
-			icon: Icons({ iconName: 'GithubIcon' }),
+			icon: Icons({ iconName: 'MailIcon' }),
 			onClick: 'https://github.com/wonny-won',
 		},
 		{
-			icon: Icons({ iconName: 'GithubIcon' }),
+			icon: Icons({ iconName: 'PhoneIcon' }),
 			onClick: 'https://github.com/wonny-won',
 		},
 		{
-			icon: Icons({ iconName: 'GithubIcon' }),
+			icon: Icons({ iconName: 'BlogIcon' }),
 			onClick: 'https://github.com/wonny-won',
 		},
 	],

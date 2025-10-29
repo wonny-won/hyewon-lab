@@ -3,7 +3,7 @@
 import { Button, Typography } from '@hyewon/design-system';
 import { navList } from './nav-const';
 interface NavigationProps {
-	onClick: (id: string) => void;
+	onClick: (id: any) => void;
 }
 
 const Navigation = ({ onClick }: NavigationProps) => {
