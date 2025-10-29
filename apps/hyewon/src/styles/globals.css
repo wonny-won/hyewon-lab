@@ -9,7 +9,7 @@
 @source "../../../../packages/design-system/**/*.{js,ts,jsx,tsx}";
 
 :root {
-	--background: radial-gradient(circle at -5% 10%, #112b4a 0%, #0a1831 40%, #0b101c 100%);
+	--background: radial-gradient(circle at 20% -12%, #112b4a 0%, #0a1831 40%, #0b101c 100%);
 	--foreground: #c4ccce;
 
 	/* font weight */
