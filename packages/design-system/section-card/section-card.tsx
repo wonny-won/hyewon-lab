@@ -18,6 +18,7 @@ interface SectionCardProps {
 	children?: ReactNode;
 	isNeedMoreBtn?: boolean;
 	subSectionImgSrc?: string[];
+	sectionCardClassName?: string;
 }
 
 const SectionCard = ({
@@ -33,6 +34,7 @@ const SectionCard = ({
 	isNeedSummary = false,
 	summaryChildren,
 	subSectionImgSrc,
+	sectionCardClassName,
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const onClickOpenCard = () => {
@@ -43,8 +45,8 @@ const SectionCard = ({
 		<section
 			className={
 				isOpen
-					? openClassStyle.sectionCardStyle?.[styleType]?.[type]
-					: notOpenClassStyle.sectionCardStyle?.[styleType]?.[type]
+					? [openClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
+					: [notOpenClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
 			}>
 			<div className={openClassStyle.contentStyle?.[styleType]?.[type]}>
 				<div className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
@@ -67,9 +69,11 @@ const SectionCard = ({
 						))}
 				</div>
 				<div className='w-[full] flex flex-col'>
-					<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
-						{title}
-					</Typography>
+					{title && (
+						<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
+							{title}
+						</Typography>
+					)}
 					{isNeedSummary ? (
 						<>
 							{summaryChildren}
