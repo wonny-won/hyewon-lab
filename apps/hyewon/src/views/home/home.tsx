@@ -19,6 +19,7 @@ const Home = () => {
 				{record.map((i, idx) => {
 					return (
 						<SectionCard
+							as='article'
 							key={idx}
 							type='record'
 							styleType='liquid'
