@@ -11,7 +11,7 @@ interface MainInroSectionProps {
 }
 const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 	return (
-		<>
+		<section className='flex flex-col gap-6'>
 			<div className='flex gap-6 items-center'>
 				<Image
 					src={aboutMyProfile.profile}
@@ -30,7 +30,7 @@ const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 				</div>
 			</div>
 			<PrograssUI currNavIdx={currNavIdx} />
-		</>
+		</section>
 	);
 };
 export default MainInroSection;

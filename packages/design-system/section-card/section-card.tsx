@@ -50,7 +50,7 @@ const SectionCard = ({
 			}>
 			<div className={openClassStyle.contentStyle?.[styleType]?.[type]}>
 				<div className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
-					<Typography as={subtitleAs} variants='body-s-strong'>
+					<Typography as={subtitleAs} variants='body-s-strong' className='mb-0.5'>
 						{subtitle}
 					</Typography>
 					{type === 'record' &&
@@ -63,7 +63,9 @@ const SectionCard = ({
 									alt='sub section img'
 									width={200}
 									height={300}
-									style={{ minHeight: '115px' }}
+									style={{
+										minHeight: '115px',
+									}}
 								/>
 							</div>
 						))}

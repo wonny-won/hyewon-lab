@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
 			<Intro />
 			<div className='w-full h-full'>
 				<Navigation onClick={handleNavClick} />
-				<main className='w-full h-full py-20 overflow-auto'>{children}</main>
+				<main className='w-full h-full py-23 overflow-auto'>{children}</main>
 			</div>
 		</div>
 	);
