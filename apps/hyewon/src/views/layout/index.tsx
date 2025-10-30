@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
 	const { handleNavClick } = useScrollContext();
 
 	return (
-		<div className='h-screen w-full overflow-hidden flex gap-20 py-5 px-10'>
+		<div className='h-screen w-full overflow-hidden flex gap-20 py-5 px-12'>
 			<Intro />
 			<div className='w-full h-full'>
 				<Navigation onClick={handleNavClick} />
