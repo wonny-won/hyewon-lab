@@ -1,15 +1,13 @@
 /** @format */
-import React from 'react';
+import React, { Fragment } from 'react';
 import ListItem from './list-item';
-import { Button } from '@hyewon/design-system';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';
 	listMap: any;
-	color?: string;
 }
 
-const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
+const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 	const classStyle = {
 		horizontal: 'flex gap-5 flex-wrap justify-center items-center',
 		virtical: '',
@@ -17,50 +15,46 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 
 	return (
 		<ul className={classStyle[direction]}>
-			{listMap?.map((i: any) => {
+			{listMap?.map((i: any, idx) => {
 				return (
-					<>
+					<Fragment key={String(i.id) + idx}>
 						{direction === 'virtical' ? (
 							<>
 								<ListItem
-									key={i.id}
 									listItem={i?.title || i}
-									listClassName='pt-2.5'
-									typoClassName={['font-semibold', color ?? ''].join(' ')}
+									listClassName='pt-3'
+									typoClassName='font-semibold text-white'
 								/>
 								{i.subtitle &&
 									i.subtitle?.map((item, idx) => {
 										return (
-											<div key={item.id} className='pl-10'>
-												<div className='flex items-center text-white py-1'>
-													{item?.txt && `${idx + 1}. `} &nbsp;
-													<ListItem listItem={item?.txt} />
-												</div>
+											<div key={String(item.id) + idx} className='pl-6'>
+												<ListItem
+													isNeedIdx
+													idx={idx + 1}
+													listItem={item?.txt}
+													listClassName='pt-1'
+													typoClassName='text-body-s text-core-neutral-100'
+												/>
 												{item?.children &&
 													item?.children?.map((child, idx) => {
 														return (
-															<div key={item.id + 'child' + idx} className='pl-10'>
-																<div className='flex items-center'>
-																	‣ &nbsp;
-																	<ListItem
-																		key={item.id + idx}
-																		listItem={child.childTxt}
-																		typoClassName='text-body-s'
-																	/>
-																</div>
+															<div key={item.id + 'child' + idx} className='pl-6'>
+																<ListItem
+																	listItem={child.childTxt}
+																	isNeedBulletPoint
+																	listClassName='pt-1'
+																	typoClassName='text-body-m text-core-neutral-300'
+																/>
 																{child?.desc &&
 																	child?.desc?.map((descItem, idx) => {
 																		return (
-																			<div
+																			<ListItem
 																				key={item.id + 'descItem' + idx}
-																				className='pl-10 flex items-center'>
-																				‣ &nbsp;
-																				<ListItem
-																					key={descItem.id + idx}
-																					listItem={descItem}
-																					typoClassName='text-body-s'
-																				/>
-																			</div>
+																				listItem={descItem}
+																				isNeedBulletPoint
+																				listClassName='pl-6'
+																			/>
 																		);
 																	})}
 															</div>
@@ -75,7 +69,7 @@ const ListUI = ({ direction = 'virtical', listMap, color }: LstProps) => {
 								<a href={i?.onClick}>{i?.icon}</a>
 							</li>
 						)}
-					</>
+					</Fragment>
 				);
 			})}
 		</ul>

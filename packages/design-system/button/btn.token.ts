@@ -24,6 +24,7 @@ export const makeBtnFn = ({
 	className?: string;
 }) => {
 	return [
+		'hover: cursor-pointer',
 		btnSize[`${size}`],
 		btnBorder[`${variants}`][`${status}`],
 		btnColor[`${variants}`]?.[`${status}`],
@@ -171,7 +172,7 @@ export const btnBgColor = {
 		disabled: 'bg-transparents',
 	},
 	chips: {
-		default: 'bg-core-neutral-50/50 backdrop-blur-[5px]',
+		default: 'bg-core-neutral-50/50',
 		active: 'bg-core-green-200',
 		disabled: 'bg-core-neutral-50',
 	},
@@ -182,9 +183,9 @@ export const btnBgColor = {
 	},
 	liquidChips: {
 		default:
-			'pointer-events-none inset-0 bg-[radial-gradient(180px_280px_at_10%_-100%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_2%)] [background-position:0%_0%,left,top] [background-size:auto,2px_100%,100%_3px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.1]',
-		active: 'pointer-events-none inset-0 mix-blend-screen bg-[radial-gradient(180px_280px_at_-10%_-126%,rgba(10,180,255,0.98),transparent_33%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_4%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.1]',
+			'overflow-hidden pointer-events-auto bg-[radial-gradient(180px_290px_at_-28%_-126%,rgba(10,180,255,1),transparent_38%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_5%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[5px] backdrop-brightness-[1.2]',
+		active: 'overflow-hidden pointer-events-auto bg-[radial-gradient(180px_290px_at_-28%_-126%,rgba(10,180,255,1),transparent_38%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_5%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[5px] backdrop-brightness-[1.2]',
 		disabled:
-			'pointer-events-none inset-0 bg-[radial-gradient(180px_280px_at_10%_-100%,rgba(10,180,255,0.38),transparent_40%),radial-gradient(350px_450px_at_-10%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_2%)] [background-position:0%_0%,left,top] [background-size:auto,0.5px_100%,100%_3px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[25px] backdrop-brightness-[1.1]',
+			'overflow-hidden pointer-events-auto bg-[radial-gradient(180px_290px_at_-28%_-126%,rgba(10,180,255,1),transparent_38%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_5%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[5px] backdrop-brightness-[1.2]',
 	},
 };
