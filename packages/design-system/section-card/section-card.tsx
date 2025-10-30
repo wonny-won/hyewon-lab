@@ -42,7 +42,7 @@ const SectionCard = ({
 	};
 
 	return (
-		<section
+		<article
 			className={
 				isOpen
 					? [openClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
@@ -94,7 +94,7 @@ const SectionCard = ({
 					{isOpen ? '간략히 보기' : '자세히 보기'}
 				</Button>
 			)}
-		</section>
+		</article>
 	);
 };
 

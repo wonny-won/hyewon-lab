@@ -10,35 +10,33 @@ const Home = () => {
 	const { aboutSectionRef, recordSectionRef, sideProjectSectionRef } = useScrollContext();
 	return (
 		<div className='flex flex-col mr-4'>
-			<div ref={aboutSectionRef}>
+			<section ref={aboutSectionRef}>
 				<SectionCard type='about'>
 					<ListUI direction='virtical' listMap={aboutMe} />
 				</SectionCard>
-			</div>
-			<div className='pt-10' ref={recordSectionRef}>
+			</section>
+			<section className='pt-10 flex flex-col gap-6' ref={recordSectionRef}>
 				{record.map((i, idx) => {
 					return (
-						<div key={idx} className='mt-6'>
-							<SectionCard
-								key={idx}
-								type='record'
-								styleType='liquid'
-								title={i.company}
-								subtitle={i.period}
-								subSectionImgSrc={i.siteGif}
-								isNeedMoreBtn
-								titleColor='text-white'
-								isNeedSummary>
-								<p className='text-body-s font-semibold text-core-neutral-300 whitespace-pre-line'>
-									{i.summary}
-								</p>
-								<ThinDiver />
-								<ListUI direction='virtical' listMap={i.main} />
-							</SectionCard>
-						</div>
+						<SectionCard
+							key={idx}
+							type='record'
+							styleType='liquid'
+							title={i.company}
+							subtitle={i.period}
+							subSectionImgSrc={i.siteGif}
+							isNeedMoreBtn
+							titleColor='text-white'
+							isNeedSummary>
+							<p className='text-body-s font-semibold text-core-neutral-300 whitespace-pre-line'>
+								{i.summary}
+							</p>
+							<ThinDiver />
+							<ListUI direction='virtical' listMap={i.main} />
+						</SectionCard>
 					);
 				})}
-			</div>
+			</section>
 			<div className='pt-25' ref={sideProjectSectionRef}>
 				{/* {sideProjects.map((i, idx) => {
 					const isLast = idx === record.length - 1;

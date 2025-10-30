@@ -12,7 +12,7 @@ interface MainInroSectionProps {
 const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 	return (
 		<>
-			<div className='rounded-[30px] flex gap-5 items-center'>
+			<div className='flex gap-6 items-center'>
 				<Image
 					src={aboutMyProfile.profile}
 					alt={'profile img'}
