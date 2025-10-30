@@ -12,14 +12,13 @@ const PrograssUI = ({ currNavIdx }: PrograssUIProps) => {
 	const { handleNavClick } = useScrollContext();
 
 	return (
-		<div className='flex flex-col items-center'>
+		<aside aria-label='현재 위치' className='flex flex-col items-center'>
 			<p className='text-body-m pb-1 font-thin text-core-neutral-200'>{navListType[currNavIdx]?.name}</p>
-			<div className='w-full flex flex-col gap-5 items-center mt-5'>
+			<div className='w-full flex flex-col gap-5 items-center mt-3'>
 				<div className=' w-full h-[5px] rounded-[20px] bg-core-neutral-500/80 overflow-hidden'>
 					<div
-						className={`w-${
-							navListType[currNavIdx]?.id || 1
-						}/3 h-[5px] rounded-[20px] bg-white/80 transition-all duration-300`}
+						className={`h-[5px] rounded-[20px] bg-white/80 transition-all duration-300`}
+						style={{ width: `${(navListType[currNavIdx]?.id / 3) * 100}%` }}
 					/>
 				</div>
 				<div className='flex gap-6'>
@@ -28,7 +27,7 @@ const PrograssUI = ({ currNavIdx }: PrograssUIProps) => {
 					<Icons iconName='NextIcon' />
 				</div>
 			</div>
-		</div>
+		</aside>
 	);
 };
 export default PrograssUI;

@@ -10,9 +10,9 @@ const Intro = () => {
 	const { currNavId } = useScrollContext();
 
 	return (
-		<header className='w-[60%] h-screen py-25'>
+		<header className='w-[60%] h-screen py-27'>
 			<div className='relative flex flex-col gap-6'>
-				<SectionCard type='default' styleType='liquid'>
+				<SectionCard type='default' styleType='liquid' sectionCardClassName='p-8'>
 					<MainInroSection currNavIdx={currNavId} />
 				</SectionCard>
 				<div className='relative flex gap-4'>
