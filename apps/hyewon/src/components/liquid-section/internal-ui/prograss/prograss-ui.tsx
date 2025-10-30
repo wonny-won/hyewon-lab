@@ -10,7 +10,6 @@ interface PrograssUIProps {
 
 const PrograssUI = ({ currNavIdx }: PrograssUIProps) => {
 	const { handleNavClick } = useScrollContext();
-	console.log(navListType[currNavIdx]?.id);
 
 	return (
 		<div className='flex flex-col items-center'>

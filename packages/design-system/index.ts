@@ -5,3 +5,4 @@ export { default as Typography } from './typography/typography';
 export { default as Tags } from './tags/tags';
 export { default as Icons } from './icon/icons';
 export { default as SectionCard } from './section-card/section-card';
+export { default as ThinDiver } from './diver/thin-diver';

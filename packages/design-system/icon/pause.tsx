@@ -10,9 +10,9 @@ const PauseIcon = () => {
 			viewBox='0 0 24 24'
 			fill='currentColor'
 			stroke='currentColor'
-			stroke-width='2'
-			stroke-linecap='square'
-			stroke-linejoin='miter'
+			strokeWidth='2'
+			strokeLinecap='square'
+			strokeLinejoin='miter'
 			className='lucide lucide-pause-icon lucide-pause'>
 			<rect x='14' y='3' width='4' height='22' rx='0.5' />
 			<rect x='4' y='3' width='4' height='22' rx='0.5' />

@@ -32,7 +32,6 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const sideProjectSectionRef = useRef<HTMLDivElement>(null);
 
 	const handleNavClick = (id: string) => {
-		console.log(id);
 		const refObj = {
 			about: aboutSectionRef,
 			record: recordSectionRef,

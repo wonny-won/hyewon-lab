@@ -13,7 +13,8 @@ export type variants =
 	| 'body-m'
 	| 'body-s-strong'
 	| 'body-s'
-	| 'body-xs-strong';
+	| 'body-xs-strong'
+	| 'body-xs';
 
 export const variant = {
 	'display-l': 'text-display-l font-semibold',
@@ -34,4 +35,5 @@ export const variant = {
 	'body-s': 'text-body-s font-regular',
 
 	'body-xs-strong': 'text-body-xs-strong font-semibold',
+	'body-xs': 'text-body-xs-strong font-regular',
 } as const;

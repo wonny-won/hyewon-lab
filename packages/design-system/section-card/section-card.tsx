@@ -1,19 +1,23 @@
 /** @format */
-import React, { JSX, useState } from 'react';
+import React, { JSX, ReactNode, useState } from 'react';
 import Typography from '../typography/typography';
 import Button from '../button/button';
+import Image from 'next/image';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
 
 interface SectionCardProps {
 	type: 'record' | 'about' | 'default';
-	styleType?: 'line' | 'normal';
+	styleType?: 'line' | 'normal' | 'liquid';
 	title?: string;
 	titleColor?: string;
 	titleAs?: keyof JSX.IntrinsicElements;
 	subtitle?: string;
 	subtitleAs?: keyof JSX.IntrinsicElements;
-	children?: any;
+	isNeedSummary?: boolean;
+	summaryChildren?: ReactNode;
+	children?: ReactNode;
 	isNeedMoreBtn?: boolean;
+	subSectionImgSrc?: string[];
 }
 
 const SectionCard = ({
@@ -26,6 +30,9 @@ const SectionCard = ({
 	subtitle,
 	subtitleAs = 'h2',
 	isNeedMoreBtn = false,
+	isNeedSummary = false,
+	summaryChildren,
+	subSectionImgSrc,
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const onClickOpenCard = () => {
@@ -44,18 +51,39 @@ const SectionCard = ({
 					<Typography as={subtitleAs} variants='body-s-strong'>
 						{subtitle}
 					</Typography>
+					{type === 'record' &&
+						subSectionImgSrc?.map((i, idx) => (
+							<div
+								key={'sub section img' + idx}
+								className={`${!idx || !!isOpen ? 'visible' : 'invisible'}`}>
+								<Image
+									src={i || ''}
+									alt='sub section img'
+									width={200}
+									height={300}
+									style={{ minHeight: '115px' }}
+								/>
+							</div>
+						))}
 				</div>
 				<div className='w-[full] flex flex-col'>
 					<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
 						{title}
 					</Typography>
-					{children}
+					{isNeedSummary ? (
+						<>
+							{summaryChildren}
+							{children}
+						</>
+					) : (
+						children
+					)}
 				</div>
 			</div>
 			{isNeedMoreBtn && (
 				<Button
-					variants='liquidChips'
-					status='default'
+					variants='chipsOutline'
+					status='active'
 					size='xsmall'
 					className='w-fit m-auto py-1 h-8'
 					onClick={onClickOpenCard}>
