@@ -19,6 +19,7 @@ interface SectionCardProps {
 	isNeedMoreBtn?: boolean;
 	subSectionImgSrc?: string[];
 	sectionCardClassName?: string;
+	as?: keyof JSX.IntrinsicElements;
 }
 
 const SectionCard = ({
@@ -35,6 +36,7 @@ const SectionCard = ({
 	summaryChildren,
 	subSectionImgSrc,
 	sectionCardClassName,
+	as: Component = 'section',
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const onClickOpenCard = () => {
@@ -42,7 +44,7 @@ const SectionCard = ({
 	};
 
 	return (
-		<article
+		<Component
 			className={
 				isOpen
 					? [openClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
@@ -96,7 +98,7 @@ const SectionCard = ({
 					{isOpen ? '간략히 보기' : '자세히 보기'}
 				</Button>
 			)}
-		</article>
+		</Component>
 	);
 };
 
