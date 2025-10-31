@@ -4,6 +4,7 @@ import Typography from '../typography/typography';
 import Button from '../button/button';
 import Image from 'next/image';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
+import Icons from '../icon/icons';
 
 interface SectionCardProps {
 	type: 'record' | 'about' | 'default';
@@ -50,8 +51,8 @@ const SectionCard = ({
 					? [openClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
 					: [notOpenClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
 			}>
-			<div className={openClassStyle.contentStyle?.[styleType]?.[type]}>
-				<div className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
+			<section className={openClassStyle.contentStyle?.[styleType]?.[type]}>
+				<figure className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
 					<Typography as={subtitleAs} variants='body-s-strong' className='mb-0.5'>
 						{subtitle}
 					</Typography>
@@ -71,7 +72,7 @@ const SectionCard = ({
 								/>
 							</div>
 						))}
-				</div>
+				</figure>
 				<div className='w-[full] flex flex-col'>
 					{title && (
 						<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
@@ -81,22 +82,17 @@ const SectionCard = ({
 					{isNeedSummary ? (
 						<>
 							{summaryChildren}
-							{children}
+							{isOpen && <>{children}</>}
 						</>
 					) : (
 						children
 					)}
 				</div>
-			</div>
+			</section>
 			{isNeedMoreBtn && (
-				<Button
-					variants='chipsOutline'
-					status='active'
-					size='xsmall'
-					className='w-fit m-auto py-1 h-8'
-					onClick={onClickOpenCard}>
-					{isOpen ? '간략히 보기' : '자세히 보기'}
-				</Button>
+				<button className='w-full pt-5 flex justify-center hover:cursor-pointer' onClick={onClickOpenCard}>
+					<Icons iconName={isOpen ? 'DoubleArrowUpIcon' : 'DoubleArrowDownIcon'} />
+				</button>
 			)}
 		</Component>
 	);

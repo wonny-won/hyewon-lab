@@ -1,6 +1,6 @@
 /** @format */
 import ListUI from '@/components/list-ui/list-ui';
-import { SectionCard, ThinDiver } from '@hyewon/design-system';
+import { SectionCard, ThinDiver, Typography } from '@hyewon/design-system';
 import { aboutMe } from '@/commons/apis/about';
 import { record } from '@/commons/apis/record';
 import { useScrollContext } from '@/commons/context/scroll-context';
@@ -12,10 +12,12 @@ const Home = () => {
 		<div className='flex flex-col mr-4'>
 			<section ref={aboutSectionRef}>
 				<SectionCard type='about'>
+					<h2 className='hidden'>자기소개</h2>
 					<ListUI direction='virtical' listMap={aboutMe} />
 				</SectionCard>
 			</section>
 			<section className='pt-10 flex flex-col gap-6' ref={recordSectionRef}>
+				<h2 className='hidden'>경력, 이력 소개</h2>
 				{record.map((i, idx) => {
 					return (
 						<SectionCard
@@ -28,34 +30,29 @@ const Home = () => {
 							subSectionImgSrc={i.siteGif}
 							isNeedMoreBtn
 							titleColor='text-white'
-							isNeedSummary>
-							<p className='text-body-s font-semibold text-core-neutral-300 whitespace-pre-line'>
-								{i.summary}
-							</p>
+							isNeedSummary
+							summaryChildren={
+								<>
+									<div className='pb-2'>
+										<Typography as='h3' variants='body-m-strong' color='text-core-gray-400/60'>
+											{i.position}
+										</Typography>
+										<Typography variants='body-m-strong' color='text-core-gray-400/60'>
+											{i.coreProject}
+										</Typography>
+									</div>
+									<p className='text-body-s text-core-gray-200 whitespace-pre-line'>{i.summary}</p>
+								</>
+							}>
 							<ThinDiver />
 							<ListUI direction='virtical' listMap={i.main} />
 						</SectionCard>
 					);
 				})}
 			</section>
-			<div className='pt-25' ref={sideProjectSectionRef}>
-				{/* {sideProjects.map((i, idx) => {
-					const isLast = idx === record.length - 1;
-					return (
-						<div key={idx} className={isLast ? 'border-b-[1px] border-solid border-core-neutral-700' : ''}>
-							<SectionCard
-								type='record'
-								styleType='line'
-								title={i.company}
-								subtitle={i.period}
-								isNeedMoreBtn
-								titleColor='text-white'>
-								<ListUI direction='virtical' listMap={i.main} color='text-white' />
-							</SectionCard>
-						</div>
-					);
-				})} */}
-			</div>
+			<section className='pt-25' ref={sideProjectSectionRef}>
+				<h2 className='hidden'>기록의 조각</h2>
+			</section>
 		</div>
 	);
 };
