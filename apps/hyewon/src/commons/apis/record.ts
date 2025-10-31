@@ -5,6 +5,8 @@ export const record = [
 		id: 'honored-1',
 		company: '(주) 포페런츠',
 		period: '2025.04 ~ 2025.09',
+		position: '개발팀 | 사원',
+		coreProject: '아너드',
 		siteGif: ['/honored.gif'],
 		summary:
 			'아너드 자체 웹 서비스 런칭 전 과정(기획, 디자인, 개발)에 참여해 다양한 방면으로 시야를 넓혔습니다.\n 또한 개발 프로세싱 리드하며 일정 및 문서화를 도입해 주도적인 개발 체계를 구축을 경험했습니다. \n 본 프로젝트에서의 가장 큰 강점은 E2E 단독 런칭으로 자체웹 프론트 파트는 혼자 온전히 런칭했습니다.',
@@ -86,6 +88,9 @@ export const record = [
 		id: 'teamstone-1',
 		company: '(주) 팀스톤',
 		period: '2023.08 ~ 2024.08',
+		position: '개발팀 | 주임',
+		coreProject: 'ontune',
+
 		siteGif: ['/teamstone.gif', '/teamstone2.gif'],
 		summary:
 			'아너드 자체 웹 서비스 런칭 전 과정(기획, 디자인, 개발)에 참여해 다양한 방면으로 시야를 넓혔습니다.\n 또한 개발 프로세싱 리드하며 일정 및 문서화를 도입해 주도적인 개발 체계를 구축을 경험했습니다. \n 본 프로젝트에서의 가장 큰 강점은 E2E 단독 런칭으로 자체웹 프론트 파트는 혼자 온전히 런칭했습니다.',

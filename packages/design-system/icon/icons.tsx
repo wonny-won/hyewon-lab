@@ -8,6 +8,8 @@ import NextIcon from './next';
 import MailIcon from './mail';
 import PhoneIcon from './phone';
 import BlogIcon from './blog';
+import DoubleArrowDownIcon from './double-arrows-down';
+import DoubleArrowUpIcon from './double-arrows-up';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -24,6 +26,8 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	MailIcon,
 	PhoneIcon,
 	BlogIcon,
+	DoubleArrowDownIcon,
+	DoubleArrowUpIcon,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
