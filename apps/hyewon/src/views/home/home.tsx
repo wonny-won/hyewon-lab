@@ -1,22 +1,23 @@
 /** @format */
 import ListUI from '@/components/list-ui/list-ui';
-import { SectionCard, ThinDiver, Typography } from '@hyewon/design-system';
+import { SectionCard, ThinDiver } from '@hyewon/design-system';
 import { aboutMe } from '@/commons/apis/about';
 import { record } from '@/commons/apis/record';
 import { useScrollContext } from '@/commons/context/scroll-context';
-// import { sideProjects } from '@/commons/apis/sideProject';
+import SummaryChildren from './internal-ui/summary-children';
+import { onClickOpenNewWindow } from '@/commons/utils/link';
 
 const Home = () => {
 	const { aboutSectionRef, recordSectionRef, sideProjectSectionRef } = useScrollContext();
 	return (
 		<div className='flex flex-col mr-4'>
 			<section ref={aboutSectionRef}>
-				<SectionCard type='about'>
+				<SectionCard as='article' type='about' styleType='liquid' title='저는 이렇게 일해왔습니다!👊🏻'>
 					<h2 className='hidden'>자기소개</h2>
 					<ListUI direction='virtical' listMap={aboutMe} />
 				</SectionCard>
 			</section>
-			<section className='pt-10 flex flex-col gap-6' ref={recordSectionRef}>
+			<section className='pt-15 flex flex-col gap-6' ref={recordSectionRef}>
 				<h2 className='hidden'>경력, 이력 소개</h2>
 				{record.map((i, idx) => {
 					return (
@@ -26,24 +27,15 @@ const Home = () => {
 							type='record'
 							styleType='liquid'
 							title={i.company}
+							isNeedTitleIcon
+							titleIconName='ArrowUpRight'
+							onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
 							subtitle={i.period}
 							subSectionImgSrc={i.siteGif}
 							isNeedMoreBtn
 							titleColor='text-white'
 							isNeedSummary
-							summaryChildren={
-								<>
-									<div className='pb-2'>
-										<Typography as='h3' variants='body-m-strong' color='text-core-gray-400/60'>
-											{i.position}
-										</Typography>
-										<Typography variants='body-m-strong' color='text-core-gray-400/60'>
-											{i.coreProject}
-										</Typography>
-									</div>
-									<p className='text-body-s text-core-gray-200 whitespace-pre-line'>{i.summary}</p>
-								</>
-							}>
+							summaryChildren={<SummaryChildren data={i} />}>
 							<ThinDiver />
 							<ListUI direction='virtical' listMap={i.main} />
 						</SectionCard>

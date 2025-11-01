@@ -1,7 +1,7 @@
 /** @format */
 import React from 'react';
 
-const MailIcon = () => {
+const MailIcon = ({ color }: { color: string }) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -9,7 +9,7 @@ const MailIcon = () => {
 			height='24'
 			viewBox='0 0 24 24'
 			fill='none'
-			stroke='currentColor'
+			stroke={color || 'currentColor'}
 			strokeWidth='2'
 			strokeLinecap='square'
 			strokeLinejoin='miter'

@@ -1,7 +1,7 @@
 /** @format */
 import React from 'react';
 
-const DoubleArrowUpIcon = () => {
+const DoubleArrowUpIcon = ({ color }: { color: string }) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -9,7 +9,7 @@ const DoubleArrowUpIcon = () => {
 			height='24'
 			viewBox='0 0 24 24'
 			fill='none'
-			stroke='#8e97995d'
+			stroke={color || '#8e97995d'}
 			strokeWidth='2.5'
 			strokeLinecap='round'
 			strokeLinejoin='round'

@@ -1,15 +1,16 @@
 /** @format */
+'use-client';
 import React from 'react';
 
-const PauseIcon = () => {
+const PauseIcon = ({ color }: { color: string }) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='24'
 			height='24'
 			viewBox='0 0 24 24'
-			fill='currentColor'
-			stroke='currentColor'
+			fill={color || 'currentColor'}
+			stroke={color || 'currentColor'}
 			strokeWidth='2'
 			strokeLinecap='square'
 			strokeLinejoin='miter'
