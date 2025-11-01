@@ -23,7 +23,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 								<ListItem
 									listItem={i?.title || i}
 									listClassName='pt-3'
-									typoClassName='font-semibold text-white'
+									typoClassName={'font-semibold text-white'}
 								/>
 								{i.subtitle &&
 									i.subtitle?.map((item, idx) => {
@@ -34,7 +34,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 													idx={idx + 1}
 													listItem={item?.txt}
 													listClassName='pt-1'
-													typoClassName='text-body-s text-core-neutral-100'
+													typoClassName='body-xs text-core-neutral-100'
 												/>
 												{item?.children &&
 													item?.children?.map((child, idx) => {
@@ -44,7 +44,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 																	listItem={child.childTxt}
 																	isNeedBulletPoint
 																	listClassName='pt-1'
-																	typoClassName='text-body-m text-core-neutral-300'
+																	typoClassName='body-xs text-core-neutral-300'
 																/>
 																{child?.desc &&
 																	child?.desc?.map((descItem, idx) => {

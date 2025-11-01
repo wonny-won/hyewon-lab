@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import PrograssUI from './prograss/prograss-ui';
-import { Typography } from '@hyewon/design-system';
+import { Tags, Typography } from '@hyewon/design-system';
 import { aboutMyProfile } from '@/commons/apis/intro';
 
 interface MainInroSectionProps {
@@ -12,7 +12,7 @@ interface MainInroSectionProps {
 const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 	return (
 		<section className='flex flex-col gap-6'>
-			<div className='flex gap-6 items-center'>
+			<figure className='flex gap-6 items-center'>
 				<Image
 					src={aboutMyProfile.profile}
 					alt={'profile img'}
@@ -28,7 +28,21 @@ const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 						{aboutMyProfile.position}
 					</Typography>
 				</div>
+			</figure>
+			<div className='overflow-hidden max-w-[450px]'>
+				<div
+					className='flex py-2.5 animate-[flow_75000ms_linear_infinite]'
+					style={{ width: 'max-content', gap: 0 }}>
+					<ul className='flex gap-3 shrink-0' style={{ width: 'max-content' }}>
+						{aboutMyProfile.skillTag.map((i, idx) => (
+							<li key={idx} className='shrink-0'>
+								<Tags tagTxt={i} type='normal' size='large' variants='liquidChips' />
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
+
 			<PrograssUI currNavIdx={currNavIdx} />
 		</section>
 	);

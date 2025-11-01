@@ -1,7 +1,6 @@
 /** @format */
 import React, { JSX, ReactNode, useState } from 'react';
 import Typography from '../typography/typography';
-import Button from '../button/button';
 import Image from 'next/image';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
 import Icons from '../icon/icons';
@@ -10,15 +9,18 @@ interface SectionCardProps {
 	type: 'record' | 'about' | 'default';
 	styleType?: 'line' | 'normal' | 'liquid';
 	title?: string;
+	isNeedTitleIcon?: boolean;
+	titleIconName?: string;
 	titleColor?: string;
 	titleAs?: keyof JSX.IntrinsicElements;
+	onClickTitle?: () => void;
 	subtitle?: string;
 	subtitleAs?: keyof JSX.IntrinsicElements;
 	isNeedSummary?: boolean;
 	summaryChildren?: ReactNode;
 	children?: ReactNode;
 	isNeedMoreBtn?: boolean;
-	subSectionImgSrc?: string[];
+	subSectionImgSrc?: { size: null | number; url: string }[];
 	sectionCardClassName?: string;
 	as?: keyof JSX.IntrinsicElements;
 }
@@ -28,7 +30,10 @@ const SectionCard = ({
 	styleType = 'normal',
 	title,
 	titleColor,
+	isNeedTitleIcon = false,
+	titleIconName,
 	titleAs = 'h1',
+	onClickTitle,
 	children,
 	subtitle,
 	subtitleAs = 'h2',
@@ -40,6 +45,10 @@ const SectionCard = ({
 	as: Component = 'section',
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isButtonHover, setIsBttonHover] = useState(false);
+	const onMouseOverHandler = () => {
+		setIsBttonHover(!isButtonHover);
+	};
 	const onClickOpenCard = () => {
 		setIsOpen(!isOpen);
 	};
@@ -62,9 +71,9 @@ const SectionCard = ({
 								key={'sub section img' + idx}
 								className={`${!idx || !!isOpen ? 'visible' : 'invisible'}`}>
 								<Image
-									src={i || ''}
+									src={i?.url || ''}
 									alt='sub section img'
-									width={200}
+									width={i.size ?? 200}
 									height={300}
 									style={{
 										minHeight: '115px',
@@ -75,14 +84,25 @@ const SectionCard = ({
 				</figure>
 				<div className='w-[full] flex flex-col'>
 					{title && (
-						<Typography as={titleAs} variants='body-l-strong' color={titleColor} className='pb-2'>
-							{title}
-						</Typography>
+						<button onClick={onClickTitle}>
+							<Typography
+								as={titleAs}
+								variants='body-l-strong'
+								color={titleColor}
+								className='pb-2 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
+								{title}
+								{isNeedTitleIcon && titleIconName && (
+									<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>
+										<Icons iconName={titleIconName} />
+									</p>
+								)}
+							</Typography>
+						</button>
 					)}
 					{isNeedSummary ? (
 						<>
 							{summaryChildren}
-							{isOpen && <>{children}</>}
+							<div className={isOpen ? 'visible' : 'invisible'}>{children}</div>
 						</>
 					) : (
 						children
@@ -90,8 +110,17 @@ const SectionCard = ({
 				</div>
 			</section>
 			{isNeedMoreBtn && (
-				<button className='w-full pt-5 flex justify-center hover:cursor-pointer' onClick={onClickOpenCard}>
-					<Icons iconName={isOpen ? 'DoubleArrowUpIcon' : 'DoubleArrowDownIcon'} />
+				<button
+					className='w-full h-[32px] flex justify-center hover:cursor-pointer group'
+					onMouseEnter={onMouseOverHandler}
+					onMouseLeave={onMouseOverHandler}
+					onClick={onClickOpenCard}>
+					<p className='mt-2 group-hover:pb-1 will-change-transform group-hover:animate-[pop_500ms_ease-out_infinite] motion-reduce:animate-none'>
+						<Icons
+							iconName={isOpen ? 'DoubleArrowUpIcon' : 'DoubleArrowDownIcon'}
+							color={isButtonHover ? '#5eead466' : '#8e97995d'}
+						/>
+					</p>
 				</button>
 			)}
 		</Component>
