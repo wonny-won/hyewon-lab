@@ -17,7 +17,7 @@ const Navigation = ({ onClick }: NavigationProps) => {
 							size='large'
 							status='active'
 							onClick={() => {
-								if (i.id) onClick?.(i.id);
+								if (i.idx) onClick?.(i.idx);
 							}}>
 							<Typography variants='body-s-strong'>{i.name}</Typography>
 						</Button>

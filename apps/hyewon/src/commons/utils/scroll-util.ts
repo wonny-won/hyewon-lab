@@ -2,11 +2,10 @@
 
 import { Dispatch, SetStateAction } from 'react';
 
-export const onClickMoveScroll = (ref, setCurrNavId?: Dispatch<SetStateAction<string>>, currNavId?: string) => {
+export const onClickMoveScroll = (ref, setCurrNavId?: Dispatch<SetStateAction<number>>, currNavId?: number) => {
 	ref.current?.scrollIntoView({
 		top: ref.current?.offsetTop,
 		behavior: 'smooth',
 	});
-	console.log(ref.current);
 	if (setCurrNavId && currNavId) setCurrNavId(currNavId);
 };

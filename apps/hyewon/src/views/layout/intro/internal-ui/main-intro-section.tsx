@@ -7,9 +7,9 @@ import { aboutMyProfile } from '@/commons/apis/intro';
 
 interface MainInroSectionProps {
 	type?: 'imgCard' | 'txtCard' | 'prograssCard';
-	currNavIdx?: string;
+	currNavIdx?: number;
 }
-const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
+const MainInroSection = ({ currNavIdx = 1 }: MainInroSectionProps) => {
 	return (
 		<section className='flex flex-col gap-6'>
 			<figure className='flex gap-6 items-center'>
@@ -29,7 +29,7 @@ const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 					</Typography>
 				</div>
 			</figure>
-			<div className='overflow-hidden max-w-[450px]'>
+			<div className='overflow-hidden'>
 				<div
 					className='flex py-2.5 animate-[flow_75000ms_linear_infinite]'
 					style={{ width: 'max-content', gap: 0 }}>
@@ -42,7 +42,6 @@ const MainInroSection = ({ currNavIdx = '' }: MainInroSectionProps) => {
 					</ul>
 				</div>
 			</div>
-
 			<PrograssUI currNavIdx={currNavIdx} />
 		</section>
 	);

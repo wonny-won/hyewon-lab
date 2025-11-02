@@ -5,7 +5,7 @@ import { navListType } from '@/views/layout/nav/nav-const';
 import { Icons } from '@hyewon/design-system';
 
 interface PrograssUIProps {
-	currNavIdx: string;
+	currNavIdx: number;
 }
 
 const PrograssUI = ({ currNavIdx }: PrograssUIProps) => {
@@ -22,9 +22,15 @@ const PrograssUI = ({ currNavIdx }: PrograssUIProps) => {
 					/>
 				</div>
 				<div className='flex gap-6'>
-					<Icons iconName='BackIcon' />
-					<Icons iconName='PauseIcon' />
-					<Icons iconName='NextIcon' />
+					<button onClick={() => handleNavClick(currNavIdx - 1)}>
+						<Icons iconName='BackIcon' />
+					</button>
+					<button>
+						<Icons iconName='PauseIcon' />
+					</button>
+					<button onClick={() => handleNavClick(currNavIdx + 1)}>
+						<Icons iconName='NextIcon' />
+					</button>
 				</div>
 			</div>
 		</aside>
