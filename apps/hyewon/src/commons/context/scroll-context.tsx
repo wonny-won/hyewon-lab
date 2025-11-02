@@ -6,9 +6,9 @@ interface ScrollContextType {
 	aboutSectionRef: RefObject<HTMLDivElement | null>;
 	recordSectionRef: RefObject<HTMLDivElement | null>;
 	sideProjectSectionRef: RefObject<HTMLDivElement | null>;
-	currNavId: string;
-	setCurrNavId: Dispatch<SetStateAction<string>>;
-	handleNavClick: (id: string) => void;
+	currNavId: number;
+	setCurrNavId: Dispatch<SetStateAction<number>>;
+	handleNavClick: (id: number) => void;
 }
 
 const ScrollContext = createContext<ScrollContextType | null>(null);
@@ -26,19 +26,26 @@ interface ScrollProviderProps {
 }
 
 export const ScrollProvider = ({ children }: ScrollProviderProps) => {
-	const [currNavId, setCurrNavId] = useState('about');
+	const [currNavId, setCurrNavId] = useState(1);
 	const aboutSectionRef = useRef<HTMLDivElement>(null);
 	const recordSectionRef = useRef<HTMLDivElement>(null);
 	const sideProjectSectionRef = useRef<HTMLDivElement>(null);
 
-	const handleNavClick = (id: string) => {
+	const handleNavClick = (id: number) => {
+		const refNumObj = {
+			1: 'about',
+			2: 'record',
+			3: 'sideProjects',
+		} as const;
+
 		const refObj = {
-			about: aboutSectionRef,
-			record: recordSectionRef,
-			sideProjects: sideProjectSectionRef,
+			[refNumObj[1]]: aboutSectionRef,
+			[refNumObj[2]]: recordSectionRef,
+			[refNumObj[3]]: sideProjectSectionRef,
 		};
-		if (refObj[id]?.current) {
-			onClickMoveScroll(refObj[id], setCurrNavId, id);
+
+		if (refObj[refNumObj?.[id]]?.current) {
+			onClickMoveScroll(refObj?.[refNumObj?.[id]], setCurrNavId, refNumObj?.[id]);
 		}
 	};
 

@@ -1,6 +1,6 @@
 /** @format */
 
-import { SectionCard, Tags } from '@hyewon/design-system';
+import { SectionCard } from '@hyewon/design-system';
 import ListUI from '@/components/list-ui/list-ui';
 import { aboutMyProfile } from '@/commons/apis/intro';
 import { useScrollContext } from '@/commons/context/scroll-context';
@@ -10,7 +10,7 @@ const Intro = () => {
 	const { currNavId } = useScrollContext();
 
 	return (
-		<header className='w-[60%] py-16'>
+		<header className='w-[35%] py-16'>
 			<div className='relative flex flex-col gap-6'>
 				<SectionCard type='default' styleType='liquid' sectionCardClassName='p-8'>
 					<MainInroSection currNavIdx={currNavId} />
