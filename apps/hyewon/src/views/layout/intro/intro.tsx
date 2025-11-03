@@ -1,29 +1,31 @@
 /** @format */
 
-import { SectionCard } from '@hyewon/design-system';
-import ListUI from '@/components/list-ui/list-ui';
+import { SectionCard, Typography } from '@hyewon/design-system';
 import { aboutMyProfile } from '@/commons/apis/intro';
 import { useScrollContext } from '@/commons/context/scroll-context';
 import MainInroSection from './internal-ui/main-intro-section';
+import Navigation from '../nav/navigation';
 
 const Intro = () => {
-	const { currNavId } = useScrollContext();
+	const { currNavId, handleNavClick } = useScrollContext();
 
 	return (
-		<header className='w-[35%] py-16'>
-			<div className='relative flex flex-col gap-6'>
-				<SectionCard type='default' styleType='liquid' sectionCardClassName='p-8'>
+		<header className='w-full p-26'>
+			<div className='relative flex gap-30 items-center justify-center'>
+				<div className='flex flex-col gap-1'>
+					<Typography as='h1' variants='display-l' color='text-white'>
+						{aboutMyProfile.name} <br />
+						{aboutMyProfile.position}
+					</Typography>
+					<Typography as='h3' variants='body-l' color='text-core-neutarl-300'>
+						{aboutMyProfile.summary}
+					</Typography>
+				</div>
+				<SectionCard type='default' styleType='liquid' sectionCardClassName='p-8 min-w-[400px] max-w-[550px]'>
 					<MainInroSection currNavIdx={currNavId} />
 				</SectionCard>
-				<div className='relative flex gap-4'>
-					<SectionCard
-						type='default'
-						styleType='liquid'
-						sectionCardClassName='flex items-center flex-wrap h-fit max-w-[150px]'>
-						<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
-					</SectionCard>
-				</div>
 			</div>
+			<Navigation onClick={handleNavClick} />
 		</header>
 	);
 };

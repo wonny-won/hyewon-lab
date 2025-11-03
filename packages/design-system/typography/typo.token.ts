@@ -17,7 +17,7 @@ export type variants =
 	| 'body-xs';
 
 export const variant = {
-	'display-l': 'text-display-l font-semibold',
+	'display-l': 'text-display-l font-extrabold',
 	'display-m': 'text-display-m font-semibold',
 	'display-s': 'text-display-s font-medium',
 

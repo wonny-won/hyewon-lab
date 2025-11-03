@@ -60,6 +60,12 @@ const SectionCard = ({
 					? [openClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
 					: [notOpenClassStyle.sectionCardStyle?.[styleType]?.[type], sectionCardClassName || ''].join(' ')
 			}>
+			<span
+				className='pointer-events-none absolute -inset-[2px] rounded-[34px]
+              bg-[rgba(0,0,10,0.25)]
+              blur-[24px] opacity-80'
+			/>
+
 			<section className={openClassStyle.contentStyle?.[styleType]?.[type]}>
 				<figure className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
 					<Typography as={subtitleAs} variants='body-s-strong' className='mb-0.5'>

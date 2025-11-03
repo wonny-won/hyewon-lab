@@ -8,7 +8,7 @@ interface NavigationProps {
 
 const Navigation = ({ onClick }: NavigationProps) => {
 	return (
-		<nav className='fixed z-10'>
+		<nav className=''>
 			<ul className='flex gap-4'>
 				{navList.map((i) => (
 					<li key={i.id} className='hover:cursor-pointer'>
