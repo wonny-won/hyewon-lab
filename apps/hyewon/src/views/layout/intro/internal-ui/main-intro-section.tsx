@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import PrograssUI from './prograss/prograss-ui';
-import { Tags, Typography } from '@hyewon/design-system';
+import { SectionCard, Tags, Typography } from '@hyewon/design-system';
 import { aboutMyProfile } from '@/commons/apis/intro';
+import ListUI from '@/components/list-ui/list-ui';
 
 interface MainInroSectionProps {
 	type?: 'imgCard' | 'txtCard' | 'prograssCard';
@@ -16,22 +17,14 @@ const MainInroSection = ({ currNavIdx = 1 }: MainInroSectionProps) => {
 				<Image
 					src={aboutMyProfile.profile}
 					alt={'profile img'}
-					width={80}
-					height={80}
-					style={{ borderRadius: '10px' }}
+					width={150}
+					height={150}
+					style={{ borderRadius: '20px' }}
 				/>
-				<div>
-					<Typography as='h1' variants='display-l' color='text-white'>
-						{aboutMyProfile.name}
-					</Typography>
-					<Typography as='h2' variants='body-l-strong' color='text-white'>
-						{aboutMyProfile.position}
-					</Typography>
-				</div>
 			</figure>
 			<div className='overflow-hidden'>
 				<div
-					className='flex py-2.5 animate-[flow_75000ms_linear_infinite]'
+					className='flex py-5 animate-[flow_75000ms_linear_infinite]'
 					style={{ width: 'max-content', gap: 0 }}>
 					<ul className='flex gap-3 shrink-0' style={{ width: 'max-content' }}>
 						{aboutMyProfile.skillTag.map((i, idx) => (
@@ -42,7 +35,14 @@ const MainInroSection = ({ currNavIdx = 1 }: MainInroSectionProps) => {
 					</ul>
 				</div>
 			</div>
-			<PrograssUI currNavIdx={currNavIdx} />
+			<SectionCard
+				type='default'
+				styleType='liquid'
+				sectionCardClassName='flex items-center flex-wrap h-fit max-w-[300px] p-0 rounded-[52px]'>
+				<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
+			</SectionCard>
+
+			{/* <PrograssUI currNavIdx={currNavIdx} /> */}
 		</section>
 	);
 };
