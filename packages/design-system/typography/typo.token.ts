@@ -14,7 +14,11 @@ export type variants =
 	| 'body-s-strong'
 	| 'body-s'
 	| 'body-xs-strong'
-	| 'body-xs';
+	| 'body-xs'
+	| 'label-xl'
+	| 'label-l'
+	| 'label-m'
+	| 'label-s';
 
 export const variant = {
 	'display-l': 'text-display-l font-extrabold',
@@ -36,4 +40,9 @@ export const variant = {
 
 	'body-xs-strong': 'text-body-xs-strong font-semibold',
 	'body-xs': 'text-body-xs-strong font-regular',
+
+	'label-xl': 'text-label-xl font-regular',
+	'label-l': 'text-label-l font-regular',
+	'label-m': 'text-label-m font-regular',
+	'label-s': 'text-label-s font-regular',
 } as const;

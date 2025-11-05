@@ -1,26 +1,28 @@
 /** @format */
 
-import { Button, Typography } from '@hyewon/design-system';
+import { Typography } from '@hyewon/design-system';
 import { navList } from './nav-const';
+import { useScrollContext } from '@/commons/context/scroll-context';
 interface NavigationProps {
 	onClick?: (id: any) => void;
 }
 
 const Navigation = ({ onClick }: NavigationProps) => {
+	const { currNavId } = useScrollContext();
 	return (
-		<nav className=''>
-			<ul className='flex gap-4'>
+		<nav className='sticky top-0 '>
+			<ul className='flex gap-10'>
 				{navList.map((i) => (
 					<li key={i.id} className='hover:cursor-pointer'>
-						<Button
-							variants='liquidChips'
-							size='large'
-							status='active'
+						<button
+							className='p-2 hover:cursor-pointer'
 							onClick={() => {
 								if (i.idx) onClick?.(i.idx);
 							}}>
-							<Typography variants='body-s-strong'>{i.name}</Typography>
-						</Button>
+							<Typography variants='label-xl'>
+								{i.idx === currNavId && '⎯⎯'} {i.name}
+							</Typography>
+						</button>
 					</li>
 				))}
 			</ul>
