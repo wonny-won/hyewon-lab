@@ -17,14 +17,13 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 					<button
 						className='pb-3 hover:cursor-pointer'
 						onClick={() => {
-							console.log();
 							if (i.idx) onClick?.(i.idx);
 						}}>
 						<Typography
 							as='a'
 							variants='label-xl'
 							color={i.idx === currNavId ? 'text-[#5eead4]' : 'text-core-neutral-200'}>
-							{i.idx === currNavId && '⎯⎯'} {i.name}
+							{i.idx === currNavId && '⎯⎯⎯'} {i.name}
 						</Typography>
 					</button>
 					<div className='flex gap-4'>
@@ -43,7 +42,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 									/>
 								)}
 								<figcaption className='pt-2 text-center'>
-									<Typography as='p' variants='label-m'>
+									<Typography as='p' variants='label-l'>
 										{item.txt}
 									</Typography>
 								</figcaption>

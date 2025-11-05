@@ -9,7 +9,7 @@ export const record = [
 		position: '개발팀 | 사원',
 		coreProject: '아너드 X 신한 걸어요',
 		mainStack: ['TypeScript', 'Next.js', 'React-query'],
-		siteGif: [{ size: 135, url: '/honored.gif' }],
+		siteGif: [{ size: 200, url: '/honored.gif' }],
 		summary:
 			'아너드 자체 웹 서비스 런칭 전 과정에 참여해 다양한 방면으로 시야를 넓혔습니다.\n 또한 개발 프로세싱 리드하며 일정 및 문서화를 도입해 주도적인 개발 체계를 구축을 경험했습니다. \n 본 프로젝트에서의 가장 큰 강점은 자체웹 프론트엔드 파트 E2E 단독 런칭입니다.',
 		main: [

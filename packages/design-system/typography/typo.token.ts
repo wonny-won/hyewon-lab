@@ -22,12 +22,12 @@ export type variants =
 
 export const variant = {
 	'display-l': 'text-display-l font-extrabold',
-	'display-m': 'text-display-m font-semibold',
-	'display-s': 'text-display-s font-medium',
+	'display-m': 'text-display-m font-extrabold',
+	'display-s': 'text-display-s font-extrabold',
 
-	'heading-l': 'text-heading-l font-medium',
-	'heading-m': 'text-heading-m font-semibold',
-	'heading-s': 'text-heading-s font-regular',
+	'heading-l': 'text-heading-l font-extrabold',
+	'heading-m': 'text-heading-m font-extrabold',
+	'heading-s': 'text-heading-s font-extrabold',
 
 	'body-l-strong': 'text-body-l-strong font-semibold',
 	'body-l': 'text-body-l font-regular',
@@ -41,8 +41,8 @@ export const variant = {
 	'body-xs-strong': 'text-body-xs-strong font-semibold',
 	'body-xs': 'text-body-xs-strong font-regular',
 
-	'label-xl': 'text-label-xl font-regular',
-	'label-l': 'text-label-l font-regular',
-	'label-m': 'text-label-m font-regular',
-	'label-s': 'text-label-s font-regular',
+	'label-xl': 'text-label-xl font-semibold',
+	'label-l': 'text-label-l font-semibold',
+	'label-m': 'text-label-m font-semibold',
+	'label-s': 'text-label-s font-semibold',
 } as const;
