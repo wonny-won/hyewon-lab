@@ -79,10 +79,10 @@ const SectionCard = ({
 								<Image
 									src={i?.url || ''}
 									alt='sub section img'
-									width={i.size ?? 200}
+									width={i.size ?? 300}
 									height={300}
 									style={{
-										minHeight: '115px',
+										minHeight: '180px',
 									}}
 								/>
 							</div>
@@ -95,7 +95,7 @@ const SectionCard = ({
 								as={titleAs}
 								variants='body-l-strong'
 								color={titleColor}
-								className='pb-2 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
+								className='pb-3 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
 								{title}
 								{isNeedTitleIcon && titleIconName && (
 									<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>

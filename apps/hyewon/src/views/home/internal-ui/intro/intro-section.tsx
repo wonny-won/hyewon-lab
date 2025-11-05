@@ -6,10 +6,10 @@ import SectionNavigation from './internal-ui/section-navigation/section-navigati
 import { useScrollContext } from '@/commons/context/scroll-context';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
 
-const Intro = () => {
+const IntroSection = () => {
 	const { handleNavClick } = useScrollContext();
 	return (
-		<section className='flex flex-col w-full h-screen pb-10'>
+		<section className='flex flex-col w-full h-screen py-10'>
 			<div className='w-full h-full flex flex-col gap-25 justify-center'>
 				<div className='flex gap-45 justify-center items-center'>
 					<div className='flex flex-col gap-1 max-w-[730px]'>
@@ -37,4 +37,4 @@ const Intro = () => {
 		</section>
 	);
 };
-export default Intro;
+export default IntroSection;
