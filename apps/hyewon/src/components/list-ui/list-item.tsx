@@ -1,39 +1,54 @@
 /** @format */
 
-import { Icons, Typography } from '@hyewon/design-system';
-
-interface ListItemProps {
-	key?: string;
-	listItem: string;
-	listClassName?: string;
-	typoClassName?: string;
-	isNeedIdx?: boolean;
-	idx?: number;
-	iconName?: string;
-	isNeedBulletPoint?: boolean;
-}
+import { ListItemProps } from './list-type';
 
 const ListItem = ({
 	listItem,
 	listClassName,
 	typoClassName,
-	iconName,
 	isNeedIdx = false,
 	isNeedBulletPoint = false,
-	idx = 0,
+	onClick,
 }: ListItemProps) => {
-	const typo = ['flex gap-1.5 items-center whitespace-pre-line', typoClassName ?? ''].join(' ');
-	const finalListClassName = ['flex items-center gap-1', listClassName].join(' ');
+	const finalListClassName = ['flex flex-col gap-1 text-core-neutral-300', listClassName].join(' ');
+	const rainbowTxt =
+		'bg-gradient-to-r from-yellow-500 via-core-green-300 to-blue-500 bg-clip-text text-transparent font-semibold';
 
 	return (
-		<li className={finalListClassName}>
-			{!!iconName?.length && <Icons iconName={iconName || ''} />}
-			{!!isNeedIdx && !!idx && <div className='text-body-s'>{idx}.</div>}
-			{!!isNeedBulletPoint && <div className='text-body-s'>‣</div>}
-			<Typography as='p' variants='body-s' className={typo}>
-				{listItem}
-			</Typography>
-		</li>
+		<>
+			{Array.isArray(listItem) ? (
+				listItem.map((i, index) => {
+					console.log(i.isImportant);
+					return (
+						<div className={finalListClassName} key={index}>
+							{!!isNeedIdx && (
+								<div
+									className={`text-body-s font-medium text-core-gray-300 ${
+										!!i.isImportant && rainbowTxt
+									}`}>
+									{index + 1}. {i.title}
+								</div>
+							)}
+							{!!isNeedBulletPoint && (
+								<div className={`text-body-xs ${!!i.isImportant && rainbowTxt}`}> ‣ {i.title} </div>
+							)}
+							{Array.isArray(i.children) && (
+								<div className='text-body-s pl-6'>
+									<ListItem
+										listItem={i.children}
+										isNeedBulletPoint
+										listClassName={listClassName}
+										typoClassName={typoClassName}
+									/>
+								</div>
+							)}
+						</div>
+					);
+				})
+			) : (
+				<div className={finalListClassName}>{listItem}</div>
+			)}
+		</>
 	);
 };
 

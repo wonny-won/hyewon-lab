@@ -1,6 +1,7 @@
 /** @format */
 import React, { Fragment } from 'react';
 import ListItem from './list-item';
+import { ListNode } from './list-type';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';
@@ -15,58 +16,24 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 
 	return (
 		<ul className={classStyle[direction]}>
-			{listMap?.map((i: any, idx) => {
+			{listMap?.map((i: ListNode, idx) => {
 				return (
-					<Fragment key={String(i.id) + idx}>
+					<Fragment key={`${i.id}-${i.title}-${idx}`}>
 						{direction === 'virtical' ? (
-							<>
+							<li className='flex flex-col'>
 								<ListItem
-									listItem={i?.title || i}
-									listClassName='pt-3'
-									typoClassName={'font-semibold text-white'}
+									listItem={i?.title}
+									listClassName='text-body-m pt-4 font-bold text-white/80'
 								/>
-								{i.subtitle &&
-									i.subtitle?.map((item, idx) => {
-										return (
-											<div key={String(item.id) + idx} className='pl-6'>
-												<ListItem
-													isNeedIdx
-													idx={idx + 1}
-													listItem={item?.txt}
-													listClassName='pt-1'
-													typoClassName='body-xs text-core-neutral-100'
-												/>
-												{item?.children &&
-													item?.children?.map((child, idx) => {
-														return (
-															<div key={item.id + 'child' + idx} className='pl-6'>
-																<ListItem
-																	listItem={child.childTxt}
-																	isNeedBulletPoint
-																	listClassName='pt-1'
-																	typoClassName='body-xs text-core-neutral-300'
-																/>
-																{child?.desc &&
-																	child?.desc?.map((descItem, idx) => {
-																		return (
-																			<ListItem
-																				key={item.id + 'descItem' + idx}
-																				listItem={descItem}
-																				isNeedBulletPoint
-																				listClassName='pl-6'
-																			/>
-																		);
-																	})}
-															</div>
-														);
-													})}
-											</div>
-										);
-									})}
-							</>
+								{Array.isArray(i.children) && (
+									<Fragment key={i.id + 'child'}>
+										<ListItem listItem={i.children} isNeedIdx listClassName='pt-1 pl-2' />
+									</Fragment>
+								)}
+							</li>
 						) : (
 							<li className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20'>
-								<a href={i?.onClick}>{i?.icon}</a>
+								<button onClick={i?.onClick}>{i?.icon}</button>
 							</li>
 						)}
 					</Fragment>

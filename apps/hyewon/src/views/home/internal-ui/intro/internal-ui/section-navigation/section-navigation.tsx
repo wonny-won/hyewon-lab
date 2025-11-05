@@ -13,7 +13,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 	return (
 		<ul className='max-w-[1460px] grid grid-cols-[1.5fr_1.3fr_1.2fr] gap-25 mx-auto'>
 			{sectionNav.map((i) => (
-				<li key={i.id} className='hover:cursor-pointer'>
+				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer'>
 					<button
 						className='pb-3 hover:cursor-pointer'
 						onClick={() => {
@@ -27,8 +27,8 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 						</Typography>
 					</button>
 					<div className='flex gap-4'>
-						{i.desc.map((item) => (
-							<figure key={item.id}>
+						{i.desc.map((item, idx) => (
+							<figure key={idx}>
 								{!!item.image && (
 									<Image
 										src={item.image ?? ''}
