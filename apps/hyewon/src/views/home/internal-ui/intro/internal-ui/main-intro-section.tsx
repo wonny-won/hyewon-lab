@@ -1,24 +1,19 @@
 /** @format */
 
 import Image from 'next/image';
-import PrograssUI from './prograss/prograss-ui';
-import { SectionCard, Tags, Typography } from '@hyewon/design-system';
-import { aboutMyProfile } from '@/commons/apis/intro';
+import { SectionCard, Tags } from '@hyewon/design-system';
 import ListUI from '@/components/list-ui/list-ui';
+import { aboutMyProfile } from '@/commons/apis/sections/intro';
 
-interface MainInroSectionProps {
-	type?: 'imgCard' | 'txtCard' | 'prograssCard';
-	currNavIdx?: number;
-}
-const MainInroSection = ({ currNavIdx = 1 }: MainInroSectionProps) => {
+const MainInroSection = () => {
 	return (
 		<section className='flex flex-col gap-6'>
 			<figure className='flex gap-6 items-center'>
 				<Image
 					src={aboutMyProfile.profile}
 					alt={'profile img'}
-					width={150}
-					height={150}
+					width={100}
+					height={100}
 					style={{ borderRadius: '20px' }}
 				/>
 			</figure>
@@ -38,11 +33,9 @@ const MainInroSection = ({ currNavIdx = 1 }: MainInroSectionProps) => {
 			<SectionCard
 				type='default'
 				styleType='liquid'
-				sectionCardClassName='flex items-center flex-wrap h-fit max-w-[300px] p-0 rounded-[52px]'>
+				sectionCardClassName='flex items-center flex-wrap h-fit max-w-[300px] rounded-[52px]'>
 				<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
 			</SectionCard>
-
-			{/* <PrograssUI currNavIdx={currNavIdx} /> */}
 		</section>
 	);
 };

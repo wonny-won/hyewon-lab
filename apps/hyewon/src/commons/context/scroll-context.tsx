@@ -45,7 +45,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 		};
 
 		if (refObj[refNumObj?.[id]]?.current) {
-			onClickMoveScroll(refObj?.[refNumObj?.[id]], setCurrNavId, refNumObj?.[id]);
+			onClickMoveScroll(refObj?.[refNumObj?.[id]], setCurrNavId, id);
 		}
 	};
 

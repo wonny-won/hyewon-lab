@@ -1,5 +1,4 @@
 /** @format */
-
 import { Icons } from '@hyewon/design-system';
 
 export const aboutMyProfile = {
