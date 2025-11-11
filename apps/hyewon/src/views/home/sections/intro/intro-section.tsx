@@ -1,6 +1,6 @@
 /** @format */
 
-import { Icons, SectionCard, Typography } from '@hyewon/design-system';
+import { SectionCard, Typography } from '@hyewon/design-system';
 import MainInroSection from './internal-ui/main-intro-section';
 import SectionNavigation from './internal-ui/section-navigation/section-navigation';
 import { useScrollContext } from '@/commons/context/scroll-context';
@@ -9,8 +9,8 @@ import { aboutMyProfile } from '@/commons/apis/sections/intro';
 const IntroSection = () => {
 	const { handleNavClick } = useScrollContext();
 	return (
-		<section className='flex flex-col w-full h-screen py-10'>
-			<div className='w-full h-full flex flex-col gap-25 justify-center'>
+		<section className='flex flex-col w-full h-screen pt-10 pb-5'>
+			<div className='w-full h-full flex flex-col gap-18 justify-center'>
 				<div className='flex gap-45 justify-center items-center'>
 					<div className='flex flex-col gap-1 max-w-[730px]'>
 						<Typography as='h1' variants='display-l' color='text-white'>
@@ -31,9 +31,9 @@ const IntroSection = () => {
 				</div>
 				<SectionNavigation onClick={handleNavClick} />
 			</div>
-			<p className='w-full h-[32px] flex justify-center will-change-transform animate-[pop_500ms_ease-out_infinite] motion-reduce:animate-none'>
+			{/* <p className='w-full h-[32px] flex justify-center will-change-transform animate-[pop_500ms_ease-out_infinite] motion-reduce:animate-none'>
 				<Icons iconName='DoubleArrowDownIcon' color='#5eead466' />
-			</p>
+			</p> */}
 		</section>
 	);
 };

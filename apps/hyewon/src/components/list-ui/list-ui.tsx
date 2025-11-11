@@ -27,7 +27,11 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 								/>
 								{Array.isArray(i.children) && (
 									<Fragment key={i.id + 'child'}>
-										<ListItem listItem={i.children} isNeedIdx listClassName='pt-1 pl-2' />
+										<ListItem
+											listItem={i.children}
+											isNeedIdx={i.children.length > 1}
+											listClassName='pt-1 pl-2'
+										/>
 									</Fragment>
 								)}
 							</li>

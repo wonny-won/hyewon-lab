@@ -1,6 +1,6 @@
 /** @format */
 
-export const record = [
+export const recordData = [
 	{
 		id: 'honored',
 		company: '(주) 포페런츠',
@@ -324,6 +324,119 @@ export const record = [
 								children: null,
 							},
 						],
+					},
+				],
+			},
+		],
+	},
+	{
+		id: 'dingco',
+		company: '(주) 딩코',
+		companyUrl: 'https://codebootcamp.co.kr/',
+		period: '2022.01 ~ 2023.04',
+		position: '개발 • 멘토팀 | 사원',
+		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
+		mainStack: ['TypeScript', 'Next.js', 'Graph-ql'],
+		siteGif: [{ size: 200, url: '/dingco.gif' }],
+		summary:
+			'인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다. \n 커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
+		main: [
+			{
+				id: 'dingco-1-depth-1-1',
+				title: '코드캠프 온/오프라인 부트캠프  학습자료 제작',
+				isImportant: true,
+				children: [
+					{
+						id: 'dingco-1-depth-2-1',
+						title: '제작해온 학습자료',
+						isImportant: false,
+						children: [
+							{
+								id: 'dingco-1-depth-3-1',
+								title: '각 주제별 핵심 내용이 꼼꼼히 정리 되어있는 학습자료',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'dingco-1-depth-3-2',
+								title: '수강생에게 노션 장인의 자료로 평가받은 학습자료 ',
+								isImportant: true,
+								children: null,
+							},
+						],
+					},
+				],
+			},
+			{
+				id: 'dingco-1-depth-1-2',
+				title: '[ 인프런 X 코드캠프 ]  & 코드캠프 온/오프라인 부트캠프 프론트엔드 멘토',
+				isImportant: true,
+				children: [
+					{
+						id: 'dingco-1-depth-2-1',
+						title: '프론트엔드 수강생 일정 관리',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'dingco-1-depth-2-2',
+						title: '멘티 과제 확인 후 로직 피드백 및 질의 응답',
+						isImportant: true,
+						children: [
+							{
+								id: 'dingco-1-depth-3-1',
+								title: '과제 피드백 및 질의 응답은 게더와 구글 클래스룸에서 이루어지며,로직 피드백은 성능상이나 유지보수상 조금 더 나은 방향으로 제시',
+								isImportant: false,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'dingco-1-depth-2-3',
+						title: '최종 포트폴리오 피드백',
+						isImportant: false,
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'dingco-1-depth-1-3',
+				title: '코드캠프 광고 페이지 개발',
+				isImportant: false,
+				children: [
+					{
+						id: 'dingco-1-depth-2-1',
+						title: 'SEO를 위한 시멘틱 태그 적용',
+						children: null,
+					},
+					{
+						id: 'dingco-1-depth-2-2',
+						title: '반응형 웹 제작',
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'dingco-1-depth-1-4',
+				title: '코드캠프 상담신청 페이지 개발',
+				isImportant: false,
+				children: [
+					{
+						id: 'dingco-1-depth-2-1',
+						title: '유지보수성을 고려한 개발',
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'dingco-1-depth-1-5',
+				title: '딩코 사이트 어드민 & 유저 백업 개발',
+				isImportant: false,
+				children: [
+					{
+						id: 'dingco-1-depth-2-1',
+						title: '유저 로그인 로그 데이터 개발',
+						children: null,
 					},
 				],
 			},
