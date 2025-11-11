@@ -2,7 +2,7 @@
 export const navListType = {
 	about: { id: 1, name: '자기소개' },
 	record: { id: 2, name: '경험 • 이력 소개' },
-	sideProjects: { id: 3, name: '기록의 조각들' },
+	troubleshooting: { id: 3, name: '트러블 슈팅 기록' },
 } as const;
 
 export const navList = [
@@ -17,8 +17,8 @@ export const navList = [
 		name: '경험 • 이력 소개',
 	},
 	{
-		id: 'sideProjects',
+		id: 'troubleshooting',
 		idx: 3,
-		name: '기록의 조각',
+		name: '트러블 슈팅 기록',
 	},
 ];

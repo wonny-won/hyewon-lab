@@ -5,7 +5,13 @@ import { onClickMoveScroll } from '../utils/scroll-util';
 interface ScrollContextType {
 	aboutSectionRef: RefObject<HTMLDivElement | null>;
 	recordSectionRef: RefObject<HTMLDivElement | null>;
-	sideProjectSectionRef: RefObject<HTMLDivElement | null>;
+	troubleshootingSectionRef: RefObject<HTMLDivElement | null>;
+	honoredSectionRef: RefObject<HTMLDivElement | null>;
+	teamstoneSectionRef: RefObject<HTMLDivElement | null>;
+	dingcoSectionRef: RefObject<HTMLDivElement | null>;
+	honoredTroubleShootingSectionRef: RefObject<HTMLDivElement | null>;
+	teamstoneTroubleShootingOneSectionRef: RefObject<HTMLDivElement | null>;
+	teanstoneTroubleShootingTwoSectionRef: RefObject<HTMLDivElement | null>;
 	currNavId: number;
 	setCurrNavId: Dispatch<SetStateAction<number>>;
 	handleNavClick: (id: number) => void;
@@ -29,19 +35,37 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const [currNavId, setCurrNavId] = useState(1);
 	const aboutSectionRef = useRef<HTMLDivElement>(null);
 	const recordSectionRef = useRef<HTMLDivElement>(null);
-	const sideProjectSectionRef = useRef<HTMLDivElement>(null);
+	const troubleshootingSectionRef = useRef<HTMLDivElement>(null);
+	const honoredSectionRef = useRef<HTMLDivElement>(null);
+	const teamstoneSectionRef = useRef<HTMLDivElement>(null);
+	const dingcoSectionRef = useRef<HTMLDivElement>(null);
+	const honoredTroubleShootingSectionRef = useRef<HTMLDivElement>(null);
+	const teamstoneTroubleShootingOneSectionRef = useRef<HTMLDivElement>(null);
+	const teanstoneTroubleShootingTwoSectionRef = useRef<HTMLDivElement>(null);
 
 	const handleNavClick = (id: number) => {
 		const refNumObj = {
 			1: 'about',
 			2: 'record',
-			3: 'sideProjects',
+			3: 'troubleshooting',
+			4: 'honored',
+			5: 'teamston',
+			6: 'dingco',
+			7: 'honored-trouble-shooting',
+			8: 'teamstone-trouble-shooting-1',
+			9: 'teamstone-trouble-shooting-2',
 		} as const;
 
 		const refObj = {
 			[refNumObj[1]]: aboutSectionRef,
 			[refNumObj[2]]: recordSectionRef,
-			[refNumObj[3]]: sideProjectSectionRef,
+			[refNumObj[3]]: troubleshootingSectionRef,
+			[refNumObj[4]]: honoredSectionRef,
+			[refNumObj[5]]: teamstoneSectionRef,
+			[refNumObj[6]]: dingcoSectionRef,
+			[refNumObj[7]]: honoredTroubleShootingSectionRef,
+			[refNumObj[8]]: teamstoneTroubleShootingOneSectionRef,
+			[refNumObj[9]]: teanstoneTroubleShootingTwoSectionRef,
 		};
 
 		if (refObj[refNumObj?.[id]]?.current) {
@@ -54,7 +78,13 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			value={{
 				aboutSectionRef,
 				recordSectionRef,
-				sideProjectSectionRef,
+				troubleshootingSectionRef,
+				honoredSectionRef,
+				teamstoneSectionRef,
+				dingcoSectionRef,
+				honoredTroubleShootingSectionRef,
+				teamstoneTroubleShootingOneSectionRef,
+				teanstoneTroubleShootingTwoSectionRef,
 				currNavId,
 				setCurrNavId,
 				handleNavClick,

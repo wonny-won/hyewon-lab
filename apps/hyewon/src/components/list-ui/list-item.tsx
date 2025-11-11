@@ -18,7 +18,6 @@ const ListItem = ({
 		<>
 			{Array.isArray(listItem) ? (
 				listItem.map((i, index) => {
-					console.log(i.isImportant);
 					return (
 						<div className={finalListClassName} key={index}>
 							{!!isNeedIdx && (
@@ -32,6 +31,15 @@ const ListItem = ({
 							{!!isNeedBulletPoint && (
 								<div className={`text-body-xs ${!!i.isImportant && rainbowTxt}`}> ‣ {i.title} </div>
 							)}
+							{!isNeedBulletPoint && !isNeedIdx && (
+								<div
+									className={`text-body-s font-medium text-core-gray-300 ${
+										!!i.isImportant && rainbowTxt
+									}`}>
+									{i.title}
+								</div>
+							)}
+
 							{Array.isArray(i.children) && (
 								<div className='text-body-s pl-6'>
 									<ListItem
