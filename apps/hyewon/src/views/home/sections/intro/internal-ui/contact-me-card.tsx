@@ -5,7 +5,7 @@ import { SectionCard } from '@hyewon/design-system';
 import ListUI from '@/components/list-ui/list-ui';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
 
-const MainInroSection = () => {
+const ContactMeCard = () => {
 	const rainbowTxt =
 		'bg-gradient-to-r from-yellow-500 via-core-green-300 to-blue-500 bg-clip-text text-transparent font-semibold';
 	return (
@@ -24,4 +24,4 @@ const MainInroSection = () => {
 		</section>
 	);
 };
-export default MainInroSection;
+export default ContactMeCard;
