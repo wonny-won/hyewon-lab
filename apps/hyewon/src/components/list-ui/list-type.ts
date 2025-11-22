@@ -6,7 +6,7 @@ export type ListNode = {
 	title: string;
 	children?: ListNode[];
 	isImportant: boolean;
-	onClick?: () => void;
+	onClick?: () => void | boolean | Promise<void | boolean>;
 	icon?: ReactNode;
 };
 

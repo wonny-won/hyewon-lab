@@ -1,0 +1,19 @@
+0 verbose cli /Users/jeonghyewon/.nvm/versions/node/v23.10.0/bin/node /Users/jeonghyewon/.nvm/versions/node/v23.10.0/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/Users/jeonghyewon/.nvm/versions/node/v23.10.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/jeonghyewon/Desktop/hyewon-lab/.npmrc
+5 silly config load:file:/Users/jeonghyewon/.npmrc
+6 silly config load:file:/Users/jeonghyewon/.nvm/versions/node/v23.10.0/etc/npmrc
+7 verbose title npm exec tsc --pretty false --noEmit apps/hyewon/src/commons/utils/copy-clipborad.tsx
+8 verbose argv "exec" "--" "tsc" "--pretty" "false" "--noEmit" "apps/hyewon/src/commons/utils/copy-clipborad.tsx"
+9 verbose logfile logs-max:10 dir:/Users/jeonghyewon/Desktop/hyewon-lab/.npm-cache/_logs/2025-11-20T12_47_04_675Z-
+10 verbose logfile /Users/jeonghyewon/Desktop/hyewon-lab/.npm-cache/_logs/2025-11-20T12_47_04_675Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/jeonghyewon/Desktop/hyewon-lab
+13 verbose os Darwin 23.4.0
+14 verbose node v23.10.0
+15 verbose npm  v10.9.2
+16 verbose exit 1
+17 verbose code 1
+18 error A complete log of this run can be found in: /Users/jeonghyewon/Desktop/hyewon-lab/.npm-cache/_logs/2025-11-20T12_47_04_675Z-debug-0.log

@@ -9,7 +9,7 @@ export const recordData = [
 		position: '개발팀 | 사원',
 		coreProject: '아너드 X 신한 걸어요',
 		mainStack: ['TypeScript', 'Next.js', 'React-query'],
-		siteGif: [{ size: 200, url: '/honored.gif' }],
+		siteGif: [{ size: 190, url: '/honored.gif' }],
 		summary:
 			'아너드 자체 웹 서비스 런칭 전 과정에 참여해 다양한 방면으로 시야를 넓혔습니다.\n 또한 개발 프로세싱 리드하며 일정 및 문서화를 도입해 주도적인 개발 체계를 구축을 경험했습니다. \n 본 프로젝트에서의 가장 큰 강점은 자체웹 프론트엔드 파트 E2E 단독 런칭입니다.',
 		main: [
@@ -135,8 +135,8 @@ export const recordData = [
 		coreProject: 'ontune',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ size: null, url: '/teamstone.gif' },
-			{ size: null, url: '/teamstone2.gif' },
+			{ size: 260, url: '/teamstone.gif' },
+			{ size: 260, url: '/teamstone2.gif' },
 		],
 		summary:
 			'아너드 자체 웹 서비스 런칭 전 과정(기획, 디자인, 개발)에 참여해 다양한 방면으로 시야를 넓혔습니다.\n 또한 개발 프로세싱 리드하며 일정 및 문서화를 도입해 주도적인 개발 체계를 구축을 경험했습니다. \n 본 프로젝트에서의 가장 큰 강점은 E2E 단독 런칭으로 자체웹 프론트 파트는 혼자 온전히 런칭했습니다.',
@@ -337,7 +337,7 @@ export const recordData = [
 		position: '개발 • 멘토팀 | 사원',
 		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
 		mainStack: ['TypeScript', 'Next.js', 'Graph-ql'],
-		siteGif: [{ size: 200, url: '/dingco.gif' }],
+		siteGif: [{ size: 260, url: '/dingco.gif' }],
 		summary:
 			'인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다. \n 커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
 		main: [

@@ -1,5 +1,7 @@
 /** @format */
+import { onClickOpenNewWindow } from '@/commons/utils/link';
 import { Icons } from '@hyewon/design-system';
+import { onClickCopyClipboard } from '@/commons/utils/copy-clipborad';
 
 export const aboutMyProfile = {
 	profile: '/profile.jpeg',
@@ -31,20 +33,20 @@ export const aboutMyProfile = {
 	],
 	contact: [
 		{
-			icon: Icons({ iconName: 'GithubIcon' }),
-			onClick: 'https://github.com/wonny-won',
+			icon: Icons({ iconName: 'GithubIcon', size: '24' }),
+			onClick: () => onClickOpenNewWindow('https://github.com/wonny-won'),
 		},
 		{
-			icon: Icons({ iconName: 'MailIcon' }),
-			onClick: 'https://github.com/wonny-won',
+			icon: Icons({ iconName: 'MailIcon', size: '24' }),
+			onClick: () => onClickCopyClipboard('wonny-won@gmail.com', '이메일 복사 완료', '이메일 복사 실패'),
 		},
 		{
-			icon: Icons({ iconName: 'PhoneIcon' }),
-			onClick: 'https://github.com/wonny-won',
+			icon: Icons({ iconName: 'PhoneIcon', size: '24' }),
+			onClick: () => onClickCopyClipboard('010-1234-5678', '전화번호 복사 완료', '전화번호 복사 실패'),
 		},
 		{
-			icon: Icons({ iconName: 'BlogIcon' }),
-			onClick: 'https://github.com/wonny-won',
+			icon: Icons({ iconName: 'BlogIcon', size: '24' }),
+			onClick: () => onClickOpenNewWindow('https://dev-raccoon-man.tistory.com/'),
 		},
 	],
 };

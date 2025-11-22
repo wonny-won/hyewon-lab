@@ -6,7 +6,7 @@ import { openClassStyle, notOpenClassStyle } from './section-card-const';
 import Icons from '../icon/icons';
 
 interface SectionCardProps {
-	type: 'record' | 'about' | 'default';
+	type: 'record' | 'about' | 'default' | 'troubleshooting';
 	styleType?: 'line' | 'normal' | 'liquid';
 	title?: string;
 	isNeedTitleIcon?: boolean;
