@@ -27,7 +27,7 @@ const TroubleShootingSection = () => {
 					as='article'
 					key={i.id}
 					ref={ref[i.id]}
-					type='record'
+					type='troubleshooting'
 					styleType='liquid'
 					title={i.title}
 					onClickTitle={() => onClickOpenNewWindow(i.detailUrl)}

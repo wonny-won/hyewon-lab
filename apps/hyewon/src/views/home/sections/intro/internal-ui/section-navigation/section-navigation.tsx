@@ -11,7 +11,7 @@ interface NavigationProps {
 const SectionNavigation = ({ onClick }: NavigationProps) => {
 	const { currNavId } = useScrollContext();
 	return (
-		<ul className='max-w-[1460px] grid grid-cols-[2fr_1fr_1fr] gap-20 mx-auto'>
+		<ul className='max-w-[1460px] grid grid-cols-[2fr_1fr_1fr] gap-50 mx-auto'>
 			{sectionNav.map((i) => (
 				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer'>
 					<button
@@ -26,7 +26,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 							{i.idx === currNavId && '⎯⎯'} {i.name}
 						</Typography>
 					</button>
-					<ul className='flex gap-5'>
+					<ul className='flex gap-6'>
 						{i.desc?.map((item, idx) => (
 							<li
 								key={idx}
@@ -52,7 +52,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 									className='flex flex-col pt-2 text-center font-semibold'>
 									{item.title}
 									<span
-										className={`text-[13px] text-core-gray-200 font-thin pt-1 text-center min-w-[120px] max-w-[125px] ${
+										className={`text-[13px] text-core-gray-200 font-thin pt-1 text-center min-w-[130px] max-w-[135px] ${
 											i.id === 'troubleshooting' && 'min-w-[140px] max-w-[145px]'
 										}`}>
 										{item.summary}

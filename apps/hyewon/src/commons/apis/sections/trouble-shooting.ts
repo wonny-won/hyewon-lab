@@ -174,7 +174,7 @@ export const troubleShootingData = [
 		title: '불필요한 리렌더 완화로 성능 개선 사례',
 		detailUrl:
 			'https://www.notion.so/Manage-Server-a42139d1574b4429b9e39b4c979eb360?source=copy_link#660eeee648074d14970f755eb18fa3b2',
-		relativeTag: ['reflow', 'repaint', 'css', 'rerender'],
+		relativeTag: ['reflow', 'repaint', 'css', 're-render'],
 		company: 'teamstone',
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
