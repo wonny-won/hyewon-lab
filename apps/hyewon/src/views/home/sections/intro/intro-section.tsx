@@ -1,7 +1,7 @@
 /** @format */
 
 import { Tags, Typography } from '@hyewon/design-system';
-import MainInroSection from './internal-ui/main-intro-section';
+import ContactMeCard from './internal-ui/contact-me-card';
 import SectionNavigation from './internal-ui/section-navigation/section-navigation';
 import { useScrollContext } from '@/commons/context/scroll-context';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
@@ -34,7 +34,7 @@ const IntroSection = () => {
 							</div>
 						</div>
 					</div>
-					<MainInroSection />
+					<ContactMeCard />
 				</div>
 				<SectionNavigation onClick={handleNavClick} />
 			</div>
