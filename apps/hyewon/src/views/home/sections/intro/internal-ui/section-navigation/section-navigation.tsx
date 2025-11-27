@@ -11,7 +11,7 @@ interface NavigationProps {
 const SectionNavigation = ({ onClick }: NavigationProps) => {
 	const { currNavId } = useScrollContext();
 	return (
-		<ul className='max-w-[1460px] grid grid-cols-[2fr_1fr_1fr] gap-50 mx-auto'>
+		<ul className='max-w-full grid max-[1297px]:grid-rows-[1fr_1fr]  min-[1300px]:grid-cols-[1fr_1fr] max-[1300px]:gap-5 min-[1300px]:gap-50 mx-auto max-[1300px]:overflow-x-auto'>
 			{sectionNav.map((i) => (
 				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer'>
 					<button
