@@ -17,7 +17,9 @@ const Layout = ({ children }: LayoutProps) => {
 				<meta name='description' content='프론트엔드 개발자 정혜원의 포트폴리오 사이트입니다.' />
 			</Head>
 			<div className='w-full overflow-hidden flex flex-col gap-5.5 lg:gap-25'>
-				<main className='w-full h-full overflow-auto pt-12 lg:pt-10 px-6 lg:px-30'>{children}</main>
+				<main className='w-full h-full overflow-auto max-lg:pt-12 max-[1328px]:pt-12 px-6 lg:px-30'>
+					{children}
+				</main>
 			</div>
 		</>
 	);

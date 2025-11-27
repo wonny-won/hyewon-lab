@@ -13,9 +13,9 @@ const Home = () => {
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />
 			</section>
-			<section className='py-25 flex flex-col gap-10' ref={recordSectionRef}>
+			<section className='py-25 flex flex-col gap-10 mx-auto' ref={recordSectionRef}>
 				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
-					<span className='text-core-neutral-50'>쌓아온 경험.</span> 함께 나눌 따끈따끈 경험 이야기.
+					<span className='text-core-neutral-50'>쌓아온 경험. </span> 함께 나눌 따끈따끈 경험 이야기.
 				</Typography>
 				<RecordSection />
 			</section>

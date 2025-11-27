@@ -59,7 +59,7 @@ const commonStyle = {
 			troubleshooting: 'w-[15%]',
 		},
 		liquid: {
-			record: 'flex flex-col gap-2 w-[25%] shrink-0',
+			record: 'lg:block lg:flex lg:flex-col lg:gap-2 lg:w-[25%] lg:shrink-0 hidden',
 			about: '',
 			default: '',
 			troubleshooting: 'flex flex-col gap-2 w-[15%] shrink-0',
@@ -133,22 +133,22 @@ export const openClassStyle = {
 export const notOpenClassStyle = {
 	sectionCardStyle: {
 		normaml: {
-			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px]`,
+			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.line.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.line.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 		},
 		line: {
-			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px]`,
+			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.line.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.line.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 		},
 		liquid: {
-			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[300px]`,
+			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.liquid.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.liquid.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 		},
 	},
 	contentStyle: {
