@@ -11,9 +11,9 @@ interface NavigationProps {
 const SectionNavigation = ({ onClick }: NavigationProps) => {
 	const { currNavId } = useScrollContext();
 	return (
-		<ul className='max-w-full grid max-[1297px]:grid-rows-[1fr_1fr]  min-[1300px]:grid-cols-[1fr_1fr] max-[1300px]:gap-5 min-[1300px]:gap-50 mx-auto max-[1300px]:overflow-x-auto'>
+		<ul className='max-w-full grid max-[1297px]:grid-rows-[1fr_1fr]  min-[1300px]:grid-cols-[1fr_1fr] max-[1300px]:gap-5 min-[1300px]:gap-50 mx-auto max-[1300px]:overflow-x-auto max-[600px]:overflow-hidden'>
 			{sectionNav.map((i) => (
-				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer'>
+				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer min-w-0'>
 					<button
 						className='pb-4 hover:cursor-pointer'
 						onClick={() => {
@@ -26,14 +26,14 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 							{i.idx === currNavId && '⎯⎯'} {i.name}
 						</Typography>
 					</button>
-					<ul className='flex gap-6'>
+					<ul className='flex flex-nowrap gap-6 max-[600px]:overflow-x-auto w-full max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
 						{i.desc?.map((item, idx) => (
 							<li
 								key={idx}
 								onClick={() => {
 									if (item.idx) onClick?.(item.idx);
 								}}
-								className='flex flex-col items-center bg-white/10 px-2 py-3 rounded-[8px]'>
+								className='flex flex-col items-center bg-white/10 px-2 py-3 rounded-[8px] flex-shrink-0'>
 								{!!item.image && (
 									<Image
 										src={item.image ?? ''}

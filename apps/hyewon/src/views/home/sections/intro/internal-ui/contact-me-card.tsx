@@ -66,9 +66,9 @@ const ContactMeCard = () => {
 			<Image
 				src={imageSrc}
 				alt={'profile img'}
-				width={120}
-				height={120}
-				className='w-[190px] h-[150px] rounded-[8px] lg:w-[120px] lg:h-[120px] lg:rounded-[16px] max-lg:max-h-[300px]'
+				width={150}
+				height={150}
+				className='w-[200px] h-[170px] rounded-[8px] lg:w-[150px] lg:h-[150px] lg:rounded-[16px] max-lg:max-h-[300px]'
 			/>
 			<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 				CONTACT ME NOW

@@ -9,9 +9,9 @@ import { aboutMyProfile } from '@/commons/apis/sections/intro';
 const IntroSection = () => {
 	const { handleNavClick } = useScrollContext();
 	return (
-		<section className='flex flex-col w-full lg:items-center lg:h-screen pb-5'>
-			<div className='w-full h-full flex flex-col gap-18 lg:max-w-[1450px] lg:justify-center overflow-hidden lg:overflow-auto'>
-				<div className='flex flex-col max-lg:items-center lg:flex-row lg:flex-wrap lg:items-center gap-8 lg:justify-around'>
+		<section className='flex flex-col w-full lg:items-center min-[1328px]:h-screen '>
+			<div className='w-full h-full flex flex-col gap-18 lg:max-w-[1450px] lg:justify-center overflow-hidden'>
+				<div className='flex flex-col gap-10 max-lg:items-center lg:flex-row lg:flex-wrap lg:items-center lg:gap-8 lg:justify-around'>
 					<div className='flex flex-col gap-1 w-full max-w-[510px]'>
 						<Typography as='h1' variants='display-s' color='text-white'>
 							<p className='hidden lg:block lg:text-[48px] lg:font-extrabold lg:text-white'>
