@@ -8,7 +8,7 @@ import TroubleShootingSection from './sections/trouble-shooting/trouble-shooting
 const Home = () => {
 	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef } = useScrollContext();
 	return (
-		<div className='flex flex-col mr-4'>
+		<div className='flex flex-col lg:mr-4'>
 			<section ref={aboutSectionRef}>
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />

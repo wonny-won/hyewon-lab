@@ -58,7 +58,9 @@ const SectionCard = ({
 	};
 
 	return (
-		<div ref={ref}>
+		<div
+			className='max-lg:w-full max-lg:flex max-lg:justify-center max-lg:min-w-[250px] max-lg:max-w-[500px]'
+			ref={ref}>
 			<Component
 				className={
 					isOpen
