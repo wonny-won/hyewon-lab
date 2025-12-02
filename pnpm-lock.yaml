@@ -40,7 +40,7 @@ importers:
         specifier: ^5.0.0
         version: 5.9.2
 
-  apps/hyewon-portfolio:
+  apps/hyewon:
     dependencies:
       '@hyewon/design-system':
         specifier: workspace:*
