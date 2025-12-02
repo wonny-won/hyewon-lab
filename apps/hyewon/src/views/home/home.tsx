@@ -15,13 +15,19 @@ const Home = () => {
 			</section>
 			<section className='py-25 flex flex-col gap-10 mx-auto' ref={recordSectionRef}>
 				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
-					<span className='text-core-neutral-50'>쌓아온 경험. </span> 함께 나눌 따끈따끈 경험 이야기.
+					<span className='text-core-neutral-50'>
+						쌓아온 경험. <br className='hidden max-[518px]:block' />
+					</span>{' '}
+					함께 나눌 따끈따끈 경험 이야기.
 				</Typography>
 				<RecordSection />
 			</section>
-			<section className='py-25 flex flex-col gap-6' ref={troubleshootingSectionRef}>
+			<section className='py-25 flex flex-col gap-6  mx-auto' ref={troubleshootingSectionRef}>
 				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
-					<span className='text-core-neutral-50'>영광의 순간.</span> 격파한 트러블들.
+					<span className='text-core-neutral-50'>
+						영광의 순간. <br className='hidden max-[356px]:block' />
+					</span>{' '}
+					격파한 트러블들.
 				</Typography>
 				<TroubleShootingSection />
 			</section>
