@@ -79,7 +79,7 @@ const SectionCard = ({
 					{
 						<figure className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
 							{Array.isArray(subtitle) ? (
-								<figcaption>
+								<figcaption className='lg:block hidden '>
 									<Typography as={subtitleAs} variants='body-s-strong' className='mb-1.5'>
 										✓ 특이사항
 									</Typography>

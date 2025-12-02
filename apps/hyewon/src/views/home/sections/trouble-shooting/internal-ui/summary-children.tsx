@@ -18,14 +18,14 @@ const SummaryChildren = ({ data }: SummaryProps) => {
 				))}
 			</ul>
 			<div className='pb-5'>
-				<Typography as='h3' variants='body-m-strong' color='text-core-gray-400/60'>
+				<Typography as='h3' variants='label-m' color='text-core-gray-400/60'>
 					{data.company}
 				</Typography>
-				<Typography variants='body-m-strong' color='text-core-gray-400/60'>
+				<Typography variants='label-m' color='text-core-gray-400/60'>
 					{data.project}
 				</Typography>
 			</div>
-			<Typography as='p' variants='body-m-strong' color='text-core-neutral-200'>
+			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200'>
 				{data.summary}
 			</Typography>
 		</>

@@ -38,11 +38,11 @@ export const aboutMyProfile = {
 		},
 		{
 			icon: Icons({ iconName: 'MailIcon', size: '24' }),
-			onClick: () => onClickCopyClipboard('wonny-won@gmail.com', '이메일 복사 완료', '이메일 복사 실패'),
+			onClick: () => onClickCopyClipboard('jaake0704@gmail.com', '이메일 복사 완료', '이메일 복사 실패'),
 		},
 		{
 			icon: Icons({ iconName: 'PhoneIcon', size: '24' }),
-			onClick: () => onClickCopyClipboard('010-1234-5678', '전화번호 복사 완료', '전화번호 복사 실패'),
+			onClick: () => onClickCopyClipboard('010-8954-4608', '전화번호 복사 완료', '전화번호 복사 실패'),
 		},
 		{
 			icon: Icons({ iconName: 'BlogIcon', size: '24' }),

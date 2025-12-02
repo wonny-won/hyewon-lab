@@ -62,7 +62,7 @@ const commonStyle = {
 			record: 'lg:block lg:flex lg:flex-col lg:gap-2 lg:w-[25%] lg:shrink-0 hidden',
 			about: '',
 			default: '',
-			troubleshooting: 'flex flex-col gap-2 w-[15%] shrink-0',
+			troubleshooting: 'lg:flex lg:flex-col lg:gap-2 lg:w-[15%] lg:shrink-0 hidden',
 		},
 	},
 };
@@ -148,7 +148,7 @@ export const notOpenClassStyle = {
 			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.liquid.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.liquid.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[400px]`,
 		},
 	},
 	contentStyle: {
