@@ -133,19 +133,19 @@ export const openClassStyle = {
 export const notOpenClassStyle = {
 	sectionCardStyle: {
 		normaml: {
-			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[420px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.line.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.line.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[450px]`,
 		},
 		line: {
-			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[420px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.line.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.line.default} h-fit`,
-			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[450px]`,
 		},
 		liquid: {
-			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[400px]:max-h-[450px]`,
+			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[320px] max-[1180px]:max-h-[350px] max-[552px]:max-h-[420px] max-[431px]:max-h-[450px] max-[373px]:max-h-[525px]`,
 			about: `${commonStyle.sectionCardStyle.liquid.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.liquid.default} h-fit`,
 			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[400px]`,
