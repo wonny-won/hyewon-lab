@@ -8,6 +8,7 @@ export type ListNode = {
 	isImportant: boolean;
 	onClick?: () => void | boolean | Promise<void | boolean>;
 	icon?: ReactNode;
+	href?: string;
 };
 
 export interface ListItemProps {

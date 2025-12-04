@@ -49,4 +49,16 @@ export const aboutMyProfile = {
 			onClick: () => onClickOpenNewWindow('https://dev-raccoon-man.tistory.com/'),
 		},
 	],
+	export: [
+		{
+			id: 'resume-file-down',
+			icon: Icons({ iconName: 'FileDownIcon', size: '24' }),
+			onClick: () => {
+				const link = document.createElement('a');
+				link.href = '/resume.pdf';
+				link.download = '정혜원_프론트엔드_이력서.pdf';
+				link.click();
+			},
+		},
+	],
 };

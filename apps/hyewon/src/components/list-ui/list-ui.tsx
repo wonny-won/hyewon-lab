@@ -56,7 +56,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 				tooltipTimerRef.current = setTimeout(() => {
 					setActiveTooltipId(null);
 					tooltipTimerRef.current = null;
-				}, 1000);
+				}, 1500);
 			} else {
 				setActiveTooltipId(null);
 			}
@@ -95,9 +95,11 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 							</li>
 						) : (
 							<li
-								onClickCapture={() => handleIconClick(i, getIdentifier(i, idx))}
+								onClickCapture={
+									i?.onClick ? () => handleIconClick(i, getIdentifier(i, idx)) : undefined
+								}
 								className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20 hover:cursor-pointer'>
-								{activeTooltipId === getIdentifier(i, idx) ? (
+								{activeTooltipId === getIdentifier(i, idx) && !i.id ? (
 									<>
 										<Tooltip content={clipboardTxt} position='top' bgColor='bg-core-green-300'>
 											<Icons iconName='CircleCheckIcons' size='14' color='green' />
@@ -105,7 +107,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 										<button className='hover:cursor-pointer'>{i?.icon}</button>
 									</>
 								) : (
-									<button className='hover:cursor-pointer'>{i?.icon}</button>
+									<a>{i?.icon}</a>
 								)}
 							</li>
 						)}
