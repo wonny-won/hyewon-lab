@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { SectionCard } from '@hyewon/design-system';
+import { SectionCard, VirticalDiver } from '@hyewon/design-system';
 import ListUI from '@/components/list-ui/list-ui';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
 
@@ -70,10 +70,22 @@ const ContactMeCard = () => {
 				height={150}
 				className='w-[200px] h-[170px] rounded-[8px] lg:w-[150px] lg:h-[150px] lg:rounded-[16px] max-lg:max-h-[300px]'
 			/>
-			<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
-				CONTACT ME NOW
-			</h3>
-			<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
+
+			<div className='flex gap-10 items-center'>
+				<section>
+					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+						CONTACT ME NOW
+					</h3>
+					<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
+				</section>
+				<VirticalDiver height={100} />
+				<section>
+					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+						Export Resume to PDF
+					</h3>
+					<ListUI direction='horizontal' listMap={aboutMyProfile.export} />
+				</section>
+			</div>
 		</SectionCard>
 	);
 };
