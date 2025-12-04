@@ -71,17 +71,17 @@ const ContactMeCard = () => {
 				className='w-[200px] h-[170px] rounded-[8px] lg:w-[150px] lg:h-[150px] lg:rounded-[16px] max-lg:max-h-[300px]'
 			/>
 
-			<div className='flex gap-10 items-center'>
+			<div className='flex max-lg:flex-col gap-2 lg:gap-10 lg:items-center'>
 				<section>
 					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						CONTACT ME NOW
 					</h3>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
 				</section>
-				<VirticalDiver height={100} />
+				<VirticalDiver height={100} display='max-lg:hidden' />
 				<section>
 					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
-						Export Resume to PDF
+						Download PDF Resume
 					</h3>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.export} />
 				</section>
