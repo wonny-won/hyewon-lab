@@ -64,10 +64,14 @@ const SectionCard = ({
 			role='link'
 			id={blockId}
 			className='max-lg:w-full max-lg:flex max-lg:justify-center max-lg:min-w-[250px] max-lg:max-w-[500px]'
-			onClick={() => {
-				const url = `${window.location.origin}${window.location.pathname}#${blockId}`;
-				navigator.clipboard.writeText(url);
-			}}
+			onClick={
+				!!blockId
+					? () => {
+							const url = `${window.location.origin}${window.location.pathname}#${blockId}`;
+							navigator.clipboard.writeText(url);
+					  }
+					: undefined
+			}
 			ref={ref}>
 			<Component
 				className={

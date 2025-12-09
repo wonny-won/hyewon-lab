@@ -24,6 +24,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 	}, []);
 
 	const resolveTooltipContent = (result: unknown): string | null => {
+		console.log('result', result);
 		if (React.isValidElement(result)) {
 			const content = (result.props as { content?: string })?.content;
 			return typeof content === 'string' ? content : null;
@@ -49,7 +50,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 
 			if (result) {
 				setActiveTooltipId(identifier);
-				setClipboardTxt(resolveTooltipContent(result));
+				setClipboardTxt(resolveTooltipContent(result) ?? 'nothing-to-clipboard');
 				if (tooltipTimerRef.current) {
 					clearTimeout(tooltipTimerRef.current);
 				}
@@ -95,9 +96,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 							</li>
 						) : (
 							<li
-								onClickCapture={
-									i?.onClick ? () => handleIconClick(i, getIdentifier(i, idx)) : undefined
-								}
+								onClickCapture={!!i.id ? i.onClick : () => handleIconClick(i, getIdentifier(i, idx))}
 								className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20 hover:cursor-pointer'>
 								{activeTooltipId === getIdentifier(i, idx) && !i.id ? (
 									<>

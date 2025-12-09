@@ -18,6 +18,7 @@ export const onClickCopyClipboard = async (
 	if (!copyContent) return;
 	try {
 		await window.navigator.clipboard.writeText(copyContent);
+		console.log('copyContent', copyContent);
 		return {
 			status: true,
 			successMessage,
