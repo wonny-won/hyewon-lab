@@ -24,6 +24,7 @@ const TroubleShootingSection = () => {
 		<>
 			{troubleShootingData.map((i: TroubleShootingDataType) => (
 				<SectionCard
+					blockId={i.blockId}
 					as='article'
 					key={i.id}
 					ref={ref[i.id]}

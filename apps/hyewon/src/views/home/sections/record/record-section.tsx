@@ -15,6 +15,7 @@ const RecordSection = () => {
 		teamstone: teamstoneSectionRef,
 		dingco: dingcoSectionRef,
 	};
+
 	useEffect(() => {
 		const hash = window.location.hash;
 		if (!hash) return;

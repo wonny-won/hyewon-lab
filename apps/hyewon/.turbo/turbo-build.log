@@ -5,18 +5,12 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.8[39m[22m (Turbopack)
 
-[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m
- [37m[1m [22m[39m We detected TypeScript in your project and reconfigured your [36mtsconfig.json[39m file for you.
- [37m[1m [22m[39m The following [37mmandatory changes[39m were made to your [36mtsconfig.json[39m:
-
- [37m[1m [22m[39m 	- [36mjsx[39m was set to [1mreact-jsx[22m (next.js uses the React automatic runtime)
-
-[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1827.6ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1827.6ms     [32m[1m✓[22m[39m Finished TypeScript in 1827.6ms 
+[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1592.0ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1592.0ms     [32m[1m✓[22m[39m Finished TypeScript in 1592.0ms 
  [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully in 1053.6ms
-[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 216.8ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 216.8ms 
-[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 183.9ms
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.7ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.7ms 
+ [32m[1m✓[22m[39m Compiled successfully in 1117.6ms
+[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 212.4ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 212.4ms 
+[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 186.3ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.9ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.9ms 
 
 [4mRoute (pages)[24m
 ┌ ○ /

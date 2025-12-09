@@ -2,6 +2,7 @@
 
 export interface TroubleShootingDataType {
 	id: string;
+	blockId?: string;
 	title?: string;
 	detailUrl: string;
 	significant?: string[];
@@ -16,6 +17,7 @@ export interface TroubleShootingDataType {
 export const troubleShootingData = [
 	{
 		id: 'honored-trouble-shooting',
+		blockId: 'honored-trouble-shooting-section',
 		title: '모노레포 배포 에러 해결 사례',
 		detailUrl: 'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017',
 		company: 'honored',
@@ -95,6 +97,7 @@ export const troubleShootingData = [
 	},
 	{
 		id: 'teamstone-trouble-shooting-1',
+		blockId: 'teamstone-trouble-shooting-1-section',
 		title: '위젯 메모리 누수 개선 사례',
 		detailUrl:
 			'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017?source=copy_link#24ac9d6263d04c4f87233a1e3f7f28c1',
@@ -171,6 +174,7 @@ export const troubleShootingData = [
 	},
 	{
 		id: 'teamstone-trouble-shooting-2',
+		blockId: 'teamstone-trouble-shooting-2-section',
 		title: '불필요한 리렌더 완화로 성능 개선 사례',
 		detailUrl:
 			'https://www.notion.so/Manage-Server-a42139d1574b4429b9e39b4c979eb360?source=copy_link#660eeee648074d14970f755eb18fa3b2',
