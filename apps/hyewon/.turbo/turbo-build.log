@@ -5,12 +5,12 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.8[39m[22m (Turbopack)
 
-[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1427.3ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1427.3ms     [32m[1m✓[22m[39m Finished TypeScript in 1427.3ms 
+[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1456.2ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1456.2ms     [32m[1m✓[22m[39m Finished TypeScript in 1456.2ms 
  [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully in 1108.8ms
-[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 192.1ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 192.1ms 
-[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 188.0ms
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.9ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.9ms 
+ [32m[1m✓[22m[39m Compiled successfully in 1007.7ms
+[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 182.1ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 182.1ms 
+[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 163.6ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.5ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.5ms 
 
 [4mRoute (pages)[24m
 ┌ ○ /
