@@ -78,7 +78,7 @@ const ContactMeCard = () => {
 					</h3>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
 				</section>
-				<VirticalDiver height={100} display='max-lg:hidden' />
+				<VirticalDiver display='max-lg:hidden block' />
 				<section>
 					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						Download PDF Resume

@@ -4,13 +4,13 @@ import React from 'react';
 
 const VirticalDiver = ({
 	display = 'block',
-	height,
+	height = 100,
 	color = 'core-neutral-700',
 }: {
 	display?: string;
-	height: number;
+	height?: number;
 	color?: string;
 }) => {
-	return <div className={`${display} border-l-[1px] h-[${height || 100}px] mt-10 border-${color}`}></div>;
+	return <div className={`${display} border-l-[1px] h-[${height}px] mt-10 border-${color}`} />;
 };
 export default VirticalDiver;
