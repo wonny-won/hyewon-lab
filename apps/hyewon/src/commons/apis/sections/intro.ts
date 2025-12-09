@@ -55,8 +55,7 @@ export const aboutMyProfile = {
 			icon: Icons({ iconName: 'FileDownIcon', size: '24' }),
 			onClick: () => {
 				const link = document.createElement('a');
-				link.href = '/resume.pdf';
-				link.download = '정혜원_프론트엔드_이력서.pdf';
+				link.href = '/hyewon-FE-resume.pdf';
 				link.click();
 			},
 		},
