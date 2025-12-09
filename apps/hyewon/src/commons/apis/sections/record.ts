@@ -3,6 +3,7 @@
 export const recordData = [
 	{
 		id: 'honored',
+		blockId: 'honored-section',
 		company: '(주) 포페런츠',
 		companyUrl: 'https://honored.shop/shinhan/',
 		period: '2025.04 ~ 2025.09',
@@ -128,6 +129,7 @@ export const recordData = [
 	},
 	{
 		id: 'teamstone',
+		blockId: 'teamstone-section',
 		company: '(주) 팀스톤',
 		companyUrl: 'https://ontune.co.kr/',
 		period: '2023.08 ~ 2024.08',
@@ -331,6 +333,7 @@ export const recordData = [
 	},
 	{
 		id: 'dingco',
+		blockId: 'dingco-section',
 		company: '(주) 딩코',
 		companyUrl: 'https://codebootcamp.co.kr/',
 		period: '2022.01 ~ 2023.04',

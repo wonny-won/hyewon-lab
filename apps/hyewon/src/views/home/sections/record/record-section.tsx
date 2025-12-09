@@ -20,6 +20,7 @@ const RecordSection = () => {
 				return (
 					<SectionCard
 						as='article'
+						blockId={i.blockId}
 						key={idx}
 						ref={ref[i.id]}
 						type='record'

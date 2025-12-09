@@ -6,6 +6,7 @@ import { openClassStyle, notOpenClassStyle } from './section-card-const';
 import Icons from '../icon/icons';
 
 interface SectionCardProps {
+	blockId?: string;
 	type: 'record' | 'about' | 'default' | 'troubleshooting';
 	styleType?: 'line' | 'normal' | 'liquid';
 	title?: string;
@@ -28,6 +29,7 @@ interface SectionCardProps {
 }
 
 const SectionCard = ({
+	blockId,
 	type = 'record',
 	styleType = 'normal',
 	title,
@@ -59,7 +61,13 @@ const SectionCard = ({
 
 	return (
 		<div
+			role='link'
+			id={blockId}
 			className='max-lg:w-full max-lg:flex max-lg:justify-center max-lg:min-w-[250px] max-lg:max-w-[500px]'
+			onClick={() => {
+				const url = `${window.location.origin}${window.location.pathname}#${blockId}`;
+				navigator.clipboard.writeText(url);
+			}}
 			ref={ref}>
 			<Component
 				className={
