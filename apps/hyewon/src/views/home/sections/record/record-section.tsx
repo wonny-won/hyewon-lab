@@ -6,6 +6,7 @@ import { SectionCard, ThinDiver } from '@hyewon/design-system';
 import { onClickOpenNewWindow } from '@/commons/utils/link';
 import SummaryChildren from './internal-ui/summary-children';
 import { useScrollContext } from '@/commons/context/scroll-context';
+import { useEffect } from 'react';
 
 const RecordSection = () => {
 	const { honoredSectionRef, teamstoneSectionRef, dingcoSectionRef } = useScrollContext();
@@ -14,6 +15,17 @@ const RecordSection = () => {
 		teamstone: teamstoneSectionRef,
 		dingco: dingcoSectionRef,
 	};
+	useEffect(() => {
+		const hash = window.location.hash;
+		if (!hash) return;
+
+		const id = hash.slice(1);
+		const el = document.getElementById(id);
+		if (el) {
+			el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+	}, []);
+
 	return (
 		<>
 			{recordData.map((i, idx) => {
