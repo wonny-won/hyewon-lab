@@ -3,36 +3,26 @@
 > hyewon-portfolio@0.1.0 build /Users/jeonghyewon/Desktop/hyewon-lab/apps/hyewon
 > next build --turbopack
 
-   [1m[38;2;173;127;168m▲ Next.js 15.5.3[39m[22m (Turbopack)
+   [1m[38;2;173;127;168m▲ Next.js 16.0.8[39m[22m (Turbopack)
 
-[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h
-./src/commons/apis/sections/trouble-shooting.ts
-14:1  Warning: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m
+ [37m[1m [22m[39m We detected TypeScript in your project and reconfigured your [36mtsconfig.json[39m file for you.
+ [37m[1m [22m[39m The following [37mmandatory changes[39m were made to your [36mtsconfig.json[39m:
 
-./src/components/list-ui/list-item.tsx
-11:2  Warning: 'onClick' is defined but never used.  @typescript-eslint/no-unused-vars
+ [37m[1m [22m[39m 	- [36mjsx[39m was set to [1mreact-jsx[22m (next.js uses the React automatic runtime)
 
-./src/views/home/sections/trouble-shooting/internal-ui/sub-section-children.tsx
-7:31  Warning: 'data' is defined but never used.  @typescript-eslint/no-unused-vars
-
-info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
-[?25l [36m.[39m [2K[1G [36m..[39m [2K[1G[?25h    [32m[1m✓[22m[39m Linting and checking validity of types 
+[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1827.6ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1827.6ms     [32m[1m✓[22m[39m Finished TypeScript in 1827.6ms 
  [37m[1m [22m[39m Creating an optimized production build ...
- ✓ Finished writing to disk in 13ms
- [32m[1m✓[22m[39m Compiled successfully in 1074ms
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data     [32m[1m✓[22m[39m Collecting page data 
-[?25l [37m[1m [22m[39m Generating static pages (0/3)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/3)  [36m[=   ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (3/3)
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
-[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization     [32m[1m✓[22m[39m Finalizing page optimization 
+ [32m[1m✓[22m[39m Compiled successfully in 1053.6ms
+[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 216.8ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 216.8ms 
+[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 183.9ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.7ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.7ms 
 
-[4mRoute (pages)[24m                       [4mSize[24m  [4mFirst Load JS[24m  [4m[24m  [4m[24m
-┌ ○ /                            30.1 kB         [37m[1m129 kB[22m[39m
-├   /_app                            0 B        [37m[1m98.5 kB[22m[39m
-├ ○ /404                         12.4 kB         [37m[1m111 kB[22m[39m
-└ ƒ /api/hello                       0 B        [37m[1m98.5 kB[22m[39m
-+ First Load JS shared by all     [37m[1m106 kB[22m[39m
-  ├ chunks/c4f6cd06fbdd4b3e.js   86.2 kB
-  └ other shared chunks (total)  20.3 kB
+[4mRoute (pages)[24m
+┌ ○ /
+├   /_app
+├ ○ /404
+└ ƒ /api/hello
 
 ○  (Static)   prerendered as static content
 ƒ  (Dynamic)  server-rendered on demand
