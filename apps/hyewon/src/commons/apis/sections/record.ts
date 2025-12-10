@@ -145,71 +145,131 @@ export const recordData = [
 		main: [
 			{
 				id: 'teamstone-1-depth-1-1',
-				title: '시스템 성능 분석 위젯 개발',
+				title: '퍼포먼스 최적화 및 대시보드 안정화',
 				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-1-depth-2-1',
-						title: '총 8개의 성능 분석 위젯을 설계 및 개발, 커스텀 레이어 팝업 기능 구현',
-						isImportant: false,
-						children: null,
-					},
-					{
-						id: 'teamstone-1-depth-2-2',
-						title: '워커 스레드를 활용한 데이터 연산을 분리 및 렌더 성능 최적화',
-						isImportant: true,
-						children: null,
-					},
-					{
-						id: 'teamstone-1-depth-2-3',
-						title: '반응형 UI 적용 및 유지보수성 향상을 위한 구조 개선',
-						isImportant: false,
-						children: null,
-					},
-					{
-						id: 'teamstone-1-depth-2-4',
-						title: '테스트를 기반으로 사용자 친화적인 UI/UX 개선 의견 제시 및 반영',
-						isImportant: true,
-						children: null,
-					},
-					{
-						id: 'teamstone-1-depth-2-5',
-						title: '위젯 성능 개선',
+						title: '메모리 누수 및 CPU 사용량 개선',
 						isImportant: true,
 						children: [
 							{
-								id: 'teamstone-1-depth-3-1',
-								title: '리플로우 최소화를 통한 렌더 최적화',
+								id: 'teamstone-1-depth-2-1-1',
+								title: 'CPU 사용률 10.9~80.4% → 3.9~5.1%로 대폭 감소',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'teamstone-1-depth-3-2',
-								title: 'requestAnimationFrame 적용으로 애니메이션 메모리 누수 해결',
+								id: 'teamstone-1-depth-2-1-2',
+								title: '메모리 누수 구간 제거 ',
+								isImportant: false,
+								children: [
+									{
+										id: 'teamstone-1-depth-2-1-2-1',
+										title: '지속 증가(50,256K) → 안정화 후 28,416K로 개선',
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'teamstone-1-depth-2-1-3',
+								title: '렌더 시 급격히 증가하던 메모리 사용량을 일정 범위 내로 고정',
+								isImportant: false,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'teamstone-1-depth-2-2',
+						title: '렌더 범위 최적화',
+						isImportant: true,
+						children: [
+							{
+								id: 'teamstone-1-depth-2-3-1',
+								title: '기존 “전체 리렌더” 구조 → 변경된 데이터만 다시 렌더링하도록 범위 국소화',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'teamstone-1-depth-3-3',
-								title: 'CSS 최적화를 통한 CPU 사용량 감소 및 개선',
+								id: 'teamstone-1-depth-2-3-2',
+								title: '차트 UI 깜빡임 제거',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'teamstone-1-depth-3-4',
-								title: '워커 스레드를 활용한 렌더 최적화 진행',
+								id: 'teamstone-1-depth-2-3-3',
+								title: '전체 리렌더에서 특정 컴포넌트 단위 렌더로 변경해 렌더 비용 감소',
+								isImportant: false,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'teamstone-1-depth-2-3',
+						title: '워커 스레드 분리로 메인 스레드 안정화',
+						isImportant: true,
+						children: [
+							{
+								id: 'teamstone-1-depth-3-3-1',
+								title: '데이터 가공 로직을 워커 스레드로 이전하여 메인 스레드 부하 감소',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'teamstone-1-depth-3-5',
-								title: '차트 모듈 트리 쉐이킹으로 번들 크기 축소',
+								id: 'teamstone-1-depth-3-3-2',
+								title: '메인 스레드 블로킹 시간 약 30~50% 감소 추정',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'teamstone-1-depth-3-6',
-								title: '이벤트 디바운싱 적용으로 불필요한 연산 최소화',
+								id: 'teamstone-1-depth-3-3-3',
+								title: '차트가 그려지지 않는 텀 및 프레임 드랍 현상 최소화',
+								isImportant: false,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'teamstone-1-depth-2-4',
+						title: '공통 컴포넌트 및 유틸 설계',
+						isImportant: true,
+						children: [
+							{
+								id: 'teamstone-1-depth-4-3-1',
+								title: '4개의 공통 차트 컴포넌트 개발',
+								isImportant: false,
+								children: [
+									{
+										id: 'teamstone-1-depth-2-4-1',
+										title: '분석 페이지 및 대시보드 위젯에서 광범위 재사용',
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'teamstone-1-depth-4-3-2',
+								title: '1개의 공통 유틸 함수 개발',
+								isImportant: false,
+								children: [
+									{
+										id: 'teamstone-1-depth-2-4-1',
+										title: '모든 차트에서 공통 사용',
+										isImportant: false,
+										children: null,
+									},
+									{
+										id: 'teamstone-1-depth-2-4-1',
+										title: '데이터 안정성 강화 및 수정 범위 최소화',
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'teamstone-1-depth-4-3-3',
+								title: '구조 통합으로 차트 신규 개발·유지보수 속도 개선',
 								isImportant: false,
 								children: null,
 							},
@@ -219,109 +279,55 @@ export const recordData = [
 			},
 			{
 				id: 'teamstone-2-depth-1-1',
-				title: '시스템 성능 분석 페이지 개발',
+				title: '대시보드 위젯 및 시스템 성능 분석 페이지 개발',
 				isImportant: false,
 				children: [
 					{
-						id: 'teamstone-2-depth-2-1',
-						title: '시스템 성능 분석 관련 총 2개 페이지 신규 개발',
+						id: 'teamstone-2-depth-2-2',
+						title: '30개의 대시보드 위젯 중 8개 개발',
 						isImportant: false,
-						children: null,
+						children: [
+							{
+								id: 'teamstone-2-depth-2-1-3-1',
+								title: '모니터링 위젯, 데이터 튜닝 위젯, 상세 분석 팝업 포함',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'teamstone-2-depth-2-1-3-2',
+								title: '위젯별 성능 고려한 렌더 구조 설계발',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'teamstone-2-depth-2-1-3-3',
+								title: '사용자 친화적 UI 제안 및 적용',
+								isImportant: false,
+								children: null,
+							},
+						],
 					},
 					{
-						id: 'teamstone-2-depth-2-2',
-						title: '위젯 데이터 지표 선택을 위한 커스텀 레이어 팝업 기능 설계 및 개발',
+						id: 'teamstone-2-depth-2-1',
+						title: '8개의 컨피그(Config) 페이지 중 6개 개발',
 						isImportant: false,
-						children: null,
+						children: [
+							{
+								id: 'teamstone-2-depth-2-2-3-2',
+								title: '공통화 가능한 설정 UI는 재사용 가능한 컴포넌트로 분리',
+								isImportant: false,
+								children: null,
+							},
+						],
 					},
 					{
 						id: 'teamstone-2-depth-2-3',
-						title: '사용자 편의성을 고려한 인터랙션 설계',
-						isImportant: false,
-						children: null,
-					},
-					{
-						id: 'teamstone-2-depth-2-4',
-						title: '메트릭 데이터 스케일 처리 공통 유틸 함수 개발로 코드 일관성 확보',
-						isImportant: false,
-						children: null,
-					},
-				],
-			},
-			{
-				id: 'teamstone-3-depth-1-1',
-				title: 'Host 및 제품 튜닝 페이지 개발',
-				children: [
-					{
-						id: 'teamstone-3-depth-2-1',
-						title: 'Host 및 제품 튜닝 관련 총 6개 페이지 개발 및 기본 데이터 세팅 구현',
-						isImportant: false,
-						children: null,
-					},
-					{
-						id: 'teamstone-3-depth-2-2',
-						title: '불필요한 전체 리렌더 제거 및 컴포넌트 단위 렌더링으로 성능 개선에 기여',
-						isImportant: true,
-						children: null,
-					},
-				],
-			},
-			{
-				id: 'teamstone-4-depth-1-1',
-				title: '공통 컴포넌트 및 글로벌 함수 개발',
-				isImportant: false,
-				children: [
-					{
-						id: 'teamstone-4-depth-2-1',
-						title: 'ReportBaseChart',
-						children: [
-							{
-								id: 'teamstone-4-depth-3-1',
-								title: '트리쉐이킹을 위해 기존 BaseChart를 활용해 개발',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'teamstone-4-depth-3-2',
-								title: 'default상태를 지정해 데이터와 차트타입만 넘겨줘도 그려지도록 개발',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'teamstone-4-depth-3-3',
-								title: '높은 자유도를 보장해 다양한 커스텀이 가능하도록 개발',
-								isImportant: false,
-								children: null,
-							},
-						],
-					},
-					{
-						id: 'teamstone-4-depth-2-2',
-						title: 'WidgetMideaQuery \n 윈도우 미디어 쿼리를 이용 할 수 없는 상황에서 반응형 UI를 위해 제작하게 된 공통 컴포넌트.',
+						title: '2개의 시스템 분석(Analysis) 페이지 개발',
 						isImportant: false,
 						children: [
 							{
-								id: 'teamstone-4-depth-3-2',
-								title: 'ResizeObserver api 이용',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'teamstone-4-depth-3-3',
-								title: '스타일 자유도를 높여 언제든 모드 추가가 가능하도록 개발',
-								isImportant: false,
-								children: null,
-							},
-						],
-					},
-					{
-						id: 'teamstone-4-depth-2-3',
-						title: ' BarChart / BarChartTooltip \n Common Grid 내부에서 사용되는 BarChart 및 BarChartTooltip.',
-						isImportant: false,
-						children: [
-							{
-								id: 'teamstone-4-depth-3-4',
-								title: '라이브러리 없이 직접 구현',
+								id: 'teamstone-2-depth-2-3-3-1',
+								title: '대용량 데이터 기반 성능 분석 화면 구현',
 								isImportant: false,
 								children: null,
 							},
