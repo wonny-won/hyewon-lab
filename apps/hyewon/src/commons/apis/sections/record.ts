@@ -107,7 +107,7 @@ export const recordData = [
 		id: 'mayI',
 		blockId: 'mayI-section',
 		company: '메이아이',
-		companyUrl: 'https://may-i.io/mash/',
+		companyUrl: 'https://may-i.io',
 		period: '2025.02 ~ 2025.04',
 		position: '개발팀 | 사원',
 		coreProject: 'mAsh',
