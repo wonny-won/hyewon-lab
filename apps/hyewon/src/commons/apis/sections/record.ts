@@ -128,6 +128,71 @@ export const recordData = [
 		],
 	},
 	{
+		id: 'MayI',
+		blockId: 'MayI-section',
+		company: '메이아이',
+		companyUrl: 'https://may-i.io/mash/',
+		period: '2025.02 ~ 2025.04',
+		position: '개발팀 | 사원',
+		coreProject: 'mAsh',
+		mainStack: ['TypeScript', 'React.js', 'React-query'],
+		siteGif: [],
+		summary:
+			'짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다. 단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다. 빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
+		main: [
+			{
+				id: 'MayI-1-depth-1-1',
+				title: '대시보드 신규 기능 런칭을 위한 프론트엔드 설계 및 성능 최적화',
+				isImportant: false,
+				children: [
+					{
+						id: 'MayI-1-depth-2-1',
+						title: '단일 책임 원칙 적용으로 유지보수성 향상',
+						isImportant: true,
+						children: [
+							{
+								id: 'MayI-1-depth-3-1',
+								title: '데이터 처리 로직과 UI 레이어를 분리하여 유지보수성과 재사용성 향상',
+								isImportant: false,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'MayI-1-depth-2-2',
+						title: '세마포어 기반 제어와 네트워크 요청 흐름 최적화로 중복·불필요 요청 최소화',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'MayI-1-depth-2-3',
+						title: '확장성을 고려한 컴포넌트 구조 설계',
+						isImportant: true,
+						children: [
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: '전체 데이터 삭제 프로바이더를 다중 삭제 프로세스로 역할 확장',
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'MayI-1-depth-2-4',
+						title: '렌더 성능최적화',
+						isImportant: true,
+						children: [
+							{
+								id: 'honored-1-depth-4-3-1',
+								title: '렌더 조건과 visibility를 이용한 reflow / repaint 제거',
+								children: null,
+							},
+						],
+					},
+				],
+			},
+		],
+	},
+	{
 		id: 'teamstone',
 		blockId: 'teamstone-section',
 		company: '(주) 팀스톤',
