@@ -21,86 +21,69 @@ export const recordData = [
 				children: [
 					{
 						id: 'honored-1-depth-2-1',
-						title: '신한 X 아너드 제휴 서비스 프론트엔드 E2E 단독 개발 및  런칭',
+						title: '서비스 런칭 전 과정(기획·디자인·개발) 참여 및 E2E 개발 프로세스 리딩',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'honored-1-depth-2-1',
+						title: '신한 X 아너드 제휴 서비스 및 자체 웹 프론트엔드 E2E 단독 개발 및  런칭',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'honored-1-depth-2-2',
+						title: 'Turborepo + pnpm 기반 모노레포 구축',
 						isImportant: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-1',
-								title: '모노레포 구축',
-								isImportant: true,
-								children: [
-									{ title: 'Turborepo + pnpm 기반 워크스페이스 설계', children: null },
-									{ title: '서비스/공용 모듈을 분리해 구조화', children: null },
-								],
-							},
-							{
-								id: 'honored-1-depth-3-2',
-								title: '유지보수, 재사용성을 고려한 데이터/UI 컴포넌트 분리',
+								title: 'design system과 공용 모듈 프로젝트와 서비스 프로젝트 분리로 재사용성을 향상',
 								isImportant: false,
 								children: null,
-							},
-							{
-								id: 'honored-1-depth-3-3',
-								title: '확장성을 고려한 컴포넌트 설계',
-								isImportant: false,
-								children: [
-									{
-										title: '전체 삭제 데이터 프로바이더 → 다중 프로세스 처리 프로바이더로 확장 ',
-										chilren: null,
-									},
-								],
 							},
 						],
 					},
 					{
 						id: 'honored-1-depth-2-2',
-						title: '서비스 런칭 전 과정(기획, 디자인, 개발)에 참여해 E2E 개발 프로세싱 리딩',
+						title: '단일 책임 원칙 적용',
 						isImportant: true,
-						children: null,
-					},
-					{
-						id: 'honored-1-depth-2-3',
-						title: '개발 시스템 및 문서화 도입',
-						isImportant: false,
 						children: [
 							{
 								id: 'honored-1-depth-3-1',
-								title: '자체 웹 서비스 릴리즈 및 문서화 체계 구축',
-								children: null,
-							},
-							{
-								id: 'honored-1-depth-3-2',
-								title: '개발팀 주요 관리 문서및 프로세스 도입으로 업무 공유를 원활히 할 수 있도록 기여',
-								children: null,
-							},
-							{
-								id: 'honored-1-depth-3-3',
-								title: '회의록 / 릴리즈 문서 / 프로젝트 별 진행 상황  / QA 문서 / 온보딩 및 인수인계 문서 등',
+								title: '데이터 처리 로직과 UI 컴포넌트 분리 설계로 유지보수, 재사용성, 변경 범위 최소화',
+								isImportant: false,
 								children: null,
 							},
 						],
+					},
+					{
+						id: 'honored-1-depth-2-3',
+						title: '개발·릴리즈·운영 문서화 체계 구축',
+						isImportant: true,
+						children: [
+							{
+								id: 'honored-1-depth-3-1',
+								title: '회의록, 릴리즈 노트, QA, 온보딩·인수인계 문서 도입으로 협업 효율 개선',
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'honored-1-depth-2-4',
+						title: '웹 프론트엔드 파트 개발 일정 리드 및 협업 조율',
+						isImportant: false,
+						children: null,
 					},
 				],
 			},
 			{
 				id: 'honored-2-depth-1',
-				title: '신규 어드민 서비스 제작',
+				title: '자체 서비스 및 어드민 프론트엔드 E2E 단독 개발 및 런칭',
 				children: [
 					{
-						id: 'honored-2-depth-2-1',
-						title: '실무진 니즈를 반영한 핵심 기능 기획 및 구현',
-						isImportant: false,
-						children: null,
-					},
-					{
 						id: 'honored-2-depth-2-2',
-						title: '기존 리소스를 활용한 MVP 성격의 빠른 제작/배포로 업무 효율성 극대화',
-						isImportant: false,
-						children: null,
-					},
-					{
-						id: 'honored-2-depth-2-3',
-						title: '개발 일정 리드 및 협업 조율',
+						title: '자체 웹 서비스 및 제휴 서비스 런칭을 위한 모노레포 기반 프론트엔드 아키텍처 구축',
 						isImportant: false,
 						children: null,
 					},
@@ -108,20 +91,13 @@ export const recordData = [
 						id: 'honored-2-depth-2-4',
 						title: '기존 어드민 유지보수 및 신규 기능 추가',
 						isImportant: false,
-						children: [
-							{
-								id: 'honored-2-depth-3-1',
-								title: '실무진 니즈를 반영한 신규 기능 기획 및 구현',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'honored-2-depth-3-2',
-								title: '각종 핫픽스 수정',
-								isImportant: false,
-								children: null,
-							},
-						],
+						children: null,
+					},
+					{
+						id: 'honored-2-depth-2-3',
+						title: '기획–디자인–개발 전 과정을 아우르는 E2E 개발 프로세스 리딩',
+						isImportant: false,
+						children: null,
 					},
 				],
 			},
@@ -162,7 +138,18 @@ export const recordData = [
 						id: 'MayI-1-depth-2-2',
 						title: '세마포어 기반 제어와 네트워크 요청 흐름 최적화로 중복·불필요 요청 최소화',
 						isImportant: true,
-						children: null,
+						children: [
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: '세마포어 기반으로 동시 요청 수 5개 제한 → API 서버 과부하 방지',
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: '요청 조건 제어를 통해 불필요한 네트워크 요청을 구조적으로 제거하고, 네트워크 요청 비용을 절감',
+								children: null,
+							},
+						],
 					},
 					{
 						id: 'MayI-1-depth-2-3',
@@ -171,7 +158,7 @@ export const recordData = [
 						children: [
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '전체 데이터 삭제 프로바이더를 다중 삭제 프로세스로 역할 확장',
+								title: '전체 데이터 삭제 프로바이더 → 다중 삭제 프로세스로 역할 확장',
 								children: null,
 							},
 						],
@@ -187,6 +174,31 @@ export const recordData = [
 								children: null,
 							},
 						],
+					},
+				],
+			},
+			{
+				id: 'MayI-1-depth-1-1',
+				title: '대시보드 신규 기능 런칭 및 유지보수',
+				isImportant: false,
+				children: [
+					{
+						id: 'MayI-1-depth-2-1',
+						title: '고객사 커스텀 신규 기능 런칭',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'MayI-1-depth-2-2',
+						title: '코호트 분석 신규 페이지 제작',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'MayI-1-depth-2-3',
+						title: '각종 신기능 릴리즈 및 핫픽스 배포',
+						isImportant: false,
+						children: null,
 					},
 				],
 			},

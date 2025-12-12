@@ -2,7 +2,7 @@
 import React from 'react';
 
 const ThinDiver = () => {
-	return <hr className='w-full h-[1px] bg-core-neutral-700 mb-6 mt-8 border-none' />;
+	return <hr className='w-full h-[1px] bg-core-neutral-700 border-none' />;
 };
 
 export default ThinDiver;

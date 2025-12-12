@@ -10,7 +10,7 @@ const ListItem = ({
 	isNeedBulletPoint = false,
 	onClick,
 }: ListItemProps) => {
-	const finalListClassName = ['flex flex-col gap-1 text-core-neutral-300', listClassName].join(' ');
+	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
 	const rainbowTxt =
 		'bg-gradient-to-r from-yellow-500 via-core-green-300 to-blue-500 bg-clip-text text-transparent font-semibold';
 
@@ -19,7 +19,7 @@ const ListItem = ({
 			{Array.isArray(listItem) ? (
 				listItem.map((i, index) => {
 					return (
-						<div className={finalListClassName} key={index}>
+						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedIdx && (
 								<div
 									className={`text-body-s font-medium text-core-gray-300 ${
@@ -54,7 +54,9 @@ const ListItem = ({
 					);
 				})
 			) : (
-				<div className={finalListClassName}>{listItem}</div>
+				<div className={finalListClassName} onClick={onClick}>
+					{listItem}
+				</div>
 			)}
 		</>
 	);

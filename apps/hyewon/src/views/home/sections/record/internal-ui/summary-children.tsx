@@ -20,7 +20,7 @@ const SummaryChildren = (data: any) => {
 					{data.data.coreProject}
 				</Typography>
 			</div>
-			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200'>
+			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200' className='pb-8'>
 				{data.data.summary}
 			</Typography>
 		</>
