@@ -187,19 +187,20 @@ export const recordData = [
 						children: [
 							{
 								id: 'teamstone-1-depth-2-3-1',
-								title: '기존 “전체 리렌더” 구조 → 변경된 데이터만 다시 렌더링하도록 범위 국소화',
+								title: '기존 전체 리렌더 구조 → 변경된 데이터만 다시 렌더링하도록 리렌더 범위 최소화',
 								isImportant: false,
-								children: null,
+								children: [
+									{
+										id: 'teamstone-1-depth-2-3-4-1',
+										title: '전체 리렌더에서 특정 컴포넌트 단위 렌더로 변경해 렌더 비용 감소',
+										isImportant: false,
+										children: null,
+									},
+								],
 							},
 							{
 								id: 'teamstone-1-depth-2-3-2',
-								title: '차트 UI 깜빡임 제거',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'teamstone-1-depth-2-3-3',
-								title: '전체 리렌더에서 특정 컴포넌트 단위 렌더로 변경해 렌더 비용 감소',
+								title: '부분 리렌더로 차트 UI 깜빡임 제거',
 								isImportant: false,
 								children: null,
 							},
@@ -207,7 +208,7 @@ export const recordData = [
 					},
 					{
 						id: 'teamstone-1-depth-2-3',
-						title: '워커 스레드 분리로 메인 스레드 안정화',
+						title: '워커 스레드 분리로 메인 스레드 안정화 및 렌더 개선',
 						isImportant: true,
 						children: [
 							{
@@ -242,6 +243,12 @@ export const recordData = [
 								children: [
 									{
 										id: 'teamstone-1-depth-2-4-1',
+										title: 'ReportBaseChart, BarChart, BarChartTooltip, WidgetMideaQuery',
+										isImportant: false,
+										children: null,
+									},
+									{
+										id: 'teamstone-1-depth-2-4-1',
 										title: '분석 페이지 및 대시보드 위젯에서 광범위 재사용',
 										isImportant: false,
 										children: null,
@@ -250,7 +257,7 @@ export const recordData = [
 							},
 							{
 								id: 'teamstone-1-depth-4-3-2',
-								title: '1개의 공통 유틸 함수 개발',
+								title: '데이터 스케일 처리 공통 유틸 함수 개발',
 								isImportant: false,
 								children: [
 									{
@@ -284,21 +291,15 @@ export const recordData = [
 				children: [
 					{
 						id: 'teamstone-2-depth-2-2',
-						title: '30개의 대시보드 위젯 중 8개 개발',
+						title: '시스템 솔루션 대시보드 환경에서 위젯·분석·설정 페이지 개발 및 구조 설계',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'teamstone-2-depth-2-1',
+						title: '전체 30개 위젯 중 8개 핵심 위젯 구현',
 						isImportant: false,
 						children: [
-							{
-								id: 'teamstone-2-depth-2-1-3-1',
-								title: '모니터링 위젯, 데이터 튜닝 위젯, 상세 분석 팝업 포함',
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'teamstone-2-depth-2-1-3-2',
-								title: '위젯별 성능 고려한 렌더 구조 설계발',
-								isImportant: false,
-								children: null,
-							},
 							{
 								id: 'teamstone-2-depth-2-1-3-3',
 								title: '사용자 친화적 UI 제안 및 적용',
@@ -308,21 +309,14 @@ export const recordData = [
 						],
 					},
 					{
-						id: 'teamstone-2-depth-2-1',
-						title: '8개의 컨피그(Config) 페이지 중 6개 개발',
+						id: 'teamstone-2-depth-2-3',
+						title: '6개의 설정(Config)페이지 개발, 공통 설정 UI 컴포넌트화',
 						isImportant: false,
-						children: [
-							{
-								id: 'teamstone-2-depth-2-2-3-2',
-								title: '공통화 가능한 설정 UI는 재사용 가능한 컴포넌트로 분리',
-								isImportant: false,
-								children: null,
-							},
-						],
+						children: null,
 					},
 					{
-						id: 'teamstone-2-depth-2-3',
-						title: '2개의 시스템 분석(Analysis) 페이지 개발',
+						id: 'teamstone-2-depth-2-4',
+						title: '2페이지의 시스템 분석(Analysis) 페이지 개발',
 						isImportant: false,
 						children: null,
 					},
