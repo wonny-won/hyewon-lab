@@ -324,14 +324,7 @@ export const recordData = [
 						id: 'teamstone-2-depth-2-3',
 						title: '2개의 시스템 분석(Analysis) 페이지 개발',
 						isImportant: false,
-						children: [
-							{
-								id: 'teamstone-2-depth-2-3-3-1',
-								title: '대용량 데이터 기반 성능 분석 화면 구현',
-								isImportant: false,
-								children: null,
-							},
-						],
+						children: null,
 					},
 				],
 			},
