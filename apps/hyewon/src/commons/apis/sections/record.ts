@@ -158,7 +158,7 @@ export const recordData = [
 						children: [
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '전체 데이터 삭제 프로바이더 → 다중 삭제 프로세스로 역할 확장',
+								title: '전체 데이터 삭제 프로세스 프로바이더 → 다중 삭제 프로세스로 역할 확장',
 								children: null,
 							},
 						],
@@ -232,7 +232,7 @@ export const recordData = [
 						children: [
 							{
 								id: 'teamstone-1-depth-2-1-1',
-								title: 'CPU 사용률 10.9~80.4% → 3.9~5.1%로 대폭 감소',
+								title: 'CPU 사용률 10.9~80.4% → 3.9~5.1% 로 감소',
 								isImportant: false,
 								children: null,
 							},
