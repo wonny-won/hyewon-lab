@@ -4,7 +4,7 @@ import { Icons } from '@hyewon/design-system';
 import { onClickCopyClipboard } from '@/commons/utils/copy-clipborad';
 
 export const aboutMyProfile = {
-	profile: '/profile.jpeg',
+	profile: '/profile.png',
 	name: ' 정혜원, ',
 	english: 'Jeong Hyewon',
 	position: 'Frontend Engineer.',
