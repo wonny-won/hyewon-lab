@@ -241,7 +241,7 @@ export const troubleShootingData = [
 											},
 											{
 												id: 'teamstone-trouble-shooting-1-depth-3-4-3',
-												title: 'Retained Size 증가되어 있다면 해당 오브젝트를 리팩토링 한다.',
+												title: 'Retained Size 증가되어 있다면 누수 포인트로 판단',
 												children: null,
 											},
 										],
@@ -367,7 +367,7 @@ export const troubleShootingData = [
 					},
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
-						title: '객체로 관리되던 변수(상태) 중 반응성이 필요 없는 값은 컴포넌트 로컬 변수로 이동해 반응성 전파 범위 축소',
+						title: '하나의 객체로 관리되던 변수(상태) 중 반응성이 필요 없는 값은 컴포넌트 로컬 변수로 이동해 반응성 전파 범위 축소',
 						isImportant: true,
 						children: null,
 					},
