@@ -39,10 +39,10 @@ const commonStyle = {
 			troubleshooting: 'flex gap-15',
 		},
 		liquid: {
-			record: 'flex gap-6',
+			record: 'flex gap-10',
 			about: '',
 			default: '',
-			troubleshooting: 'flex gap-6',
+			troubleshooting: 'flex gap-10',
 		},
 	},
 	subTitleSideStyle: {
@@ -145,7 +145,7 @@ export const notOpenClassStyle = {
 			troubleshooting: `${commonStyle.sectionCardStyle.line.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[450px]`,
 		},
 		liquid: {
-			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[320px] max-[1180px]:max-h-[350px] max-[552px]:max-h-[420px] max-[431px]:max-h-[450px] max-[373px]:max-h-[525px]`,
+			record: `${commonStyle.sectionCardStyle.liquid.record} max-h-[330px] max-[1180px]:max-h-[350px] max-[552px]:max-h-[420px] max-[431px]:max-h-[450px] max-[373px]:max-h-[525px]`,
 			about: `${commonStyle.sectionCardStyle.liquid.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.liquid.default} h-fit`,
 			troubleshooting: `${commonStyle.sectionCardStyle.liquid.troubleshooting} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[400px]`,

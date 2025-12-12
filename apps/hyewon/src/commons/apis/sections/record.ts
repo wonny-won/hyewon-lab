@@ -128,15 +128,15 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'MayI',
-		blockId: 'MayI-section',
+		id: 'mayI',
+		blockId: 'mayI-section',
 		company: '메이아이',
 		companyUrl: 'https://may-i.io/mash/',
 		period: '2025.02 ~ 2025.04',
 		position: '개발팀 | 사원',
 		coreProject: 'mAsh',
 		mainStack: ['TypeScript', 'React.js', 'React-query'],
-		siteGif: [],
+		siteGif: [{ size: null, url: '/may-i.png' }],
 		summary:
 			'짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다. 단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다. 빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
 		main: [
@@ -202,8 +202,8 @@ export const recordData = [
 		coreProject: 'ontune',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ size: 260, url: '/teamstone.gif' },
-			{ size: 260, url: '/teamstone2.gif' },
+			{ size: null, url: '/teamstone.gif' },
+			{ size: null, url: '/teamstone2.gif' },
 		],
 		summary:
 			'해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. \n 성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. \n 대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다. \n 이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
@@ -398,7 +398,7 @@ export const recordData = [
 		position: '개발 • 멘토팀 | 사원',
 		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
 		mainStack: ['TypeScript', 'Next.js', 'Graph-ql'],
-		siteGif: [{ size: 260, url: '/dingco.gif' }],
+		siteGif: [{ size: null, url: '/dingco.gif' }],
 		summary:
 			'인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다. \n 커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
 		main: [

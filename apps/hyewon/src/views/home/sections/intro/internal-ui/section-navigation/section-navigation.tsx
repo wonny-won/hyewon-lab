@@ -26,7 +26,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 							{i.idx === currNavId && '⎯⎯'} {i.name}
 						</Typography>
 					</button>
-					<ul className='flex flex-nowrap gap-6 max-[600px]:overflow-x-auto w-full max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
+					<ul className='flex flex-nowrap gap-6 overflow-x-auto w-full max-w-[600px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
 						{i.desc?.map((item, idx) => (
 							<li
 								key={idx}

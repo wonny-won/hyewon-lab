@@ -13,6 +13,12 @@ export const sectionNav = [
 				summary: '액티브 시니어를 위한 여행 이커머스',
 			},
 			{
+				idx: 10,
+				image: '/may-i-section-nav.png',
+				title: 'mAsh(매쉬)',
+				summary: 'LG,현대백화점이 선택한 CCTV 방문객 데이터 분석',
+			},
+			{
 				idx: 5,
 				image: '/teamstone-section-nav.png',
 				title: '온튠',

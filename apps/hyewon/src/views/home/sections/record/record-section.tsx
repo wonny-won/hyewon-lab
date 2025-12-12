@@ -9,9 +9,10 @@ import { useScrollContext } from '@/commons/context/scroll-context';
 import { useEffect } from 'react';
 
 const RecordSection = () => {
-	const { honoredSectionRef, teamstoneSectionRef, dingcoSectionRef } = useScrollContext();
+	const { honoredSectionRef, mayISectionRef, teamstoneSectionRef, dingcoSectionRef } = useScrollContext();
 	const ref = {
 		honored: honoredSectionRef,
+		mayI: mayISectionRef,
 		teamstone: teamstoneSectionRef,
 		dingco: dingcoSectionRef,
 	};
@@ -34,7 +35,7 @@ const RecordSection = () => {
 					<SectionCard
 						as='article'
 						blockId={i.blockId}
-						key={idx}
+						key={`${i.id}-${idx}`}
 						ref={ref[i.id]}
 						type='record'
 						styleType='liquid'
