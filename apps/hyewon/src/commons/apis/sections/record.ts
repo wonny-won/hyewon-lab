@@ -111,7 +111,7 @@ export const recordData = [
 		period: '2025.02 ~ 2025.04',
 		position: '개발팀 | 사원',
 		coreProject: 'mAsh',
-		mainStack: ['TypeScript', 'React.js', 'React-query'],
+		mainStack: ['TypeScript', 'React.js', 'React-query', 'Context-Api'],
 		siteGif: [{ size: null, url: '/may-i.png' }],
 		summary:
 			'짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다. 단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다. 빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
@@ -141,12 +141,12 @@ export const recordData = [
 						children: [
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '세마포어 기반으로 동시 요청 수 5개 제한 → API 서버 과부하 방지',
+								title: '세마포어 기반으로 동시 요청 수 5개 제한으로 API 서버 과부하 방지',
 								children: null,
 							},
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '요청 조건 제어를 통해 불필요한 네트워크 요청을 구조적으로 제거하고, 네트워크 요청 비용을 절감',
+								title: '요청 조건 제어를 통해 불필요한 네트워크 요청을 제거하고, 네트워크 요청 비용을 절감',
 								children: null,
 							},
 						],
@@ -363,7 +363,7 @@ export const recordData = [
 			},
 			{
 				id: 'teamstone-2-depth-1-1',
-				title: '대시보드 위젯 및 시스템 성능 분석 페이지 개발',
+				title: '대시보드 위젯 및 시스템 성능 분석 페이지 개발 및 베타버전 런칭',
 				isImportant: false,
 				children: [
 					{
@@ -375,7 +375,7 @@ export const recordData = [
 					{
 						id: 'teamstone-2-depth-2-1',
 						title: '전체 30개 위젯 중 8개 핵심 위젯 구현',
-						isImportant: false,
+						isImportant: true,
 						children: [
 							{
 								id: 'teamstone-2-depth-2-1-3-3',
@@ -388,13 +388,13 @@ export const recordData = [
 					{
 						id: 'teamstone-2-depth-2-3',
 						title: '6개의 설정(Config)페이지 개발, 공통 설정 UI 컴포넌트화',
-						isImportant: false,
+						isImportant: true,
 						children: null,
 					},
 					{
 						id: 'teamstone-2-depth-2-4',
 						title: '2페이지의 시스템 분석(Analysis) 페이지 개발',
-						isImportant: false,
+						isImportant: true,
 						children: null,
 					},
 				],
@@ -416,49 +416,36 @@ export const recordData = [
 		main: [
 			{
 				id: 'dingco-1-depth-1-1',
-				title: '코드캠프 온/오프라인 부트캠프  학습자료 제작',
+				title: '프론트엔드 멘토 & 콘텐츠 제작',
 				isImportant: true,
 				children: [
 					{
 						id: 'dingco-1-depth-2-1',
-						title: '제작해온 학습자료',
-						isImportant: false,
+						title: '온·오프라인 부트캠프 프론트엔드 학습자료 제작',
+						isImportant: true,
 						children: [
 							{
-								id: 'dingco-1-depth-3-1',
-								title: '각 주제별 핵심 내용이 꼼꼼히 정리 되어있는 학습자료',
+								id: 'dingco-1-depth-1-3-1',
+								title: '각 주제별 핵심 내용이 꼼꼼히 정리 되어있는 학습자료 제작',
 								isImportant: false,
 								children: null,
 							},
 							{
-								id: 'dingco-1-depth-3-2',
-								title: '수강생에게 노션 장인의 자료로 평가받은 학습자료 ',
-								isImportant: true,
+								id: 'dingco-1-depth-1-3-2',
+								title: '수강생에게 노션 장인의 자료로 평가받은 학습자료 제공',
+								isImportant: false,
 								children: null,
 							},
 						],
 					},
-				],
-			},
-			{
-				id: 'dingco-1-depth-1-2',
-				title: '[ 인프런 X 코드캠프 ]  & 코드캠프 온/오프라인 부트캠프 프론트엔드 멘토',
-				isImportant: true,
-				children: [
-					{
-						id: 'dingco-1-depth-2-1',
-						title: '프론트엔드 수강생 일정 관리',
-						isImportant: false,
-						children: null,
-					},
 					{
 						id: 'dingco-1-depth-2-2',
-						title: '멘티 과제 확인 후 로직 피드백 및 질의 응답',
+						title: '프론트엔드 멘토로 수강생 학습 전 과정 지원',
 						isImportant: true,
 						children: [
 							{
-								id: 'dingco-1-depth-3-1',
-								title: '과제 피드백 및 질의 응답은 게더와 구글 클래스룸에서 이루어지며,로직 피드백은 성능상이나 유지보수상 조금 더 나은 방향으로 제시',
+								id: 'dingco-1-depth-2-3-1',
+								title: '일정 관리, 과제 및 포트폴리오 로직 리뷰, 질의응답을 통해 학습 완주율 및 이해도 향상에 기여',
 								isImportant: false,
 								children: null,
 							},
@@ -466,50 +453,41 @@ export const recordData = [
 					},
 					{
 						id: 'dingco-1-depth-2-3',
-						title: '최종 포트폴리오 피드백',
-						isImportant: false,
-						children: null,
+						title: '코드캠프 광고 및 상담 신청 페이지 프론트엔드 개발',
+						isImportant: true,
+						children: [
+							{
+								id: 'dingco-1-depth-3-3-1',
+								title: 'SEO를 고려한 시멘틱 마크업 적용',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'dingco-1-depth-3-3-2',
+								title: '유지보수성을 고려한 페이지 구조 설계',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'dingco-1-depth-3-3-3',
+								title: '반응형 웹 구현',
+								isImportant: false,
+								children: null,
+							},
+						],
 					},
-				],
-			},
-			{
-				id: 'dingco-1-depth-1-3',
-				title: '코드캠프 광고 페이지 개발',
-				isImportant: false,
-				children: [
 					{
-						id: 'dingco-1-depth-2-1',
-						title: 'SEO를 위한 시멘틱 태그 적용',
-						children: null,
-					},
-					{
-						id: 'dingco-1-depth-2-2',
-						title: '반응형 웹 제작',
-						children: null,
-					},
-				],
-			},
-			{
-				id: 'dingco-1-depth-1-4',
-				title: '코드캠프 상담신청 페이지 개발',
-				isImportant: false,
-				children: [
-					{
-						id: 'dingco-1-depth-2-1',
-						title: '유지보수성을 고려한 개발',
-						children: null,
-					},
-				],
-			},
-			{
-				id: 'dingco-1-depth-1-5',
-				title: '딩코 사이트 어드민 & 유저 백업 개발',
-				isImportant: false,
-				children: [
-					{
-						id: 'dingco-1-depth-2-1',
-						title: '유저 로그인 로그 데이터 개발',
-						children: null,
+						id: 'dingco-1-depth-2-4',
+						title: '딩코 사이트 어드민 및 유저 백업 기능 개발',
+						isImportant: true,
+						children: [
+							{
+								id: 'dingco-1-depth-3-3-1',
+								title: '자체 온라인 부트캠프 사이트 유저 로그인 로그 데이터 수집 기능 구현',
+								isImportant: false,
+								children: null,
+							},
+						],
 					},
 				],
 			},
