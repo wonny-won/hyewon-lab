@@ -10,7 +10,7 @@ export interface TroubleShootingDataType {
 	project: string;
 	relativeTag?: string[] | null;
 	summary: string;
-	main: { id: string; title: string; children: any }[];
+	main: { id: string; title: string; children: any; isImportant: boolean }[];
 }
 [];
 
@@ -30,6 +30,7 @@ export const troubleShootingData = [
 			{
 				id: 'honored-trouble-shooting-depth-1-1',
 				title: '문제',
+				isImportant: false,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-1',
@@ -41,10 +42,18 @@ export const troubleShootingData = [
 			{
 				id: 'honored-trouble-shooting-depth-1-2',
 				title: '원인',
+				isImportant: false,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-2-1',
-						title: '모노레포 + npm 워크스페이스 환경에서 모듈 호이스팅으로 인한 패키지 경로 인식 실패',
+						title: 'Vercel은 빌드 타겟 디렉터리 기준으로 의존성 해석',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'honored-trouble-shooting-depth-2-2-1',
+						title: '모노레포 + npm 워크스페이스 환경에서 Vercel 배포시 모듈 호이스팅으로 인한 패키지 경로 인식 실패',
+						isImportant: true,
 						children: [
 							{
 								id: 'honored-trouble-shooting-depth-3-2-1',
@@ -63,32 +72,54 @@ export const troubleShootingData = [
 			{
 				id: 'honored-trouble-shooting-depth-1-3',
 				title: '해결',
+				isImportant: false,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-3',
-						title: 'npm은 직접적으로 호이스팅을 제어하기 어렵다. 가장 빠르고 확실한 해결 방법은 패키지 매니저를 pnpm으로 바꾸고, 워크스페이스를 pnpm 으로 바꾸는 것이라 생각했음. 따라서 pnpm으로 패키지 매니저 변경.',
-						children: null,
+						title: '가장 확실한 방법인 패키지 매니저를 pnpm으로 변경 후 워크스페이스를 pnpm 으로 변경',
+						isImportant: true,
+						children: [
+							{
+								id: 'honored-trouble-shooting-depth-2-3',
+								title: 'npm은 호이스팅 제어 설정 복잡도 증가해 직접적으로 제어가 어렵다고 판단',
+								children: null,
+							},
+							{
+								id: 'honored-trouble-shooting-depth-2-3',
+								title: '반면 pnpm은 패키지 단위로 node_modules를 관리',
+								children: null,
+							},
+						],
 					},
 				],
 			},
 			{
 				id: 'honored-trouble-shooting-depth-1-4',
 				title: '결과',
+				isImportant: false,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-4',
-						title: '패키지 호이스팅을 제거해 모두 설치할 수 있도록 해주고, 빌드 에러를 제거 성공했으며 이후 배포에 성공.',
-						children: null,
+						title: '패키지 호이스팅 문제를 제거해 빌드 에러를 근본적으로 해결 후 배포 성공',
+						isImportant: true,
+						children: [
+							{
+								id: 'honored-trouble-shooting-depth-2-3',
+								title: '패키지 단위로 node_modules가 분리되며 하위 루트에 node_modules를 생성해 빌드에러 해결',
+								children: null,
+							},
+						],
 					},
 				],
 			},
 			{
 				id: 'honored-trouble-shooting-depth-1-5',
 				title: '비고',
+				isImportant: false,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-5',
-						title: '추후 비슷한 트러블 슈팅에 도움이 될 수 있을 것 같아 문서화로 남겨두었다.',
+						title: '추후 동일한 이슈 재발 방지 및 사이드 이펙트에 도움이 될 수 있을 것 같아 트러블 슈팅 문서화 완료',
 						children: null,
 					},
 				],
@@ -111,22 +142,36 @@ export const troubleShootingData = [
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-1',
 				title: '문제',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-1',
-						title: '특정 위젯의 자바스크립트 메모리가 지속적으로 증가하는 메모리 누수 상황 발견',
-						children: null,
+						title: '특정 위젯의 메모리가 해제되지 못하고 지속적으로 증가하는 메모리 누수 상황 발견',
+						children: [
+							{
+								id: 'teamstone-trouble-shooting-1-depth-2-1-3-1',
+								title: 'CPU 사용률 10.9~80.4%',
+								isImportant: true,
+								children: null,
+							},
+							{
+								id: 'teamstone-trouble-shooting-1-depth-2-1-3-2',
+								title: '자바스크립트 메모리 지속 증가(50,256K)',
+								isImportant: true,
+								children: null,
+							},
+						],
 					},
 				],
-				isImportant: true,
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-2',
 				title: '원인',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-2',
-						title: '애니메이션 구현을 위해 사용한 interval이 너무 빈번히 호출되며 clear 되지못해 발생한 문제',
+						title: '애니메이션 구현을 위해 사용한 interval이 2초에 한번씩 호출되어 동시에 여러 interval 생성 후 1:1 clear 되지못해 발생한 문제',
 						children: null,
 					},
 				],
@@ -134,22 +179,101 @@ export const troubleShootingData = [
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
 				title: '해결',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
 						title: 'requestAnimationFrame api를 이용한 애니메이션으로 재구현',
-						children: null,
+						isImportant: true,
+						children: [
+							{
+								id: 'teamstone-trouble-shooting-1-depth-3-3-1',
+								title: '메모리 누수 판단 과정',
+								isImportant: true,
+								children: [
+									{
+										id: 'teamstone-trouble-shooting-1-depth-3-4-1',
+										title: '브라우저 작업 관리자로 자바스크립트 메모리 사이즈 및 CPU 사용률 추적',
+										children: null,
+									},
+									{
+										id: 'teamstone-trouble-shooting-1-depth-3-4-2',
+										title: '자바스크립트 메모리가 GC 이후에도 안정화 되지 않고 지속적으로 증가 시 메모리 누수 판단',
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'teamstone-trouble-shooting-1-depth-3-3-1',
+								title: '누수지점 파악 과정',
+								isImportant: true,
+								children: [
+									{
+										id: 'teamstone-trouble-shooting-1-depth-3-4-1',
+										title: '브라우저 DevTools → Performance 탭에서 메모리 타임라인 녹화',
+										children: [
+											{
+												id: 'teamstone-trouble-shooting-1-depth-3-4-2',
+												title: 'JS 힙 메모리가 증가후 제대로 해제되지 않은 지점 확인',
+												children: null,
+											},
+										],
+									},
+									{
+										id: 'teamstone-trouble-shooting-1-depth-3-4-3',
+										title: '브라우저 DevTools → Memory 탭에서 Allocation instrumentation on timeline 실행',
+										children: [
+											{
+												id: 'teamstone-trouble-shooting-1-depth-3-4-3',
+												title: '메모리 막대가 해제되지 않은 구간의 타겟 오브젝트 확인',
+												children: null,
+											},
+										],
+									},
+									{
+										id: 'teamstone-trouble-shooting-1-depth-3-4-3',
+										title: '브라우저 DevTools → Memory 탭에서 프로그램 시작 초기 힙스냅샷 녹화',
+										children: [
+											{
+												id: 'teamstone-trouble-shooting-1-depth-3-4-3',
+												title: '일정 시간 이후 힙스냅샷을 한번 더 녹화 후 두 스냅샷에서 타겟 오브젝트 비교',
+												children: null,
+											},
+											{
+												id: 'teamstone-trouble-shooting-1-depth-3-4-3',
+												title: 'Retained Size 증가되어 있다면 해당 오브젝트를 리팩토링 한다.',
+												children: null,
+											},
+										],
+									},
+								],
+							},
+						],
 					},
 				],
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-4',
 				title: '결과',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-1',
-						title: '메모리 사용량과 더불어 CPU 사용량도 개선되며 누수가 개선되었고 화면이 많이 부드러워졌음',
-						children: null,
+						title: '메모리 사용량과 더불어 CPU 사용량도 개선되며 누수가 개선되었고 화면이 많이 부드러워짐',
+						children: [
+							{
+								id: 'teamstone-trouble-shooting-1-depth-2-2',
+								title: 'CPU 사용률 10.9~80.4% → 3.9~5.1% 로 감소',
+								isImportant: true,
+								children: null,
+							},
+							{
+								id: 'teamstone-trouble-shooting-1-depth-2-2',
+								title: 'JS 메모리 지속 증가(50,256K) → 안정화 후 28,416K로 개선',
+								isImportant: true,
+								children: null,
+							},
+						],
 					},
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-2',
@@ -157,11 +281,11 @@ export const troubleShootingData = [
 						children: null,
 					},
 				],
-				isImportant: true,
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-5',
 				title: '비고',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-5',
@@ -183,46 +307,47 @@ export const troubleShootingData = [
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
 		summary:
-			'불필요한 전체 리렌더링을 조건부 렌더링과 블록 단위 코드 실행으로 부분 리렌더링으로 개선해 나간 트러블슈팅',
+			'불필요한 반응성 전파로 인한 광범위한 DOM/컴포넌트 업데이트를 조건부 렌더링과 블록 단위 코드 실행으로 부분 업데이트로 개선해 나간 트러블슈팅',
 		main: [
 			{
 				id: 'teamstone-trouble-shooting-2-depth-1-1',
 				title: '문제',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-1',
-						title: '패널의 active를 수정 시 불필요한 전체 리렌더로 인한 성능저하 개선 사례',
+						title: '사이드 패널의 active를 수정 시 불필요한 반응성 전파로 광범위한 DOM 업데이트되어 성능 저하 발생',
 						children: null,
 					},
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-1',
-						title: '해당 리렌더는 그리드에 데이터가 많아질 경우 버벅임과 메모리 사용량이 크게 증가함',
+						title: '그리드에 데이터가 많아질수록 버벅임과 메모리 사용량이 크게 증가',
 						children: null,
 					},
 				],
-				isImportant: true,
 			},
 			{
 				id: 'teamstone-trouble-shooting-2-depth-1-2',
 				title: '원인',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-2',
-						title: '반응성 부여 시 리렌더를 실행 할 조건을 부여하지 않아 변수 중 하나라도 변경되면 무조건 전체가 리렌더 된다',
+						title: '반응성 부여 시 리렌더를 실행 할 조건을 부여하지 않아 변수 중 하나라도 변경되면 무조건 전체가 업데이트되는 구조',
 						children: null,
 					},
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-2',
-						title: '페이지 내부에 필요한 대부분의 변수가 외부 파일에 하나의 객체로 묶여 있다',
+						title: '페이지 내부에 필요한 대부분의 변수(상태)가 외부 파일에 하나의 객체로 묶여 있다',
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-2-depth-2-2',
-								title: 'grid의 인스턴트도 분리해 묶어놔서 패널 밖 그리드도 리렌더 발생',
+								title: '변수 객체중 하나의 프로퍼티라도 변경되면 해당 객체를 참조하고 있던 모든 컴포넌트에서 반응성이 전파되어 DOM 업데이트',
 								children: null,
 							},
 							{
 								id: 'teamstone-trouble-shooting-2-depth-2-2',
-								title: '해당 객체중 하나의 프로퍼티가 변경되면 객체 관련된건 와르르 리렌더 된다',
+								title: 'grid 생성에 필요한 인스턴스 객체도 해당 객체에 포함되어있어 패널 밖 그리드까지 불필요한 DOM 업데이트 발생',
 								children: null,
 							},
 						],
@@ -232,15 +357,18 @@ export const troubleShootingData = [
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
 				title: '해결',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
-						title: '반응성 부여 시 리렌더 실행 조건 부여,리렌더를 쪼개서 실행하도록 렌더 시점 분리',
+						title: '반응성($) 부여 시 필요한 값만 참조 할 수 있도록 조건을 설정해 렌더 시점 분리',
+						isImportant: true,
 						children: null,
 					},
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
-						title: '파일 분리가 굳이 필요하지 않은 변수들은 컴포넌트 내부에 선언 → 웬만하면 블록 내부로 선언해 사용후 빠르게 사라지도록 리팩토링',
+						title: '객체로 관리되던 변수(상태) 중 반응성이 필요 없는 값은 컴포넌트 로컬 변수로 이동해 반응성 전파 범위 축소',
+						isImportant: true,
 						children: null,
 					},
 				],
@@ -248,18 +376,19 @@ export const troubleShootingData = [
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-4',
 				title: '결과',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-4',
-						title: '버벅임과 메모리는 확실히 개선되었으며, 변수의 선언을 컴포넌트 내부로 일부 옮겨 리딩이 좀 더 쉬워지는 효과가 있었음',
+						title: '대량 데이터 환경에서도 버벅임과 메모리 증가 완화, 변수(상태)의 선언을 컴포넌트 내부로 일부 옮겨 가독성 개선',
 						children: null,
 					},
 				],
-				isImportant: true,
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-5',
 				title: '비고',
+				isImportant: false,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-5',

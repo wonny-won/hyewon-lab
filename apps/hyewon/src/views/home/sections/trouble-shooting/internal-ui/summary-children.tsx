@@ -25,7 +25,7 @@ const SummaryChildren = ({ data }: SummaryProps) => {
 					{data.project}
 				</Typography>
 			</div>
-			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200'>
+			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200' className='pb-8'>
 				{data.summary}
 			</Typography>
 		</>

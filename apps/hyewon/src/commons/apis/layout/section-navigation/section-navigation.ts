@@ -16,7 +16,7 @@ export const sectionNav = [
 				idx: 10,
 				image: '/may-i-section-nav.png',
 				title: 'mAsh(매쉬)',
-				summary: 'LG,현대백화점이 선택한 CCTV 방문객 데이터 분석',
+				summary: 'LG, 현대 백화점이 선택한 방문객 CCTV 데이터 분석',
 			},
 			{
 				idx: 5,
