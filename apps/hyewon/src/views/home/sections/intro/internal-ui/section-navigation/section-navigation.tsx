@@ -2,7 +2,7 @@
 
 import { sectionNav } from '@/commons/apis/layout/section-navigation/section-navigation';
 import { useScrollContext } from '@/commons/context/scroll-context';
-import { Typography } from '@hyewon/design-system';
+import { Tooltip, Typography } from '@hyewon/design-system';
 import Image from 'next/image';
 interface NavigationProps {
 	onClick?: (id: any) => void;
@@ -11,9 +11,14 @@ interface NavigationProps {
 const SectionNavigation = ({ onClick }: NavigationProps) => {
 	const { currNavId } = useScrollContext();
 	return (
-		<ul className='max-w-full grid max-[1297px]:grid-rows-[1fr_1fr]  min-[1300px]:grid-cols-[1fr_1fr] max-[1300px]:gap-5 min-[1300px]:gap-30 mx-auto max-[1300px]:overflow-x-auto max-[600px]:overflow-hidden'>
-			{sectionNav.map((i) => (
+		<ul className='max-w-full grid max-[1297px]:grid-rows-[1fr_1fr] min-[1300px]:grid-cols-[1fr_1fr] max-[1300px]:gap-5 min-[1300px]:gap-30 mx-auto max-[1300px]:overflow-x-auto max-[600px]:overflow-hidden'>
+			{sectionNav.map((i, idx) => (
 				<li key={`${i.id}-${i.idx}`} className='hover:cursor-pointer min-w-0'>
+					{!idx && (
+						<div className='max-[1297px]:mt-[46px] max-[1297px]:ml-[50px] mb-[-25px] ml-[40px]'>
+							<Tooltip content={'좌우로 넘겨보세요 👀'} position='top' />
+						</div>
+					)}
 					<button
 						className='pb-4 hover:cursor-pointer'
 						onClick={() => {

@@ -14,7 +14,7 @@ type TooltipProps = {
 const getTooltipPositionClass = (position: TooltipProps['position']) => {
 	switch (position) {
 		case 'top':
-			return 'bottom-full left-1/2 -translate-x-1/2 mb-[35px] z-10000';
+			return 'bottom-full left-1/2 -translate-x-[38%] mb-[35px] z-10000';
 		case 'bottom':
 			return 'top-full left-1/2 -translate-x-1/3 mt-2';
 		case 'left':
@@ -34,7 +34,7 @@ const getArrowStyle = (position: TooltipProps['position']) => {
 				width: `${size}px`,
 				height: `${size}px`,
 				bottom: `-${size / 2}px`,
-				left: '57%',
+				left: '47%',
 				transform: 'translateX(-50%) rotate(45deg)',
 			} as React.CSSProperties;
 		case 'bottom':
@@ -65,7 +65,7 @@ const getArrowStyle = (position: TooltipProps['position']) => {
 	}
 };
 
-const Tooltip = ({ children, content, position = 'top', bgColor = 'bg-core-neutral-800' }: TooltipProps) => (
+const Tooltip = ({ children, content, position = 'top', bgColor = 'bg-core-green-300' }: TooltipProps) => (
 	<div className='z-[10000] relative inline-flex items-center'>
 		<div
 			className={`absolute whitespace-nowrap rounded px-2 py-1 text-[12px] text-gray-800 font-semibold ${bgColor} ${getTooltipPositionClass(
