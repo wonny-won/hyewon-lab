@@ -8,7 +8,8 @@ export const aboutMyProfile = {
 	name: ' 정혜원, ',
 	english: 'Jeong Hyewon',
 	position: 'Frontend Engineer.',
-	summary: '작은곳에서 시작되는 성능 최적화, 디자인 디테일, 두번의 런칭 경험을 함께 공유합니다.',
+	summary:
+		'구조적 문제를 정리하고 사용자 경험을 개선하며 성능 ・ 유지보수성을 함께 고려해 서비스 품질을 끌어올려온 개발자 입니다.',
 	skillTag: [
 		'HTML',
 		'CSS',
