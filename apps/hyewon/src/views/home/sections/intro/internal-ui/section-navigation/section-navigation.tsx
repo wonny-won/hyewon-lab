@@ -38,7 +38,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 								onClick={() => {
 									if (item.idx) onClick?.(item.idx);
 								}}
-								className='flex flex-col items-center bg-white/10 px-1 py-2 rounded-[8px] flex-shrink-0'>
+								className='flex flex-col h-[150px] items-center justify-center bg-white/10 px-1 py-2 rounded-[8px] flex-shrink-0'>
 								{!!item.image && (
 									<Image
 										src={item.image ?? ''}
@@ -56,10 +56,7 @@ const SectionNavigation = ({ onClick }: NavigationProps) => {
 									variants='label-m'
 									className='flex flex-col pt-2 text-center font-semibold'>
 									{item.title}
-									<span
-										className={`text-[12px] text-core-gray-200 font-thin pt-1 text-center min-w-[130px] max-w-[135px] ${
-											i.id === 'troubleshooting' && 'min-w-[130px] max-w-[135px]'
-										}`}>
+									<span className='text-[12px] text-core-gray-200 font-thin pt-1 text-center min-w-[130px] max-w-[135px]'>
 										{item.summary}
 									</span>
 								</Typography>

@@ -29,7 +29,7 @@ const RecordSection = () => {
 	}, []);
 
 	return (
-		<div className='w-full flex gap-10 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
+		<div className='w-full pl-1 pt-4 pb-10 flex gap-10 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
 			{recordData.map((i, idx) => {
 				return (
 					<SectionCard
