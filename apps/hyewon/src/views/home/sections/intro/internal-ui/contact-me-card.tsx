@@ -32,7 +32,7 @@ const ContactMeCard = () => {
 							{aboutMyProfile.position}
 						</p> */}
 					</Typography>
-					<Typography as='h3' variants='body-s' color='text-core-neutarl-300' className='py-3'>
+					<Typography as='div' variants='body-s' color='text-core-neutarl-300' className='py-3'>
 						<p className='hidden lg:block lg:text-[15px] lg:font-regular lg:text-white'>
 							{aboutMyProfile.summary}
 						</p>
@@ -56,16 +56,16 @@ const ContactMeCard = () => {
 
 			<div className='flex max-lg:flex-col gap-2 lg:gap-12 lg:items-center pt-15'>
 				<section>
-					<h3 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+					<h2 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						CONTACT ME NOW
-					</h3>
+					</h2>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
 				</section>
 				<VirticalDiver height={100} display='max-lg:hidden block' />
 				<section>
-					<h3 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+					<h2 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						Download PDF Resume
-					</h3>
+					</h2>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.export} />
 				</section>
 			</div>

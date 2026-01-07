@@ -72,6 +72,11 @@ const SectionCard = ({
 			setSubImgCurrIdx((prev) => (prev + 1) % subSectionImgSrc.length);
 		}, 5000);
 
+		//interval 무한 실행방지 (30분 후 자동 중지)
+		setTimeout(() => {
+			clearInterval(id);
+		}, 1800000);
+
 		return () => clearInterval(id);
 	}, [subSectionImgSrc]);
 
@@ -133,15 +138,16 @@ const SectionCard = ({
 									src={subImg.url || ''}
 									alt='sub section img'
 									width={subImg.size ?? 300}
-									height={180}
+									height={200}
 									style={{ minHeight: '180px', objectFit: 'contain' }}
+									loading='lazy'
 								/>
 							)}
 						</figure>
 					}
 					<div className='w-[full] flex flex-col pt-3'>
 						{title && (
-							<button onClick={onClickTitle}>
+							<button className='max-w-fit' onClick={onClickTitle}>
 								<Typography
 									as={titleAs}
 									variants='body-l-strong'

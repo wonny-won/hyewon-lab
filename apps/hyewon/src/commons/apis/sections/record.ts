@@ -104,7 +104,7 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'mayI',
+		id: 'may-i',
 		blockId: 'mayI-section',
 		company: '메이아이',
 		companyUrl: 'https://may-i.io',

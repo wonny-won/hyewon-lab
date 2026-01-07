@@ -18,7 +18,7 @@ const SummaryChildren = ({ data }: SummaryProps) => {
 				))}
 			</ul>
 			<div className='pb-5'>
-				<Typography as='h3' variants='label-m' color='text-core-gray-400/60'>
+				<Typography as='h2' variants='label-m' color='text-core-gray-400/60'>
 					{data.company}
 				</Typography>
 				<Typography variants='label-m' color='text-core-gray-400/60'>

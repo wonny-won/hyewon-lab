@@ -5,18 +5,22 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.8[39m[22m (Turbopack)
 
-[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 2.2s  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 2.2s     [32m[1m✓[22m[39m Finished TypeScript in 2.2s 
+[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1732.6ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1732.6ms     [32m[1m✓[22m[39m Finished TypeScript in 1732.6ms 
  [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully in 1417.5ms
-[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 354.4ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 354.4ms 
-[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages using 7 workers (0/3)  [36m[=   ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (3/3) in 332.3ms
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 11.5ms     [32m[1m✓[22m[39m Finalizing page optimization in 11.5ms 
+ [32m[1m✓[22m[39m Compiled successfully in 1380.2ms
+[?25l [37m[1m [22m[39m Collecting page data using 7 workers  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data using 7 workers  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 7 workers in 553.1ms     [32m[1m✓[22m[39m Collecting page data using 7 workers in 553.1ms 
+[?25l [37m[1m [22m[39m Generating static pages using 7 workers (0/7)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages using 7 workers (0/7)  [36m[=   ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages using 7 workers (7/7) in 302.5ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 9.9ms     [32m[1m✓[22m[39m Finalizing page optimization in 9.9ms 
 
 [4mRoute (pages)[24m
 ┌ ○ /
 ├   /_app
 ├ ○ /404
-└ ƒ /api/hello
+├ ƒ /api/hello
+├ ○ /projects/company/dingco
+├ ○ /projects/company/honored
+├ ○ /projects/company/may-i
+└ ○ /projects/company/teamstone
 
 ○  (Static)   prerendered as static content
 ƒ  (Dynamic)  server-rendered on demand

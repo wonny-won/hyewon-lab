@@ -13,7 +13,7 @@ const SummaryChildren = (data: any) => {
 				))}
 			</ul>
 			<div className='pb-3'>
-				<Typography as='h3' variants='label-m' color='text-core-gray-400/60'>
+				<Typography as='p' variants='label-m' color='text-core-gray-400/60'>
 					{data.data.position}
 				</Typography>
 				<Typography variants='label-m' color='text-core-gray-400/60'>
