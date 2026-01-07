@@ -29,7 +29,7 @@ const RecordSection = () => {
 	}, []);
 
 	return (
-		<>
+		<div className='w-full flex gap-10 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
 			{recordData.map((i, idx) => {
 				return (
 					<SectionCard
@@ -45,7 +45,6 @@ const RecordSection = () => {
 						onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
 						subtitle={i.period}
 						subSectionImgSrc={i.siteGif}
-						isNeedMoreBtn
 						titleColor='text-white'
 						isNeedSummary
 						summaryChildren={<SummaryChildren data={i} />}>
@@ -54,7 +53,7 @@ const RecordSection = () => {
 					</SectionCard>
 				);
 			})}
-		</>
+		</div>
 	);
 };
 export default RecordSection;

@@ -13,7 +13,7 @@ const Home = () => {
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />
 			</section>
-			<section className='max-lg:pt-20 pt-25 flex flex-col gap-10  mx-auto' ref={recordSectionRef}>
+			<section className='w-full max-lg:pt-20 pt-25 flex flex-col gap-10 mx-auto' ref={recordSectionRef}>
 				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
 					<span className='text-core-neutral-50'>
 						쌓아온 경험. <br className='hidden max-[518px]:block' />

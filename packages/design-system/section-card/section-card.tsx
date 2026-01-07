@@ -1,5 +1,5 @@
 /** @format */
-import React, { Fragment, JSX, ReactNode, RefObject, useState } from 'react';
+import React, { Fragment, JSX, ReactNode, RefObject, useEffect, useState } from 'react';
 import Typography from '../typography/typography';
 import Image from 'next/image';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
@@ -52,12 +52,28 @@ const SectionCard = ({
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isButtonHover, setIsBttonHover] = useState(false);
+	const [subImg, setSubImg] = useState<any>(subSectionImgSrc?.[0]);
+	const [subImgcurrIdx, setSubImgCurrIdx] = useState(0);
 	const onMouseOverHandler = () => {
 		setIsBttonHover(!isButtonHover);
 	};
 	const onClickOpenCard = () => {
 		setIsOpen(!isOpen);
 	};
+
+	useEffect(() => {
+		if (!subSectionImgSrc || !subSectionImgSrc.length) return;
+		setSubImg(subSectionImgSrc[subImgcurrIdx]);
+	}, [subImgcurrIdx, subSectionImgSrc]);
+	useEffect(() => {
+		if (!subSectionImgSrc || !subSectionImgSrc.length) return;
+
+		const id = setInterval(() => {
+			setSubImgCurrIdx((prev) => (prev + 1) % subSectionImgSrc.length);
+		}, 5000);
+
+		return () => clearInterval(id);
+	}, [subSectionImgSrc]);
 
 	return (
 		<div
@@ -112,25 +128,18 @@ const SectionCard = ({
 								</figcaption>
 							)}
 
-							{type === 'record' &&
-								subSectionImgSrc?.map((i, idx) => (
-									<div
-										key={'sub section img' + idx}
-										className={`${!idx || !!isOpen ? 'visible' : 'invisible'}`}>
-										<Image
-											src={i?.url || ''}
-											alt='sub section img'
-											width={i.size ?? 300}
-											height={300}
-											style={{
-												minHeight: '180px',
-											}}
-										/>
-									</div>
-								))}
+							{type === 'record' && (
+								<Image
+									src={subImg.url || ''}
+									alt='sub section img'
+									width={subImg.size ?? 300}
+									height={180}
+									style={{ minHeight: '180px', objectFit: 'contain' }}
+								/>
+							)}
 						</figure>
 					}
-					<div className='w-[full] flex flex-col'>
+					<div className='w-[full] flex flex-col pt-3'>
 						{title && (
 							<button onClick={onClickTitle}>
 								<Typography

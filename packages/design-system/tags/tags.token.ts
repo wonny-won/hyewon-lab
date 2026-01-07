@@ -4,7 +4,7 @@ export type tagVariants = 'primary' | 'secondary' | 'outline' | 'liquidChips';
 export type tagSize = 'default' | 'large';
 
 const tagSize = {
-	default: 'px-1 py-0.5 h-[22px] text-label-m w-fit',
+	default: 'px-1.5 py-0.5 h-[22px] text-[12px] w-fit font-bold',
 	large: 'px-1.5 py-0.5 h-[24px] text-label-s w-fit',
 };
 

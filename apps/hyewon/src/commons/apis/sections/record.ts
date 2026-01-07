@@ -10,7 +10,7 @@ export const recordData = [
 		position: '개발팀 | 사원',
 		coreProject: '아너드 X 신한 걸어요',
 		mainStack: ['TypeScript', 'Next.js', 'React-query'],
-		siteGif: [{ size: 190, url: '/honored.gif' }],
+		siteGif: [{ size: 280, url: '/honored.gif' }],
 		summary:
 			'아너드 자체 웹 서비스 런칭의 전 과정을 맡아 프론트엔드 E2E 단독 런칭을 수행하며 제품 이해와 기술적 시야를 확장했습니다. 특히 모노레포 구조를 직접 구축해 디자인 시스템의 재사용성을 획기적으로 높였고, 이 과정에서 발생한 다양한 배포 환경·빌드 오류 트러블슈팅을 해결하며 안정적인 배포 파이프라인을 완성했습니다. 또한 개발 프로세스를 리드하며 일정·문서화 체계를 도입해 주도적으로 개발 문화를 정립한 경험이 프로젝트의 중심 성과입니다.',
 		main: [
@@ -111,8 +111,8 @@ export const recordData = [
 		period: '2025.02 ~ 2025.04',
 		position: '개발팀 | 사원',
 		coreProject: 'mAsh',
-		mainStack: ['TypeScript', 'React.js', 'React-query', 'Context-Api'],
-		siteGif: [{ size: null, url: '/may-i.png' }],
+		mainStack: ['TypeScript', 'React.js', 'React-query'],
+		siteGif: [{ size: 280, url: '/may-i.png' }],
 		summary:
 			'짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다. 단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다. 빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
 		main: [
@@ -214,8 +214,8 @@ export const recordData = [
 		coreProject: 'ontune',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ size: null, url: '/teamstone.gif' },
-			{ size: null, url: '/teamstone2.gif' },
+			{ size: 280, url: '/teamstone2.gif' },
+			{ size: 280, url: '/teamstone.gif' },
 		],
 		summary:
 			'해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. \n 성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. \n 대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다. \n 이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
@@ -410,7 +410,7 @@ export const recordData = [
 		position: '개발 • 멘토팀 | 사원',
 		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
 		mainStack: ['TypeScript', 'Next.js', 'Graph-ql'],
-		siteGif: [{ size: null, url: '/dingco.gif' }],
+		siteGif: [{ size: 280, url: '/dingco.gif' }],
 		summary:
 			'인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다. \n 커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
 		main: [

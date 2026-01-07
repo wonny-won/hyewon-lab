@@ -24,7 +24,6 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 	}, []);
 
 	const resolveTooltipContent = (result: unknown): string | null => {
-		console.log('result', result);
 		if (React.isValidElement(result)) {
 			const content = (result.props as { content?: string })?.content;
 			return typeof content === 'string' ? content : null;
