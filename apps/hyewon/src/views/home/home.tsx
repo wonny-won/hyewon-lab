@@ -9,7 +9,7 @@ const Home = () => {
 	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef } = useScrollContext();
 	return (
 		<div className='w-full flex flex-col lg:mr-4'>
-			<section className='min-[1328px]:h-screen' ref={aboutSectionRef}>
+			<section className='min-[1328px]:h-screen min-[1450px]:px-[100px]' ref={aboutSectionRef}>
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />
 			</section>

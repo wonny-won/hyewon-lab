@@ -9,36 +9,31 @@ import { aboutMyProfile } from '@/commons/apis/sections/intro';
 const ContactMeCard = () => {
 	const rainbowTxt =
 		'bg-gradient-to-r from-yellow-500 via-core-green-300 to-blue-500 bg-clip-text text-transparent font-semibold';
-
 	return (
 		<SectionCard
 			type='default'
 			styleType='liquid'
-			sectionCardClassName='w-full lg:px-10 lg:py-8 max-md:min-w-[360px] max-lg:min-w-[500px] max-[1000px]:max-w-[1000px] max-w-[1300px]'>
-			<figure className='flex gap-8'>
+			sectionCardClassName='w-full h-full lg:p-8 max-md:min-w-[360px] max-lg:min-w-[500px] max-w-[700px]'>
+			<figure className='flex gap-6'>
 				<Image
 					src={aboutMyProfile.profile}
 					alt={'profile img'}
-					width={200}
-					height={200}
+					width={150}
+					height={150}
 					className='max-lg:hidden rounded-[8px]'
 				/>
-				<figcaption className='flex flex-col gap-1 w-full min-w-[410px] max-md:min-w-[200px] max-lg:min-w-[300px]'>
+				<figcaption className='flex flex-col gap-1 min-w-[380px] max-lg:min-w-[300px]'>
 					<Typography as='h1' variants='display-s' color='text-white'>
 						<p className='hidden lg:block lg:text-[38px] lg:font-extrabold lg:text-white'>
 							{aboutMyProfile.name}
 						</p>
 
-						<p className='hidden lg:block lg:text-[20px] lg:font-extrabold lg:text-white'>
+						{/* <p className='hidden lg:block lg:text-[20px] lg:font-extrabold lg:text-white'>
 							{aboutMyProfile.position}
-						</p>
-						<p className='block lg:hidden'>
-							{aboutMyProfile.name} <br />
-							{aboutMyProfile.position}
-						</p>
+						</p> */}
 					</Typography>
 					<Typography as='h3' variants='body-s' color='text-core-neutarl-300' className='py-3'>
-						<p className='hidden lg:block lg:text-[16px] lg:font-regular lg:text-white'>
+						<p className='hidden lg:block lg:text-[15px] lg:font-regular lg:text-white'>
 							{aboutMyProfile.summary}
 						</p>
 						<p className='block lg:hidden'>{aboutMyProfile.summary}</p>
@@ -59,16 +54,16 @@ const ContactMeCard = () => {
 				</figcaption>
 			</figure>
 
-			<div className='flex max-lg:flex-col gap-2 lg:gap-10 lg:items-center'>
+			<div className='flex max-lg:flex-col gap-2 lg:gap-12 lg:items-center pt-15'>
 				<section>
-					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+					<h3 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						CONTACT ME NOW
 					</h3>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.contact} />
 				</section>
-				<VirticalDiver display='max-lg:hidden block' />
+				<VirticalDiver height={100} display='max-lg:hidden block' />
 				<section>
-					<h3 className={`pt-[40px] lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
+					<h3 className={`lg:pb-[16px] pb-[10px] text-[18px] font-extrabold ${rainbowTxt}`}>
 						Download PDF Resume
 					</h3>
 					<ListUI direction='horizontal' listMap={aboutMyProfile.export} />

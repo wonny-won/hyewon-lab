@@ -11,6 +11,6 @@ const VirticalDiver = ({
 	height?: number;
 	color?: string;
 }) => {
-	return <div className={`${display} border-l-[1px] h-[${height}px] mt-10 border-${color}`} />;
+	return <div className={`${display} w-[2px] border-l-[1px] h-[${height}px] mt-10 border-${color}`} />;
 };
 export default VirticalDiver;

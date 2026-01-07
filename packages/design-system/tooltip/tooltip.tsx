@@ -14,7 +14,7 @@ type TooltipProps = {
 const getTooltipPositionClass = (position: TooltipProps['position']) => {
 	switch (position) {
 		case 'top':
-			return 'bottom-full left-1/2 -translate-x-[38%] mb-[35px] z-10000';
+			return 'bottom-full left-1/2 -translate-x-[33%] min-[1450px]:-translate-x-[30%] mb-[35px] z-10000';
 		case 'bottom':
 			return 'top-full left-1/2 -translate-x-1/3 mt-2';
 		case 'left':

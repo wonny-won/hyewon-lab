@@ -7,7 +7,7 @@ import { useScrollContext } from '@/commons/context/scroll-context';
 const IntroSection = () => {
 	const { handleNavClick } = useScrollContext();
 	return (
-		<div className='w-full h-full flex flex-col gap-25 items-center lg:justify-center overflow-hidden'>
+		<div className='w-full h-full flex flex-col gap-25 min-[1450px]:gap-30 lg:justify-center overflow-hidden'>
 			<ContactMeCard />
 			<SectionNavigation onClick={handleNavClick} />
 		</div>
