@@ -1,5 +1,6 @@
 /** @format */
 
+import Image from 'next/image';
 import { ListItemProps } from './list-type';
 
 const ListItem = ({
@@ -21,23 +22,32 @@ const ListItem = ({
 					return (
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedIdx && (
-								<div
-									className={`text-body-s font-medium text-core-gray-300 ${
+								<p
+									className={`text-body-m font-medium text-core-gray-300 ${
 										!!i.isImportant && rainbowTxt
 									}`}>
 									{index + 1}. {i.title}
-								</div>
+								</p>
 							)}
 							{!!isNeedBulletPoint && (
-								<div className={`text-body-xs ${!!i.isImportant && rainbowTxt}`}> ‣ {i.title} </div>
+								<p className={`text-body-s ${!!i.isImportant && rainbowTxt}`}> ‣ {i.title} </p>
 							)}
 							{!isNeedBulletPoint && !isNeedIdx && (
-								<div
+								<p
 									className={`text-body-s font-medium text-core-gray-300 ${
 										!!i.isImportant && rainbowTxt
 									}`}>
 									{i.title}
-								</div>
+								</p>
+							)}
+							{!!i?.imgUrl && (
+								<Image
+									alt='설명'
+									src={i?.imgUrl || ''}
+									width={500}
+									height={500}
+									className='pl-3 pt-2'
+								/>
 							)}
 
 							{Array.isArray(i.children) && (

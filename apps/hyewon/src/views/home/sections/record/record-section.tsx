@@ -48,10 +48,8 @@ const RecordSection = () => {
 							subSectionImgSrc={i.siteGif}
 							titleColor='text-white'
 							isNeedSummary
-							summaryChildren={<SummaryChildren data={i} />}>
-							<ThinDiver />
-							<ListUI direction='virtical' listMap={i.main} />
-						</SectionCard>
+							summaryChildren={<SummaryChildren data={i} />}
+						/>
 					</a>
 				);
 			})}

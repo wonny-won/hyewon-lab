@@ -140,7 +140,6 @@ const SectionCard = ({
 									width={subImg.size ?? 300}
 									height={200}
 									style={{ minHeight: '180px', objectFit: 'contain' }}
-									loading='lazy'
 								/>
 							)}
 						</figure>
