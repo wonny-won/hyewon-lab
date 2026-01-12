@@ -2,7 +2,7 @@
 import React from 'react';
 import { BasicIconType } from './incon-type/type';
 
-const BlogIcon = ({ size, color }: BasicIconType) => {
+const ArrowLeft = ({ color, size }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -10,13 +10,15 @@ const BlogIcon = ({ size, color }: BasicIconType) => {
 			height={size ?? '24'}
 			viewBox='0 0 24 24'
 			fill='none'
-			stroke={color || 'currentColor'}
+			stroke={color ?? 'currentColor'}
 			strokeWidth='2'
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className='lucide lucide-book-a-icon lucide-book-a'>
-			<path d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20' />
+			className='lucide lucide-arrow-left-icon lucide-arrow-left'>
+			<path d='m12 19-7-7 7-7' />
+			<path d='M19 12H5' />
 		</svg>
 	);
 };
-export default BlogIcon;
+
+export default ArrowLeft;

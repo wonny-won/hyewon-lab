@@ -1,6 +1,8 @@
 /** @format */
 
-const FileDownIcon = ({ size, color }: { size: string; color: string }) => {
+import { BasicIconType } from './incon-type/type';
+
+const FileDownIcon = ({ size, color }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'

@@ -10,6 +10,7 @@ export type ListNode = {
 	icon?: ReactNode;
 	imgUrl?: string;
 	href?: string;
+	isOpen?: boolean;
 };
 
 export interface ListItemProps {

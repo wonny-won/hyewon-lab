@@ -1,8 +1,9 @@
 /** @format */
 'use-client';
 import React from 'react';
+import { BasicIconType } from './incon-type/type';
 
-const PauseIcon = ({ color }: { color: string }) => {
+const PauseIcon = ({ size, color }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'

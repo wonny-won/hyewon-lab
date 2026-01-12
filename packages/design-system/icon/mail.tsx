@@ -1,7 +1,8 @@
 /** @format */
 import React from 'react';
+import { BasicIconType } from './incon-type/type';
 
-const MailIcon = ({ size, color }: { size: string; color: string }) => {
+const MailIcon = ({ size, color }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'

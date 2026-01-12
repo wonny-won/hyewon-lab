@@ -269,13 +269,13 @@ export const recordData = [
 				title: '',
 				isImportant: false,
 				imgUrl: null,
-
 				children: [
 					{
 						id: 'teamstone-contribute-1',
 						title: 'webworker를 이용한 대시보드 위젯 데이터 연산 처리 및 메인 스레드 분리',
 						isImportant: true,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-contribute-1-desc-1',
@@ -291,6 +291,7 @@ export const recordData = [
 						title: 'echart와 SVG를 활용한 총 8개 차트 & 위젯 구현',
 						isImportant: true,
 						imgUrl: null,
+						isOpen: false,
 						children: [
 							{
 								id: 'teamstone-contribute-2-desc-1',
@@ -306,6 +307,7 @@ export const recordData = [
 						title: '각종 글로벌 컴포넌트 및 글로벌 utils 개발',
 						isImportant: troubleShootingData,
 						imgUrl: null,
+						isOpen: false,
 						children: [
 							{
 								id: 'teamstone-contribute-3-desc-1',
@@ -342,6 +344,7 @@ export const recordData = [
 						title: '사용자 경험을 고려한 UI 의견 제시 및 반영',
 						isImportant: true,
 						imgUrl: null,
+						isOpen: false,
 						children: [
 							{
 								id: 'teamstone-contribute-4-desc-1',
@@ -357,6 +360,7 @@ export const recordData = [
 						id: 'teamstone-2-depth-2-3',
 						title: '6개의 설정(Config)페이지 개발, 공통 설정 UI 컴포넌트화',
 						isImportant: true,
+						isOpen: false,
 						children: null,
 					},
 					// {

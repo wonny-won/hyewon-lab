@@ -1,7 +1,8 @@
 /** @format */
 import React from 'react';
+import { BasicIconType } from './incon-type/type';
 
-const BackIcon = ({ color }: { color: string }) => {
+const BackIcon = ({ color, size }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'

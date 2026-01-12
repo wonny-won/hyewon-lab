@@ -1,7 +1,8 @@
 /** @format */
 
 import React from 'react';
-const GithubIcon = ({ size, color }: { size: string; color: string }) => (
+import { BasicIconType } from './incon-type/type';
+const GithubIcon = ({ size, color }: BasicIconType) => (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		width={size ?? '24'}

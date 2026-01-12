@@ -1,12 +1,8 @@
 /** @format */
 import React from 'react';
+import { BasicIconType } from './incon-type/type';
 
-interface CircleCheckIconsProps {
-	size: string;
-	color: string;
-}
-
-const CircleCheckIcons = ({ size, color }: CircleCheckIconsProps) => {
+const CircleCheckIcons = ({ size, color }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
