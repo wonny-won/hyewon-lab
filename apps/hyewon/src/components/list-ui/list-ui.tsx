@@ -87,7 +87,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 									<Fragment key={i.id + 'child'}>
 										<ListItem
 											listItem={i.children}
-											isNeedIdx={i.children.length > 1}
+											isNeedChevoronBullet
 											listClassName='pt-1.5 pl-2'
 										/>
 									</Fragment>

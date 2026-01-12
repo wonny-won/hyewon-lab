@@ -5,19 +5,24 @@ import ListUI from '@/components/list-ui/list-ui';
 import { Icons, Tags, Typography } from '@hyewon/design-system';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 const CompanyProjectDatail = () => {
+	const router = useRouter();
 	const param = useParams();
 	const data = recordData.filter((i) => i.id === param?.id)?.[0] || [];
 
 	return (
-		<article className='pt-10 pb-28'>
+		<article className='pt-15 pb-28 lg:px-[150px]'>
 			<header>
 				<nav className='w-full flex items-center gap-4 pb-10'>
-					<button>
+					<button
+						onClick={() => {
+							router.back();
+						}}>
 						<Icons iconName='ArrowLeft' size='60' color={'#5eead4'} />
 					</button>
-					<Link href='/'>홈</Link>
+					{/* <Link href='/'>홈</Link> */}
 				</nav>
 				<div className='px-6'>
 					<Typography as='h1' variants='display-l' className='pb-5'>

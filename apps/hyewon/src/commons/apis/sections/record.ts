@@ -289,7 +289,7 @@ export const recordData = [
 					{
 						id: 'teamstone-contribute-2',
 						title: 'echart와 SVG를 활용한 총 8개 차트 & 위젯 구현',
-						isImportant: true,
+						isImportant: false,
 						imgUrl: null,
 						isOpen: false,
 						children: [
@@ -305,7 +305,7 @@ export const recordData = [
 					{
 						id: 'teamstone-contribute-3',
 						title: '각종 글로벌 컴포넌트 및 글로벌 utils 개발',
-						isImportant: troubleShootingData,
+						isImportant: false,
 						imgUrl: null,
 						isOpen: false,
 						children: [
@@ -359,7 +359,7 @@ export const recordData = [
 					{
 						id: 'teamstone-2-depth-2-3',
 						title: '6개의 설정(Config)페이지 개발, 공통 설정 UI 컴포넌트화',
-						isImportant: true,
+						isImportant: false,
 						isOpen: false,
 						children: null,
 					},

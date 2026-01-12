@@ -18,8 +18,8 @@ export interface ListItemProps {
 	listItem: ListNode[] | string;
 	listClassName?: string;
 	typoClassName?: string;
-	isNeedIdx?: boolean;
 	iconName?: string;
 	isNeedBulletPoint?: boolean;
+	isNeedChevoronBullet?: boolean;
 	onClick?: () => void;
 }

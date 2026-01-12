@@ -14,6 +14,8 @@ import ArrowUpRight from './arrow-up-right';
 import CircleCheckIcons from './circle-check';
 import FileDownIcon from './fie-down';
 import ArrowLeft from './arrow-left';
+import ChevoronRight from './chevon-right';
+import ChevoronDwon from './chevoron-down';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -36,6 +38,8 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	CircleCheckIcons,
 	FileDownIcon,
 	ArrowLeft,
+	ChevoronRight,
+	ChevoronDwon,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
