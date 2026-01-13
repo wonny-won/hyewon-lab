@@ -58,16 +58,16 @@ const CompanyProjectDatail = () => {
 				</div>
 			</header>
 
-			<div className='px-8 pt-20 flex gap-20 min-[1450px]:gap-30'>
-				<section className='bg-blend-hard-light'>
+			<div className='px-8 pt-20 flex max-lg:flex-col gap-20 min-[1450px]:gap-30'>
+				<section className='flex flex-col gap-8'>
 					{data?.siteGif?.map((i) => (
-						<figure key={i.id} className='pb-4 flex flex-col items-center'>
+						<figure key={i.id} className='flex flex-col items-center  max-lg:items-start'>
 							<Image
 								alt={i.alt}
 								src={i.url}
 								width={i.size}
 								height={i.size}
-								className='min-[1450px]:min-w-[450px]  rounded-[8px]'
+								className='max-lg:min-w-[400px] min-[1450px]:min-w-[450px]  rounded-[8px]'
 							/>
 							<figcaption className='pt-1'>
 								<Typography variants='label-s' color='text-core-gray-600'>

@@ -29,7 +29,7 @@ const ListItem = ({
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedChevoronBullet && (
 								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-lebel-m font-semibold ${
+									className={`hover: cursor-pointer flex items-center gap-1 text-body-m font-semibold ${
 										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200'
 									}`}
 									onClick={() => {
@@ -46,7 +46,7 @@ const ListItem = ({
 
 							{!!isNeedBulletPoint && (
 								<p
-									className={`text-lebel-m ${
+									className={`text-body-s pb-0.5 ${
 										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200/85'
 									}`}>
 									• {i.title}
@@ -70,7 +70,7 @@ const ListItem = ({
 									width={500}
 									height={450}
 									objectFit='contain'
-									className='pl-3.5 pt-2'
+									className='pl-3.5 pt-2 pb-3.5'
 								/>
 							)}
 

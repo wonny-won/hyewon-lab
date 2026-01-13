@@ -258,8 +258,8 @@ export const recordData = [
 		coreProject: 'ontune',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ id: 'teamstone-img-1', size: 320, url: '/teamstone.gif', alt: '사용자 경험과 성능을 개선한 차트' },
-			{ id: 'teamstone-img-2', size: 320, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
+			{ id: 'teamstone-img-1', size: 380, url: '/teamstone.gif', alt: '사용자 경험과 성능을 개선한 차트' },
+			{ id: 'teamstone-img-2', size: 380, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 		],
 		summary:
 			'해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. \n 성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. \n 대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다. \n 이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
