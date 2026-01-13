@@ -155,7 +155,7 @@ const SectionCard = ({
 									{title}
 									{isNeedTitleIcon && titleIconName && (
 										<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>
-											<Icons iconName={titleIconName} />
+											<Icons iconName={titleIconName} size='13' />
 										</p>
 									)}
 								</Typography>

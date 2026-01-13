@@ -34,7 +34,7 @@ const CompanyProjectDatail = () => {
 							className='pb-5 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
 							{data?.company || '회사명'}
 							<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>
-								<Icons iconName='ArrowUpRight' size='20' />
+								<Icons iconName='ArrowUpRight' />
 							</p>
 						</Typography>
 					</button>
@@ -79,13 +79,13 @@ const CompanyProjectDatail = () => {
 				</section>
 				<div>
 					<section>
-						<Typography as='h2' variants='heading-m'>
+						<Typography as='h2' variants='heading-m' color='text-white'>
 							기여 및 역할
 						</Typography>
 						<ListUI direction='virtical' listMap={data.contribute} />
 					</section>
 					<section className='pt-20'>
-						<Typography as='h2' variants='heading-m'>
+						<Typography as='h2' variants='heading-m' color='text-white'>
 							문제 해결 사례
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />

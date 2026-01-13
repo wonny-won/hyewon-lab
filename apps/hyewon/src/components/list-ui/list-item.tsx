@@ -20,8 +20,6 @@ const ListItem = ({
 		return [];
 	});
 	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
-	const rainbowTxt =
-		'bg-gradient-to-r from-yellow-500 via-core-green-300 to-blue-500 bg-clip-text text-transparent font-semibold';
 
 	return (
 		<>
@@ -31,8 +29,8 @@ const ListItem = ({
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedChevoronBullet && (
 								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-lebel-m font-semibold text-core-neutral-200/85 ${
-										!!i.isImportant && rainbowTxt
+									className={`hover: cursor-pointer flex items-center gap-1 text-lebel-m font-semibold ${
+										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200'
 									}`}
 									onClick={() => {
 										setIsOpen((prev) => prev.map((val, i) => (i === index ? !val : val)));
@@ -47,15 +45,18 @@ const ListItem = ({
 							)}
 
 							{!!isNeedBulletPoint && (
-								<p className={`text-lebel-m text-core-neutral-200/85 ${!!i.isImportant && rainbowTxt}`}>
+								<p
+									className={`text-lebel-m ${
+										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200/85'
+									}`}>
 									• {i.title}
 								</p>
 							)}
 
 							{!isNeedBulletPoint && !isNeedChevoronBullet && (
 								<p
-									className={`text-body-l font-medium text-core-gray-300/80 ${
-										!!i.isImportant && rainbowTxt
+									className={`text-body-l font-medium ${
+										!!i.isImportant ? 'text-core-green-300' : 'text-core-gray-300/80'
 									}`}>
 									{i.title}
 								</p>
