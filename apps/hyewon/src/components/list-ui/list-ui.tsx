@@ -78,17 +78,17 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 				return (
 					<Fragment key={`${i.id}-${i.title}-${idx}`}>
 						{direction === 'virtical' ? (
-							<li className='flex flex-col gap-3.5'>
+							<li className='flex flex-col gap-2'>
 								<ListItem
 									listItem={i?.title}
-									listClassName='text-body-m pt-2 font-bold text-white/80'
+									listClassName='text-[18px] pt-3 font-bold text-core-neutral-100'
 								/>
 								{Array.isArray(i.children) && (
 									<Fragment key={i.id + 'child'}>
 										<ListItem
 											listItem={i.children}
-											isNeedChevoronBullet
-											listClassName='pt-1.5 pl-2'
+											isNeedChevoronBullet={!!i.children}
+											listClassName='pl-2 pt-0.5'
 										/>
 									</Fragment>
 								)}

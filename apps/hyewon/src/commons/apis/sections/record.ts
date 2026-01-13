@@ -258,15 +258,15 @@ export const recordData = [
 		coreProject: 'ontune',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ size: 280, url: '/teamstone2.gif' },
-			{ size: 280, url: '/teamstone.gif' },
+			{ id: 'teamstone-img-1', size: 320, url: '/teamstone.gif', alt: '사용자 경험과 성능을 개선한 차트' },
+			{ id: 'teamstone-img-2', size: 320, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 		],
 		summary:
 			'해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. \n 성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. \n 대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다. \n 이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
 		contribute: [
 			{
 				id: 'teamstone-contribute-section',
-				title: '',
+				title: '시스템 성능 관제 솔루션 대시보드 웹버전 개발 및 런칭',
 				isImportant: false,
 				imgUrl: null,
 				children: [
@@ -436,8 +436,8 @@ export const recordData = [
 					},
 					{
 						id: 'teamstone-1-depth-2-2',
-						title: '렌더 범위 최적화',
-						isImportant: true,
+						title: 'visibility 조절로 렌더 범위 최적화',
+						isImportant: false,
 						imgUrl: null,
 
 						children: [
@@ -501,73 +501,73 @@ export const recordData = [
 							},
 						],
 					},
-					{
-						id: 'teamstone-1-depth-2-4',
-						title: '공통 컴포넌트 및 유틸 설계',
-						isImportant: true,
-						imgUrl: null,
+					// {
+					// 	id: 'teamstone-1-depth-2-4',
+					// 	title: '공통 컴포넌트 및 유틸 설계',
+					// 	isImportant: true,
+					// 	imgUrl: null,
 
-						children: [
-							{
-								id: 'teamstone-1-depth-4-3-1',
-								title: '4개의 공통 차트 컴포넌트 개발',
-								isImportant: false,
-								imgUrl: null,
+					// 	children: [
+					// 		{
+					// 			id: 'teamstone-1-depth-4-3-1',
+					// 			title: '4개의 공통 차트 컴포넌트 개발',
+					// 			isImportant: false,
+					// 			imgUrl: null,
 
-								children: [
-									{
-										id: 'teamstone-1-depth-2-4-1',
-										title: 'ReportBaseChart, BarChart, BarChartTooltip, WidgetMideaQuery',
-										isImportant: false,
-										imgUrl: null,
+					// 			children: [
+					// 				{
+					// 					id: 'teamstone-1-depth-2-4-1',
+					// 					title: 'ReportBaseChart, BarChart, BarChartTooltip, WidgetMideaQuery',
+					// 					isImportant: false,
+					// 					imgUrl: null,
 
-										children: null,
-									},
-									{
-										id: 'teamstone-1-depth-2-4-1',
-										title: '분석 페이지 및 대시보드 위젯에서 광범위 재사용',
-										isImportant: false,
-										imgUrl: null,
+					// 					children: null,
+					// 				},
+					// 				{
+					// 					id: 'teamstone-1-depth-2-4-1',
+					// 					title: '분석 페이지 및 대시보드 위젯에서 광범위 재사용',
+					// 					isImportant: false,
+					// 					imgUrl: null,
 
-										children: null,
-									},
-								],
-							},
-							{
-								id: 'teamstone-1-depth-4-3-2',
-								title: '데이터 스케일 처리 공통 유틸 함수 개발',
-								isImportant: false,
-								imgUrl: null,
+					// 					children: null,
+					// 				},
+					// 			],
+					// 		},
+					// 		{
+					// 			id: 'teamstone-1-depth-4-3-2',
+					// 			title: '데이터 스케일 처리 공통 유틸 함수 개발',
+					// 			isImportant: false,
+					// 			imgUrl: null,
 
-								children: [
-									{
-										id: 'teamstone-1-depth-2-4-1',
-										title: '모든 차트에서 공통 사용',
-										isImportant: false,
-										imgUrl: null,
+					// 			children: [
+					// 				{
+					// 					id: 'teamstone-1-depth-2-4-1',
+					// 					title: '모든 차트에서 공통 사용',
+					// 					isImportant: false,
+					// 					imgUrl: null,
 
-										children: null,
-									},
-									{
-										id: 'teamstone-1-depth-2-4-1',
-										title: '데이터 안정성 강화 및 수정 범위 최소화',
-										isImportant: false,
-										imgUrl: null,
+					// 					children: null,
+					// 				},
+					// 				{
+					// 					id: 'teamstone-1-depth-2-4-1',
+					// 					title: '데이터 안정성 강화 및 수정 범위 최소화',
+					// 					isImportant: false,
+					// 					imgUrl: null,
 
-										children: null,
-									},
-								],
-							},
-							{
-								id: 'teamstone-1-depth-4-3-3',
-								title: '구조 통합으로 차트 신규 개발·유지보수 속도 개선',
-								isImportant: false,
-								imgUrl: null,
+					// 					children: null,
+					// 				},
+					// 			],
+					// 		},
+					// 		{
+					// 			id: 'teamstone-1-depth-4-3-3',
+					// 			title: '구조 통합으로 차트 신규 개발·유지보수 속도 개선',
+					// 			isImportant: false,
+					// 			imgUrl: null,
 
-								children: null,
-							},
-						],
-					},
+					// 			children: null,
+					// 		},
+					// 	],
+					// },
 				],
 			},
 		],

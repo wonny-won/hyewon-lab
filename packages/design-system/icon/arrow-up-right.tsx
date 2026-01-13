@@ -6,8 +6,8 @@ const ArrowUpRight = ({ color, size }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width='13'
-			height='13'
+			width={size ?? '13'}
+			height={size ?? '13'}
 			viewBox='0 0 24 24'
 			fill='none'
 			stroke={color || 'currentColor'}

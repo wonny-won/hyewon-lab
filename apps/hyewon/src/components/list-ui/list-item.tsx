@@ -31,7 +31,7 @@ const ListItem = ({
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedChevoronBullet && (
 								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-body-m font-semibold text-core-gray-200/90 ${
+									className={`hover: cursor-pointer flex items-center gap-1 text-lebel-m font-semibold text-core-neutral-200/85 ${
 										!!i.isImportant && rainbowTxt
 									}`}
 									onClick={() => {
@@ -47,16 +47,21 @@ const ListItem = ({
 							)}
 
 							{!!isNeedBulletPoint && (
-								<p className={`text-body-s ${!!i.isImportant && rainbowTxt}`}> • {i.title} </p>
+								<p className={`text-lebel-m text-core-neutral-200/85 ${!!i.isImportant && rainbowTxt}`}>
+									• {i.title}
+								</p>
 							)}
+
 							{!isNeedBulletPoint && !isNeedChevoronBullet && (
 								<p
-									className={`text-body-s font-medium text-core-gray-300 ${
+									className={`text-body-l font-medium text-core-gray-300/80 ${
 										!!i.isImportant && rainbowTxt
 									}`}>
 									{i.title}
 								</p>
 							)}
+
+							{/* 이미지 */}
 							{!!i?.imgUrl && (
 								<Image
 									alt='설명'
@@ -64,12 +69,12 @@ const ListItem = ({
 									width={500}
 									height={450}
 									objectFit='contain'
-									className='pl-3 pt-2'
+									className='pl-3.5 pt-2'
 								/>
 							)}
 
 							{Array.isArray(i.children) && !!isOpen[index] && (
-								<div className='text-body-s pl-6'>
+								<div className='text-body-s pl-6 pb-3.5 pt-0.5'>
 									<ListItem
 										listItem={i.children}
 										isNeedBulletPoint
