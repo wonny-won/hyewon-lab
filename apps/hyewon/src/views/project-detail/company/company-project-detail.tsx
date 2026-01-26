@@ -24,7 +24,7 @@ const CompanyProjectDatail = () => {
 						<Icons iconName='ArrowLeft' size='60' color={'#5eead4'} />
 					</button>
 				</nav>
-				<div className='px-6'>
+				<div className='px-6 max-[450px]:px-0'>
 					<button
 						className='max-w-fit'
 						onClick={() => onClickOpenNewWindow('https://ontune.co.kr/pd-product.php')}>
@@ -58,39 +58,50 @@ const CompanyProjectDatail = () => {
 				</div>
 			</header>
 
-			<div className='px-8 pt-20 flex max-lg:flex-col gap-20 min-[1450px]:gap-30'>
-				<section className='flex flex-col gap-8'>
-					{data?.siteGif?.map((i) => (
-						<figure key={i.id} className='flex flex-col items-center  max-lg:items-start'>
-							<Image
-								alt={i.alt}
-								src={i.url}
-								width={i.size}
-								height={i.size}
-								className='max-lg:min-w-[400px] min-[1450px]:min-w-[450px]  rounded-[8px]'
-							/>
-							<figcaption className='pt-1'>
-								<Typography variants='label-s' color='text-core-gray-600'>
-									{i.alt}
-								</Typography>
-							</figcaption>
-						</figure>
-					))}
-				</section>
-				<div>
+			<div className='max-[450px]:px-0 px-8 pt-20'>
+				<div className='flex max-lg:flex-col gap-25 min-[1450px]:gap-30'>
+					<section className='flex flex-col gap-8 mx-auto'>
+						{data?.siteGif?.map((i) => (
+							<figure key={i.id} className='flex flex-col items-center max-lg:items-start'>
+								<Image
+									alt={i.alt}
+									src={i.url}
+									width={i.size}
+									height={i.size}
+									objectFit='contain'
+									className='max-[450px]:max-w-[180px] max-[450px]:max-h-[300px] max-lg:min-w-[400px] min-[1450px]:min-w-[450px] rounded-[8px]'
+								/>
+								<figcaption className='pt-1'>
+									<Typography variants='label-s' color='text-core-gray-600'>
+										{i.alt}
+									</Typography>
+								</figcaption>
+							</figure>
+						))}
+					</section>
 					<section>
 						<Typography as='h2' variants='heading-m' color='text-white'>
 							기여 및 역할
 						</Typography>
 						<ListUI direction='virtical' listMap={data.contribute} />
 					</section>
-					<section className='pt-20'>
+				</div>
+				<section className='w-screen bg-slate-800/35 mt-20 relative left-1/2 -translate-x-1/2'>
+					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
 							문제 해결 사례
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
-					</section>
-				</div>
+					</div>
+				</section>
+				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
+					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
+						<Typography as='h2' variants='heading-m' color='text-white'>
+							공통 Develop Point
+						</Typography>
+						<ListUI direction='virtical' listMap={data.troubleshooting} />
+					</div>
+				</section>
 			</div>
 		</article>
 	);

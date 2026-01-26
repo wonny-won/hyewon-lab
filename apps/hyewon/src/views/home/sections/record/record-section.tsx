@@ -17,6 +17,11 @@ const RecordSection = () => {
 		dingco: dingcoSectionRef,
 	};
 
+	const onClickHandleLink = (blockId) => {
+		const url = `${window.location.origin}${window.location.pathname}#${blockId}`;
+		navigator.clipboard.writeText(url);
+	};
+
 	useEffect(() => {
 		const hash = window.location.hash;
 		if (!hash) return;
@@ -35,7 +40,6 @@ const RecordSection = () => {
 					<a key={i.id} href={`/projects/company/${i.id}`}>
 						<SectionCard
 							as='article'
-							blockId={i.blockId}
 							key={`${i.id}-${idx}`}
 							ref={ref[i.id]}
 							type='record'
@@ -48,6 +52,7 @@ const RecordSection = () => {
 							subSectionImgSrc={i.siteGif}
 							titleColor='text-white'
 							isNeedSummary
+							onClick={() => onClickHandleLink(i.blockId)}
 							summaryChildren={<SummaryChildren data={i} />}
 						/>
 					</a>
