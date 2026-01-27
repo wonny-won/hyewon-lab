@@ -28,10 +28,9 @@ const TroubleShootingSection = () => {
 	return (
 		<>
 			{troubleShootingData.map((i: TroubleShootingDataType) => (
-				<>
+				<div key={i.id} className='hover: cursor-pointer'>
 					<SectionCard
 						as='article'
-						key={i.id}
 						ref={ref[i.id]}
 						type='troubleshooting'
 						styleType='liquid'
@@ -50,7 +49,7 @@ const TroubleShootingSection = () => {
 							<ListUI direction='virtical' listMap={i.main} />
 						</Modal>
 					)}
-				</>
+				</div>
 			))}
 		</>
 	);
