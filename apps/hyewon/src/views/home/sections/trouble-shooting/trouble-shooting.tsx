@@ -40,15 +40,16 @@ const TroubleShootingSection = () => {
 						isNeedTitleIcon
 						titleIconName='ArrowUpRight'
 						subtitle={i.significant}
-						isNeedMoreBtn
 						titleColor='text-white'
 						isNeedSummary
 						onClick={() => onClickHandlePopup(i.id)}
-						summaryChildren={<SummaryChildren data={i} />}>
-						<ThinDiver />
-						<ListUI direction='virtical' listMap={i.main} />
-					</SectionCard>
-					{openModalId === i.id && <Modal setIsOpen={() => setOpenModalId(null)}></Modal>}
+						summaryChildren={<SummaryChildren data={i} />}
+					/>
+					{openModalId === i.id && (
+						<Modal setIsOpen={() => setOpenModalId(null)}>
+							<ListUI direction='virtical' listMap={i.main} />
+						</Modal>
+					)}
 				</>
 			))}
 		</>

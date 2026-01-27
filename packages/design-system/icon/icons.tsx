@@ -16,6 +16,7 @@ import FileDownIcon from './fie-down';
 import ArrowLeft from './arrow-left';
 import ChevoronRight from './chevon-right';
 import ChevoronDwon from './chevoron-down';
+import Close from './close';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -40,6 +41,7 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	ArrowLeft,
 	ChevoronRight,
 	ChevoronDwon,
+	Close,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {

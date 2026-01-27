@@ -4,7 +4,6 @@ import { useScrollContext } from '@/commons/context/scroll-context';
 import IntroSection from './sections/intro/intro-section';
 import RecordSection from './sections/record/record-section';
 import TroubleShootingSection from './sections/trouble-shooting/trouble-shooting';
-import { Modal } from '@hyewon/design-system';
 
 const Home = () => {
 	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef } = useScrollContext();
