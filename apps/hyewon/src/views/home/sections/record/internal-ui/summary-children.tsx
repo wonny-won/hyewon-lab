@@ -13,14 +13,14 @@ const SummaryChildren = (data: any) => {
 				))}
 			</ul>
 			<div className='pb-3'>
+				<Typography variants='label-m' color='text-core-gray-400/60'>
+					{data.data.company}
+				</Typography>
 				<Typography as='p' variants='label-m' color='text-core-gray-400/60'>
 					{data.data.position}
 				</Typography>
-				<Typography variants='label-m' color='text-core-gray-400/60'>
-					{data.data.coreProject}
-				</Typography>
 			</div>
-			<Typography as='p' variants='body-xs' color='text-core-neutral-100' className='pb-8'>
+			<Typography as='p' variants='body-m' color='text-core-neutral-100' className='pb-8'>
 				{data.data.summary}
 			</Typography>
 		</>

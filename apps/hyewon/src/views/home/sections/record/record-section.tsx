@@ -34,7 +34,7 @@ const RecordSection = () => {
 	}, []);
 
 	return (
-		<ul className='w-full pl-1 pt-4 pb-10 flex gap-10 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
+		<ul className='pl-1 pt-4 pb-10 flex flex-col gap-10'>
 			{recordData.map((i, idx) => {
 				return (
 					<a key={i.id} href={`/projects/company/${i.id}`}>
@@ -44,12 +44,12 @@ const RecordSection = () => {
 							ref={ref[i.id]}
 							type='record'
 							styleType='liquid'
-							title={i.company}
+							title={i.coreProject}
 							isNeedTitleIcon
-							titleIconName='ArrowUpRight'
-							onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
+							// titleIconName='ArrowUpRight'
+							// onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
 							subtitle={i.period}
-							subSectionImgSrc={i.siteGif}
+							subSectionImgSrc={i.thumbnail}
 							titleColor='text-white'
 							isNeedSummary
 							onClick={() => onClickHandleLink(i.blockId)}
