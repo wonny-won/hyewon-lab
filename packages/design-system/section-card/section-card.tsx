@@ -146,7 +146,7 @@ const SectionCard = ({
 								</figcaption>
 							) : (
 								<figcaption>
-									<Typography as={subtitleAs} variants='body-s-strong' className='mb-0.5'>
+									<Typography as={subtitleAs} variants='body-s-strong' className='mb-2.5'>
 										{subtitle}
 									</Typography>
 								</figcaption>

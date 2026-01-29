@@ -44,7 +44,7 @@ const RecordSection = () => {
 							ref={ref[i.id]}
 							type='record'
 							styleType='liquid'
-							title={i.coreProject}
+							title={i.company}
 							isNeedTitleIcon
 							// titleIconName='ArrowUpRight'
 							// onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
