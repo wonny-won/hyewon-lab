@@ -19,6 +19,7 @@
 	--regular: 400;
 
 	/* font size */
+	--display-extra: 60px;
 	--display-l: 48px;
 	--display-m: 40px;
 	--display-s: 36px;
@@ -102,7 +103,7 @@
 	--core-typo-third: #bebebe;
 	--core-typo-error: #e64d4d;
 	--core-typo-brand: #68c7c1;
-	--core-typo-normal: #307d58;
+	--core-typo-normal: #5eead4;
 }
 
 @theme inline {
@@ -117,6 +118,7 @@
 	--font-weight-regular: var(--regular);
 
 	/* font size */
+	--text-display-extra: var(--display-extra);
 	--text-display-l: var(--display-l);
 	--text-display-m: var(--display-m);
 	--text-display-s: var(--display-s);

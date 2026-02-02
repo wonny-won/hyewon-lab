@@ -1,6 +1,7 @@
 /** @format */
 
 export type variants =
+	| 'display-extra'
 	| 'display-l'
 	| 'display-m'
 	| 'display-s'
@@ -21,6 +22,7 @@ export type variants =
 	| 'label-s';
 
 export const variant = {
+	'display-extra':'text-display-extra font-extrabold',
 	'display-l': 'text-display-l font-extrabold',
 	'display-m': 'text-display-m font-extrabold',
 	'display-s': 'text-display-s font-extrabold',

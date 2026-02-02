@@ -97,8 +97,8 @@ export const btnColor = {
 		disabled: 'text-core-green-200',
 	},
 	secondary: {
-		default: 'text-core-green-500',
-		active: 'text-core-green-500',
+		default: 'text-core-green-300',
+		active: 'text-core-green-300',
 		disabled: 'text-core-green-200',
 	},
 	teriary: {
@@ -117,8 +117,8 @@ export const btnColor = {
 		disabled: 'text-core-neutral-200',
 	},
 	outline: {
-		default: 'text-core-typo-second',
-		active: 'text-core-typo-normal',
+		default: 'text-core-green-300',
+		active: 'text-core-green-300',
 		disabled: 'text-core-typo-third',
 	},
 
