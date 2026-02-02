@@ -12,7 +12,7 @@ import DoubleArrowDownIcon from './double-arrows-down';
 import DoubleArrowUpIcon from './double-arrows-up';
 import ArrowUpRight from './arrow-up-right';
 import CircleCheckIcons from './circle-check';
-import FileDownIcon from './fie-down';
+import FileDownIcon from './file-down';
 import ArrowLeft from './arrow-left';
 import ChevoronRight from './chevon-right';
 import ChevoronDwon from './chevoron-down';
