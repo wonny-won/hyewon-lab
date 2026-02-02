@@ -26,18 +26,15 @@ const TroubleShootingSection = () => {
 	};
 
 	return (
-		<>
+		<ul className='flex flex-wrap gap-3 justify-center items-center'>
 			{troubleShootingData.map((i: TroubleShootingDataType) => (
-				<div key={i.id} className='hover: cursor-pointer'>
+				<li key={i.id} className='hover: cursor-pointer'>
 					<SectionCard
 						as='article'
 						ref={ref[i.id]}
 						type='troubleshooting'
 						styleType='liquid'
 						title={i.title}
-						onClickTitle={() => onClickOpenNewWindow(i.detailUrl)}
-						isNeedTitleIcon
-						titleIconName='ArrowUpRight'
 						subtitle={i.significant}
 						titleColor='text-white'
 						isNeedSummary
@@ -49,9 +46,9 @@ const TroubleShootingSection = () => {
 							<ListUI direction='virtical' listMap={i.main} />
 						</Modal>
 					)}
-				</div>
+				</li>
 			))}
-		</>
+		</ul>
 	);
 };
 

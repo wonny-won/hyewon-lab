@@ -46,8 +46,6 @@ const RecordSection = () => {
 							styleType='liquid'
 							title={i.company}
 							isNeedTitleIcon
-							// titleIconName='ArrowUpRight'
-							// onClickTitle={() => onClickOpenNewWindow(i.companyUrl)}
 							subtitle={i.period}
 							subSectionImgSrc={i.thumbnail}
 							titleColor='text-white'

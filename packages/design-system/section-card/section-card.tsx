@@ -109,7 +109,7 @@ const SectionCard = ({
 									as={titleAs}
 									variants='heading-s'
 									color={titleColor}
-									className='pb-3 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
+									className='max-w-[300px] pb-3 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group whitespace-pre-line'>
 									{title}
 									{isNeedTitleIcon && titleIconName && (
 										<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>

@@ -27,9 +27,9 @@ const Home = () => {
 			<section className='max-lg:pt-20 pt-25 flex flex-col gap-10 max-lg:mx-auto' ref={troubleshootingSectionRef}>
 				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
 					<span className='text-core-neutral-50'>
-						영광의 순간. <br className='hidden max-[356px]:block' />
+						프로젝트 상세. <br />
 					</span>
-					격파한 트러블들.
+					주요 프로젝트의 세부 사항을 확인해보세요
 				</Typography>
 				<TroubleShootingSection />
 			</section>
