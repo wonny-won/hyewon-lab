@@ -17,7 +17,7 @@ export const navItems = [
 		href: '#troubleshooting-section',
 	},
 	{
-		id: null,
+		id: 4,
 		label: '연락처',
 		href: '#contact-section',
 	},
