@@ -42,7 +42,7 @@ const commonStyle = {
 			record: 'flex gap-15 px-5 justify-around',
 			about: '',
 			default: '',
-			troubleshooting: 'flex gap-10 w-full',
+			troubleshooting: 'flex gap-10 w-full min-h-[250px] max-h-[340px]',
 		},
 	},
 	subTitleSideStyle: {
