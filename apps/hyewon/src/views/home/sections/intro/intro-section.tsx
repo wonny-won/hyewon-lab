@@ -12,20 +12,23 @@ const IntroSection = () => {
 	};
 
 	return (
-		<div className='mt-10 w-full h-full flex flex-col justify-center items-center overflow-hidden'>
-			<Typography as='p' variants='body-l' color='text-core-green-300 pb-3 font-semibold'>
+		<div className='mt-10 w-full h-full flex flex-col justify-center overflow-hidden'>
+			<Typography as='p' variants='body-m' color='text-core-green-300 pb-4 pt-5 font-semibold'>
 				안녕하세요, 저는 ...
 			</Typography>
 			<Typography
 				as='h2'
 				variants='display-extra'
-				className='font-extrabold text-core-neutral-200/70 line-clamp-1'>
+				className='font-extrabold text-core-neutral-200/70 leading-tight mb-0'>
 				{aboutMyProfile.position}
 			</Typography>
-			<Typography as='h3' variants='display-extra' className='font-extrabold text-core-neutral-100'>
+			<Typography
+				as='h3'
+				variants='display-extra'
+				className='font-extrabold text-core-neutral-100 leading-tight mt-0.5'>
 				{aboutMyProfile.name} 입니다.
 			</Typography>
-			<div className='pt-4'>
+			<div className='pt-10'>
 				<Typography as='p' variants='body-l' className='text-core-neutral-200/70 whitespace-pre-line'>
 					{aboutMyProfile.summaryList[0].prefix}
 					<span className='text-core-green-300'>{aboutMyProfile.summaryList[0].highlight}</span>
