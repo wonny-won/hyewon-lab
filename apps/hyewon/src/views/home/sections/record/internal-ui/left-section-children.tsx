@@ -14,10 +14,10 @@ const LeftSectionChildren = (data: any) => {
 				))}
 			</ul>
 			<div className='pt-2 pb-4'>
-				<Typography as='p' variants='label-l' color='text-core-gray-400/60'>
+				<Typography as='p' variants='label-l' color='text-core-gray-300/70'>
 					{data.data.position}
 				</Typography>
-				<Typography variants='label-l' color='text-core-gray-400/60'>
+				<Typography variants='label-l' color='text-core-gray-300/70'>
 					{data.data.coreProject}
 				</Typography>
 			</div>

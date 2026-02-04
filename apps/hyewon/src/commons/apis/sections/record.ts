@@ -12,34 +12,32 @@ export const recordData = [
 		mainStack: ['TypeScript', 'Next.js', 'React-query'],
 		thumbnail: [{ size: 480, url: '/honored.png' }],
 		siteGif: [{ size: 480, url: '/honored.gif' }],
-		summary:
-			[
-				{
-					id:'honored-summary-section',
-					title:null,
-					isImportant:false,
-					children:[
-						{
-							id:'honored-summary-section-1',
-							title:'아너드 자체 웹 서비스 런칭의 전 과정을 맡아 프론트엔드 E2E 단독 런칭을 수행하며 제품 이해와 기술적 시야를 확장했습니다.',
-							isImportant:false,
-							children:null
-						},
-						{
-							id:'honored-summary-section-2',
-							title:'특히 모노레포 구조를 직접 구축해 디자인 시스템의 재사용성을 획기적으로 높였고, 이 과정에서 발생한 다양한 배포 환경·빌드 오류 트러블슈팅을 해결하며 안정적인 배포 파이프라인을 완성했습니다. ',
-							isImportant:false,
-							children:null
-						},
-						{
-							id:'honored-summary-section-3',
-							title:'또한 개발 프로세스를 리드하며 일정·문서화 체계를 도입해 주도적으로 개발 문화를 정립한 경험이 프로젝트의 중심 성과입니다.',
-							isImportant:false,
-							children:null
-						},
-		
-					]
-				},
+		summary: [
+			{
+				id: 'honored-summary-section',
+				title: null,
+				isImportant: false,
+				children: [
+					{
+						id: 'honored-summary-section-1',
+						title: '아너드 자체 웹 서비스 런칭의 전 과정을 맡아 프론트엔드 E2E 단독 런칭을 수행하며 제품 이해와 기술적 시야를 확장했습니다.',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'honored-summary-section-2',
+						title: '특히 모노레포 구조를 직접 구축해 디자인 시스템의 재사용성을 획기적으로 높였고, 이 과정에서 발생한 다양한 배포 환경·빌드 오류 트러블슈팅을 해결하며 안정적인 배포 파이프라인을 완성했습니다. ',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'honored-summary-section-3',
+						title: '또한 개발 프로세스를 리드하며 일정·문서화 체계를 도입해 주도적으로 개발 문화를 정립한 경험이 프로젝트의 중심 성과입니다.',
+						isImportant: false,
+						children: null,
+					},
+				],
+			},
 		],
 		contribute: [
 			{
@@ -160,32 +158,33 @@ export const recordData = [
 		mainStack: ['TypeScript', 'React.js', 'React-query'],
 		thumbnail: [{ size: 480, url: '/may-i.png' }],
 		siteGif: [{ size: 480, url: '/may-i.png' }],
-		summary:
-			[{
-				id:'mayI-summary-section',
-				title:null,
-				isImportant:false,
-				children:[
+		summary: [
+			{
+				id: 'mayI-summary-section',
+				title: null,
+				isImportant: false,
+				children: [
 					{
-						id:'mayI-summary-section',
-						title:'짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다.',
-						isImportant:false,
-						children:null
+						id: 'mayI-summary-section',
+						title: '짧은 기간이었지만 신규 기능 런칭을 중심으로 프론트엔드 설계와 성능 최적화를 경험하며 빠르게 성장했습니다.',
+						isImportant: false,
+						children: null,
 					},
 					{
-						id:'mayI-summary-section',
-						title:'단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다.',
-						isImportant:false,
-						children:null
+						id: 'mayI-summary-section',
+						title: '단일책임 원칙 적용, 렌더 성능 개선, 네트워크 요청 최적화 등을 통해 서비스 안정성과 확장성을 함께 고려한 개발을 수행했습니다.',
+						isImportant: false,
+						children: null,
 					},
 					{
-						id:'mayI-summary-section',
-						title:'빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
-						isImportant:false,
-						children:null
+						id: 'mayI-summary-section',
+						title: '빠른 성장을 바탕으로 외부 스카웃 제안을 받아 커리어를 확장했습니다.',
+						isImportant: false,
+						children: null,
 					},
-				]
-			},],
+				],
+			},
+		],
 		contribute: [
 			{
 				id: 'MayI-contribute-section',
@@ -314,40 +313,39 @@ export const recordData = [
 			{ id: 'teamstone-img-2', size: 480, url: '/teamstone.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 			{ id: 'teamstone-img-2', size: 480, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 		],
-		summary:
-			[
-				{
-					id:'teamstone-summary-section',
-					title: null,
-					isImportant: false,
-					children:[
-						{
-							id:'teamstone-summary-section',
-							title:'해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. ',
-							isImportant: false,
-							children:null,
-						},
-						{
-							id:'teamstone-summary-section',
-							title:'성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. ',
-							isImportant: false,
-							children:null,
-						},
-						{
-							id:'teamstone-summary-section',
-							title:'대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다.',
-							isImportant: false,
-							children:null,
-						},
-						{
-							id:'teamstone-summary-section',
-							title:'이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
-							isImportant: false,
-							children:null,
-						},
-					],
-				},
-			],
+		summary: [
+			{
+				id: 'teamstone-summary-section',
+				title: null,
+				isImportant: false,
+				children: [
+					{
+						id: 'teamstone-summary-section',
+						title: '해당 프로젝트를 통해 성능 측정을 하는 방법을 익히고, 어떤 지점이 퍼포먼스 저하를 초래하는지 판단할 수 있는 역량을 갖추게 되었습니다. ',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'teamstone-summary-section',
+						title: '성능 측정 결과를 토대로 위젯과 주요 페이지의 퍼포먼스를 개선했습니다. ',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'teamstone-summary-section',
+						title: '대표적으로 메모리 누수 제거, 불필요한 전체 리렌더 최소화 등 체감 성능을 높인 개선 사례를 만들었습니다.',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'teamstone-summary-section',
+						title: '이 성과를 기반으로 사내 최단기 주임 승진이라는 결과로 이어졌습니다.',
+						isImportant: false,
+						children: null,
+					},
+				],
+			},
+		],
 		contribute: [
 			{
 				id: 'teamstone-contribute-section',
@@ -665,27 +663,27 @@ export const recordData = [
 			{ size: 480, url: '/dingco.png' },
 			{ size: 480, url: '/dingco.gif' },
 		],
-		summary:
-			[{
-				id:'dingco-summary-section',
+		summary: [
+			{
+				id: 'dingco-summary-section',
 				title: null,
 				isImportant: false,
-				children:[
+				children: [
 					{
-						id:'dingco-summary-section',
-						title:'인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다.',
+						id: 'dingco-summary-section',
+						title: '인프런과 협력한 부트캠프에서 멘토로 활동하며 수강생에게 [노션 장인] 이라는 영광의 타이틀을 받은 개발자 첫 커리어입니다.',
 						isImportant: false,
-						children:null,
+						children: null,
 					},
 					{
-						id:'dingco-summary-section',
-						title:'커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
+						id: 'dingco-summary-section',
+						title: '커리큘럼 개편 회의에 참여해 직접 의견을 내고 개발동향을 추적하며 개발자로서 많은 성장을 일궈낸 핵심 경험이었습니다.',
 						isImportant: false,
-						children:null,
-					}
+						children: null,
+					},
 				],
 			},
-			],
+		],
 		contribute: [
 			{
 				id: 'dingco-contribute-section',

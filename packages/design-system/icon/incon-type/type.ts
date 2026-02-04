@@ -1,6 +1,7 @@
 /** @format */
 
 export interface BasicIconType {
-	size: string;
-	color: string;
+	size?: string;
+	color?: string;
+	className?: string;
 }
