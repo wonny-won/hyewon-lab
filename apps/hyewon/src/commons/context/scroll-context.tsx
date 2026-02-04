@@ -6,6 +6,7 @@ interface ScrollContextType {
 	aboutSectionRef: RefObject<HTMLDivElement | null>;
 	recordSectionRef: RefObject<HTMLDivElement | null>;
 	troubleshootingSectionRef: RefObject<HTMLDivElement | null>;
+	contactRef: RefObject<HTMLDivElement | null>;
 	honoredSectionRef: RefObject<HTMLDivElement | null>;
 	mayISectionRef: RefObject<HTMLDivElement | null>;
 	teamstoneSectionRef: RefObject<HTMLDivElement | null>;
@@ -37,6 +38,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const aboutSectionRef = useRef<HTMLDivElement>(null);
 	const recordSectionRef = useRef<HTMLDivElement>(null);
 	const troubleshootingSectionRef = useRef<HTMLDivElement>(null);
+	const contactRef = useRef<HTMLDivElement>(null);
 	const honoredSectionRef = useRef<HTMLDivElement>(null);
 	const mayISectionRef = useRef<HTMLDivElement>(null);
 	const teamstoneSectionRef = useRef<HTMLDivElement>(null);
@@ -50,26 +52,28 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			1: 'about',
 			2: 'record',
 			3: 'troubleshooting',
-			4: 'honored',
-			5: 'teamston',
-			6: 'dingco',
-			7: 'honored-trouble-shooting',
-			8: 'teamstone-trouble-shooting-1',
-			9: 'teamstone-trouble-shooting-2',
-			10: 'mayI',
+			4: 'contact',
+			5: 'honored',
+			6: 'teamston',
+			7: 'dingco',
+			8: 'honored-trouble-shooting',
+			9: 'teamstone-trouble-shooting-1',
+			10: 'teamstone-trouble-shooting-2',
+			11: 'mayI',
 		} as const;
 
 		const refObj = {
 			[refNumObj[1]]: aboutSectionRef,
 			[refNumObj[2]]: recordSectionRef,
 			[refNumObj[3]]: troubleshootingSectionRef,
-			[refNumObj[4]]: honoredSectionRef,
-			[refNumObj[5]]: teamstoneSectionRef,
-			[refNumObj[6]]: dingcoSectionRef,
-			[refNumObj[7]]: honoredTroubleShootingSectionRef,
-			[refNumObj[8]]: teamstoneTroubleShootingOneSectionRef,
-			[refNumObj[9]]: teanstoneTroubleShootingTwoSectionRef,
-			[refNumObj[10]]: mayISectionRef,
+			[refNumObj[4]]: contactRef,
+			[refNumObj[5]]: honoredSectionRef,
+			[refNumObj[6]]: teamstoneSectionRef,
+			[refNumObj[7]]: dingcoSectionRef,
+			[refNumObj[8]]: honoredTroubleShootingSectionRef,
+			[refNumObj[9]]: teamstoneTroubleShootingOneSectionRef,
+			[refNumObj[10]]: teanstoneTroubleShootingTwoSectionRef,
+			[refNumObj[11]]: mayISectionRef,
 		};
 
 		if (refObj[refNumObj?.[id]]?.current) {
@@ -83,6 +87,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 				aboutSectionRef,
 				recordSectionRef,
 				troubleshootingSectionRef,
+				contactRef,
 				honoredSectionRef,
 				mayISectionRef,
 				teamstoneSectionRef,

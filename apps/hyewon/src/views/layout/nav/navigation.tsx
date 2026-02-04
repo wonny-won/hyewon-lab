@@ -16,10 +16,9 @@ const Navigation = () => {
 							currNavId === item.id
 								? 'bg-core-neutral-300/15 text-core-green-300 font-bold'
 								: 'text-core-neutral-200'
-						}`}>
-						<a href={item.href} onClick={() => handleNavClick(item.id as number)}>
-							{item.label}
-						</a>
+						}`}
+						onClick={() => handleNavClick(item.id as number)}>
+						<a href={item.href}>{item.label}</a>
 					</li>
 				))}
 			</ul>

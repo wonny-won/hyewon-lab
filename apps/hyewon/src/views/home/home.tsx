@@ -4,34 +4,33 @@ import { useScrollContext } from '@/commons/context/scroll-context';
 import IntroSection from './sections/intro/intro-section';
 import RecordSection from './sections/record/record-section';
 import TroubleShootingSection from './sections/trouble-shooting/trouble-shooting';
+import ContactMe from './sections/contact/contact-me';
 
 const Home = () => {
-	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef } = useScrollContext();
+	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef, contactRef } = useScrollContext();
 	return (
 		<div className='w-full flex flex-col lg:mr-4'>
-			<section className='min-[1328px]:h-screen min-[1450px]:px-[100px]' ref={aboutSectionRef}>
+			<section className='h-screen min-[1450px]:px-[100px]' ref={aboutSectionRef}>
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />
 			</section>
-			<section
-				className='w-full min-[1450px]:px-45 max-lg:pt-20 pt-25 flex flex-col gap-10 mx-auto'
-				ref={recordSectionRef}>
-				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
-					<span className='text-core-neutral-50'>
-						쌓아온 경험. <br className='hidden max-[518px]:block' />
-					</span>
-					함께 나눌 따끈따끈 경험 이야기.
+			<section className='w-full min-[1450px]:px-45 py-25 flex flex-col gap-5 mx-auto' ref={recordSectionRef}>
+				<Typography as='h1' variants='heading-l' color='text-core-neutral-100/90'>
+					<span className='text-body-l text-core-green-300'>01.</span> 쌓아온 경험
 				</Typography>
 				<RecordSection />
 			</section>
-			<section className='max-lg:pt-20 pt-25 flex flex-col gap-10 max-lg:mx-auto' ref={troubleshootingSectionRef}>
-				<Typography as='h1' variants='heading-m' color='text-core-gray-400'>
-					<span className='text-core-neutral-50'>
-						프로젝트 상세. <br />
-					</span>
-					주요 프로젝트의 세부 사항을 확인해보세요
+			<section className='max-lg:pt-20 py-25 flex flex-col gap-10 max-lg:mx-auto' ref={troubleshootingSectionRef}>
+				<Typography as='h1' variants='heading-l' color='text-core-neutral-100/90'>
+					<span className='text-body-l text-core-green-300'>02.</span> 프로젝트 상세
 				</Typography>
 				<TroubleShootingSection />
+			</section>
+			<section className='flex flex-col items-center py-25 mb-25 min-[1450px]:px-[100px]' ref={contactRef}>
+				<Typography as='h1' variants='body-m-strong' color='text-core-green-300' className='pb-5'>
+					03. 함께 다음 단계로 가볼까요?
+				</Typography>
+				<ContactMe />
 			</section>
 		</div>
 	);
