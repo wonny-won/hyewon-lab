@@ -20,7 +20,9 @@ const Layout = ({ children }: LayoutProps) => {
 			</Head>
 			<div className='w-full overflow-hidden flex flex-col'>
 				<Navigation />
-				<main className='w-full h-full overflow-hidden px-50'>{children}</main>
+				<main className='w-full h-full overflow-hidden px-50 max-[1100px]:px-20 max-[1200px]:px-25'>
+					{children}
+				</main>
 				<Footer />
 			</div>
 		</>

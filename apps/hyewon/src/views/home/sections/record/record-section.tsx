@@ -1,12 +1,11 @@
 /** @format */
 
-import ListUI from '@/components/list-ui/list-ui';
 import { recordData } from '@/commons/apis/sections/record';
-import { SectionCard, ThinDiver } from '@hyewon/design-system';
-import { onClickOpenNewWindow } from '@/commons/utils/link';
-import SummaryChildren from './internal-ui/summary-children';
+import { SectionCard } from '@hyewon/design-system';
+import LeftSectionChildren from './internal-ui/left-section-children';
 import { useScrollContext } from '@/commons/context/scroll-context';
 import { useEffect } from 'react';
+import RightSectionChildren from './internal-ui/right-section-children';
 
 const RecordSection = () => {
 	const { honoredSectionRef, mayISectionRef, teamstoneSectionRef, dingcoSectionRef } = useScrollContext();
@@ -46,12 +45,11 @@ const RecordSection = () => {
 							styleType='liquid'
 							title={i.company}
 							isNeedTitleIcon
-							subtitle={i.period}
-							subSectionImgSrc={i.thumbnail}
 							titleColor='text-white'
 							isNeedSummary
 							onClick={() => onClickHandleLink(i.blockId)}
-							summaryChildren={<SummaryChildren data={i} />}
+							summaryChildren={<RightSectionChildren data={i} />}
+							leftChildren={<LeftSectionChildren data={i} />}
 						/>
 					</a>
 				);

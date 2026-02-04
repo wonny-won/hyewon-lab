@@ -26,8 +26,8 @@ const Home = () => {
 				</Typography>
 				<TroubleShootingSection />
 			</section>
-			<section className='flex flex-col items-center py-25 mb-25 min-[1450px]:px-[100px]' ref={contactRef}>
-				<Typography as='h1' variants='body-m-strong' color='text-core-green-300' className='pb-5'>
+			<section className='flex flex-col items-center py-30 mb-35 min-[1450px]:px-[100px]' ref={contactRef}>
+				<Typography as='h1' variants='body-m-strong' color='text-core-green-300' className='pb-6'>
 					03. 함께 다음 단계로 가볼까요?
 				</Typography>
 				<ContactMe />

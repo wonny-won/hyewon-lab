@@ -1,9 +1,9 @@
 /** @format */
 
-import ListUI from '@/components/list-ui/list-ui';
 import { Tags, Typography } from '@hyewon/design-system';
+import ImgComp from './image';
 
-const SummaryChildren = (data: any) => {
+const LeftSectionChildren = (data: any) => {
 	return (
 		<>
 			<ul className='flex flex-wrap gap-3 pb-3'>
@@ -21,13 +21,9 @@ const SummaryChildren = (data: any) => {
 					{data.data.coreProject}
 				</Typography>
 			</div>
-			<ListUI direction='virtical' listMap={data.data.summary} />
-
-			{/* <Typography as='p' variants='body-m' color='text-core-neutral-100' className='pb-8'>
-				{data.data.summary}
-			</Typography> */}
+			<ImgComp data={data.data.thumbnail[0]} />
 		</>
 	);
 };
 
-export default SummaryChildren;
+export default LeftSectionChildren;

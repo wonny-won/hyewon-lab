@@ -7,13 +7,13 @@ import { Typography } from '@hyewon/design-system';
 const ContactMe = () => {
 	return (
 		<>
-			<Typography as='h2' variants='display-l'>
+			<Typography as='h2' variants='display-l' color='text-core-neutral-100/90'>
 				{contactMeComment.main}
 			</Typography>
 			<Typography
 				as='p'
-				variants='body-l-strong'
-				className='text-center whitespace-pre-line text-core-neutral-300/80 py-3'>
+				variants='label-xl'
+				className='text-center whitespace-pre-line text-core-neutral-300/70 py-3'>
 				{contactMeComment.sub}
 			</Typography>
 			<div className='pt-8'>

@@ -79,12 +79,12 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 					<Fragment key={`${i.id}-${i.title}-${idx}`}>
 						{direction === 'virtical' ? (
 							<li className='flex flex-col gap-2'>
-								{i?.title && 
+								{i?.title && (
 									<ListItem
 										listItem={i?.title}
 										listClassName='pl-2 text-[18px] pt-3 pb-3 font-bold text-white/90 underline decoration-core-green-300/20 decoration-4'
 									/>
-								}
+								)}
 								{Array.isArray(i.children) && (
 									<Fragment key={i.id + 'child'}>
 										<ListItem
@@ -98,7 +98,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 						) : (
 							<li
 								onClickCapture={!!i.id ? i.onClick : () => handleIconClick(i, getIdentifier(i, idx))}
-								className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20 hover:cursor-pointer'>
+								className='flex items-center justify-center w-[45px] h-[45px] rounded-[25px] bg-core-neutral-50/20 hover:cursor-pointer hover:bg-core-green-300/30'>
 								{activeTooltipId === getIdentifier(i, idx) && !i.id ? (
 									<>
 										<Tooltip content={clipboardTxt} position='top' bgColor='bg-core-green-300'>

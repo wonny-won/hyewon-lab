@@ -1,12 +1,10 @@
 /** @format */
-import React, { Fragment, JSX, ReactNode, RefObject, useEffect, useState } from 'react';
+import React, { JSX, ReactNode, RefObject, useState } from 'react';
 import Typography from '../typography/typography';
-import Image from 'next/image';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
 import Icons from '../icon/icons';
 
 interface SectionCardProps {
-	// blockId?: string;
 	type: 'record' | 'about' | 'default' | 'troubleshooting';
 	styleType?: 'line' | 'normal' | 'liquid';
 	title?: string;
@@ -15,15 +13,12 @@ interface SectionCardProps {
 	titleColor?: string;
 	titleAs?: keyof JSX.IntrinsicElements;
 	onClickTitle?: () => void;
-	subtitle?: string | string[];
-	subtitleAs?: keyof JSX.IntrinsicElements;
 	isNeedSummary?: boolean;
 	summaryChildren?: ReactNode;
+	leftChildren?: ReactNode;
 	children?: ReactNode;
 	isNeedMoreBtn?: boolean;
-	subSectionImgSrc?: { size: null | number; url: string }[];
 	sectionCardClassName?: string;
-	subSectionChildren?: JSX.IntrinsicElements;
 	as?: keyof JSX.IntrinsicElements;
 	ref?: RefObject<HTMLDivElement | null>;
 	onClick?: () => void;
@@ -39,22 +34,17 @@ const SectionCard = ({
 	titleAs = 'h1',
 	onClickTitle,
 	children,
-	subtitle,
-	subtitleAs = 'h2',
+	leftChildren,
 	isNeedMoreBtn = false,
 	isNeedSummary = false,
 	summaryChildren,
 	onClick,
-	subSectionChildren,
-	subSectionImgSrc,
 	sectionCardClassName,
 	as: Component = 'section',
 	ref,
 }: SectionCardProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isButtonHover, setIsBttonHover] = useState(false);
-	const [subImg, setSubImg] = useState<any>(subSectionImgSrc?.[0]);
-	const [subImgcurrIdx, setSubImgCurrIdx] = useState(0);
 	const onMouseOverHandler = () => {
 		setIsBttonHover(!isButtonHover);
 	};
@@ -62,31 +52,8 @@ const SectionCard = ({
 		setIsOpen(!isOpen);
 	};
 
-	useEffect(() => {
-		if (!subSectionImgSrc || !subSectionImgSrc.length) return;
-		setSubImg(subSectionImgSrc[subImgcurrIdx]);
-	}, [subImgcurrIdx, subSectionImgSrc]);
-	useEffect(() => {
-		if (!subSectionImgSrc || !subSectionImgSrc.length) return;
-
-		const id = setInterval(() => {
-			setSubImgCurrIdx((prev) => (prev + 1) % subSectionImgSrc.length);
-		}, 5000);
-
-		//interval 무한 실행방지 (30분 후 자동 중지)
-		setTimeout(() => {
-			clearInterval(id);
-		}, 1800000);
-
-		return () => clearInterval(id);
-	}, [subSectionImgSrc]);
-
 	return (
-		<div
-			role='link'
-			className='max-lg:w-full max-lg:flex max-lg:justify-center max-lg:min-w-[250px] max-lg:max-w-[500px]'
-			onClick={onClick}
-			ref={ref}>
+		<div role='link' onClick={onClick} ref={ref}>
 			<Component
 				className={
 					isOpen
@@ -120,54 +87,18 @@ const SectionCard = ({
 							</button>
 						)}
 						{isNeedSummary ? (
-							<>
-								{summaryChildren}
-								<div className={isOpen ? 'visible' : 'invisible'}>{children}</div>
-							</>
+							<div className='flex justify-around max-lg:flex-col'>
+								<div>{leftChildren}</div>
+								<div className='pl-5'>{summaryChildren}</div>
+								<div className={isOpen ? 'visible pl-5' : 'invisible'}>{children}</div>
+							</div>
 						) : (
-							children
+							<div className='flex justify-around max-lg:flex-col'>
+								<div>{leftChildren}</div>
+								<div className='pl-5'>{children}</div>
+							</div>
 						)}
 					</div>
-					{
-						<figure className={openClassStyle.subTitleSideStyle?.[styleType]?.[type]}>
-							{Array.isArray(subtitle) ? (
-								<figcaption className='lg:block hidden '>
-									<Typography as={subtitleAs} variants='body-s-strong' className='mb-1.5'>
-										✓ 특이사항
-									</Typography>
-
-									{subtitle.map((item, idx) => (
-										<Fragment key={idx}>
-											<Typography as={subtitleAs} variants='body-s' className='mb-0.5'>
-												{idx + 1}. {item}
-											</Typography>
-										</Fragment>
-									))}
-								</figcaption>
-							) : (
-								<figcaption>
-									<Typography as={subtitleAs} variants='body-s-strong' className='mb-2.5'>
-										{subtitle}
-									</Typography>
-								</figcaption>
-							)}
-
-							{type === 'record' && (
-								<Image
-									src={subImg.url || ''}
-									alt='sub section img'
-									width={subImg.size ?? 500}
-									height={500}
-									style={{
-										maxWidth: '450px',
-										maxHeight: '500px',
-										objectFit: 'contain',
-										borderRadius: '8px',
-									}}
-								/>
-							)}
-						</figure>
-					}
 				</section>
 				{isNeedMoreBtn && (
 					<button
