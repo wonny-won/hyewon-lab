@@ -25,9 +25,9 @@ const TroubleShootingSection = () => {
 	};
 
 	return (
-		<ul className='flex flex-wrap gap-3 justify-center items-center'>
+		<ul className='flex flex-row flex-wrap gap-3 justify-center items-stretch'>
 			{troubleShootingData.map((i: TroubleShootingDataType) => (
-				<li key={i.id} className='hover: cursor-pointer'>
+				<li key={i.id} className='hover:cursor-pointer flex-1 min-w-[260px] max-w-[500px] flex'>
 					<SectionCard
 						as='article'
 						ref={ref[i.id]}
