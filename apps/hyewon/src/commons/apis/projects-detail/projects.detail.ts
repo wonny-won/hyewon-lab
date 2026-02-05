@@ -281,7 +281,7 @@ export const projectDetailData = [
 						title: '사용자 경험을 고려한 UI 의견 제시 및 반영',
 						isImportant: false,
 						imgUrl: null,
-						isOpen: false,
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-contribute-4-desc-1',
@@ -298,7 +298,7 @@ export const projectDetailData = [
 						title: 'echart와 SVG를 활용한 총 8개 차트 & 위젯 구현',
 						isImportant: false,
 						imgUrl: null,
-						isOpen: false,
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-contribute-2-desc-1',

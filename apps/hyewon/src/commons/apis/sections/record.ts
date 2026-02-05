@@ -2,9 +2,9 @@
 export interface RecordDataType {
 	id: string;
 	company: string;
+	companyExplain: string;
 	period: string;
 	position: string;
-	coreProject: string;
 	mainStack: string[];
 	thumbnail?: { size: number; url: string }[] | null;
 	summary: { id: string; title: string | null; children: any; isImportant: boolean }[];
@@ -15,9 +15,9 @@ export const recordData = [
 	{
 		id: 'honored',
 		company: '(주) 포페런츠',
+		companyExplain: '액티브 시니어를 위한 여행 이커머스 서비스',
 		period: '2025.04 ⏤ 2025.09',
 		position: '개발팀 | 사원',
-		coreProject: '아너드 X 신한 걸어요 자체 웹 런칭 및 운영',
 		mainStack: ['TypeScript', 'Next.js', 'React-query', 'emotion', 'tailwind'],
 		thumbnail: [{ size: 480, url: '/honored.png' }],
 		summary: [
@@ -63,9 +63,9 @@ export const recordData = [
 	{
 		id: 'may-i',
 		company: '메이아이(mAy-i)',
+		companyExplain: '대기업 고객사(LG전자, 현대백화점) 방문객 데이터 분석 서비스',
 		period: '2025.02 ⏤ 2025.04',
 		position: '개발팀 | 사원',
-		coreProject: 'mAsh 대시보드 개발',
 		mainStack: ['TypeScript', 'React.js', 'React-query', 'styled-component'],
 		thumbnail: [{ size: 480, url: '/may-i.png' }],
 		summary: [
@@ -105,9 +105,9 @@ export const recordData = [
 	{
 		id: 'teamstone',
 		company: '(주) 팀스톤',
+		companyExplain: '삼성, 메이저 은행권에서 사용하는 시스템 모니터링 서비스',
 		period: '2023 ⏤ 2024',
 		position: '개발팀 | 주임',
-		coreProject: 'ontune 시스템 모니터링 대시보드 런칭',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket', 'tailwind', 'tanstack'],
 		thumbnail: [{ id: 'teamstone-img-1', size: 480, url: '/teamstone3.png', alt: '팀스톤 커버' }],
 		summary: [
@@ -147,9 +147,9 @@ export const recordData = [
 	{
 		id: 'dingco',
 		company: '(주) 딩코',
+		companyExplain: '인프런에도 올라온 온/오프라인 부트캠프',
 		period: '2022 ⏤ 2023',
 		position: '개발 • 멘토팀 | 사원',
-		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
 		mainStack: ['TypeScript', 'Next.js', 'Graph-ql', 'emotion', 'recoil'],
 		thumbnail: [{ size: 480, url: '/dingco.png' }],
 		summary: [

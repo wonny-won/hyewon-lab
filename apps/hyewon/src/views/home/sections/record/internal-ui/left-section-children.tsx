@@ -18,7 +18,7 @@ const LeftSectionChildren = (data: any) => {
 					{data.data.position}
 				</Typography>
 				<Typography variants='label-l' color='text-core-gray-300/80'>
-					{data.data.coreProject}
+					{data.data.companyExplain}
 				</Typography>
 				<Typography variants='body-s-strong' color='text-core-gray-400 pt-4'>
 					{data.data.period}
