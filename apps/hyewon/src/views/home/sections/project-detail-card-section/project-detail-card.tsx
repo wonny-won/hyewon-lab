@@ -23,7 +23,7 @@ const ProjectDetailCardSection = () => {
 						title={i.title}
 						titleColor='text-white'
 						isNeedTitleIcon
-						titleIconName='BugIcon'
+						titleIconName={i.division}
 						isNeedSummary
 						onClick={() => onClickHandlePopup(i.id)}
 						leftChildren={<SummaryChildren data={i} />}

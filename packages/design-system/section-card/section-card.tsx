@@ -81,7 +81,7 @@ const SectionCard = ({
 								as={titleAs}
 								variants='heading-s'
 								color={titleColor}
-								className='max-h-[100px] text-start max-w-[300px] pb-5 flex gap-0.5 hover:cursor-pointer group whitespace-pre-line'>
+								className='max-h-[100px] text-start max-w-[300px] pb-5 flex gap-0.5 hover:cursor-pointer group-hover:text-core-green-300 whitespace-pre-line'>
 								{title}
 							</Typography>
 						)}

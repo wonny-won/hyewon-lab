@@ -18,7 +18,7 @@ export const troubleShootingData = [
 		id: 'honored-trouble-shooting',
 		title: '모노레포 배포 에러 \n 해결 사례',
 		detailUrl: 'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017',
-		division: 'trouble-shooting',
+		division: 'BugIcon',
 		project: '아너드 자체 웹 서비스 구현 프로젝트 및 신한 제휴',
 		relativeTag: ['npm', 'mono-repo', 'pnpm', 'package-hoisting'],
 		significant: [],
@@ -131,7 +131,7 @@ export const troubleShootingData = [
 			'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017?source=copy_link#24ac9d6263d04c4f87233a1e3f7f28c1',
 		significant: ['2초 주기 데이터 변경', '2초 주기 화면 리렌더'],
 		relativeTag: ['interval', 'clear', 'requestAnimationFrame', 'cpu'],
-		division: 'trouble-shooting',
+		division: 'BugIcon',
 		project: '온튠 웹 프로젝트 - 모니터 위젯 파트',
 		summary:
 			'애니메이션 구현 시 setInterval로 인해 발생한 메모리 누수를 requestAnimationFrame으로 해결해 나간 트러블슈팅',
@@ -299,7 +299,7 @@ export const troubleShootingData = [
 		detailUrl:
 			'https://www.notion.so/Manage-Server-a42139d1574b4429b9e39b4c979eb360?source=copy_link#660eeee648074d14970f755eb18fa3b2',
 		relativeTag: ['reflow', 'repaint', 'css', 're-render'],
-		division: 'trouble-shooting',
+		division: 'BugIcon',
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
 		summary:
