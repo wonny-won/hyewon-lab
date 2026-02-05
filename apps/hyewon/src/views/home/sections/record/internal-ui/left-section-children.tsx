@@ -25,7 +25,7 @@ const LeftSectionChildren = (data: any) => {
 				</Typography>
 			</div>
 			<ImgComp data={data.data.thumbnail[0]} />
-			<div className='max-lg:py-8'>
+			<div className='max-lg:py-8 lg:hidden'>
 				<ThinDiver />
 			</div>
 		</>

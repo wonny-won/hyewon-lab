@@ -39,7 +39,7 @@ const commonStyle = {
 			troubleshooting: 'flex gap-15',
 		},
 		liquid: {
-			record: 'w-full flex gap-15 px-5 justify-around',
+			record: 'w-full flex gap-15 max-sm:px-3 px-5 justify-around',
 			about: '',
 			default: '',
 			troubleshooting: 'flex gap-10 w-full min-h-[250px] max-h-[340px]',
