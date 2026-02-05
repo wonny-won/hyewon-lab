@@ -6,7 +6,7 @@ import ImgComp from './image';
 const LeftSectionChildren = (data: any) => {
 	return (
 		<>
-			<ul className='flex flex-wrap gap-3 pb-3'>
+			<ul className='flex flex-wrap gap-1.5 pb-3'>
 				{data.data.mainStack?.map((item, idx) => (
 					<li key={idx}>
 						<Tags tagTxt={item} type='normal' size='default' variants='liquidChips' />

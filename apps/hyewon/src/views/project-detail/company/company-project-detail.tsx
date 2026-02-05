@@ -1,6 +1,6 @@
 /** @format */
 
-import { recordData } from '@/commons/apis/sections/record';
+import { projectDetailData } from '@/commons/apis/projects-detail/projects.detail';
 import { onClickOpenNewWindow } from '@/commons/utils/link';
 import ListUI from '@/components/list-ui/list-ui';
 import { Icons, Tags, Typography } from '@hyewon/design-system';
@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 const CompanyProjectDatail = () => {
 	const router = useRouter();
 	const param = useParams();
-	const data = recordData.filter((i) => i.id === param?.id)?.[0] || [];
+	const data = projectDetailData.filter((i) => i.id === param?.id)?.[0] || [];
 
 	return (
 		<article className='pt-15 pb-28 min-[1450px]:px-[150px]'>

@@ -3,24 +3,10 @@
 import { recordData } from '@/commons/apis/sections/record';
 import { SectionCard } from '@hyewon/design-system';
 import LeftSectionChildren from './internal-ui/left-section-children';
-import { useScrollContext } from '@/commons/context/scroll-context';
 import { useEffect } from 'react';
 import RightSectionChildren from './internal-ui/right-section-children';
 
 const RecordSection = () => {
-	const { honoredSectionRef, mayISectionRef, teamstoneSectionRef, dingcoSectionRef } = useScrollContext();
-	const ref = {
-		honored: honoredSectionRef,
-		mayI: mayISectionRef,
-		teamstone: teamstoneSectionRef,
-		dingco: dingcoSectionRef,
-	};
-
-	const onClickHandleLink = (blockId) => {
-		const url = `${window.location.origin}${window.location.pathname}#${blockId}`;
-		navigator.clipboard.writeText(url);
-	};
-
 	useEffect(() => {
 		const hash = window.location.hash;
 		if (!hash) return;
@@ -40,14 +26,12 @@ const RecordSection = () => {
 						<SectionCard
 							as='article'
 							key={`${i.id}-${idx}`}
-							ref={ref[i.id]}
 							type='record'
 							styleType='liquid'
 							title={i.company}
 							isNeedTitleIcon
 							titleColor='text-white'
 							isNeedSummary
-							onClick={() => onClickHandleLink(i.blockId)}
 							summaryChildren={<RightSectionChildren data={i} />}
 							leftChildren={<LeftSectionChildren data={i} />}
 						/>

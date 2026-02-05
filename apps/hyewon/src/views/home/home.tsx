@@ -3,11 +3,11 @@ import { Typography } from '@hyewon/design-system';
 import { useScrollContext } from '@/commons/context/scroll-context';
 import IntroSection from './sections/intro/intro-section';
 import RecordSection from './sections/record/record-section';
-import TroubleShootingSection from './sections/trouble-shooting/trouble-shooting';
+import ProjectDetailCardSection from './sections/project-detail-card-section/project-detail-card';
 import ContactMe from './sections/contact/contact-me';
 
 const Home = () => {
-	const { aboutSectionRef, recordSectionRef, troubleshootingSectionRef, contactRef } = useScrollContext();
+	const { aboutSectionRef, recordSectionRef, projectDetailSectionRef, contactRef } = useScrollContext();
 	return (
 		<div className='w-full flex flex-col lg:mr-4'>
 			<section className='h-screen min-[1450px]:px-[100px]' ref={aboutSectionRef}>
@@ -20,11 +20,11 @@ const Home = () => {
 				</Typography>
 				<RecordSection />
 			</section>
-			<section className='max-lg:pt-20 py-25 flex flex-col gap-10 max-lg:mx-auto' ref={troubleshootingSectionRef}>
+			<section className='max-lg:pt-20 py-25 flex flex-col gap-10 max-lg:mx-auto' ref={projectDetailSectionRef}>
 				<Typography as='h1' variants='heading-l' color='text-core-neutral-100/90'>
 					<span className='text-body-l text-core-green-300'>02.</span> 프로젝트 상세
 				</Typography>
-				<TroubleShootingSection />
+				<ProjectDetailCardSection />
 			</section>
 			<section className='flex flex-col items-center py-30 mb-35 min-[1450px]:px-[100px]' ref={contactRef}>
 				<Typography as='h1' variants='body-m-strong' color='text-core-green-300' className='pb-6'>
