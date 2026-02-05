@@ -19,6 +19,7 @@ import ChevoronDwon from './chevoron-down';
 import Close from './close';
 import GitBranchIcon from './git-branch';
 import TriangleLeft from './tirangle-left';
+import BugIcon from './bug';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -46,6 +47,7 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	Close,
 	GitBranchIcon,
 	TriangleLeft,
+	BugIcon,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {

@@ -22,9 +22,11 @@ const ProjectDetailCardSection = () => {
 						styleType='liquid'
 						title={i.title}
 						titleColor='text-white'
+						isNeedTitleIcon
+						titleIconName='BugIcon'
 						isNeedSummary
 						onClick={() => onClickHandlePopup(i.id)}
-						summaryChildren={<SummaryChildren data={i} />}
+						leftChildren={<SummaryChildren data={i} />}
 					/>
 					{openModalId === i.id && (
 						<Modal setIsOpen={() => setOpenModalId(null)}>

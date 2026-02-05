@@ -10,24 +10,16 @@ interface SummaryProps {
 const SummaryChildren = ({ data }: SummaryProps) => {
 	return (
 		<>
-			<ul className='flex flex-wrap gap-2 pb-5'>
+			<Typography as='p' variants='label-m' color='text-core-neutral-200' className='pb-8 h-[130px]'>
+				{data.summary}
+			</Typography>
+			<ul className='flex flex-wrap gap-2 pb-5 h-[90px]'>
 				{data.relativeTag?.map((item, idx) => (
 					<li key={idx}>
 						<Tags tagTxt={item} type='normal' size='large' variants='liquidChips' />
 					</li>
 				))}
 			</ul>
-			<div className='pb-5'>
-				<Typography as='h2' variants='label-m' color='text-core-gray-400/60'>
-					{data.company}
-				</Typography>
-				<Typography variants='label-m' color='text-core-gray-400/60'>
-					{data.project}
-				</Typography>
-			</div>
-			<Typography as='p' variants='body-s-strong' color='text-core-neutral-200' className='pb-8'>
-				{data.summary}
-			</Typography>
 		</>
 	);
 };

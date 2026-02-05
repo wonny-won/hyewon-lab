@@ -2,11 +2,10 @@
 
 export interface TroubleShootingDataType {
 	id: string;
-	blockId?: string;
 	title?: string;
 	detailUrl: string;
 	significant?: string[];
-	company: string;
+	division: string;
 	project: string;
 	relativeTag?: string[] | null;
 	summary: string;
@@ -17,10 +16,9 @@ export interface TroubleShootingDataType {
 export const troubleShootingData = [
 	{
 		id: 'honored-trouble-shooting',
-		blockId: 'honored-trouble-shooting-section',
-		title: '모노레포 배포 에러 해결 사례',
+		title: '모노레포 배포 에러 \n 해결 사례',
 		detailUrl: 'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017',
-		company: 'honored',
+		division: 'trouble-shooting',
 		project: '아너드 자체 웹 서비스 구현 프로젝트 및 신한 제휴',
 		relativeTag: ['npm', 'mono-repo', 'pnpm', 'package-hoisting'],
 		significant: [],
@@ -128,13 +126,12 @@ export const troubleShootingData = [
 	},
 	{
 		id: 'teamstone-trouble-shooting-1',
-		blockId: 'teamstone-trouble-shooting-1-section',
-		title: '위젯 메모리 누수 개선 사례',
+		title: '위젯 메모리 누수 \n 개선 사례',
 		detailUrl:
 			'https://www.notion.so/Basic-performance-OSInfo-a7c7a9ff1dec46f8ae9fbec96503e017?source=copy_link#24ac9d6263d04c4f87233a1e3f7f28c1',
 		significant: ['2초 주기 데이터 변경', '2초 주기 화면 리렌더'],
 		relativeTag: ['interval', 'clear', 'requestAnimationFrame', 'cpu'],
-		company: 'teamstone',
+		division: 'trouble-shooting',
 		project: '온튠 웹 프로젝트 - 모니터 위젯 파트',
 		summary:
 			'애니메이션 구현 시 setInterval로 인해 발생한 메모리 누수를 requestAnimationFrame으로 해결해 나간 트러블슈팅',
@@ -298,12 +295,11 @@ export const troubleShootingData = [
 	},
 	{
 		id: 'teamstone-trouble-shooting-2',
-		blockId: 'teamstone-trouble-shooting-2-section',
-		title: '불필요한 리렌더 완화로 성능 개선 사례',
+		title: '불필요한 리렌더 완화로 \n 성능 개선 사례',
 		detailUrl:
 			'https://www.notion.so/Manage-Server-a42139d1574b4429b9e39b4c979eb360?source=copy_link#660eeee648074d14970f755eb18fa3b2',
 		relativeTag: ['reflow', 'repaint', 'css', 're-render'],
-		company: 'teamstone',
+		division: 'trouble-shooting',
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
 		summary:

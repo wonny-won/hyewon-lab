@@ -70,21 +70,20 @@ const SectionCard = ({
 
 				<section className={openClassStyle.contentStyle?.[styleType]?.[type]}>
 					<div className='w-[full] flex flex-col pt-3'>
+						{isNeedTitleIcon && titleIconName && (
+							<span className='pb-4'>
+								<Icons iconName={titleIconName} size='30' color='#5eead4' />
+							</span>
+						)}
+
 						{title && (
-							<button className='max-w-fit' onClick={onClickTitle}>
-								<Typography
-									as={titleAs}
-									variants='heading-s'
-									color={titleColor}
-									className='max-w-[300px] pb-3 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group whitespace-pre-line'>
-									{title}
-									{isNeedTitleIcon && titleIconName && (
-										<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>
-											<Icons iconName={titleIconName} size='13' />
-										</p>
-									)}
-								</Typography>
-							</button>
+							<Typography
+								as={titleAs}
+								variants='heading-s'
+								color={titleColor}
+								className='max-h-[100px] text-start max-w-[300px] pb-5 flex gap-0.5 hover:cursor-pointer group whitespace-pre-line'>
+								{title}
+							</Typography>
 						)}
 						{isNeedSummary ? (
 							<div className='flex justify-around max-lg:flex-col'>
