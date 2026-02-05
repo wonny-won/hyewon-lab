@@ -24,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
 			</Head>
 			<div className='w-full overflow-hidden flex flex-col'>
 				{!excludesNavigationPage.some((i) => route.asPath.includes(i)) && <Navigation />}
-				<main className='w-full h-full overflow-hidden px-50 max-[1100px]:px-20 max-[1200px]:px-25'>
+				<main className='w-full h-full overflow-hidden px-50 max-sm:px-5 max-[1100px]:px-20 max-[1200px]:px-25'>
 					{children}
 				</main>
 				<Footer />

@@ -89,13 +89,13 @@ const SectionCard = ({
 						{isNeedSummary ? (
 							<div className='flex justify-around max-lg:flex-col'>
 								<div>{leftChildren}</div>
-								<div className='pl-5'>{summaryChildren}</div>
-								<div className={isOpen ? 'visible pl-5' : 'invisible'}>{children}</div>
+								<div className='pl-5 max-lg:pl-0'>{summaryChildren}</div>
+								<div className={isOpen ? 'visible pl-5 max-lg:pl-0' : 'invisible'}>{children}</div>
 							</div>
 						) : (
 							<div className='flex justify-around max-lg:flex-col'>
 								<div>{leftChildren}</div>
-								<div className='pl-5'>{children}</div>
+								<div className='pl-5 max-lg:pl-0'>{children}</div>
 							</div>
 						)}
 					</div>

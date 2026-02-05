@@ -15,9 +15,9 @@ const TriangleLeft = ({ size, color, className }: BasicIconType) => {
 				d='M8 5.5 L19 12 L8 18.5 Z'
 				fill='none'
 				stroke={color ?? '#5eead4'}
-				stroke-width='2.6'
-				stroke-linejoin='miter'
-				stroke-linecap='butt'
+				strokeWidth='2.6'
+				strokeLinejoin='miter'
+				strokeLinecap='butt'
 			/>
 		</svg>
 	);

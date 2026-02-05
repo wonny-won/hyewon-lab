@@ -1,6 +1,6 @@
 /** @format */
 
-import { Tags, Typography } from '@hyewon/design-system';
+import { Tags, ThinDiver, Typography } from '@hyewon/design-system';
 import ImgComp from './image';
 
 const LeftSectionChildren = (data: any) => {
@@ -25,6 +25,9 @@ const LeftSectionChildren = (data: any) => {
 				</Typography>
 			</div>
 			<ImgComp data={data.data.thumbnail[0]} />
+			<div className='max-lg:py-8'>
+				<ThinDiver />
+			</div>
 		</>
 	);
 };
