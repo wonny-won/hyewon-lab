@@ -3,7 +3,6 @@
 import Image from 'next/image';
 
 const ImgComp = (data: any) => {
-	console.log(data);
 	return (
 		<Image
 			src={data.data.url || ''}
