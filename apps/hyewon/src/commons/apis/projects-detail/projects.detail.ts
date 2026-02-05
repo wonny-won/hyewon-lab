@@ -13,27 +13,51 @@ export const projectDetailData = [
 		contribute: [
 			{
 				id: 'honored-contribute-section',
-				title: '아너드 자체 웹 서비스 프론트엔드 E2E 단독 개발 및 런칭',
+				title: null,
 				isImportant: false,
 				imgUrl: null,
 				children: [
 					{
 						id: 'honored-1-depth-2-1',
-						title: '서비스 런칭 전 과정(기획·디자인·개발) 참여 및 E2E 개발 프로세스 리딩',
+						title: '아너드 자체 웹 서비스 프론트 파트 E2E 단독 설계 및 개발 / 운영',
 						imgUrl: null,
 						isImportant: false,
-						children: null,
+						children: [
+							{
+								id: '0',
+								title: 'monorepo + pnpm 기반 워크스페이스 설계 및 구축',
+								imgUrl: null,
+								isImportant: false,
+								children: [
+									{
+										id: '1',
+										title: '서비스 확장을 고려한 아키텍처 설계',
+										imgUrl: null,
+										isImportant: false,
+										children: [
+											{
+												id: '2',
+												title: 'application + package(designsystem + common)',
+												imgUrl: null,
+												isImportant: false,
+												children: null,
+											},
+										],
+									},
+								],
+							},
+						],
 					},
 					{
 						id: 'honored-1-depth-2-1',
-						title: '신한 X 아너드 제휴 서비스 및 자체 웹 프론트엔드 E2E 단독 개발 및  런칭',
+						title: '아너드 X 신한 걸어요 제휴 페이지 기획 및 런칭 / 운영',
 						imgUrl: null,
 						isImportant: false,
 						children: null,
 					},
 					{
 						id: 'honored-1-depth-2-2',
-						title: 'Turborepo + pnpm 기반 모노레포 구축',
+						title: '자체웹 성능 최적화 및 검색엔진 최적화',
 						isImportant: false,
 						imgUrl: null,
 						children: [
@@ -48,7 +72,7 @@ export const projectDetailData = [
 					},
 					{
 						id: 'honored-1-depth-2-2',
-						title: '단일 책임 원칙 적용',
+						title: '신규 어드민 런칭 및 구 어드민 유지보수',
 						isImportant: false,
 						imgUrl: null,
 						children: [
@@ -63,7 +87,7 @@ export const projectDetailData = [
 					},
 					{
 						id: 'honored-1-depth-2-3',
-						title: '개발·릴리즈·운영 문서화 체계 구축',
+						title: '배포 주기 & 릴리즈 문서 & 태스크 티켓등 개발 시스템 및 개발 환경 개선',
 						isImportant: false,
 						imgUrl: null,
 						children: [
@@ -78,7 +102,7 @@ export const projectDetailData = [
 					},
 					{
 						id: 'honored-1-depth-2-4',
-						title: '웹 프론트엔드 파트 개발 일정 리드 및 협업 조율',
+						title: '웹 프론트엔드 파트 리드로 개발 타임라인 관리',
 						isImportant: false,
 						imgUrl: null,
 						children: null,

@@ -78,8 +78,8 @@ const CompanyProjectDatail = () => {
 						))}
 					</section>
 					<section>
-						<Typography as='h2' variants='heading-m' color='text-white'>
-							기여 및 역할
+						<Typography as='h2' variants='heading-m' color='text-white' className='pb-3'>
+							<span className='text-core-green-300 text-label-xl'>01. </span> 기여 및 역할
 						</Typography>
 						<ListUI direction='virtical' listMap={data.contribute} />
 					</section>
@@ -87,7 +87,7 @@ const CompanyProjectDatail = () => {
 				<section className='w-screen bg-slate-800/35 mt-20 relative left-1/2 -translate-x-1/2'>
 					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
-							문제 해결 사례
+							<span className='text-core-green-300 text-label-xl'>02. </span> 문제 해결 사례
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
 					</div>
@@ -95,7 +95,7 @@ const CompanyProjectDatail = () => {
 				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
 					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
-							공통 Develop Point
+							<span className='text-core-green-300 text-label-xl'>03. </span> 공통 Develop Point
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
 					</div>

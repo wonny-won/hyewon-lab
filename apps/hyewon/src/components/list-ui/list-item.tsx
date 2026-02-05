@@ -79,8 +79,8 @@ const ListItem = ({
 								/>
 							)}
 
-							{Array.isArray(i.children) && !!isOpen[index] && (
-								<div className='text-body-s pl-6 pb-3.5 pt-0.5'>
+							{Array.isArray(i.children) && (isNeedChevoronBullet ? !!isOpen[index] : true) && (
+								<div className='text-body-s pl-2.5 pb-1.5 pt-0.5'>
 									<ListItem
 										listItem={i.children}
 										isNeedBulletPoint
