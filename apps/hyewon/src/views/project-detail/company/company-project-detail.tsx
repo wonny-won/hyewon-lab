@@ -41,7 +41,11 @@ const CompanyProjectDatail = () => {
 						<Typography as='p' variants='label-xl'>
 							{data?.period}
 							<br />
-							{data?.coreProject || '진행 프로젝트'}
+							<span className='pb-4'>
+								{data?.position}
+								<br />
+								{data?.coreProject || '진행 프로젝트'}
+							</span>
 						</Typography>
 						<ul className='flex gap-2 pt-3'>
 							{data?.mainStack?.map((i, idx) => {
@@ -87,7 +91,7 @@ const CompanyProjectDatail = () => {
 				<section className='w-screen bg-slate-800/35 mt-20 relative left-1/2 -translate-x-1/2'>
 					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
-							<span className='text-core-green-300 text-label-xl'>02. </span> 문제 해결 사례
+							<span className='text-core-green-300 text-label-xl'>02. </span> 공통 Develop Point
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
 					</div>
@@ -95,7 +99,7 @@ const CompanyProjectDatail = () => {
 				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
 					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
-							<span className='text-core-green-300 text-label-xl'>03. </span> 공통 Develop Point
+							<span className='text-core-green-300 text-label-xl'>03. </span> 문제 해결 사례
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
 					</div>

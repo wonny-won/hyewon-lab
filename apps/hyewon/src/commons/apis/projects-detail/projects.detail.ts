@@ -22,12 +22,13 @@ export const projectDetailData = [
 						title: '아너드 자체 웹 서비스 프론트 파트 E2E 단독 설계 및 개발 / 운영',
 						imgUrl: null,
 						isImportant: false,
+						isOpen: true,
 						children: [
 							{
 								id: '0',
 								title: 'monorepo + pnpm 기반 워크스페이스 설계 및 구축',
 								imgUrl: null,
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: '1',
@@ -53,17 +54,48 @@ export const projectDetailData = [
 						title: '아너드 X 신한 걸어요 제휴 페이지 기획 및 런칭 / 운영',
 						imgUrl: null,
 						isImportant: false,
-						children: null,
+						isOpen: true,
+						children: [
+							{
+								id: '2',
+								title: '자체 웹에서 유입 경로 데이터를 이용해 일반 웹과는 완벽히 분리된 상품 운영이 가능하도록 데이터 아키텍쳐 설계',
+								imgUrl: null,
+								isImportant: false,
+								children: null,
+							},
+						],
 					},
 					{
 						id: 'honored-1-depth-2-2',
 						title: '자체웹 성능 최적화 및 검색엔진 최적화',
 						isImportant: false,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-1',
-								title: 'design system과 공용 모듈 프로젝트와 서비스 프로젝트 분리로 재사용성을 향상',
+								title: '단일 책임 원리 적용으로 데이터/UI 컴포넌트 분리',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: 'lazyloading을 이용한 네트워크, 렌더 최적화',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: 'SEO를 위한 시멘틱 HTML 구조 설계 및 meta / OG 태그 적용',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: 'memoization hooks를 이용한 렌더 최적화',
 								isImportant: false,
 								imgUrl: null,
 								children: null,
@@ -75,10 +107,11 @@ export const projectDetailData = [
 						title: '신규 어드민 런칭 및 구 어드민 유지보수',
 						isImportant: false,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-1',
-								title: '데이터 처리 로직과 UI 컴포넌트 분리 설계로 유지보수, 재사용성, 변경 범위 최소화',
+								title: 'monorepo의 디자인 시스템 재이용',
 								isImportant: false,
 								imgUrl: null,
 								children: null,
@@ -90,10 +123,47 @@ export const projectDetailData = [
 						title: '배포 주기 & 릴리즈 문서 & 태스크 티켓등 개발 시스템 및 개발 환경 개선',
 						isImportant: false,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-1',
-								title: '회의록, 릴리즈 노트, QA, 온보딩·인수인계 문서 도입으로 협업 효율 개선',
+								title: '서비스 품질 관리를 위한 배포주기 관리',
+								imgUrl: null,
+								isImportant: false,
+								children: [
+									{
+										id: 'honored-1-depth-3-1',
+										title: '릴리즈 문서를 통한 배포 내용 관리',
+										imgUrl: null,
+										isImportant: false,
+										children: null,
+									},
+									{
+										id: 'honored-1-depth-3-1',
+										title: '대규모 업데이트 날은 QA문서 함께 관리',
+										imgUrl: null,
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: '추후 신규 입사자를 위한 인수인계 문서, 코드 베이스 가이드 문서 제작',
+								imgUrl: null,
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: '팀간의 업무추적을 위한 태스크 티켓 운영',
+								imgUrl: null,
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-1',
+								title: '타팀과의 업무 공유, 지난 회의 복기를 위한 회의록 운영',
 								imgUrl: null,
 								isImportant: false,
 								children: null,
