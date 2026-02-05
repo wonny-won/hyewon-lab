@@ -13,12 +13,15 @@ const LeftSectionChildren = (data: any) => {
 					</li>
 				))}
 			</ul>
-			<div className='pt-2 pb-4'>
-				<Typography as='p' variants='label-l' color='text-core-gray-300/70'>
+			<div className='py-2'>
+				<Typography as='p' variants='label-l' color='text-core-gray-300/80'>
 					{data.data.position}
 				</Typography>
-				<Typography variants='label-l' color='text-core-gray-300/70'>
+				<Typography variants='label-l' color='text-core-gray-300/80'>
 					{data.data.coreProject}
+				</Typography>
+				<Typography variants='body-s-strong' color='text-core-gray-400 pt-4'>
+					{data.data.period}
 				</Typography>
 			</div>
 			<ImgComp data={data.data.thumbnail[0]} />
