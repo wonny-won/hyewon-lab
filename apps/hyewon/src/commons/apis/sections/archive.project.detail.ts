@@ -1,6 +1,6 @@
 /** @format */
 
-export interface TroubleShootingDataType {
+export interface ArchiveProjectDetailDataType {
 	id: string;
 	title?: string;
 	detailUrl: string;
@@ -13,7 +13,7 @@ export interface TroubleShootingDataType {
 }
 [];
 
-export const troubleShootingData = [
+export const archiveProjectDetailData = [
 	{
 		id: 'honored-trouble-shooting',
 		title: '모노레포 배포 에러 \n 해결 사례',

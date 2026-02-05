@@ -1,6 +1,6 @@
 /** @format */
 
-import { recordData } from '@/commons/apis/sections/record';
+import { recordData, RecordDataType } from '@/commons/apis/sections/record';
 import { SectionCard } from '@hyewon/design-system';
 import LeftSectionChildren from './internal-ui/left-section-children';
 import { useEffect } from 'react';
@@ -20,7 +20,7 @@ const RecordSection = () => {
 
 	return (
 		<ul className='pl-1 pt-4 pb-10 flex flex-col gap-10'>
-			{recordData.map((i, idx) => {
+			{recordData.map((i: RecordDataType, idx: number) => {
 				return (
 					<a key={i.id} href={`/projects/company/${i.id}`}>
 						<SectionCard

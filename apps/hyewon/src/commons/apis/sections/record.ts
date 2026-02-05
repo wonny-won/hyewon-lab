@@ -1,4 +1,15 @@
 /** @format */
+export interface RecordDataType {
+	id: string;
+	company: string;
+	period: string;
+	position: string;
+	coreProject: string;
+	mainStack: string[];
+	thumbnail?: { size: number; url: string }[] | null;
+	summary: { id: string; title: string | null; children: any; isImportant: boolean }[];
+}
+[];
 
 export const recordData = [
 	{

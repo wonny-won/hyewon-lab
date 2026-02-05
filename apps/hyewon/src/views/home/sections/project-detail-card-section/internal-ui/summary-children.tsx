@@ -1,6 +1,6 @@
 /** @format */
 
-import { TroubleShootingDataType } from '@/commons/apis/sections/trouble-shooting';
+import { TroubleShootingDataType } from '@/commons/apis/sections/archive.project.detail';
 import { Tags, Typography } from '@hyewon/design-system';
 
 interface SummaryProps {
