@@ -40,7 +40,7 @@ const ListItem = ({
 											iconName='TriangleLeft'
 											size='16px'
 											className={`transition-transform duration-200 ${
-												isOpen[index] ? 'rotate-90' : 'rotate-0'
+												Array.isArray(i.children) && !!isOpen[index] ? 'rotate-90' : 'rotate-0'
 											}`}
 										/>
 									</span>

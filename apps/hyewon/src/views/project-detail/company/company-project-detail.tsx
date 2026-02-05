@@ -25,9 +25,7 @@ const CompanyProjectDatail = () => {
 					</button>
 				</nav>
 				<div className='px-6 max-[450px]:px-0'>
-					<button
-						className='max-w-fit'
-						onClick={() => onClickOpenNewWindow('https://ontune.co.kr/pd-product.php')}>
+					<button className='max-w-fit' onClick={() => onClickOpenNewWindow(data?.companyUrl)}>
 						<Typography
 							as='h1'
 							variants='display-l'
