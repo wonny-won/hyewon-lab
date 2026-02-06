@@ -29,8 +29,8 @@ const ListItem = ({
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedChevoronBullet && (
 								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-body-s font-semibold ${
-										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200'
+									className={`hover: cursor-pointer flex items-center gap-1 text-label-m font-semibold ${
+										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-100'
 									}`}
 									onClick={() => {
 										setIsOpen((prev) => prev.map((val, i) => (i === index ? !val : val)));
@@ -52,7 +52,7 @@ const ListItem = ({
 							{!!isNeedBulletPoint && (
 								<p
 									className={`text-body-s pb-0.5 ${
-										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-200/85'
+										!!i.isImportant ? 'text-core-green-300/83' : 'text-core-neutral-200/90'
 									}`}>
 									• {i.title}
 								</p>
@@ -61,7 +61,7 @@ const ListItem = ({
 							{!isNeedBulletPoint && !isNeedChevoronBullet && (
 								<p
 									className={`text-body-m font-medium ${
-										!!i.isImportant ? 'text-core-green-300' : 'text-core-gray-300/80'
+										!!i.isImportant ? 'text-core-green-300/80' : 'text-core-gray-300/80'
 									}`}>
 									{i.title}
 								</p>

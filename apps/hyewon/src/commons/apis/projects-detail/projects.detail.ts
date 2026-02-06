@@ -224,19 +224,35 @@ export const projectDetailData = [
 		contribute: [
 			{
 				id: 'MayI-contribute-section',
-				title: '대시보드 신규 기능 런칭을 위한 프론트엔드 설계 및 성능 최적화',
+				title: null,
 				isImportant: false,
 				imgUrl: null,
+				isOpen: true,
 				children: [
 					{
 						id: 'MayI-1-depth-2-1',
-						title: '단일 책임 원칙 적용으로 유지보수성 향상',
+						title: 'Mash 대시보드 신규 기능 및 코호트 분석 페이지 개발 및 핫픽스 배포',
 						isImportant: false,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'MayI-1-depth-3-1',
-								title: '데이터 처리 로직과 UI 레이어를 분리하여 유지보수성과 재사용성 향상',
+								title: '기능 관련 데이터 프로토타입 설계 및 페이지 개발',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'MayI-1-depth-3-1',
+								title: '대기업고객사 커스텀 기능 개발 및 핫픽스 배포',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'MayI-1-depth-3-1',
+								title: '위젯, 페이지 핫픽스 및 개선 요청 티켓 처리',
 								isImportant: false,
 								imgUrl: null,
 								children: null,
@@ -245,20 +261,14 @@ export const projectDetailData = [
 					},
 					{
 						id: 'MayI-1-depth-2-2',
-						title: '세마포어 기반 제어와 네트워크 요청 흐름 최적화로 중복·불필요 요청 최소화',
-						isImportant: false,
+						title: '확장성을 고려한 프로바이더 설계',
+						isImportant: true,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '세마포어 기반으로 동시 요청 수 5개 제한으로 API 서버 과부하 방지',
-								imgUrl: null,
-								isImportant: false,
-								children: null,
-							},
-							{
-								id: 'honored-1-depth-3-3-1',
-								title: '요청 조건 제어를 통해 불필요한 네트워크 요청을 제거하고, 네트워크 요청 비용을 절감',
+								title: '단일 삭제 API를 Promise.all을 활용해 다중 삭제 처리로 보완',
 								imgUrl: null,
 								isImportant: false,
 								children: null,
@@ -267,13 +277,49 @@ export const projectDetailData = [
 					},
 					{
 						id: 'MayI-1-depth-2-3',
-						title: '확장성을 고려한 컴포넌트 구조 설계',
-						isImportant: false,
+						title: '위젯 및 대시보드 성능 최적화',
+						isImportant: true,
 						imgUrl: null,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-3-3-1',
-								title: '전체 데이터 삭제 프로세스 프로바이더 → 다중 삭제 프로세스로 역할 확장',
+								title: '세마포어 기반으로 동시 요청 수 5개 제한',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: '요청 조건 제어를 통한 불필요한 요청 제거',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: '단일 책임 원리 적용으로 데이터/UI 컴포넌트 분리',
+								imgUrl: null,
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: 'lazyloading을 이용한 네트워크, 렌더 최적화',
+								imgUrl: null,
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: 'visibility 활용으로 reflow/repaint 제거',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+							{
+								id: 'honored-1-depth-3-3-1',
+								title: 'memoization hooks를 이용한 렌더 최적화',
 								imgUrl: null,
 								isImportant: false,
 								children: null,
@@ -282,18 +328,10 @@ export const projectDetailData = [
 					},
 					{
 						id: 'MayI-1-depth-2-4',
-						title: '렌더 성능최적화',
-						isImportant: false,
+						title: '스카웃 제의로 이직 ',
+						isImportant: true,
 						imgUrl: null,
-						children: [
-							{
-								id: 'honored-1-depth-4-3-1',
-								title: '렌더 조건과 visibility를 이용한 reflow / repaint 제거',
-								imgUrl: null,
-								isImportant: false,
-								children: null,
-							},
-						],
+						children: null,
 					},
 				],
 			},

@@ -82,7 +82,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 								{i?.title && (
 									<ListItem
 										listItem={i?.title}
-										listClassName='pl-2 text-[18px] pt-3 pb-3 font-bold text-white/90 underline decoration-core-green-300/20 decoration-4'
+										listClassName='pl-2 text-[18px] pt-3 pb-3.5 font-bold text-white/90 underline decoration-core-green-300/20 decoration-4'
 									/>
 								)}
 								{Array.isArray(i.children) && (
@@ -90,7 +90,7 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 										<ListItem
 											listItem={i.children}
 											isNeedChevoronBullet={!!i.children}
-											listClassName='pl-2 pt-0.5'
+											listClassName='pl-2 '
 										/>
 									</Fragment>
 								)}
