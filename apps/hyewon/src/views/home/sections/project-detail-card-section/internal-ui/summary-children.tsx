@@ -1,10 +1,10 @@
 /** @format */
 
-import { TroubleShootingDataType } from '@/commons/apis/sections/archive.project.detail';
+import { ArchiveProjectDetailDataType } from '@/commons/apis/sections/archive.project.detail';
 import { Tags, Typography } from '@hyewon/design-system';
 
 interface SummaryProps {
-	data: TroubleShootingDataType;
+	data: ArchiveProjectDetailDataType;
 }
 
 const SummaryChildren = ({ data }: SummaryProps) => {
