@@ -395,14 +395,14 @@ export const projectDetailData = [
 					{
 						id: 'teamstone-contribute-1',
 						title: 'ontune 시스템 모니터링 대시보드 v5 버전 개발 및 런칭',
-						isImportant: false,
+						isImportant: true,
 						imgUrl: null,
 						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-contribute-1-desc-1',
 								title: '시스템 성능 분석 위젯 및 위젯 설정 팝업 8종 설계 및 개발',
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-1-desc-1',
@@ -415,7 +415,7 @@ export const projectDetailData = [
 							{
 								id: 'teamstone-contribute-1-desc-1',
 								title: 'Host 및 위젯 데이터 튜닝 관련 총 6개 페이지 개발',
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-1-desc-1',
@@ -428,7 +428,7 @@ export const projectDetailData = [
 							{
 								id: 'teamstone-contribute-1-desc-1',
 								title: '시스템 성능 분석 관련 총 2개 페이지 개발',
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-1-desc-1',
@@ -441,7 +441,7 @@ export const projectDetailData = [
 							{
 								id: 'teamstone-contribute-1-desc-1',
 								title: '공통 컴포넌트 및 글로벌 함수 개발 ',
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-1-desc-1',
@@ -462,7 +462,7 @@ export const projectDetailData = [
 					{
 						id: 'teamstone-contribute-4',
 						title: '대시보드 성능 개선 ',
-						isImportant: false,
+						isImportant: true,
 						imgUrl: null,
 						isOpen: true,
 						children: [
@@ -470,27 +470,27 @@ export const projectDetailData = [
 								id: 'teamstone-contribute-4-desc-1',
 								title: 'Web Worker 기반 연산/렌더 분리로 메인 스레드 부하 개선 ',
 								imgUrl: null,
-								isImportant: false,
+								isImportant: true,
 								children: null,
 							},
 							{
 								id: 'teamstone-contribute-4-desc-1',
 								title: '메모리 누수 개선',
 								imgUrl: null,
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-4-desc-1',
 										title: 'JS 메모리: 50,256K(지속증가) → 28,416K 안정화',
 										imgUrl: null,
-										isImportant: false,
+										isImportant: true,
 										children: null,
 									},
 									{
 										id: 'teamstone-contribute-4-desc-1',
 										title: 'CPU 사용률: 10.9~80.4% → 3.9~5.1%',
 										imgUrl: null,
-										isImportant: false,
+										isImportant: true,
 										children: null,
 									},
 								],
@@ -499,13 +499,13 @@ export const projectDetailData = [
 								id: 'teamstone-contribute-4-desc-1',
 								title: '대규모 데이터 환경에서의 렌더 성능 개선',
 								imgUrl: null,
-								isImportant: false,
+								isImportant: true,
 								children: [
 									{
 										id: 'teamstone-contribute-4-desc-1',
 										title: '반응성 전파 제어를 통한 렌더범위 국소화',
 										imgUrl: null,
-										isImportant: false,
+										isImportant: true,
 										children: null,
 									},
 									{
@@ -559,7 +559,7 @@ export const projectDetailData = [
 					{
 						id: 'teamstone-2-depth-2-3',
 						title: '24년 하반기 최단기  주임 승진',
-						isImportant: false,
+						isImportant: true,
 						isOpen: false,
 						children: null,
 					},
