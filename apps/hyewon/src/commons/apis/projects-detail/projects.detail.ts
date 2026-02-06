@@ -769,23 +769,24 @@ export const projectDetailData = [
 		contribute: [
 			{
 				id: 'dingco-contribute-section',
-				title: '프론트엔드 멘토 & 콘텐츠 제작',
+				title: null,
 				isImportant: true,
 				children: [
 					{
 						id: 'dingco-1-depth-2-1',
-						title: '온·오프라인 부트캠프 프론트엔드 학습자료 제작',
+						title: '코드캠프 온/오프라인 부트캠프  학습자료 제작  파트 리드',
 						isImportant: false,
+						isOpen: true,
 						children: [
 							{
 								id: 'dingco-1-depth-1-3-1',
-								title: '각 주제별 핵심 내용이 꼼꼼히 정리 되어있는 학습자료 제작',
+								title: '프론트엔드 전과정 학습자료 검토 및 제작',
 								isImportant: false,
 								children: null,
 							},
 							{
 								id: 'dingco-1-depth-1-3-2',
-								title: '수강생에게 노션 장인의 자료로 평가받은 학습자료 제공',
+								title: '‘노션 장인의 자료’라 평가 받은 학습자료',
 								isImportant: false,
 								children: null,
 							},
@@ -793,12 +794,19 @@ export const projectDetailData = [
 					},
 					{
 						id: 'dingco-1-depth-2-2',
-						title: '프론트엔드 멘토로 수강생 학습 전 과정 지원',
+						title: '[ 인프런 X 코드캠프 ]  & 코드캠프 온/오프라인 부트캠프 프론트엔드 멘토',
 						isImportant: false,
+						isOpen: true,
 						children: [
 							{
 								id: 'dingco-1-depth-2-3-1',
-								title: '일정 관리, 과제 및 포트폴리오 로직 리뷰, 질의응답을 통해 학습 완주율 및 이해도 향상에 기여',
+								title: '수강생 과제 및 포트폴리오 성능·유지보수 관점 코드 피드백',
+								isImportant: false,
+								children: null,
+							},
+							{
+								id: 'dingco-1-depth-2-3-1',
+								title: '필요시 JS 특강 진행 (수업에 필요한 JS 강의)',
 								isImportant: false,
 								children: null,
 							},
@@ -806,37 +814,32 @@ export const projectDetailData = [
 					},
 					{
 						id: 'dingco-1-depth-2-3',
-						title: '코드캠프 광고 및 상담 신청 페이지 프론트엔드 개발',
+						title: '회사 홈페이지 및 부트캠프 사이트 개발 ',
 						isImportant: false,
+						isOpen: true,
 						children: [
 							{
 								id: 'dingco-1-depth-3-3-1',
-								title: 'SEO를 고려한 시멘틱 마크업 적용',
+								title: 'SEO를 고려한 광고(랜딩) 페이지 개발',
 								isImportant: false,
-								children: null,
+								children: [
+									{
+										id: 'dingco-1-depth-3-3-2',
+										title: '시멘틱 HTML 구조 설계 및 meta / OG 태그 적용',
+										isImportant: false,
+										children: null,
+									},
+								],
 							},
 							{
 								id: 'dingco-1-depth-3-3-2',
-								title: '유지보수성을 고려한 페이지 구조 설계',
+								title: '반응형 웹 적용',
 								isImportant: false,
 								children: null,
 							},
 							{
 								id: 'dingco-1-depth-3-3-3',
-								title: '반응형 웹 구현',
-								isImportant: false,
-								children: null,
-							},
-						],
-					},
-					{
-						id: 'dingco-1-depth-2-4',
-						title: '딩코 사이트 어드민 및 유저 백업 기능 개발',
-						isImportant: false,
-						children: [
-							{
-								id: 'dingco-1-depth-3-3-1',
-								title: '자체 온라인 부트캠프 사이트 유저 로그인 로그 데이터 수집 기능 구현',
+								title: '유저 로그인 로그 데이터 개발',
 								isImportant: false,
 								children: null,
 							},
