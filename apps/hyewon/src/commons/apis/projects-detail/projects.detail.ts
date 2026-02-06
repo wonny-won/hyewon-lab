@@ -9,7 +9,7 @@ export const projectDetailData = [
 		position: '개발팀 | 사원',
 		coreProject: '아너드 X 신한 걸어요 자체 웹 런칭 및 운영',
 		mainStack: ['TypeScript', 'Next.js', 'React-query'],
-		siteGif: [{ size: 480, url: '/honored.gif' }],
+		siteGif: [{ size: 420, url: '/honored.gif' }],
 		contribute: [
 			{
 				id: 'honored-contribute-section',
@@ -220,7 +220,7 @@ export const projectDetailData = [
 		position: '개발팀 | 사원',
 		coreProject: 'mAsh 대시보드 개발',
 		mainStack: ['TypeScript', 'React.js', 'React-query'],
-		siteGif: [{ size: 480, url: '/may-i.png' }],
+		siteGif: [{ size: 420, url: '/may-i.png' }],
 		contribute: [
 			{
 				id: 'MayI-contribute-section',
@@ -381,9 +381,9 @@ export const projectDetailData = [
 		coreProject: 'ontune 시스템 모니터링 대시보드 런칭',
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
-			{ id: 'teamstone-img-1', size: 480, url: '/teamstone3.png', alt: '팀스톤 커버' },
-			{ id: 'teamstone-img-2', size: 480, url: '/teamstone.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
-			{ id: 'teamstone-img-2', size: 480, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
+			{ id: 'teamstone-img-1', size: 420, url: '/teamstone3.png', alt: '팀스톤 커버' },
+			{ id: 'teamstone-img-2', size: 420, url: '/teamstone.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
+			{ id: 'teamstone-img-2', size: 420, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 		],
 		contribute: [
 			{
@@ -763,8 +763,8 @@ export const projectDetailData = [
 		coreProject: ' 인프런 X 코드캠프 온/오프라인 부트캠프',
 		mainStack: ['TypeScript', 'Next.js', 'Graph-ql'],
 		siteGif: [
-			{ size: 480, url: '/dingco.png' },
-			{ size: 480, url: '/dingco.gif' },
+			{ size: 420, url: '/dingco.png' },
+			{ size: 420, url: '/dingco.gif' },
 		],
 		contribute: [
 			{

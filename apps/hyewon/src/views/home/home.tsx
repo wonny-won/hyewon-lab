@@ -10,23 +10,23 @@ const Home = () => {
 	const { aboutSectionRef, recordSectionRef, projectDetailSectionRef, contactRef } = useScrollContext();
 	return (
 		<div className='w-full flex flex-col lg:mr-4'>
-			<section className='h-screen min-[1450px]:px-[100px]' ref={aboutSectionRef}>
+			<section className='h-screen ' ref={aboutSectionRef}>
 				<h1 className='hidden'>자기 소개</h1>
 				<IntroSection />
 			</section>
-			<section className='w-full min-[1450px]:px-45 py-25 flex flex-col gap-5 mx-auto' ref={recordSectionRef}>
+			<section className='w-full py-25 flex flex-col gap-5 mx-auto' ref={recordSectionRef}>
 				<Typography as='h1' variants='heading-l' color='text-core-neutral-100/90'>
 					<span className='text-body-l text-core-green-300'>01.</span> 쌓아온 경험
 				</Typography>
 				<RecordSection />
 			</section>
-			<section className='max-lg:pt-20 py-25 flex flex-col gap-10 max-lg:mx-auto' ref={projectDetailSectionRef}>
+			<section className='w-full py-25 flex flex-col gap-5 mx-auto' ref={projectDetailSectionRef}>
 				<Typography as='h1' variants='heading-l' color='text-core-neutral-100/90'>
 					<span className='text-body-l text-core-green-300'>02.</span> 프로젝트 상세
 				</Typography>
 				<ProjectDetailCardSection />
 			</section>
-			<section className='flex flex-col items-center py-30 mb-35 min-[1450px]:px-[100px]' ref={contactRef}>
+			<section className='flex flex-col items-center py-30 mb-35' ref={contactRef}>
 				<Typography as='h1' variants='body-m-strong' color='text-core-green-300' className='pb-6'>
 					03. 함께 다음 단계로 가볼까요?
 				</Typography>
