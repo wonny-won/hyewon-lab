@@ -94,7 +94,7 @@ const CompanyProjectDatail = () => {
 						<Typography as='h2' variants='heading-m' color='text-white'>
 							<span className='text-core-green-300 text-label-xl'>02. </span> 공통 Develop Point
 						</Typography>
-						{/* <ListUI direction='virtical' listMap={data.troubleshooting} /> */}
+						<ListUI direction='virtical' listMap={data.commonDev} />
 					</div>
 				</section>
 				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>

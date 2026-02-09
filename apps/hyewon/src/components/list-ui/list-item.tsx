@@ -51,7 +51,7 @@ const ListItem = ({
 
 							{!!isNeedBulletPoint && (
 								<p
-									className={`text-body-s pb-0.5 ${
+									className={`text-body-s pb-0.5 whitespace-pre-line ${
 										!!i.isImportant ? 'text-core-green-300/83' : 'text-core-neutral-200/90'
 									}`}>
 									• {i.title}
@@ -60,7 +60,7 @@ const ListItem = ({
 
 							{!isNeedBulletPoint && !isNeedChevoronBullet && (
 								<p
-									className={`text-body-m font-medium ${
+									className={`text-body-m font-medium whitespace-pre-line ${
 										!!i.isImportant ? 'text-core-green-300/80' : 'text-core-gray-300/80'
 									}`}>
 									{i.title}

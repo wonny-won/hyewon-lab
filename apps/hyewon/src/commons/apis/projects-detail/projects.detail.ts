@@ -180,6 +180,23 @@ export const projectDetailData = [
 				],
 			},
 		],
+		commonDev: [
+			{
+				id: 'honored-common-dev-section',
+				title: '자체 서비스 및 어드민 프론트엔드 E2E 단독 개발 및 런칭',
+				imgUrl: null,
+				isImportantm: false,
+				children: [
+					{
+						id: 'honored-2-depth-2-2',
+						title: '자체 웹 서비스 및 제휴 서비스 런칭을 위한 모노레포 기반 프론트엔드 아키텍처 구축',
+						isImportant: false,
+						imgUrl: null,
+						children: null,
+					},
+				],
+			},
+		],
 		troubleshooting: [
 			{
 				id: 'honored-trouble-shooting-section',
@@ -330,6 +347,23 @@ export const projectDetailData = [
 						id: 'MayI-1-depth-2-4',
 						title: '스카웃 제의로 이직 ',
 						isImportant: true,
+						imgUrl: null,
+						children: null,
+					},
+				],
+			},
+		],
+		commonDev: [
+			{
+				id: 'MayI-common-dev-section',
+				title: '자체 서비스 및 어드민 프론트엔드 E2E 단독 개발 및 런칭',
+				imgUrl: null,
+				isImportantm: false,
+				children: [
+					{
+						id: 'honored-2-depth-2-2',
+						title: '자체 웹 서비스 및 제휴 서비스 런칭을 위한 모노레포 기반 프론트엔드 아키텍처 구축',
+						isImportant: false,
 						imgUrl: null,
 						children: null,
 					},
@@ -545,7 +579,7 @@ export const projectDetailData = [
 						title: '테스트를 기반으로 사용자 친화적인 UI/UX 개선 의견 제시 및 반영',
 						isImportant: false,
 						imgUrl: null,
-						isOpen: true,
+						isOpen: false,
 						children: [
 							{
 								id: 'teamstone-contribute-2-desc-1',
@@ -566,13 +600,44 @@ export const projectDetailData = [
 				],
 			},
 		],
+		commonDev: [
+			{
+				id: 'teamstone-common-dev-section',
+				title: null,
+				imgUrl: null,
+				isImportantm: false,
+				children: [
+					{
+						id: 'honored-2-depth-2-2',
+						title: '차트 시리즈 및 옵션 워커 내부에서 제작',
+						isImportant: true,
+						imgUrl: null,
+						children: [
+							{
+								id: 'honored-2-depth-2-2',
+								title: '시리즈와 옵션엔 차트를 그리기 위한 특성과 데이터를 포함합니다. \n\u00A0\u00A0 2~10초 주기로 재연산이 필요한 데이터 특성에 따라 렌더 블로킹을 줄이기 위해 메인 스레드 연산을 워커 스레드 연산으로 변경했습니다.',
+								isImportant: true,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'honored-2-depth-2-2',
+								title: '[ ⚠️ 참고 ] 위젯 데이터와 차트 데이터는 다릅니다. \n\u00A0\u00A0 위젯 데이터는 처음부터 워커에서 가공해왔으나 차트 데이터는 렌더 블로킹 현상을 겪고 팀장님과 내부회의를 거치며 제가 직접 개선한 결과 입니다.',
+								isImportant: false,
+								imgUrl: '/teamstone-chart-worker.png',
+								children: null,
+							},
+						],
+					},
+				],
+			},
+		],
 		troubleshooting: [
 			{
 				id: 'teamstone-troubleshooting-section',
 				title: '퍼포먼스 최적화 및 대시보드 안정화',
 				isImportant: false,
 				imgUrl: null,
-
 				children: [
 					{
 						id: 'teamstone-1-depth-2-1',
@@ -586,7 +651,6 @@ export const projectDetailData = [
 								title: 'CPU 사용률 10.9~80.4% → 3.9~5.1% 로 감소',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 							{
@@ -594,7 +658,6 @@ export const projectDetailData = [
 								title: '메모리 누수 구간 제거 ',
 								isImportant: false,
 								imgUrl: null,
-
 								children: [
 									{
 										id: 'teamstone-1-depth-2-1-2-1',
@@ -611,7 +674,6 @@ export const projectDetailData = [
 								title: '렌더 시 급격히 증가하던 메모리 사용량을 일정 범위 내로 고정',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 						],
@@ -621,7 +683,6 @@ export const projectDetailData = [
 						title: 'visibility 조절로 렌더 범위 최적화',
 						isImportant: false,
 						imgUrl: null,
-
 						children: [
 							{
 								id: 'teamstone-1-depth-2-3-1',
@@ -645,7 +706,6 @@ export const projectDetailData = [
 								title: '부분 리렌더로 차트 UI 깜빡임 제거',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 						],
@@ -655,14 +715,12 @@ export const projectDetailData = [
 						title: '워커 스레드 분리로 메인 스레드 안정화 및 렌더 개선',
 						isImportant: false,
 						imgUrl: null,
-
 						children: [
 							{
 								id: 'teamstone-1-depth-3-3-1',
 								title: '데이터 가공 로직을 워커 스레드로 이전하여 메인 스레드 부하 감소',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 							{
@@ -670,7 +728,6 @@ export const projectDetailData = [
 								title: '메인 스레드 블로킹 시간 약 30~50% 감소 추정',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 							{
@@ -678,7 +735,6 @@ export const projectDetailData = [
 								title: '차트가 그려지지 않는 텀 및 프레임 드랍 현상 최소화',
 								isImportant: false,
 								imgUrl: null,
-
 								children: null,
 							},
 						],
