@@ -416,8 +416,8 @@ export const projectDetailData = [
 		mainStack: ['TypeScript', 'Sevelt.js', 'websocket'],
 		siteGif: [
 			{ id: 'teamstone-img-1', size: 420, url: '/teamstone3.png', alt: '팀스톤 커버' },
-			{ id: 'teamstone-img-2', size: 420, url: '/teamstone.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 			{ id: 'teamstone-img-2', size: 420, url: '/teamstone2.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
+			{ id: 'teamstone-img-2', size: 420, url: '/teamstone.gif', alt: '프레임워크 없이 SVG로 만든 차트' },
 		],
 		contribute: [
 			{
@@ -431,7 +431,7 @@ export const projectDetailData = [
 						title: 'ontune 시스템 모니터링 대시보드 v5 버전 개발 및 런칭',
 						isImportant: true,
 						imgUrl: null,
-						isOpen: true,
+						isOpen: false,
 						children: [
 							{
 								id: 'teamstone-contribute-1-desc-1',
@@ -577,7 +577,7 @@ export const projectDetailData = [
 					{
 						id: 'teamstone-contribute-2',
 						title: '테스트를 기반으로 사용자 친화적인 UI/UX 개선 의견 제시 및 반영',
-						isImportant: false,
+						isImportant: true,
 						imgUrl: null,
 						isOpen: false,
 						children: [
@@ -603,13 +603,67 @@ export const projectDetailData = [
 		commonDev: [
 			{
 				id: 'teamstone-common-dev-section',
-				title: null,
+				title: '워커 스레드 100% 활용',
 				imgUrl: null,
 				isImportantm: false,
 				children: [
 					{
 						id: 'honored-2-depth-2-2',
+						title: '메인 / 워커 스레드 역할 분리',
+						isOpen: true,
+						isImportant: true,
+						imgUrl: null,
+						children: [
+							{
+								id: 'honored-2-depth-2-2',
+								title: '메인 스레드: UI 처리 및 워커에서 받아온 값 처리',
+								isImportant: true,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'honored-2-depth-2-2',
+								title: '워커 스레드: 위젯에서 데이터를 바로 사용할 수 있도록 연산 및 가공',
+								isImportant: true,
+								imgUrl: '/webworker.webp',
+								children: [
+									{
+										id: 'honored-2-depth-2-2',
+										title: '위젯 데이터는 무슨 연산을 하는가?',
+										isImportant: true,
+										imgUrl: null,
+										children: [
+											{
+												id: 'honored-2-depth-2-2',
+												title: '데이터 단위 스케일 처리',
+												isImportant: false,
+												imgUrl: null,
+												children: null,
+											},
+											{
+												id: 'honored-2-depth-2-2',
+												title: '위젯에 필요한 데이터만 뽑아 넘길 수 있도록 정제',
+												isImportant: false,
+												imgUrl: null,
+												children: null,
+											},
+											{
+												id: 'honored-2-depth-2-2',
+												title: '위 과정을 2~10초 단위로 반복',
+												isImportant: false,
+												imgUrl: null,
+												children: null,
+											},
+										],
+									},
+								],
+							},
+						],
+					},
+					{
+						id: 'honored-2-depth-2-2',
 						title: '차트 시리즈 및 옵션 워커 내부에서 제작',
+						isOpen: true,
 						isImportant: true,
 						imgUrl: null,
 						children: [

@@ -63,7 +63,7 @@ const CompanyProjectDatail = () => {
 
 			<div className='max-[450px]:px-0 px-8 pt-20'>
 				<div className='flex max-lg:flex-col gap-25 min-[1450px]:gap-30'>
-					<section className='flex flex-col gap-8 mx-auto'>
+					<section className='flex overflow-auto gap-8 mx-auto'>
 						{data?.siteGif?.map((i) => (
 							<figure key={i.id} className='flex flex-col items-center max-lg:items-start'>
 								<Image
@@ -82,23 +82,25 @@ const CompanyProjectDatail = () => {
 							</figure>
 						))}
 					</section>
-					<section>
+				</div>
+				<section className='w-screen bg-slate-900/35 relative left-1/2 -translate-x-1/2'>
+					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white' className='pb-3'>
 							<span className='text-core-green-300 text-label-xl'>01. </span> 기여 및 역할
 						</Typography>
 						<ListUI direction='virtical' listMap={data.contribute} />
-					</section>
-				</div>
-				<section className='w-screen bg-slate-800/35 mt-20 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
+					</div>
+				</section>
+				<section className='w-screen bg-slate-800/35 relative left-1/2 -translate-x-1/2'>
+					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
-							<span className='text-core-green-300 text-label-xl'>02. </span> 공통 Develop Point
+							<span className='text-core-green-300 text-label-xl'>02. </span> Develop Point
 						</Typography>
 						<ListUI direction='virtical' listMap={data.commonDev} />
 					</div>
 				</section>
 				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-30 max-[450px]:px-0 py-25'>
+					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-m' color='text-white'>
 							<span className='text-core-green-300 text-label-xl'>03. </span> 문제 해결 사례
 						</Typography>

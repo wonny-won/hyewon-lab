@@ -51,8 +51,8 @@ const ListItem = ({
 
 							{!!isNeedBulletPoint && (
 								<p
-									className={`text-body-s pb-0.5 whitespace-pre-line ${
-										!!i.isImportant ? 'text-core-green-300/83' : 'text-core-neutral-200/90'
+									className={`text-body-s py-0.5 whitespace-pre-line ${
+										!!i.isImportant ? 'text-white/95' : 'text-core-neutral-200/90'
 									}`}>
 									• {i.title}
 								</p>
