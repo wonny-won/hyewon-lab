@@ -189,14 +189,14 @@ export const projectDetailData = [
 				children: [
 					{
 						id: 'honored-2-depth-2-2',
-						title: '품질 향상을 위한 문서화',
+						title: '버그 히스토리 추적과 배포 관리 문서화를 통한 품질 관리',
 						isImportant: false,
 						imgUrl: null,
 						isOpen: true,
 						children: [
 							{
 								id: 'honored-1-depth-2-4',
-								title: '발생 빈도가 높은 버그는 원인 및 히스토리를 기록해 재발을 방지하며 품질을 향상시키는 동시에 기능 안정성을 좀 더 강화할 수 있도록 문서화했습니다.',
+								title: '반복적으로 발생하는 버그의 원인과 히스토리를 체계적으로 문서화해 재발을 방지하고, 제품의 품질과 기능 안정성을 강화했습니다.',
 								isImportant: true,
 								imgUrl: null,
 								children: [
@@ -211,27 +211,33 @@ export const projectDetailData = [
 							},
 							{
 								id: 'honored-1-depth-2-4',
-								title: '배포 주기와 업데이트 내용을 함께 관리해 정기적인 변경 사항 공유가 가능하도록 했습니다. \n\u00A0\u00A0 또한, 향후 배포 일정과 업데이트 내용을 사전에 안내해 미리 예측할 수 있도록 했습니다.',
+								title: '배포 주기와 업데이트 내용을 함께 관리해 정기적인 변경 사항 공유가 가능하도록 했습니다.',
 								isImportant: true,
 								imgUrl: null,
 								children: [
 									{
-										id: '',
-										title: '품질 향상 및 안정화를 위한 문서 갤러리',
+										id: 'honored-1-depth-2-4',
+										title: '향후 배포 일정과 업데이트 내용을 사전에 안내해 미리 예측할 수 있도록 했습니다.',
 										isImportant: true,
-										imgUrl: [
-											{ id: 'bug-doc-1', url: '/bug-doc.png', direction: 'row' },
-											{ id: 'deploy-doc-1', url: '/deploy-doc.png', direction: 'row' },
-											{ id: 'release-doc-1', url: '/release-doc.png', direction: 'row' },
-										],
+										imgUrl: null,
 										children: null,
 									},
 								],
 							},
+							{
+								id: 'honored-1-depth-2-4',
+								title: '[ 📸 품질 향상 및 안정화를 위한 문서 갤러리 ]',
+								isImportant: false,
+								imgUrl: [
+									{ id: 'bug-doc-1', url: '/bug-doc.png', direction: 'row' },
+									{ id: 'deploy-doc-1', url: '/deploy-doc.png', direction: 'row' },
+									{ id: 'release-doc-1', url: '/release-doc.png', direction: 'row' },
+								],
+								children: null,
+							},
 						],
 					},
 				],
-				// 배포 주기와 업데이트 내용, 다음 업데이트 예정까지 관리 하는 릴리즈 문서를 통한 품질 관리 문서'
 			},
 			{
 				id: 'honored-common-dev-section',
@@ -248,16 +254,34 @@ export const projectDetailData = [
 						children: [
 							{
 								id: 'honored-1-depth-2-4',
-								title: '팀 문서 관리 노션 제작 \n\u00A0\u00A0 팀 노션 뿐만아니라 팀노션 내부의 많은 문서를 제작 및 관리했습니다.',
+								title: '팀 문서 관리용 노션을 직접 구축하고, 내부에서 공유되는 주요 문서들을 다수 제작·관리했습니다.',
 								isImportant: true,
-								imgUrl: [{ id: 'team-notion-1', url: '/team-notion.png', direction: 'row' }],
+								imgUrl: null,
+								children: [
+									{
+										id: 'honored-1-depth-2-4',
+										title: '문서 구조를 가독성 있게 정리해 팀원들이 필요한 정보를 빠르게 파악할 수 있도록 했습니다.',
+										isImportant: true,
+										imgUrl: null,
+										children: null,
+									},
+								],
+							},
+							{
+								id: 'honored-1-depth-2-4',
+								title: '태스크 티켓 운영을 통해 프로젝트 및 개인별 업무 타임라인을 체계적으로 관리하고, 팀원 간 협업과 커뮤니케이션 효율을 향상시켰습니다.',
+								isImportant: true,
+								imgUrl: null,
 								children: null,
 							},
 							{
 								id: 'honored-1-depth-2-4',
-								title: '업무추적을 위한 태스크 티켓 운영과 타임라인 추적',
-								isImportant: true,
-								imgUrl: [{ id: 'time-line-1', url: '/time-line.png', direction: 'row' }],
+								title: '[ 📸 업무 효율을 높인 문서 갤러리 ]',
+								isImportant: false,
+								imgUrl: [
+									{ id: 'team-notion-1', url: '/team-notion.png', direction: 'row' },
+									{ id: 'time-line-1', url: '/time-line.png', direction: 'row' },
+								],
 								children: null,
 							},
 						],
