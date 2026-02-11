@@ -29,7 +29,7 @@ const ListItem = ({
 						<div className={finalListClassName} key={index} onClick={onClick}>
 							{!!isNeedChevoronBullet && (
 								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-label-m font-semibold ${
+									className={`hover: cursor-pointer flex items-center gap-1 text-label-l font-semibold ${
 										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-100'
 									}`}
 									onClick={() => {
@@ -60,7 +60,7 @@ const ListItem = ({
 
 							{!isNeedBulletPoint && !isNeedChevoronBullet && (
 								<p
-									className={`text-body-m font-medium whitespace-pre-line ${
+									className={`text-label-xl font-medium whitespace-pre-line ${
 										!!i.isImportant ? 'text-core-green-300/80' : 'text-core-gray-300/80'
 									}`}>
 									{i.title}
@@ -72,14 +72,14 @@ const ListItem = ({
 								<div className={`flex ${i?.imgUrl?.[0].direction} overflow-auto`}>
 									{!!i?.imgUrl?.length &&
 										i?.imgUrl?.map((item) => (
-											<figure key={item.id}>
+											<figure key={item.id} className='overflow-hidde'>
 												<Image
 													alt='설명'
 													src={item?.url || ''}
 													width={500}
 													height={450}
 													objectFit='contain'
-													className='pl-3.5 pt-2 pb-3.5 max-w-[400px] max-h-[400px]'
+													className='pl-3.5 pt-2 pb-3.5 max-w-[400px] max-h-[400px] rounded-[8px] max-lg:max-w-[350px] max-sm:max-w-[200px]'
 												/>
 											</figure>
 										))}

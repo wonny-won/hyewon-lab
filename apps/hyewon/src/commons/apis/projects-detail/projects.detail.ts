@@ -183,14 +183,80 @@ export const projectDetailData = [
 		commonDev: [
 			{
 				id: 'honored-common-dev-section',
-				title: '서비스 품질 향상 및 안정화',
+				title: '서비스 품질 향상 및 안정화 주도',
 				imgUrl: null,
-				isImportantm: false,
+				isImportantm: true,
 				children: [
 					{
 						id: 'honored-2-depth-2-2',
+						title: '정기 스터디를 통한 품질 향상 기여',
+						isImportant: true,
+						imgUrl: null,
+						isOpen: true,
+						children: [
+							{
+								id: 'honored-1-depth-2-4',
+								title: '제품에 필요한 지식을 중심으로 정기 스터디를 구성하고 주도했으며, 학습 내용을 정리한 문서를 제작해 팀 내에 공유했습니다. \n\u00A0\u00A0 또한, 스터디 결과를 실제 업무에 적용해 제품 품질과 팀의 기술 역량 성장을 함께 이루었습니다',
+								isImportant: true,
+								imgUrl: null,
+								isOpen: true,
+								children: [
+									{
+										id: 'honored-1-depth-2-4',
+										title: '실제 업무에 적용한 스터디 결과들',
+										isImportant: true,
+										imgUrl: null,
+										children: [
+											{
+												id: 'honored-1-depth-2-4',
+												title: '검색엔진 최적화 (SEO)',
+												isImportant: true,
+												imgUrl: null,
+												children: null,
+											},
+											{
+												id: 'honored-1-depth-2-4',
+												title: '모노레포와 모노레포 아키텍쳐 설계',
+												isImportant: true,
+												imgUrl: null,
+												children: [
+													{
+														id: 'honored-1-depth-2-4',
+														title: ' [ ⚠️ 참고 ] 해당 스터디는 혼자 공부해 발표하는 형식으로 진행했습니다.',
+														isImportant: false,
+														imgUrl: null,
+														children: null,
+													},
+												],
+											},
+											{
+												id: 'honored-1-depth-2-4',
+												title: '브랜치 전략',
+												isImportant: false,
+												imgUrl: null,
+												children: null,
+											},
+										],
+									},
+								],
+							},
+							{
+								id: 'honored-1-depth-2-4',
+								title: '[ 📸 정기 스터디 갤러리 ]',
+								isImportant: true,
+								imgUrl: [
+									{ id: 'seo-doc-1', url: '/seo-doc.png', direction: 'row' },
+									{ id: 'mono-repo-1', url: '/mono-repo.png', direction: 'row' },
+									{ id: 'brnach-1', url: '/branch.png', direction: 'row' },
+								],
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'honored-2-depth-2-2',
 						title: '버그 히스토리 추적과 배포 관리 문서화를 통한 품질 관리',
-						isImportant: false,
+						isImportant: true,
 						imgUrl: null,
 						isOpen: true,
 						children: [
@@ -218,7 +284,7 @@ export const projectDetailData = [
 									{
 										id: 'honored-1-depth-2-4',
 										title: '향후 배포 일정과 업데이트 내용을 사전에 안내해 미리 예측할 수 있도록 했습니다.',
-										isImportant: true,
+										isImportant: false,
 										imgUrl: null,
 										children: null,
 									},
@@ -227,7 +293,7 @@ export const projectDetailData = [
 							{
 								id: 'honored-1-depth-2-4',
 								title: '[ 📸 품질 향상 및 안정화를 위한 문서 갤러리 ]',
-								isImportant: false,
+								isImportant: true,
 								imgUrl: [
 									{ id: 'bug-doc-1', url: '/bug-doc.png', direction: 'row' },
 									{ id: 'deploy-doc-1', url: '/deploy-doc.png', direction: 'row' },
@@ -248,7 +314,7 @@ export const projectDetailData = [
 					{
 						id: 'honored-2-depth-2-2',
 						title: '업무 병목을 제거한 개발 시스템 구축과 문서화',
-						isImportant: false,
+						isImportant: true,
 						imgUrl: null,
 						isOpen: true,
 						children: [
@@ -261,7 +327,7 @@ export const projectDetailData = [
 									{
 										id: 'honored-1-depth-2-4',
 										title: '문서 구조를 가독성 있게 정리해 팀원들이 필요한 정보를 빠르게 파악할 수 있도록 했습니다.',
-										isImportant: true,
+										isImportant: false,
 										imgUrl: null,
 										children: null,
 									},
@@ -277,7 +343,7 @@ export const projectDetailData = [
 							{
 								id: 'honored-1-depth-2-4',
 								title: '[ 📸 업무 효율을 높인 문서 갤러리 ]',
-								isImportant: false,
+								isImportant: true,
 								imgUrl: [
 									{ id: 'team-notion-1', url: '/team-notion.png', direction: 'row' },
 									{ id: 'time-line-1', url: '/time-line.png', direction: 'row' },
