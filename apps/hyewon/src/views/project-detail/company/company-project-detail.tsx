@@ -72,7 +72,7 @@ const CompanyProjectDatail = () => {
 									width={i.size}
 									height={i.size}
 									objectFit='contain'
-									className='max-[450px]:max-w-[180px] max-[450px]:max-h-[300px] max-lg:min-w-[400px] min-[1450px]:min-w-[420px] rounded-[8px]'
+									className='max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px] rounded-[8px]'
 								/>
 								<figcaption className='pt-1'>
 									<Typography variants='label-s' color='text-core-gray-600'>

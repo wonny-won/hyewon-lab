@@ -79,7 +79,7 @@ const ListItem = ({
 													width={500}
 													height={450}
 													objectFit='contain'
-													className='pl-3.5 pt-2 pb-3.5 max-w-[400px] max-h-[400px] rounded-[8px] max-lg:max-w-[350px] max-sm:max-w-[200px]'
+													className='pl-3.5 pt-2 pb-3.5 max-w-[350px] max-h-[550px] rounded-[8px] max-lg:max-w-[300px] max-sm:max-w-[200px]'
 												/>
 											</figure>
 										))}
