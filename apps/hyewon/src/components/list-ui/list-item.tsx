@@ -68,15 +68,22 @@ const ListItem = ({
 							)}
 
 							{/* 이미지 */}
-							{!!i?.imgUrl && (
-								<Image
-									alt='설명'
-									src={i?.imgUrl || ''}
-									width={500}
-									height={450}
-									objectFit='contain'
-									className='pl-3.5 pt-2 pb-3.5'
-								/>
+							{i?.imgUrl?.length && (
+								<div className={`flex ${i?.imgUrl?.[0].direction} overflow-auto`}>
+									{!!i?.imgUrl?.length &&
+										i?.imgUrl?.map((item) => (
+											<figure key={item.id}>
+												<Image
+													alt='설명'
+													src={item?.url || ''}
+													width={500}
+													height={450}
+													objectFit='contain'
+													className='pl-3.5 pt-2 pb-3.5 max-w-[400px] max-h-[400px]'
+												/>
+											</figure>
+										))}
+								</div>
 							)}
 
 							{Array.isArray(i.children) && (isNeedChevoronBullet ? !!isOpen[index] : true) && (

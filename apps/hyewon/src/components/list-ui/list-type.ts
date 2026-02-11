@@ -8,7 +8,7 @@ export type ListNode = {
 	isImportant: boolean;
 	onClick?: () => void | boolean | Promise<void | boolean>;
 	icon?: ReactNode;
-	imgUrl?: string;
+	imgUrl?: { id: string; url: string; direction: string }[];
 	href?: string;
 	isOpen?: boolean;
 };
