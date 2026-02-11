@@ -355,37 +355,7 @@ export const projectDetailData = [
 				],
 			},
 		],
-		troubleshooting: [
-			{
-				id: 'honored-trouble-shooting-section',
-				title: '자체 서비스 및 어드민 프론트엔드 E2E 단독 개발 및 런칭',
-				imgUrl: null,
-				isImportantm: false,
-				children: [
-					{
-						id: 'honored-2-depth-2-2',
-						title: '자체 웹 서비스 및 제휴 서비스 런칭을 위한 모노레포 기반 프론트엔드 아키텍처 구축',
-						isImportant: false,
-						imgUrl: null,
-						children: null,
-					},
-					{
-						id: 'honored-2-depth-2-4',
-						title: '기존 어드민 유지보수 및 신규 기능 추가',
-						isImportant: false,
-						imgUrl: null,
-						children: null,
-					},
-					{
-						id: 'honored-2-depth-2-3',
-						title: '기획–디자인–개발 전 과정을 아우르는 E2E 개발 프로세스 리딩',
-						isImportant: false,
-						imgUrl: null,
-						children: null,
-					},
-				],
-			},
-		],
+		troubleshooting: [],
 	},
 	{
 		id: 'may-i',
@@ -511,58 +481,8 @@ export const projectDetailData = [
 				],
 			},
 		],
-		commonDev: [
-			{
-				id: 'MayI-common-dev-section',
-				title: '자체 서비스 및 어드민 프론트엔드 E2E 단독 개발 및 런칭',
-				imgUrl: null,
-				isImportantm: false,
-				children: [
-					{
-						id: 'honored-2-depth-2-2',
-						title: '자체 웹 서비스 및 제휴 서비스 런칭을 위한 모노레포 기반 프론트엔드 아키텍처 구축',
-						isImportant: false,
-						imgUrl: null,
-						children: null,
-					},
-				],
-			},
-		],
-		troubleshooting: [
-			{
-				id: 'MayI-trouble-shooting-section',
-				title: '대시보드 신규 기능 런칭 및 유지보수',
-				isImportant: false,
-				imgUrl: null,
-
-				children: [
-					{
-						id: 'MayI-1-depth-2-1',
-						title: '고객사 커스텀 신규 기능 런칭',
-						isImportant: false,
-						imgUrl: null,
-
-						children: null,
-					},
-					{
-						id: 'MayI-1-depth-2-2',
-						title: '코호트 분석 신규 페이지 제작',
-						isImportant: false,
-						imgUrl: null,
-
-						children: null,
-					},
-					{
-						id: 'MayI-1-depth-2-3',
-						title: '각종 신기능 릴리즈 및 핫픽스 배포',
-						isImportant: false,
-						imgUrl: null,
-
-						children: null,
-					},
-				],
-			},
-		],
+		commonDev: [],
+		troubleshooting: [],
 	},
 	{
 		id: 'teamstone',
