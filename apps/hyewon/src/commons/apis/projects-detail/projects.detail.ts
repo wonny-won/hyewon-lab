@@ -687,7 +687,7 @@ export const projectDetailData = [
 				children: [
 					{
 						id: 'honored-2-depth-2-2',
-						title: '메인 / 워커 스레드 역할 분리',
+						title: '메인 / 워커 스레드 역할 분리로 렌더 최적화',
 						isOpen: true,
 						isImportant: true,
 						imgUrl: null,
@@ -740,14 +740,14 @@ export const projectDetailData = [
 					},
 					{
 						id: 'honored-2-depth-2-2',
-						title: '차트 시리즈 및 옵션 워커 내부에서 제작',
+						title: '렌더 블로킹 완화를 위해 차트 시리즈 및 옵션 워커 내부에서 제작',
 						isOpen: true,
 						isImportant: true,
 						imgUrl: null,
 						children: [
 							{
 								id: 'honored-2-depth-2-2',
-								title: '시리즈와 옵션엔 차트를 그리기 위한 특성과 데이터를 포함합니다. \n\u00A0\u00A0 2~10초 주기로 재연산이 필요한 데이터 특성에 따라 렌더 블로킹을 줄이기 위해 메인 스레드 연산을 워커 스레드 연산으로 변경했습니다.',
+								title: '시리즈와 옵션엔 차트를 그리기 위한 특성과 데이터를 포함합니다. \n\u00A0\u00A0 2~10초 주기로 재연산이 필요한 데이터 특성에 따라 렌더 블로킹 완화를 위해 메인 스레드 연산을 워커 스레드 연산으로 변경했습니다.',
 								isImportant: true,
 								imgUrl: null,
 								children: null,
@@ -763,6 +763,34 @@ export const projectDetailData = [
 										direction: 'row',
 									},
 								],
+								children: null,
+							},
+						],
+					},
+				],
+			},
+			{
+				id: 'teamstone-common-dev-section',
+				title: 'reflow / repaint 를 최소화한 렌더 최적화',
+				imgUrl: null,
+				isImportantm: false,
+				children: [
+					{
+						id: 'teamstone-common-dev-section',
+						title: '변경 범위를 세분화하여 필요한 부분만 리렌더링되도록 해 렌더 최적화',
+						imgUrl: null,
+						isImportant: true,
+						isOpen: true,
+						children: [
+							{
+								id: 'teamstone-common-dev-section',
+								title: '[ 📌 예시 ] 1번 크기 및 위치 고정, 2,3,4번만 리렌더',
+								imgUrl: [
+									{ id: 'reflow-repaint-1', url: '/reflow-repaint-1.webp', direction: 'row' },
+									{ id: 'reflow-repaint-2', url: '/reflow-repaint-2.webp', direction: 'row' },
+								],
+								isOpen: true,
+								isImportantm: false,
 								children: null,
 							},
 						],

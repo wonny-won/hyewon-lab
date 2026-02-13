@@ -72,7 +72,7 @@ export const archiveProjectDetailData = [
 			},
 			{
 				id: 'honored-trouble-shooting-depth-1-3',
-				title: '해결',
+				title: '해결 과정',
 				isImportant: false,
 				isOpen: true,
 				children: [
@@ -163,7 +163,7 @@ export const archiveProjectDetailData = [
 							},
 							{
 								id: 'teamstone-trouble-shooting-1-depth-2-1-3-2',
-								title: '자바스크립트 메모리 지속 증가(50,256K)',
+								title: '자바스크립트 메모리 지속 증가로 해제 X (50,256K~)',
 								isImportant: true,
 								children: null,
 							},
@@ -186,7 +186,7 @@ export const archiveProjectDetailData = [
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
-				title: '해결',
+				title: '해결 과정',
 				isImportant: false,
 				isOpen: true,
 				children: [
@@ -257,6 +257,19 @@ export const archiveProjectDetailData = [
 											},
 										],
 									},
+									{
+										id: 'teamstone-1-depth-2-3-4-1',
+										title: '[ 📸 메모리 누수 공부 과정 기록 갤러리 ]',
+										isImportant: true,
+										imgUrl: [
+											{
+												id: 'memoryleak-record-1',
+												url: '/memoryleak-record.webp',
+												direction: 'row',
+											},
+										],
+										children: null,
+									},
 								],
 							},
 						],
@@ -273,6 +286,7 @@ export const archiveProjectDetailData = [
 						id: 'teamstone-trouble-shooting-1-depth-2-1',
 						title: '메모리 사용량과 더불어 CPU 사용량도 개선되며 누수가 개선되었고 화면이 많이 부드러워짐',
 						isOpen: true,
+						isImportant: true,
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-1-depth-2-2',
@@ -282,8 +296,15 @@ export const archiveProjectDetailData = [
 							},
 							{
 								id: 'teamstone-trouble-shooting-1-depth-2-2',
-								title: 'JS 메모리 지속 증가(50,256K) → 안정화 후 28,416K로 개선',
+								title: 'JS 메모리 지속 증가 (50,256K~) → 안정화 후 28,416K로 개선',
 								isImportant: true,
+								imgUrl: [
+									{
+										id: 'memoryleak-after-1',
+										url: '/memoryleak-after.webp',
+										direction: 'row',
+									},
+								],
 								children: null,
 							},
 						],
@@ -372,7 +393,7 @@ export const archiveProjectDetailData = [
 			},
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
-				title: '해결',
+				title: '해결 과정',
 				isImportant: false,
 				isOpen: true,
 				children: [

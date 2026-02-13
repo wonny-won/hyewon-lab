@@ -84,7 +84,7 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedtitleIdx }: LstProps) =
 								{i?.title && (
 									<ListItem
 										isNeedtitleIdx={isNeedtitleIdx}
-										titleIdx={!!isNeedtitleIdx && idx}
+										titleIdx={idx}
 										listItem={i?.title}
 										listClassName='pl-2 text-[18px] pt-5 pb-2 font-bold text-white/90 underline decoration-core-green-300/20 decoration-4'
 									/>
