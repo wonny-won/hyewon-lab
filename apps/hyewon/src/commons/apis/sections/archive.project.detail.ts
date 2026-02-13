@@ -29,6 +29,7 @@ export const archiveProjectDetailData = [
 				id: 'honored-trouble-shooting-depth-1-1',
 				title: '문제',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-1',
@@ -41,6 +42,7 @@ export const archiveProjectDetailData = [
 				id: 'honored-trouble-shooting-depth-1-2',
 				title: '원인',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-2-1',
@@ -52,6 +54,7 @@ export const archiveProjectDetailData = [
 						id: 'honored-trouble-shooting-depth-2-2-1',
 						title: '모노레포 + npm 워크스페이스 환경에서 Vercel 배포시 모듈 호이스팅으로 인한 패키지 경로 인식 실패',
 						isImportant: true,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-trouble-shooting-depth-3-2-1',
@@ -71,11 +74,13 @@ export const archiveProjectDetailData = [
 				id: 'honored-trouble-shooting-depth-1-3',
 				title: '해결',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-3',
 						title: '가장 확실한 방법인 패키지 매니저를 pnpm으로 변경 후 워크스페이스를 pnpm 으로 변경',
 						isImportant: true,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-trouble-shooting-depth-2-3',
@@ -95,11 +100,13 @@ export const archiveProjectDetailData = [
 				id: 'honored-trouble-shooting-depth-1-4',
 				title: '결과',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-4',
 						title: '패키지 호이스팅 문제를 제거해 빌드 에러를 근본적으로 해결 후 배포 성공',
 						isImportant: true,
+						isOpen: true,
 						children: [
 							{
 								id: 'honored-trouble-shooting-depth-2-3',
@@ -114,6 +121,7 @@ export const archiveProjectDetailData = [
 				id: 'honored-trouble-shooting-depth-1-5',
 				title: '비고',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'honored-trouble-shooting-depth-2-5',
@@ -140,10 +148,12 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-1',
 				title: '문제',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-1',
 						title: '특정 위젯의 메모리가 해제되지 못하고 지속적으로 증가하는 메모리 누수 상황 발견',
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-1-depth-2-1-3-1',
@@ -165,6 +175,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-2',
 				title: '원인',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-2',
@@ -177,11 +188,13 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
 				title: '해결',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
 						title: 'requestAnimationFrame api를 이용한 애니메이션으로 재구현',
 						isImportant: true,
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-1-depth-3-3-1',
@@ -204,6 +217,7 @@ export const archiveProjectDetailData = [
 								id: 'teamstone-trouble-shooting-1-depth-3-3-1',
 								title: '누수지점 파악 과정',
 								isImportant: true,
+								isOpen: true,
 								children: [
 									{
 										id: 'teamstone-trouble-shooting-1-depth-3-4-1',
@@ -253,10 +267,12 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-4',
 				title: '결과',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-1',
 						title: '메모리 사용량과 더불어 CPU 사용량도 개선되며 누수가 개선되었고 화면이 많이 부드러워짐',
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-1-depth-2-2',
@@ -283,6 +299,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-5',
 				title: '비고',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-5',
@@ -309,6 +326,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-2-depth-1-1',
 				title: '문제',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-1',
@@ -326,6 +344,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-2-depth-1-2',
 				title: '원인',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-2',
@@ -335,6 +354,7 @@ export const archiveProjectDetailData = [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-2',
 						title: '페이지 내부에 필요한 대부분의 변수(상태)가 외부 파일에 하나의 객체로 묶여 있다',
+						isOpen: true,
 						children: [
 							{
 								id: 'teamstone-trouble-shooting-2-depth-2-2',
@@ -354,6 +374,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-3',
 				title: '해결',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-3',
@@ -373,6 +394,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-4',
 				title: '결과',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-4',
@@ -385,6 +407,7 @@ export const archiveProjectDetailData = [
 				id: 'teamstone-trouble-shooting-1-depth-1-5',
 				title: '비고',
 				isImportant: false,
+				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-1-depth-2-5',

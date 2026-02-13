@@ -10,7 +10,7 @@ const ArrowLeft = ({ color, size }: BasicIconType) => {
 			height={size ?? '24'}
 			viewBox='0 0 24 24'
 			fill='none'
-			stroke={color ?? 'currentColor'}
+			stroke={color ?? 'Color'}
 			strokeWidth='2'
 			strokeLinecap='round'
 			strokeLinejoin='round'

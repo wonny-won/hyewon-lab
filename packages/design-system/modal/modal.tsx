@@ -5,7 +5,7 @@ import React from 'react';
 import BackDrop from './modal-backdrop';
 import ModalPopup from './modal-popup';
 
-const Modal = ({ setIsOpen, children }) => {
+const Modal = ({ setIsOpen, title, iconName, iconColor, children }) => {
 	if (typeof window === 'undefined') return null;
 
 	const el = document.getElementById('modal');
@@ -14,7 +14,9 @@ const Modal = ({ setIsOpen, children }) => {
 	return createPortal(
 		<>
 			<BackDrop />
-			<ModalPopup setIsOpen={setIsOpen}>{children}</ModalPopup>
+			<ModalPopup title={title} iconName={iconName} iconColor={iconColor} setIsOpen={setIsOpen}>
+				{children}
+			</ModalPopup>
 		</>,
 		el
 	);

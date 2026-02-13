@@ -11,6 +11,8 @@ const ListItem = ({
 	typoClassName,
 	isNeedBulletPoint = false,
 	isNeedChevoronBullet = false,
+	isNeedtitleIdx = false,
+	titleIdx,
 	onClick,
 }: ListItemProps) => {
 	const [isOpen, setIsOpen] = useState<boolean[]>(() => {
@@ -20,6 +22,7 @@ const ListItem = ({
 		return [];
 	});
 	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
+	console.log(listItem);
 
 	return (
 		<>
@@ -101,7 +104,10 @@ const ListItem = ({
 					);
 				})
 			) : (
-				<div className={finalListClassName} onClick={onClick}>
+				<div className={`${finalListClassName} flex-row items-center`} onClick={onClick}>
+					{isNeedtitleIdx && titleIdx && (
+						<span className='text-label-s text-core-green-300 mr-2 font-extrabold'>{titleIdx + 1}. </span>
+					)}
 					{listItem}
 				</div>
 			)}

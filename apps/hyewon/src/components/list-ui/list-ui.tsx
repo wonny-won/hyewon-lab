@@ -7,10 +7,11 @@ import { CopyClipboardResult } from '@/commons/utils/copy-clipborad';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';
+	isNeedtitleIdx?: boolean;
 	listMap: any;
 }
 
-const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
+const ListUI = ({ direction = 'virtical', listMap, isNeedtitleIdx }: LstProps) => {
 	const [activeTooltipId, setActiveTooltipId] = useState<string | null>(null);
 	const [clipboardTxt, setClipboardTxt] = useState<string | null>(null);
 	const tooltipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -75,12 +76,15 @@ const ListUI = ({ direction = 'virtical', listMap }: LstProps) => {
 	return (
 		<ul className={classStyle[direction]}>
 			{listMap?.map((i: ListNode, idx) => {
+				console.log(idx);
 				return (
 					<Fragment key={`${i.id}-${i.title}-${idx}`}>
 						{direction === 'virtical' ? (
 							<li className='flex flex-col gap-2'>
 								{i?.title && (
 									<ListItem
+										isNeedtitleIdx={isNeedtitleIdx}
+										titleIdx={isNeedtitleIdx && idx}
 										listItem={i?.title}
 										listClassName='pl-2 text-[18px] pt-5 pb-2 font-bold text-white/90 underline decoration-core-green-300/20 decoration-4'
 									/>

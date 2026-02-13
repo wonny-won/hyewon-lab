@@ -29,8 +29,12 @@ const ProjectDetailCardSection = () => {
 						leftChildren={<SummaryChildren data={i} />}
 					/>
 					{openModalId === i.id && (
-						<Modal setIsOpen={() => setOpenModalId(null)}>
-							<ListUI direction='virtical' listMap={i.main} />
+						<Modal
+							title={i.title}
+							iconName={i.division}
+							iconColor='#5eead4'
+							setIsOpen={() => setOpenModalId(null)}>
+							<ListUI isNeedtitleIdx={true} direction='virtical' listMap={i.main} />
 						</Modal>
 					)}
 				</li>
