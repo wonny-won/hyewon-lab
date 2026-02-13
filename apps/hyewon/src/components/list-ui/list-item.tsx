@@ -105,8 +105,8 @@ const ListItem = ({
 				})
 			) : (
 				<div className={`${finalListClassName} flex-row items-center`} onClick={onClick}>
-					{isNeedtitleIdx && titleIdx && (
-						<span className='text-label-s text-core-green-300 mr-2 font-extrabold'>{titleIdx + 1}. </span>
+					{isNeedtitleIdx && typeof titleIdx === 'number' && (
+						<span className='text-label-s text-core-green-300 mr-2 font-extrabold'>{++titleIdx}. </span>
 					)}
 					{listItem}
 				</div>
