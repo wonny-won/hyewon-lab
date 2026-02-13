@@ -62,7 +62,7 @@ const CompanyProjectDatail = () => {
 			</header>
 
 			<div className='max-[450px]:px-0 px-8 pt-20'>
-				<div className='flex max-lg:flex-col gap-25 min-[1450px]:gap-30'>
+				<div className='flex overflow-auto max-lg:flex-col gap-25 min-[1450px]:gap-30'>
 					<section className='flex overflow-auto gap-8 mx-auto'>
 						{data?.siteGif?.map((i) => (
 							<figure key={i.id} className='flex flex-col items-center max-lg:items-start'>
