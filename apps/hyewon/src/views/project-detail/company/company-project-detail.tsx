@@ -25,12 +25,12 @@ const CompanyProjectDatail = () => {
 						<Icons iconName='ArrowLeft' size='60' color={'#5eead4'} />
 					</button>
 				</nav>
-				<div className='px-6 max-[450px]:px-0'>
+				<div className='px-6 max-sm:px-0'>
 					<button className='max-w-fit' onClick={() => onClickOpenNewWindow(data?.companyUrl)}>
 						<Typography
 							as='h1'
 							variants='display-l'
-							className='pb-5 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group'>
+							className='pb-5 flex gap-0.5 hover:text-core-green-300 hover:cursor-pointer group max-sm:text-display-m'>
 							{data?.company || '회사명'}
 							<p className='pt-1.5 group-hover:pt-1 group-hover:pl-1'>
 								<Icons iconName='ArrowUpRight' />
@@ -61,7 +61,7 @@ const CompanyProjectDatail = () => {
 				</div>
 			</header>
 
-			<div className='max-[450px]:px-0 px-8 pt-20'>
+			<div className='max-sm:px-0 px-8 pt-20 max-sm:pt-15'>
 				<div className='flex overflow-auto max-lg:flex-col gap-25 min-[1450px]:gap-30'>
 					<section className='flex overflow-auto gap-8 mx-auto'>
 						{data?.siteGif?.map((i) => (
@@ -84,29 +84,29 @@ const CompanyProjectDatail = () => {
 					</section>
 				</div>
 				<section className='w-screen bg-slate-900/35 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
+					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:py-18'>
 						<Typography as='h2' variants='heading-l' color='text-white' className='pb-3'>
 							<span className='text-core-green-300 text-label-xl'>01. </span> 기여 및 역할
 						</Typography>
 						<ListUI direction='virtical' listMap={data.contribute} />
 					</div>
 				</section>
-				<section className='w-screen bg-slate-800/35 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
+				<section className='w-screen bg-slate-800/40 relative left-1/2 -translate-x-1/2'>
+					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:py-15'>
 						<Typography as='h2' variants='heading-l' color='text-white'>
 							<span className='text-core-green-300 text-label-xl'>02. </span> Develop Point
 						</Typography>
 						<ListUI direction='virtical' listMap={data.commonDev} />
 					</div>
 				</section>
-				<section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
+				{/* <section className='w-screen bg-slate-700/35 relative left-1/2 -translate-x-1/2'>
 					<div className='px-6 lg:px-60 max-[450px]:px-0 py-25'>
 						<Typography as='h2' variants='heading-l' color='text-white'>
 							<span className='text-core-green-300 text-label-xl'>03. </span> 문제 해결 사례
 						</Typography>
 						<ListUI direction='virtical' listMap={data.troubleshooting} />
 					</div>
-				</section>
+				</section> */}
 			</div>
 		</article>
 	);

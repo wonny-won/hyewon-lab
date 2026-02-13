@@ -12,28 +12,34 @@ const IntroSection = () => {
 	};
 
 	return (
-		<div className='mt-10 w-full h-full flex flex-col justify-center overflow-hidden'>
+		<div className='mt-10 w-full h-full flex flex-col max-sm:gap-5 justify-center max-sm:items-center max-sm:mt-0 max-sm:mb-10 overflow-hidden'>
 			<Typography as='p' variants='body-m' color='text-core-green-300 pb-4 pt-5 font-semibold'>
 				안녕하세요, 저는 ...
 			</Typography>
 			<Typography
 				as='h2'
 				variants='display-extra'
-				className='font-extrabold text-core-neutral-200/70 leading-tight mb-0'>
+				className='font-extrabold text-core-neutral-200/70 leading-tight mb-0 max-sm:text-display-m'>
 				{aboutMyProfile.position}
 			</Typography>
 			<Typography
 				as='h3'
 				variants='display-extra'
-				className='font-extrabold text-core-neutral-100 leading-tight mt-0.5'>
+				className='font-extrabold text-core-neutral-100 leading-tight mt-0.5 max-sm:text-display-m'>
 				{aboutMyProfile.name} 입니다.
 			</Typography>
 			<div className='pt-10'>
-				<Typography as='p' variants='body-l' className='text-core-neutral-200/70 whitespace-pre-line'>
+				<Typography
+					as='p'
+					variants='body-l'
+					className='text-core-neutral-200/70 whitespace-pre-line max-sm:text-body-m'>
 					{aboutMyProfile.summaryList[0].prefix}
 					<span className='text-core-green-300'>{aboutMyProfile.summaryList[0].highlight}</span>
 				</Typography>
-				<Typography as='p' variants='body-l' className='text-core-neutral-200/70 whitespace-pre-line'>
+				<Typography
+					as='p'
+					variants='body-l'
+					className='text-core-neutral-200/70 whitespace-pre-line max-sm:text-body-m'>
 					{aboutMyProfile.summaryList[1].prefix}
 				</Typography>
 			</div>

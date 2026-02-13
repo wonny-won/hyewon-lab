@@ -827,10 +827,9 @@ export const projectDetailData = [
 								children: [
 									{
 										id: 'teamstone-1-depth-2-1-2-1',
-										title: '지속 증가(50,256K) → 안정화 후 28,416K로 개선',
+										title: 'JS 메모리 지속 증가(50,256K~) → 안정화 후 28,416K로 개선',
 										isImportant: false,
 										imgUrl: null,
-
 										children: null,
 									},
 								],

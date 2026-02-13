@@ -22,7 +22,6 @@ const ListItem = ({
 		return [];
 	});
 	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
-	console.log(listItem);
 
 	return (
 		<>
@@ -75,14 +74,14 @@ const ListItem = ({
 								<div className={`flex ${i?.imgUrl?.[0].direction} overflow-auto`}>
 									{!!i?.imgUrl?.length &&
 										i?.imgUrl?.map((item) => (
-											<figure key={item.id} className='overflow-hidden rounded-[8px]'>
+											<figure key={item.id} className='rounded-[8px]'>
 												<Image
 													alt='설명'
 													src={item?.url || ''}
 													width={500}
 													height={450}
 													objectFit='contain'
-													className='pl-3.5 pt-2 pb-3.5 max-w-[350px] max-h-[550px] max-lg:max-w-[300px] max-sm:max-w-[200px]'
+													className='pl-3.5 pt-2 pb-3.5 max-w-[350px] max-h-[550px] max-lg:max-w-[300px] max-sm:max-w-[280px]'
 													style={{ borderRadius: '8px' }}
 												/>
 											</figure>

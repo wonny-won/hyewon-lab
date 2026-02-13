@@ -76,7 +76,6 @@ const ListUI = ({ direction = 'virtical', listMap, isNeedtitleIdx }: LstProps) =
 	return (
 		<ul className={classStyle[direction]}>
 			{listMap?.map((i: ListNode, idx) => {
-				console.log(idx);
 				return (
 					<Fragment key={`${i.id}-${i.title}-${idx}`}>
 						{direction === 'virtical' ? (
