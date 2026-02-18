@@ -17,13 +17,13 @@ const IntroSection = () => {
 				안녕하세요, 저는 ...
 			</Typography>
 			<Typography
-				as='h2'
+				as='h3'
 				variants='display-extra'
-				className='font-extrabold text-core-neutral-200/70 leading-tight mb-0 max-sm:text-display-m'>
+				className='font-extrabold text-core-neutral-200/70 leading-tight mb-0 max-sm:text-display-s'>
 				{aboutMyProfile.position}
 			</Typography>
 			<Typography
-				as='h3'
+				as='h2'
 				variants='display-extra'
 				className='font-extrabold text-core-neutral-100 leading-tight mt-0.5 max-sm:text-display-m'>
 				{aboutMyProfile.name} 입니다.

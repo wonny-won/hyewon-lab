@@ -481,7 +481,57 @@ export const projectDetailData = [
 				],
 			},
 		],
-		commonDev: [],
+		commonDev: [
+			{
+				id: 'MayI-commonDev-section',
+				title: '서비스 품질 향상 및 안정화 주도',
+				isImportant: false,
+				imgUrl: null,
+				isOpen: true,
+				children: [
+					{
+						id: 'MayI-1-depth-3-3-1',
+						title: '정기 스터디를 통한 품질 향상 기여',
+						imgUrl: null,
+						isOpen: true,
+						isImportant: true,
+						children: [
+							{
+								id: 'MayI-1-depth-3-3-1',
+								title: '세마포어 스터디를 통한 네트워크 최적화 적용 및 품질 향상 기여',
+								imgUrl: null,
+								isImportant: true,
+								children: [
+									{
+										id: 'MayI-1-depth-3-3-1',
+										title: '[ ⚠️ 참고 ] 세마포어 적용은 라이브러리로 진행했으며, 이미 초석이 다져진 상태에서 진행되었습니다.',
+										imgUrl: null,
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+						],
+					},
+					{
+						id: 'MayI-1-depth-3-3-1',
+						title: '단일 책임 원리 적용으로 렌더 최적화 및 유지보수성 향상',
+						imgUrl: null,
+						isOpen: true,
+						isImportant: true,
+						children: [
+							{
+								id: 'MayI-1-depth-3-3-1',
+								title: '데이터 / UI 컴포넌트의 역할 분리로 유지보수성을 향상시키며 렌더의 범위를 축소해 최적화 진행',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+						],
+					},
+				],
+			},
+		],
 		troubleshooting: [],
 	},
 	{
