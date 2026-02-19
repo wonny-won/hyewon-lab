@@ -9,3 +9,4 @@ export { default as ThinDiver } from './diver/thin-diver';
 export { default as Tooltip } from './tooltip/tooltip';
 export { default as VirticalDiver } from './diver/virtical-diver';
 export { default as Modal } from './modal/modal';
+export { default as SkeletonUI } from './skeleton-ui/skeleton';

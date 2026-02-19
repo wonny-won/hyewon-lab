@@ -3,15 +3,21 @@
 import { projectDetailData } from '@/commons/apis/projects-detail/projects.detail';
 import { onClickOpenNewWindow } from '@/commons/utils/link';
 import ListUI from '@/components/list-ui/list-ui';
-import { Icons, Tags, Typography } from '@hyewon/design-system';
+import { Icons, Tags, Typography, SkeletonUI } from '@hyewon/design-system';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { useRouter } from 'next/router';
+import { useCallback, useState } from 'react';
 
 const CompanyProjectDatail = () => {
 	const router = useRouter();
 	const param = useParams();
 	const data = projectDetailData.filter((i) => i.id === param?.id)?.[0] || [];
+	const [loadedImages, setLoadedImages] = useState<Record<string, boolean>>({});
+
+	const handleImageLoad = useCallback((id: string) => {
+		setLoadedImages((prev) => ({ ...prev, [id]: true }));
+	}, []);
 
 	return (
 		<article className='pt-15 pb-28 min-[1450px]:px-[150px]'>
@@ -66,14 +72,22 @@ const CompanyProjectDatail = () => {
 					<section className='flex overflow-auto gap-8 mx-auto'>
 						{data?.siteGif?.map((i) => (
 							<figure key={i.id} className='flex flex-col items-center max-lg:items-start'>
-								<Image
-									alt={i.alt}
-									src={i.url}
-									width={i.size}
-									height={i.size}
-									objectFit='contain'
-									className='max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px] rounded-[8px]'
-								/>
+								<div className='relative max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px]'>
+									{!loadedImages[i.id] && (
+										<div className='absolute inset-0 z-0'>
+											<SkeletonUI width={i.size} height={i.size} />
+										</div>
+									)}
+									<Image
+										alt={i.alt}
+										src={i.url}
+										width={i.size}
+										height={i.size}
+										objectFit='contain'
+										className='relative z-10 rounded-[8px]'
+										onLoad={() => handleImageLoad(i.id)}
+									/>
+								</div>
 								<figcaption className='pt-1'>
 									<Typography variants='label-s' color='text-core-gray-600'>
 										{i.alt}
