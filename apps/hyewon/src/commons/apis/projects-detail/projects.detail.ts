@@ -358,7 +358,7 @@ export const projectDetailData = [
 		troubleshooting: [],
 	},
 	{
-		id: 'may-i',
+		id: 'mayI',
 		company: '메이아이(mAy-i)',
 		companyUrl: 'https://may-i.io',
 		period: '2025.02 - 2025.04',

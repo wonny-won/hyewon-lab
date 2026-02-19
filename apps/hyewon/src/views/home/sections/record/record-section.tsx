@@ -11,10 +11,16 @@ import { useRouter } from 'next/router';
 const RecordSection = () => {
 	const router = useRouter();
 	const { honoredRef, mayIRef, teamstoneRef, dingcoRef } = useScrollContext();
+	const href = {
+		honored: 'honored-section',
+		mayI: 'mayI-section',
+		teamstone: 'teamstone-section',
+		dingco: 'dingco-section',
+	} as const;
 
 	const refByHash = {
 		'honored-section': honoredRef,
-		'mayI-section': mayIRef,
+		'mayIRef-section': mayIRef,
 		'teamstone-section': teamstoneRef,
 		'dingco-section': dingcoRef,
 	} as const;
@@ -23,7 +29,7 @@ const RecordSection = () => {
 		const hash = window.location.hash;
 		if (!hash) return;
 
-		const id = hash.slice(1) as keyof typeof refByHash;
+		const id = hash.slice(1);
 		const ref = refByHash[id];
 		if (ref?.current) {
 			ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -37,7 +43,7 @@ const RecordSection = () => {
 					<a key={i.id} href={`/projects/company/${i.id}`}>
 						<SectionCard
 							as='article'
-							ref={refByHash[i.id]}
+							ref={refByHash[href[i.id]]}
 							key={`${i.id}-${idx}`}
 							type='record'
 							styleType='liquid'
