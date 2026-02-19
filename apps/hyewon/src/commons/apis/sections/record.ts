@@ -13,7 +13,7 @@ export interface RecordDataType {
 
 export const recordData = [
 	{
-		id: 'honored',
+		id: 'honored-section',
 		company: '(주) 포페런츠',
 		companyExplain: '액티브 시니어를 위한 여행 이커머스 서비스',
 		period: '2025.04 ⏤ 2025.09',
@@ -61,7 +61,7 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'mayI',
+		id: 'mayI-section',
 		company: '메이아이(mAy-i)',
 		companyExplain: '대기업 고객사(LG전자, 현대백화점) 방문객 데이터 분석 서비스',
 		period: '2025.02 ⏤ 2025.04',
@@ -103,7 +103,7 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'teamstone',
+		id: 'teamstone-section',
 		company: '(주) 팀스톤',
 		companyExplain: '삼성, 메이저 은행권에서 사용하는 시스템 모니터링 서비스',
 		period: '2023 ⏤ 2024',
@@ -145,7 +145,7 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'dingco',
+		id: 'dingco-section',
 		company: '(주) 딩코',
 		companyExplain: '인프런에도 올라온 온/오프라인 부트캠프',
 		period: '2022 ⏤ 2023',

@@ -14,7 +14,7 @@ export const navItems = [
 	{
 		id: 3,
 		label: '프로젝트',
-		href: '#troubleshooting-section',
+		href: '#project-detail-section',
 	},
 	{
 		id: 4,

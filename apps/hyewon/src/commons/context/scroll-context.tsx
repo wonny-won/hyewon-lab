@@ -63,12 +63,12 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			2: 'record',
 			3: 'projectDetail',
 			4: 'contact',
-			5: 'honored-section',
-			6: 'mayI-section',
-			7: 'teamstone-section',
-			8: 'dingco-section',
-			9: 'teamstone-trouble-shooting-1-section',
-			10: 'teamstone-trouble-shooting-2-section',
+			5: 'honored',
+			6: 'mayI',
+			7: 'teamstone',
+			8: 'dingco',
+			9: 'teamstone-trouble-shooting-1',
+			10: 'teamstone-trouble-shooting-2',
 		} as const;
 
 		const refObj = {
