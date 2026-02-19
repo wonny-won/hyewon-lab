@@ -99,7 +99,7 @@ const CompanyProjectDatail = () => {
 					</section>
 				</div>
 				<section className='w-screen bg-slate-900/35 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:py-18'>
+					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:pb-18 max-sm:pt-25'>
 						<Typography as='h2' variants='heading-l' color='text-white' className='pb-3'>
 							<Tooltip content={clipboardTxt} position='right-top' bgColor='bg-core-green-300'>
 								<Icons iconName='CircleCheckIcons' size='14' color='green' />
