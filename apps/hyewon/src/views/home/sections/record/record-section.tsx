@@ -20,7 +20,7 @@ const RecordSection = () => {
 
 	const refByHash = {
 		'honored-section': honoredRef,
-		'mayIRef-section': mayIRef,
+		'mayI-section': mayIRef,
 		'teamstone-section': teamstoneRef,
 		'dingco-section': dingcoRef,
 	} as const;
