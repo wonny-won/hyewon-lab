@@ -61,7 +61,7 @@ export const recordData = [
 		],
 	},
 	{
-		id: 'may-i',
+		id: 'mayI',
 		company: '메이아이(mAy-i)',
 		companyExplain: '대기업 고객사(LG전자, 현대백화점) 방문객 데이터 분석 서비스',
 		period: '2025.02 ⏤ 2025.04',

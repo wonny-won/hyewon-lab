@@ -5,18 +5,30 @@ import { SectionCard } from '@hyewon/design-system';
 import LeftSectionChildren from './internal-ui/left-section-children';
 import { useEffect } from 'react';
 import RightSectionChildren from './internal-ui/right-section-children';
+import { useScrollContext } from '@/commons/context/scroll-context';
+import { useRouter } from 'next/router';
 
 const RecordSection = () => {
+	const router = useRouter();
+	const { honoredRef, mayIRef, teamstoneRef, dingcoRef } = useScrollContext();
+
+	const refByHash = {
+		honored: honoredRef,
+		mayI: mayIRef,
+		teamstone: teamstoneRef,
+		dingco: dingcoRef,
+	} as const;
+
 	useEffect(() => {
 		const hash = window.location.hash;
 		if (!hash) return;
 
-		const id = hash.slice(1);
-		const el = document.getElementById(id);
-		if (el) {
-			el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		const id = hash.slice(1) as keyof typeof refByHash;
+		const ref = refByHash[id];
+		if (ref?.current) {
+			ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		}
-	}, []);
+	}, [router.asPath]);
 
 	return (
 		<ul className='pl-1 pt-4 pb-10 flex flex-col gap-10'>
@@ -25,6 +37,7 @@ const RecordSection = () => {
 					<a key={i.id} href={`/projects/company/${i.id}`}>
 						<SectionCard
 							as='article'
+							ref={refByHash[i.id]}
 							key={`${i.id}-${idx}`}
 							type='record'
 							styleType='liquid'

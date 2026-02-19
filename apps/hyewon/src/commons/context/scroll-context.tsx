@@ -17,6 +17,12 @@ interface ScrollContextType {
 	recordSectionRef: RefObject<HTMLElement | null>;
 	projectDetailSectionRef: RefObject<HTMLElement | null>;
 	contactRef: RefObject<HTMLElement | null>;
+	honoredRef: RefObject<HTMLElement | null>;
+	mayIRef: RefObject<HTMLElement | null>;
+	teamstoneRef: RefObject<HTMLElement | null>;
+	dingcoRef: RefObject<HTMLElement | null>;
+	teamstoneTroubleShooting1Ref: RefObject<HTMLElement | null>;
+	teamstoneTroubleShooting2Ref: RefObject<HTMLElement | null>;
 	currNavId: number;
 	setCurrNavId: Dispatch<SetStateAction<number>>;
 	handleNavClick: (id: number) => void;
@@ -43,6 +49,12 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const recordSectionRef = useRef<HTMLElement | null>(null);
 	const projectDetailSectionRef = useRef<HTMLElement | null>(null);
 	const contactRef = useRef<HTMLElement | null>(null);
+	const honoredRef = useRef<HTMLElement | null>(null);
+	const mayIRef = useRef<HTMLElement | null>(null);
+	const teamstoneRef = useRef<HTMLElement | null>(null);
+	const dingcoRef = useRef<HTMLElement | null>(null);
+	const teamstoneTroubleShooting1Ref = useRef<HTMLElement | null>(null);
+	const teamstoneTroubleShooting2Ref = useRef<HTMLElement | null>(null);
 	const intersectionStateRef = useRef<Record<number, { isIntersecting: boolean; ratio: number; top: number }>>({});
 
 	const handleNavClick = (id: number) => {
@@ -51,6 +63,12 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			2: 'record',
 			3: 'projectDetail',
 			4: 'contact',
+			5: 'honored',
+			6: 'mayI',
+			7: 'teamstone',
+			8: 'dingco',
+			9: 'teamstone-trouble-shooting-1',
+			10: 'teamstone-trouble-shooting-2',
 		} as const;
 
 		const refObj = {
@@ -58,6 +76,12 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			[refNumObj[2]]: recordSectionRef,
 			[refNumObj[3]]: projectDetailSectionRef,
 			[refNumObj[4]]: contactRef,
+			[refNumObj[5]]: honoredRef,
+			[refNumObj[6]]: mayIRef,
+			[refNumObj[7]]: teamstoneRef,
+			[refNumObj[8]]: teamstoneTroubleShooting1Ref,
+			[refNumObj[9]]: teamstoneTroubleShooting2Ref,
+			[refNumObj[10]]: dingcoRef,
 		};
 
 		if (refObj[refNumObj?.[id]]?.current) {
@@ -120,6 +144,12 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 				recordSectionRef,
 				projectDetailSectionRef,
 				contactRef,
+				honoredRef,
+				teamstoneRef,
+				teamstoneTroubleShooting1Ref,
+				teamstoneTroubleShooting2Ref,
+				dingcoRef,
+				mayIRef,
 				currNavId,
 				setCurrNavId,
 				handleNavClick,
