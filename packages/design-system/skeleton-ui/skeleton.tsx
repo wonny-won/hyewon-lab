@@ -7,24 +7,22 @@ interface SkeletonProps {
 	className?: string;
 }
 
-const SkeletonUI = ({ width = 450, height = 450, className = '' }: SkeletonProps) => {
+const SkeletonUI = ({ width, height, className = '' }: SkeletonProps) => {
+	console.log(width, height);
 	return (
 		<>
 			<style>{`
 				@keyframes skeleton-shimmer {
-					0% { background-position: 100% 0; }
-					100% { background-position: -100% 0; }
+					0% { background-position: -100% 0; }
+					100% { background-position: 100% 0; }
 				}
 			`}</style>
 			<div
-				className={`rounded-[8px] overflow-hidden ${className}`.trim()}
+				className={`rounded-[8px] object-contain min-w-[250px] max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px] bg-[linear-gradient(90deg,var(--core-neutral-200,#c4ccce)_0%,var(--core-neutral-100,#dfe6e8)_20%,var(--core-neutral-200,#c4ccce)_40%,var(--core-neutral-200,#c4ccce)_100%)] bg-[length:300%_100%] ${className}`.trim()}
 				style={{
-					width,
-					height,
-					background:
-						'linear-gradient(90deg, var(--core-neutral-400, #8e9799) 0%, var(--core-neutral-400, #8e9799) 40%, var(--core-neutral-300, #a9b1b3) 50%, var(--core-neutral-400, #8e9799) 60%, var(--core-neutral-400, #8e9799) 100%)',
-					backgroundSize: '200% 100%',
-					animation: 'skeleton-shimmer 1.5s ease-in-out infinite',
+					width: `${width}px`,
+					height: `${height}px`,
+					animation: 'skeleton-shimmer 2s ease-in-out infinite',
 				}}
 			/>
 		</>
