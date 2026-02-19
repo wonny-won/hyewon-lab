@@ -75,7 +75,7 @@ const CompanyProjectDatail = () => {
 							<figure key={i.id} className='flex flex-col items-center max-lg:items-start'>
 								<div className='relative min-w-[250px] max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px]'>
 									{!loadedImages[i.id] && (
-										<div className='absolute inset-0 z-0'>
+										<div className='absolute inset-0 z-0 mr-8 min-w-[250px] max-sm:max-w-[280px] max-lg:max-w-[320px] min-[1450px]:max-w-[360px]'>
 											<SkeletonUI width={i.size} height={i.size} />
 										</div>
 									)}
