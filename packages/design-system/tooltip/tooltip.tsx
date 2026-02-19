@@ -7,18 +7,20 @@ import React from 'react';
 type TooltipProps = {
 	children?: React.ReactNode;
 	content?: React.ReactNode;
-	position?: 'top' | 'bottom' | 'left' | 'right';
+	position?: 'top' | 'bottom' | 'left' | 'right' | 'right-top';
 	bgColor?: string;
 };
 
 const getTooltipPositionClass = (position: TooltipProps['position']) => {
 	switch (position) {
 		case 'top':
-			return 'bottom-full left-1/2 -translate-x-[33%] min-[1450px]:-translate-x-[30%] mb-[35px] z-1';
+			return 'bottom-full left-1/2 -translate-x-[42%] max-sm:translate-y-[-5px] min-[1450px]:-translate-x-[30%] mb-[35px] z-1';
 		case 'bottom':
 			return 'top-full left-1/2 -translate-x-1/3 mt-2';
 		case 'left':
 			return 'right-full top-1/2 -translate-y-1/3 mr-2';
+		case 'right-top':
+			return 'bottom-full left-1/2 -translate-x-[2%] translate-y-[-8px] max-sm:translate-y-[-5px] min-[1450px]:-translate-x-[30%] mb-[35px] z-1';
 		case 'right':
 		default:
 			return 'left-full top-1/2 -translate-y-1/3 ml-2';
@@ -30,11 +32,12 @@ const getArrowStyle = (position: TooltipProps['position']) => {
 
 	switch (position) {
 		case 'top':
+		case 'right-top':
 			return {
 				width: `${size}px`,
 				height: `${size}px`,
 				bottom: `-${size / 2}px`,
-				left: '47%',
+				left: '50%',
 				transform: 'translateX(-50%) rotate(45deg)',
 			} as React.CSSProperties;
 		case 'bottom':
