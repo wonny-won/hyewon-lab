@@ -17,8 +17,8 @@ const ProjectDetailCardSection = () => {
 	};
 
 	const refByHash = {
-		'teamstone-trouble-shooting-1': teamstoneTroubleShooting1Ref,
-		'teamstone-trouble-shooting-2': teamstoneTroubleShooting2Ref,
+		'teamstone-trouble-shooting-1-section': teamstoneTroubleShooting1Ref,
+		'teamstone-trouble-shooting-2-section': teamstoneTroubleShooting2Ref,
 	} as const;
 
 	useEffect(() => {

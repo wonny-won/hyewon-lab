@@ -13,10 +13,10 @@ const RecordSection = () => {
 	const { honoredRef, mayIRef, teamstoneRef, dingcoRef } = useScrollContext();
 
 	const refByHash = {
-		honored: honoredRef,
-		mayI: mayIRef,
-		teamstone: teamstoneRef,
-		dingco: dingcoRef,
+		'honored-section': honoredRef,
+		'mayI-section': mayIRef,
+		'teamstone-section': teamstoneRef,
+		'dingco-section': dingcoRef,
 	} as const;
 
 	useEffect(() => {
