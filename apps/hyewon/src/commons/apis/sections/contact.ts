@@ -1,6 +1,6 @@
 /** @format */
 
-import { onClickCopyClipboard } from '@/commons/utils/copy-clipborad';
+import { onClickCopyClipboard } from '@/commons/utils/copy.clipborad';
 import { onClickOpenNewWindow } from '@/commons/utils/link';
 import { Icons } from '@hyewon/design-system';
 

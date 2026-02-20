@@ -1,13 +1,13 @@
 /** @format */
 
 import { onClickOpenNewWindow } from '@/commons/utils/link';
-import ListUI from '@/components/list-ui/list-ui';
 import { Icons, Typography, SkeletonUI, Tooltip } from '@hyewon/design-system';
 import Image from 'next/image';
 import Header from './internal-ui/header';
 import CompanyProjectDatailContextProvider, {
 	useCompanyProjectDatailContext,
 } from '../feature/company-project-detail.context';
+import ListUI from '@/components/list-ui/ui/list-ui';
 
 const CompanyProjectDatailContent = () => {
 	const { clipboardTxt, prodDetaildata, loadedImages, sectionInfo, handleImageLoad } =

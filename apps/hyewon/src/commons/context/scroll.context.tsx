@@ -10,7 +10,7 @@ import React, {
 	SetStateAction,
 } from 'react';
 import { useRouter } from 'next/router';
-import { onClickMoveScroll } from '../utils/scroll-util';
+import { onClickMoveScroll } from '../utils/scroll.util';
 
 /**
  * type

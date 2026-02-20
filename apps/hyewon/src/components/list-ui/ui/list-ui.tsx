@@ -1,9 +1,9 @@
 /** @format */
 import React, { Fragment, useEffect, useRef, useState } from 'react';
-import ListItem from './list-item';
-import { ListNode } from './list-type';
 import { Icons, Tooltip } from '@hyewon/design-system';
-import { CopyClipboardResult } from '@/commons/utils/copy-clipborad';
+import { CopyClipboardResult } from '@/commons/utils/copy.clipborad';
+import { ListNode } from '../feature/list.type';
+import ListItem from './internal-ui/list-item';
 
 interface LstProps {
 	direction?: 'horizontal' | 'virtical';

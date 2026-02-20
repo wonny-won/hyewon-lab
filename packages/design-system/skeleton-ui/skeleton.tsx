@@ -8,7 +8,6 @@ interface SkeletonProps {
 }
 
 const SkeletonUI = ({ width, height, className = '' }: SkeletonProps) => {
-	console.log(width, height);
 	return (
 		<>
 			<style>{`

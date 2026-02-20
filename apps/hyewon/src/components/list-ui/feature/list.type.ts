@@ -15,7 +15,6 @@ export type ListNode = {
 
 export interface ListItemProps {
 	key?: string;
-	// listStyle?: 'custom' | 'default';
 	listItem: ListNode[] | string;
 	listClassName?: string;
 	typoClassName?: string;

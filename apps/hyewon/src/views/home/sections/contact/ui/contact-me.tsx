@@ -1,7 +1,7 @@
 /** @format */
 
 import { contactRoot, contactMeComment } from '@/commons/apis/sections/contact';
-import ListUI from '@/components/list-ui/list-ui';
+import ListUI from '@/components/list-ui/ui/list-ui';
 import { Typography } from '@hyewon/design-system';
 
 const ContactMe = () => {

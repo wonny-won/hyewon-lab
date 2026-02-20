@@ -1,10 +1,6 @@
 /** @format */
 import { useScrollContext } from '@/commons/context/scroll.context';
-import { ReactNode, useContext, createContext } from 'react';
-import IntroSection from '../sections/intro/ui/intro-section';
-import RecordSection from '../sections/record/ui/record-section';
-import ProjectDetailCardSection from '../sections/project-detail-card-section/ui/project-detail-card';
-import ContactMe from '../sections/contact/ui/contact-me';
+import { useContext, createContext } from 'react';
 
 /**
  * type
@@ -16,7 +12,6 @@ interface SectionInfoType {
 	typoClassName: string;
 	title: string;
 	subTitle: string | null;
-	component: ReactNode;
 }
 interface HomeDataContextType {
 	sectionInfo: SectionInfoType[];
@@ -32,7 +27,7 @@ const HomeDataContext = createContext<HomeDataContextType | null>(null);
 export const useHomeDataContext = () => {
 	const context = useContext(HomeDataContext);
 	if (!context) {
-		throw new Error('useHomeDataContextProvider must be used within HomeDataContextProvider');
+		throw new Error('useHomeDataContext must be used within HomeDataContextProvider');
 	}
 	return context;
 };
@@ -54,7 +49,6 @@ export const HomeDataContextProvider = ({ children }: HomeDataContextProviderPro
 			typoClassName: 'hidden',
 			title: '자기 소개',
 			subTitle: null,
-			component: <IntroSection />,
 		},
 		{
 			id: 'record',
@@ -63,7 +57,6 @@ export const HomeDataContextProvider = ({ children }: HomeDataContextProviderPro
 			typoClassName: 'text-core-neutral-100/90',
 			title: '쌓아온 경험',
 			subTitle: '01.',
-			component: <RecordSection />,
 		},
 		{
 			id: 'projectDetail',
@@ -72,7 +65,6 @@ export const HomeDataContextProvider = ({ children }: HomeDataContextProviderPro
 			typoClassName: 'text-core-neutral-100/90',
 			title: '프로젝트 상세',
 			subTitle: '02.',
-			component: <ProjectDetailCardSection />,
 		},
 		{
 			id: 'contactMe',
@@ -81,7 +73,6 @@ export const HomeDataContextProvider = ({ children }: HomeDataContextProviderPro
 			typoClassName: 'text-core-green-300 pb-6',
 			title: '03. 함께 다음 단계로 가볼까요?',
 			subTitle: null,
-			component: <ContactMe />,
 		},
 	];
 

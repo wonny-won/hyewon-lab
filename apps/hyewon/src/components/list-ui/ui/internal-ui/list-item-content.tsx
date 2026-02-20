@@ -1,11 +1,11 @@
 /** @format */
 
 import Image from 'next/image';
-import { ListItemProps } from './list-type';
-import { useState } from 'react';
 import { Icons } from '@hyewon/design-system';
+import { ListItemProps } from '../../feature/list.type';
+import { useListItemContext } from '../../feature/list-item.context';
 
-const ListItem = ({
+const ListItemContent = ({
 	listItem,
 	listClassName,
 	typoClassName,
@@ -15,12 +15,7 @@ const ListItem = ({
 	titleIdx,
 	onClick,
 }: ListItemProps) => {
-	const [isOpen, setIsOpen] = useState<boolean[]>(() => {
-		if (Array.isArray(listItem)) {
-			return listItem.map((i) => i.isOpen ?? false);
-		}
-		return [];
-	});
+	const { isOpen, setIsOpen } = useListItemContext();
 	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
 
 	return (
@@ -91,7 +86,7 @@ const ListItem = ({
 
 							{Array.isArray(i.children) && (isNeedChevoronBullet ? !!isOpen[index] : true) && (
 								<div className='text-body-s pl-2.5 pb-1.5 pt-0.5'>
-									<ListItem
+									<ListItemContent
 										listItem={i.children}
 										isNeedBulletPoint
 										listClassName={listClassName}
@@ -117,5 +112,4 @@ const ListItem = ({
 		</>
 	);
 };
-
-export default ListItem;
+export default ListItemContent;

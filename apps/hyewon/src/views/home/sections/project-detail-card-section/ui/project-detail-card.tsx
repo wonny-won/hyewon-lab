@@ -1,10 +1,10 @@
 /** @format */
 
 import { archiveProjectDetailData, ArchiveProjectDetailDataType } from '@/commons/apis/sections/archive.project.detail';
-import ListUI from '@/components/list-ui/list-ui';
 import { Modal, SectionCard } from '@hyewon/design-system';
 import SummaryChildren from './internal-ui/summary-children';
 import ProjectDetailContextProvider, { useProjectDetailContext } from '../feature/project-detail.context';
+import ListUI from '@/components/list-ui/ui/list-ui';
 
 const ProjectDetailCardContent = () => {
 	const { refByHash, openModalId, onClickHandlePopup, setOpenModalId } = useProjectDetailContext();
