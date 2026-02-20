@@ -1,6 +1,6 @@
 /** @format */
 
-import { useScrollContext } from '@/commons/context/scroll-context';
+import { useScrollContext } from '@/commons/context/scroll.context';
 import { navItems } from '../feature/const';
 
 const Navigation = () => {

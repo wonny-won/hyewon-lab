@@ -1,7 +1,7 @@
 /** @format */
 
 import { createContext, useContext, useEffect, useState } from 'react';
-import { useScrollContext } from '@/commons/context/scroll-context';
+import { useScrollContext } from '@/commons/context/scroll.context';
 import { useRouter } from 'next/router';
 
 /**

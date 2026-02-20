@@ -1,5 +1,5 @@
 /** @format */
-import { useScrollContext } from '@/commons/context/scroll-context';
+import { useScrollContext } from '@/commons/context/scroll.context';
 import { ReactNode, useContext, createContext } from 'react';
 import IntroSection from '../sections/intro/ui/intro-section';
 import RecordSection from '../sections/record/ui/record-section';
