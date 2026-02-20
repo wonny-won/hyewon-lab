@@ -3,38 +3,11 @@
 import { recordData, RecordDataType } from '@/commons/apis/sections/record';
 import { SectionCard } from '@hyewon/design-system';
 import LeftSectionChildren from './internal-ui/left-section-children';
-import { useEffect } from 'react';
 import RightSectionChildren from './internal-ui/right-section-children';
-import { useScrollContext } from '@/commons/context/scroll-context';
-import { useRouter } from 'next/router';
+import RecordDataContextProvider, { useRecordDataContext } from './record.data.context';
 
-const RecordSection = () => {
-	const router = useRouter();
-	const { honoredRef, mayIRef, teamstoneRef, dingcoRef } = useScrollContext();
-	const href = {
-		honored: 'honored-section',
-		mayI: 'mayI-section',
-		teamstone: 'teamstone-section',
-		dingco: 'dingco-section',
-	} as const;
-
-	const refByHash = {
-		'honored-section': honoredRef,
-		'mayI-section': mayIRef,
-		'teamstone-section': teamstoneRef,
-		'dingco-section': dingcoRef,
-	} as const;
-
-	useEffect(() => {
-		const hash = window.location.hash;
-		if (!hash) return;
-
-		const id = hash.slice(1);
-		const ref = refByHash[id];
-		if (ref?.current) {
-			ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
-	}, [router.asPath]);
+const RecordSectionContent = () => {
+	const { refByHash, href } = useRecordDataContext();
 
 	return (
 		<ul className='pl-1 pt-4 pb-10 flex flex-col gap-10'>
@@ -58,6 +31,14 @@ const RecordSection = () => {
 				);
 			})}
 		</ul>
+	);
+};
+
+const RecordSection = () => {
+	return (
+		<RecordDataContextProvider>
+			<RecordSectionContent />
+		</RecordDataContextProvider>
 	);
 };
 export default RecordSection;
