@@ -10,7 +10,8 @@ import CompanyProjectDatailContextProvider, {
 } from '../feature/company-project-detail.context';
 
 const CompanyProjectDatailContent = () => {
-	const { clipboardTxt, prodDetaildata, loadedImages, handleImageLoad } = useCompanyProjectDatailContext();
+	const { clipboardTxt, prodDetaildata, loadedImages, sectionInfo, handleImageLoad } =
+		useCompanyProjectDatailContext();
 
 	return (
 		<article className='pt-15 pb-28 min-[1450px]:px-[150px]'>
@@ -42,25 +43,22 @@ const CompanyProjectDatailContent = () => {
 						))}
 					</section>
 				</div>
-				<section className='w-screen bg-slate-900/35 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:pb-18 max-sm:pt-25'>
-						<Typography as='h2' variants='heading-l' color='text-white' className='pb-3'>
-							<Tooltip content={clipboardTxt} position='right-top' bgColor='bg-core-green-300'>
-								<Icons iconName='CircleCheckIcons' size='14' color='green' />
-							</Tooltip>
-							<span className='text-core-green-300 text-label-xl'>01. </span> 기여 및 역할
-						</Typography>
-						<ListUI direction='virtical' listMap={prodDetaildata.contribute} />
-					</div>
-				</section>
-				<section className='w-screen bg-slate-800/40 relative left-1/2 -translate-x-1/2'>
-					<div className='px-6 lg:px-60 max-sm:px-5 py-25 max-sm:py-15'>
-						<Typography as='h2' variants='heading-l' color='text-white'>
-							<span className='text-core-green-300 text-label-xl'>02. </span> Develop Point
-						</Typography>
-						<ListUI direction='virtical' listMap={prodDetaildata.commonDev} />
-					</div>
-				</section>
+				{sectionInfo?.map((item) => (
+					<section key={item.id} className={item.sectionClassName}>
+						<div className={item.divClassName}>
+							<Typography as='h2' variants='heading-l' color='text-white' className={item.typoClassName}>
+								{item.isNeedToolTip && (
+									<Tooltip content={clipboardTxt} position='right-top' bgColor='bg-core-green-300'>
+										<Icons iconName='CircleCheckIcons' size='14' color='green' />
+									</Tooltip>
+								)}
+								<span className='text-core-green-300 text-label-xl'> {item.subTtitle} </span>{' '}
+								{item.title}
+							</Typography>
+							<ListUI direction='virtical' listMap={item.data} />
+						</div>
+					</section>
+				))}
 			</div>
 		</article>
 	);
