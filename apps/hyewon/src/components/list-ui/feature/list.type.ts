@@ -25,3 +25,9 @@ export interface ListItemProps {
 	titleIdx?: number;
 	onClick?: () => void;
 }
+
+export interface ListUiProps {
+	direction?: 'horizontal' | 'virtical';
+	isNeedtitleIdx?: boolean;
+	listMap: any;
+}

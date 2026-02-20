@@ -1,9 +1,11 @@
 /** @format */
 
-import Image from 'next/image';
-import { Icons } from '@hyewon/design-system';
 import { ListItemProps } from '../../feature/list.type';
 import { useListItemContext } from '../../feature/list-item.context';
+import NormalIdxTxtItem from './list-item-type/normal-idx-txt';
+import BulletChevoronItem from './list-item-type/bullet-chvoron';
+import BulletPointItem from './list-item-type/bullet-point';
+import ImgItem from './list-item-type/img-item';
 
 const ListItemContent = ({
 	listItem,
@@ -15,7 +17,7 @@ const ListItemContent = ({
 	titleIdx,
 	onClick,
 }: ListItemProps) => {
-	const { isOpen, setIsOpen } = useListItemContext();
+	const { isOpen } = useListItemContext();
 	const finalListClassName = ['flex flex-col text-core-neutral-300', listClassName].join(' ');
 
 	return (
@@ -24,65 +26,9 @@ const ListItemContent = ({
 				listItem.map((i, index) => {
 					return (
 						<div className={finalListClassName} key={index} onClick={onClick}>
-							{!!isNeedChevoronBullet && (
-								<div
-									className={`hover: cursor-pointer flex items-center gap-1 text-label-l font-semibold ${
-										!!i.isImportant ? 'text-core-green-300' : 'text-core-neutral-100'
-									}`}
-									onClick={() => {
-										setIsOpen((prev) => prev.map((val, i) => (i === index ? !val : val)));
-									}}>
-									<span className='pr-0.5'>
-										<Icons
-											iconName='TriangleLeft'
-											size='16px'
-											className={`transition-transform duration-200 ${
-												Array.isArray(i.children) && !!isOpen[index] ? 'rotate-90' : 'rotate-0'
-											}`}
-										/>
-									</span>
-
-									{i.title}
-								</div>
-							)}
-
-							{!!isNeedBulletPoint && (
-								<p
-									className={`text-body-s py-0.5 whitespace-pre-line ${
-										!!i.isImportant ? 'text-white/95' : 'text-core-neutral-200/90'
-									}`}>
-									• {i.title}
-								</p>
-							)}
-
-							{!isNeedBulletPoint && !isNeedChevoronBullet && (
-								<p
-									className={`text-label-xl font-medium whitespace-pre-line ${
-										!!i.isImportant ? 'text-core-green-300/80' : 'text-core-gray-300/80'
-									}`}>
-									{i.title}
-								</p>
-							)}
-
-							{/* 이미지 */}
-							{i?.imgUrl?.length && (
-								<div className={`flex ${i?.imgUrl?.[0].direction} overflow-auto`}>
-									{!!i?.imgUrl?.length &&
-										i?.imgUrl?.map((item) => (
-											<figure key={item.id} className='rounded-[8px]'>
-												<Image
-													alt='설명'
-													src={item?.url || ''}
-													width={500}
-													height={450}
-													objectFit='contain'
-													className='pl-3.5 pt-2 pb-3.5 max-w-[350px] max-h-[550px] max-lg:max-w-[300px] max-sm:max-w-[280px]'
-													style={{ borderRadius: '8px' }}
-												/>
-											</figure>
-										))}
-								</div>
-							)}
+							<BulletChevoronItem item={i} isNeedChevoronBullet={isNeedChevoronBullet} index={index} />
+							<BulletPointItem isNeedBulletPoint={isNeedBulletPoint} item={i} />
+							<ImgItem item={i} />
 
 							{Array.isArray(i.children) && (isNeedChevoronBullet ? !!isOpen[index] : true) && (
 								<div className='text-body-s pl-2.5 pb-1.5 pt-0.5'>
@@ -98,16 +44,13 @@ const ListItemContent = ({
 					);
 				})
 			) : (
-				<div
-					className={`${finalListClassName} flex-row items-center ${
-						isNeedtitleIdx ? 'mt-7' : typeof titleIdx === 'number' && titleIdx === 0 ? '' : 'mt-10'
-					}`}
-					onClick={onClick}>
-					{isNeedtitleIdx && typeof titleIdx === 'number' && (
-						<span className='text-label-s text-core-green-300 mr-2 font-extrabold'>{++titleIdx}. </span>
-					)}
-					{listItem}
-				</div>
+				<NormalIdxTxtItem
+					finalListClassName={finalListClassName}
+					isNeedtitleIdx={isNeedtitleIdx}
+					titleIdx={titleIdx}
+					onClick={onClick}
+					listItem={listItem}
+				/>
 			)}
 		</>
 	);
