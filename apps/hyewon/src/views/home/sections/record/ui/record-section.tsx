@@ -4,7 +4,7 @@ import { recordData, RecordDataType } from '@/commons/apis/sections/record';
 import { SectionCard } from '@hyewon/design-system';
 import LeftSectionChildren from './internal-ui/left-section-children';
 import RightSectionChildren from './internal-ui/right-section-children';
-import RecordDataContextProvider, { useRecordDataContext } from './record.data.context';
+import RecordDataContextProvider, { useRecordDataContext } from '../feture/record.data.context';
 
 const RecordSectionContent = () => {
 	const { refByHash, href } = useRecordDataContext();

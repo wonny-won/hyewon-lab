@@ -1,6 +1,6 @@
 /** @format */
 import { Typography } from '@hyewon/design-system';
-import { useHomeDataContext, HomeDataContextProvider } from './home.data.provider';
+import HomeDataContextProvider, { useHomeDataContext } from '../feature/home.data.provider';
 
 const HomeContent = () => {
 	const { sectionInfo } = useHomeDataContext();

@@ -2,7 +2,7 @@
 
 import { Button, Icons, Typography } from '@hyewon/design-system';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
-import { onClickDownloadResume } from './util';
+import { onClickDownloadResume } from '../feature/util';
 
 const IntroSection = () => {
 	return (

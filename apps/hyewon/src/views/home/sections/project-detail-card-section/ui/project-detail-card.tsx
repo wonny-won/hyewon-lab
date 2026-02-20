@@ -4,33 +4,10 @@ import { archiveProjectDetailData, ArchiveProjectDetailDataType } from '@/common
 import ListUI from '@/components/list-ui/list-ui';
 import { Modal, SectionCard } from '@hyewon/design-system';
 import SummaryChildren from './internal-ui/summary-children';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { useScrollContext } from '@/commons/context/scroll-context';
+import ProjectDetailContextProvider, { useProjectDetailContext } from '../feature/project.detail.data.context';
 
-const ProjectDetailCardSection = () => {
-	const router = useRouter();
-	const { teamstoneTroubleShooting1Ref, teamstoneTroubleShooting2Ref } = useScrollContext();
-	const [openModalId, setOpenModalId] = useState<string | null>(null);
-	const onClickHandlePopup = (cardId: string) => {
-		setOpenModalId(openModalId === cardId ? null : cardId);
-	};
-
-	const refByHash = {
-		'teamstone-trouble-shooting-1-section': teamstoneTroubleShooting1Ref,
-		'teamstone-trouble-shooting-2-section': teamstoneTroubleShooting2Ref,
-	} as const;
-
-	useEffect(() => {
-		const hash = window.location.hash;
-		if (!hash) return;
-
-		const id = hash.slice(1) as keyof typeof refByHash;
-		const ref = refByHash[id];
-		if (ref?.current) {
-			ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
-	}, [router.asPath]);
+const ProjectDetailCardContent = () => {
+	const { refByHash, openModalId, onClickHandlePopup, setOpenModalId } = useProjectDetailContext();
 
 	return (
 		<ul className='flex flex-row flex-wrap gap-3 justify-center items-stretch'>
@@ -61,6 +38,14 @@ const ProjectDetailCardSection = () => {
 				</li>
 			))}
 		</ul>
+	);
+};
+
+const ProjectDetailCardSection = () => {
+	return (
+		<ProjectDetailContextProvider>
+			<ProjectDetailCardContent />
+		</ProjectDetailContextProvider>
 	);
 };
 

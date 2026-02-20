@@ -1,9 +1,9 @@
 /** @format */
 import Head from 'next/head';
 import React, { ReactNode } from 'react';
-import Footer from './footer/footer';
-import Navigation from './nav/navigation';
+import Footer from './footer/ui/footer';
 import { useRouter } from 'next/router';
+import Navigation from './nav/ui/navigation';
 
 interface LayoutProps {
 	children: ReactNode;

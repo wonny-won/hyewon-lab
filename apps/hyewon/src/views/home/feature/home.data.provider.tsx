@@ -1,10 +1,10 @@
 /** @format */
 import { useScrollContext } from '@/commons/context/scroll-context';
-import IntroSection from './sections/intro/intro-section';
-import RecordSection from './sections/record/record-section';
-import ProjectDetailCardSection from './sections/project-detail-card-section/project-detail-card';
-import ContactMe from './sections/contact/contact-me';
 import { ReactNode, useContext, createContext } from 'react';
+import IntroSection from '../sections/intro/ui/intro-section';
+import RecordSection from '../sections/record/ui/record-section';
+import ProjectDetailCardSection from '../sections/project-detail-card-section/ui/project-detail-card';
+import ContactMe from '../sections/contact/ui/contact-me';
 
 /**
  * type
