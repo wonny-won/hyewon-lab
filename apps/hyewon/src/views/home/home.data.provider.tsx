@@ -18,7 +18,6 @@ interface SectionInfoType {
 	subTitle: string | null;
 	component: ReactNode;
 }
-
 interface HomeDataContextType {
 	sectionInfo: SectionInfoType[];
 }
@@ -30,7 +29,6 @@ interface HomeDataContextProviderProps {
  * context
  */
 const HomeDataContext = createContext<HomeDataContextType | null>(null);
-
 export const useHomeDataContext = () => {
 	const context = useContext(HomeDataContext);
 	if (!context) {
@@ -42,7 +40,9 @@ export const useHomeDataContext = () => {
 /**
  * contextProvider comp
  * @param children
- * @returns sectionInfo (컨텍스트 제공 값)
+ * @returns
+ * [컨텍스트 제공값]
+ * sectionInfo
  */
 export const HomeDataContextProvider = ({ children }: HomeDataContextProviderProps) => {
 	const { aboutSectionRef, recordSectionRef, projectDetailSectionRef, contactRef } = useScrollContext();

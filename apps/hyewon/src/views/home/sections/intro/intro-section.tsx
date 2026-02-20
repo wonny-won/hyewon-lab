@@ -2,15 +2,9 @@
 
 import { Button, Icons, Typography } from '@hyewon/design-system';
 import { aboutMyProfile } from '@/commons/apis/sections/intro';
+import { onClickDownloadResume } from './util';
 
 const IntroSection = () => {
-	const onClickDownloadResume = () => {
-		const link = document.createElement('a');
-		link.href = '/hyewon-jeong-fe-resume.pdf';
-		link.download = '정혜원_프론트엔드_이력서.pdf';
-		link.click();
-	};
-
 	return (
 		<div className='mt-10 w-full h-full flex flex-col max-sm:gap-5 justify-center max-sm:items-center max-sm:mt-0 max-sm:mb-10 overflow-hidden'>
 			<Typography as='p' variants='body-m' color='text-core-green-300 pb-4 pt-5 font-semibold'>

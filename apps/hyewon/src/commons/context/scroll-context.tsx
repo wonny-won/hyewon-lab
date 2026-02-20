@@ -12,6 +12,9 @@ import React, {
 import { useRouter } from 'next/router';
 import { onClickMoveScroll } from '../utils/scroll-util';
 
+/**
+ * type
+ */
 interface ScrollContextType {
 	aboutSectionRef: RefObject<HTMLElement | null>;
 	recordSectionRef: RefObject<HTMLElement | null>;
@@ -27,9 +30,14 @@ interface ScrollContextType {
 	setCurrNavId: Dispatch<SetStateAction<number>>;
 	handleNavClick: (id: number) => void;
 }
+interface ScrollProviderProps {
+	children: React.ReactNode;
+}
 
+/**
+ * context
+ */
 const ScrollContext = createContext<ScrollContextType | null>(null);
-
 export const useScrollContext = () => {
 	const context = useContext(ScrollContext);
 	if (!context) {
@@ -38,10 +46,25 @@ export const useScrollContext = () => {
 	return context;
 };
 
-interface ScrollProviderProps {
-	children: React.ReactNode;
-}
-
+/**
+ *
+ * @param children
+ * @returns
+ * [컨텍스트 제공값]
+ * aboutSectionRef,
+	recordSectionRef,
+	projectDetailSectionRef,
+	contactRef,
+	honoredRef,
+	teamstoneRef,
+	teamstoneTroubleShooting1Ref,
+	teamstoneTroubleShooting2Ref,
+	dingcoRef,
+	mayIRef,
+	currNavId,
+	setCurrNavId,
+	handleNavClick,
+ */
 export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const router = useRouter();
 	const [currNavId, setCurrNavId] = useState(1);
