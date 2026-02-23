@@ -10,7 +10,7 @@ const ProjectDetailCardContent = () => {
 	const { refByHash, openModalId, onClickHandlePopup, setOpenModalId } = useProjectDetailContext();
 
 	return (
-		<ul className='flex flex-row flex-wrap gap-3 justify-center items-stretch'>
+		<ul className='flex flex-row flex-wrap gap-4 justify-center items-stretch'>
 			{archiveProjectDetailData.map((i: ArchiveProjectDetailDataType) => (
 				<li key={i.id} className='hover:cursor-pointer flex-1 min-w-[260px] max-w-[500px] flex'>
 					<SectionCard

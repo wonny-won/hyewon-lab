@@ -3,7 +3,7 @@
 export interface ArchiveProjectDetailDataType {
 	id: string;
 	title?: string;
-	detailUrl: string;
+	detailUrl: string | null;
 	significant?: string[];
 	division: string;
 	project: string;
@@ -439,4 +439,86 @@ export const archiveProjectDetailData = [
 			},
 		],
 	},
+	{
+		id: 'srp-architecture',
+		title: '컴포넌트 책임 분리와 \n 유지보수 효과',
+		detailUrl: null,
+		relativeTag: ['srp', 'components', 'react', 'JS'],
+		division: 'BlogIcon',
+		project: 'hyewon-lab',
+		significant: [],
+		summary:
+			'데이터와 렌더 컴포넌트를 분리해 유지보수 효율을 높이고 나아가 메모이제이션을 활용한 렌더 개선 경험 기록',
+		main: [],
+	},
+	{
+		id: 'semaphore-architecture',
+		title: '세마포어를 이용한 \n 네트워크 성능 개선 사례',
+		detailUrl: null,
+		relativeTag: ['semaphore', 'api', 'network', 're-render'],
+		division: 'BugIcon',
+		project: 'MASH FE 파트',
+		significant: [],
+		summary:
+			'한번에 요청할 수 있는 네트워크 개수를 5개로 제한해 서버 과부하를 방지할 수 있도록 공부하고 적용한 트러블 슈팅',
+		main: [],
+	},
+	{
+		id: 'seo',
+		title: '검색엔진 최적화를 적용해 \n 상단 노출 사례',
+		detailUrl: null,
+		relativeTag: ['seo', 'google', 'meta', 'html'],
+		division: 'BlogIcon',
+		project: '아너드 프로젝트',
+		significant: [],
+		summary: '검색엔진 최적화를 공부하고 적용해 구글 검색시 상단 노출이 가능하도록 기여한 사례',
+		main: [],
+	},
+	{
+		id: 'global-col',
+		title: '글로벌 컬럼으로 \n 컬럼 획일화',
+		detailUrl: null,
+		relativeTag: ['column', 'global', 'design'],
+		division: 'BugIcon',
+		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
+		significant: [],
+		summary: '불필요한 코드를 줄이고 디자인 및 테마 통일을 할 수 있도록 컬럼을 글로벌화 하여 적용 한 사례',
+		main: [],
+	},
+	// {
+	// 	id: 'connect-sotore-trouble-shooting',
+	// 	title: '스토어 연결시점 \n 트러블 슈팅 사례',
+	// 	detailUrl:
+	// 	null,
+	// 	relativeTag: ['reflow', 'repaint', 'css', 're-render'],
+	// 	division: 'BugIcon',
+	// 	project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
+	// 	significant: [],
+	// 	summary:
+	// 		'불필요한 반응성 전파로 인한 광범위한 DOM/컴포넌트 업데이트를 조건부 렌더링과 블록 단위 코드 실행으로 부분 업데이트로 개선해 나간 트러블슈팅',
+	// 	main: [],
+	// },
+	{
+		id: 'mono-repo-pt',
+		title: '모노레포 아키텍처 설계 사례',
+		detailUrl: null,
+		relativeTag: ['mono-repo', 'pnpm', 'turbo', 'npm'],
+		division: 'BlogIcon',
+		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
+		significant: [],
+		summary: '아너드 프로젝트에 모노레포를 도입하게 된 계기와 설계 사고 과정 기록',
+		main: [],
+	},
+	// {
+	// 	id: 'TCO',
+	// 	title: 'TCO와 커스텀 인터벌',
+	// 	detailUrl: null,
+	// 	relativeTag: ['reflow', 'repaint', 'css', 're-render'],
+	// 	division: 'BugIcon',
+	// 	project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
+	// 	significant: [],
+	// 	summary:
+	// 		'커스텀 인터벌 트러블 슈팅과 ',
+	// 	main: [],
+	// },
 ];
