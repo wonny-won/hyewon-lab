@@ -23,7 +23,7 @@ export const archiveProjectDetailData = [
 		relativeTag: ['npm', 'mono-repo', 'pnpm', 'package-hoisting'],
 		significant: [],
 		summary:
-			'처음으로 구축한 모노레포를 Vercel로 배포하는 과정에서, 모듈 호이스팅으로 인한 빌드 에러를 해결해 나간 트러블슈팅',
+			'처음으로 구축한 모노레포를 Vercel로 배포하는 과정에서, \n 모듈 호이스팅으로 인한 빌드 에러를 해결해 나간 트러블슈팅',
 		main: [
 			{
 				id: 'honored-trouble-shooting-depth-1-1',
@@ -142,7 +142,7 @@ export const archiveProjectDetailData = [
 		division: 'BugIcon',
 		project: '온튠 웹 프로젝트 - 모니터 위젯 파트',
 		summary:
-			'애니메이션 구현 시 setInterval로 인해 발생한 메모리 누수를 requestAnimationFrame으로 해결해 나간 트러블슈팅',
+			'애니메이션 구현 시 setInterval로 인해 발생한 메모리 누수를 \n requestAnimationFrame으로 해결해 나간 트러블슈팅',
 		main: [
 			{
 				id: 'teamstone-trouble-shooting-1-depth-1-1',
@@ -341,7 +341,7 @@ export const archiveProjectDetailData = [
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
 		summary:
-			'불필요한 반응성 전파로 인한 광범위한 DOM/컴포넌트 업데이트를 조건부 렌더링과 블록 단위 코드 실행으로 부분 업데이트로 개선해 나간 트러블슈팅',
+			'불필요한 반응성 전파로 인한 광범위한 DOM/컴포넌트 업데이트를 \n 조건부 렌더링과 블록 단위 코드 실행으로 부분 업데이트로 개선해 나간 트러블슈팅',
 		main: [
 			{
 				id: 'teamstone-trouble-shooting-2-depth-1-1',
@@ -448,8 +448,103 @@ export const archiveProjectDetailData = [
 		project: 'hyewon-lab',
 		significant: [],
 		summary:
-			'데이터 로직과 UI 컴포넌트를 분리하여 책임을 명확히 하고 유지보수성을 향상시키고, 메모이제이션을 통해 렌더링 성능을 개선한 경험',
-		main: [],
+			'데이터 로직과 UI 컴포넌트를 분리하여 책임을 명확히해 유지보수성을 향상시키고, \n 메모이제이션을 통해 렌더링 성능을 개선한 경험',
+		main: [
+			{
+				id: 'teamstone-trouble-shooting-2-depth-1-1',
+				title: '문제',
+				isImportant: false,
+				isOpen: true,
+				children: [
+					{
+						id: 'teamstone-trouble-shooting-2-depth-2-1',
+						title: '사이드 패널의 active를 수정 시 불필요한 반응성 전파로 광범위한 DOM 업데이트되어 성능 저하 발생',
+						children: null,
+					},
+					{
+						id: 'teamstone-trouble-shooting-2-depth-2-1',
+						title: '그리드에 데이터가 많아질수록 버벅임과 메모리 사용량이 크게 증가',
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'teamstone-trouble-shooting-2-depth-1-2',
+				title: '원인',
+				isImportant: false,
+				isOpen: true,
+				children: [
+					{
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: '반응성 부여 시 리렌더를 실행 할 조건을 부여하지 않아 변수 중 하나라도 변경되면 무조건 전체가 업데이트되는 구조',
+						children: null,
+					},
+					{
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: '페이지 내부에 필요한 대부분의 변수(상태)가 외부 파일에 하나의 객체로 묶여 있다',
+						isOpen: true,
+						children: [
+							{
+								id: 'teamstone-trouble-shooting-2-depth-2-2',
+								title: '변수 객체중 하나의 프로퍼티라도 변경되면 해당 객체를 참조하고 있던 모든 컴포넌트에서 반응성이 전파되어 DOM 업데이트',
+								children: null,
+							},
+							{
+								id: 'teamstone-trouble-shooting-2-depth-2-2',
+								title: 'grid 생성에 필요한 인스턴스 객체도 해당 객체에 포함되어있어 패널 밖 그리드까지 불필요한 DOM 업데이트 발생',
+								children: null,
+							},
+						],
+					},
+				],
+			},
+			{
+				id: 'teamstone-trouble-shooting-1-depth-1-3',
+				title: '해결 과정',
+				isImportant: false,
+				isOpen: true,
+				children: [
+					{
+						id: 'teamstone-trouble-shooting-1-depth-2-3',
+						title: '반응성($) 부여 시 필요한 값만 참조 할 수 있도록 조건을 설정해 렌더 시점 분리',
+						isImportant: true,
+						children: null,
+					},
+					{
+						id: 'teamstone-trouble-shooting-1-depth-2-3',
+						title: '하나의 객체로 관리되던 변수(상태) 중 반응성이 필요 없는 값은 컴포넌트 로컬 변수로 이동해 반응성 전파 범위 축소',
+						isImportant: true,
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'teamstone-trouble-shooting-1-depth-1-4',
+				title: '결과',
+				isImportant: false,
+				isOpen: true,
+				children: [
+					{
+						id: 'teamstone-trouble-shooting-1-depth-2-4',
+						title: '대량 데이터 환경에서도 버벅임과 메모리 증가 완화, 변수(상태)의 선언을 컴포넌트 내부로 일부 옮겨 가독성 개선',
+						children: null,
+					},
+				],
+			},
+			{
+				id: 'teamstone-trouble-shooting-1-depth-1-5',
+				title: '비고',
+				isImportant: false,
+				isOpen: true,
+				children: [
+					{
+						id: 'teamstone-trouble-shooting-1-depth-2-5',
+						title: '',
+						children: null,
+					},
+				],
+			},
+		],
 	},
 	{
 		id: 'semaphore-architecture',
@@ -459,7 +554,8 @@ export const archiveProjectDetailData = [
 		division: 'BugIcon',
 		project: 'MASH FE 파트',
 		significant: [],
-		summary: '세마포어 기반 동시성 제어 로직을 적용해 요청 수를 5개로 제한함으로써 서버 부하를 완화한 경험',
+		summary:
+			'세마포어 기반 동시성 제어 로직을 적용해 \n 네트워크 요청 수를 5개로 제한함으로써 서버 부하를 완화한 경험',
 		main: [],
 	},
 	{
@@ -471,7 +567,7 @@ export const archiveProjectDetailData = [
 		project: '아너드 프로젝트',
 		significant: [],
 		summary:
-			'SEO 전략을 스터디를 통해 학습 및 적용하여 메타 태그, 시맨틱 구조 개선 등을 통해 구글 검색 결과 상위 노출을 달성한 경험',
+			'SEO 전략을 스터디를 통해 학습 및 적용하여 메타 태그, 시맨틱 구조 개선 등을 통해 \n 구글 검색 결과 상위 노출을 달성한 경험',
 		main: [],
 	},
 	{
@@ -482,7 +578,8 @@ export const archiveProjectDetailData = [
 		division: 'BugIcon',
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
-		summary: '컬럼을 글로벌 레벨로 올려 정의하며 불필요한 중복 코드를 제거하고, 디자인·테마의 통일성을 강화한 사례',
+		summary:
+			'컬럼을 글로벌 레벨로 올려 정의하며 \n 불필요한 중복 코드를 제거하고, 디자인·테마의 통일성을 강화한 사례',
 		main: [],
 	},
 	// {

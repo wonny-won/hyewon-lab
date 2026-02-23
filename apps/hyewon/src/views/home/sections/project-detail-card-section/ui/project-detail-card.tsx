@@ -1,7 +1,7 @@
 /** @format */
 
 import { archiveProjectDetailData, ArchiveProjectDetailDataType } from '@/commons/apis/sections/archive.project.detail';
-import { Modal, SectionCard } from '@hyewon/design-system';
+import { Modal, SectionCard, Tags, ThinDiver, Typography } from '@hyewon/design-system';
 import SummaryChildren from './internal-ui/summary-children';
 import ProjectDetailContextProvider, { useProjectDetailContext } from '../feature/project-detail.context';
 import ListUI from '@/components/list-ui/ui/list-ui';
@@ -32,6 +32,32 @@ const ProjectDetailCardContent = () => {
 							iconName={i.division}
 							iconColor='#5eead4'
 							setIsOpen={() => setOpenModalId(null)}>
+							<div className='pt-5 pb-12'>
+								<Typography as='h3' variants='label-xl' color='text-core-neutral-100'>
+									프로젝트 설명
+								</Typography>
+								<Typography
+									as='p'
+									variants='body-s'
+									color='text-core-neutral-300'
+									className='pt-2 whitespace-pre-line'>
+									{i.summary}
+								</Typography>
+							</div>
+
+							<div className='pb-15'>
+								<Typography as='p' variants='label-xl' color='text-core-neutral-100'>
+									연관 기술
+								</Typography>
+								<ul className='flex gap-2 pt-2'>
+									{i.relativeTag?.map((i, idx) => (
+										<li key={idx}>
+											<Tags variants='liquidChips' size='default' type='normal' tagTxt={i} />
+										</li>
+									))}
+								</ul>
+							</div>
+							<ThinDiver />
 							<ListUI isNeedtitleIdx={true} direction='virtical' listMap={i.main} />
 						</Modal>
 					)}
