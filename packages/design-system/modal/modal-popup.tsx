@@ -18,7 +18,7 @@ const ModalPopup = ({ setIsOpen, title, iconName, iconColor, children }: ModalPo
 			<div
 				role='dialog'
 				aria-modal='true'
-				className='relative w-[70%] h-[75vh] max-sm:w-full max-sm:h-full overflow-auto px-10 pb-10 bg-slate-950 text-white rounded-lg'>
+				className='relative w-[70%] h-[85vh] max-sm:w-full max-sm:h-full overflow-auto px-10 pb-10 bg-slate-950 text-white rounded-lg'>
 				<div className='sticky h-[110px] max-sm:h-[130px] pt-10 top-0 z-10 flex justify-between bg-slate-950 pb-8'>
 					<div className='flex'>
 						{iconName && <Icons iconName={iconName} size='45px' color={iconColor ?? 'currentColor'} />}

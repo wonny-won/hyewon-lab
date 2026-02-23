@@ -452,46 +452,23 @@ export const archiveProjectDetailData = [
 		main: [
 			{
 				id: 'teamstone-trouble-shooting-2-depth-1-1',
-				title: '문제',
+				title: '데이터 컨텍스트 프로바이터',
 				isImportant: false,
 				isOpen: true,
 				children: [
 					{
 						id: 'teamstone-trouble-shooting-2-depth-2-1',
-						title: '사이드 패널의 active를 수정 시 불필요한 반응성 전파로 광범위한 DOM 업데이트되어 성능 저하 발생',
-						children: null,
-					},
-					{
-						id: 'teamstone-trouble-shooting-2-depth-2-1',
-						title: '그리드에 데이터가 많아질수록 버벅임과 메모리 사용량이 크게 증가',
-						children: null,
-					},
-				],
-			},
-			{
-				id: 'teamstone-trouble-shooting-2-depth-1-2',
-				title: '원인',
-				isImportant: false,
-				isOpen: true,
-				children: [
-					{
-						id: 'teamstone-trouble-shooting-2-depth-2-2',
-						title: '반응성 부여 시 리렌더를 실행 할 조건을 부여하지 않아 변수 중 하나라도 변경되면 무조건 전체가 업데이트되는 구조',
-						children: null,
-					},
-					{
-						id: 'teamstone-trouble-shooting-2-depth-2-2',
-						title: '페이지 내부에 필요한 대부분의 변수(상태)가 외부 파일에 하나의 객체로 묶여 있다',
+						isImportant: false,
 						isOpen: true,
+						imgUrl: null,
+						title: 'feature/comp-name.context.tsx 파일에 데이터 처리 로직을 분리',
 						children: [
 							{
-								id: 'teamstone-trouble-shooting-2-depth-2-2',
-								title: '변수 객체중 하나의 프로퍼티라도 변경되면 해당 객체를 참조하고 있던 모든 컴포넌트에서 반응성이 전파되어 DOM 업데이트',
-								children: null,
-							},
-							{
-								id: 'teamstone-trouble-shooting-2-depth-2-2',
-								title: 'grid 생성에 필요한 인스턴스 객체도 해당 객체에 포함되어있어 패널 밖 그리드까지 불필요한 DOM 업데이트 발생',
+								id: 'teamstone-trouble-shooting-2-depth-2-1',
+								title: '데이터 레이어를 분리해 책임을 명확히 하고, 렌더링 영향 범위를 제어할 수 있는 구조로 개선함으로써 \n\u00A0\u00A0 성능 제어, 확장성, 테스트 용이성을 동시에 확보',
+								isOpen: true,
+								isImportant: false,
+								imgUrl: [{ id: 'srp-data-context', url: '/srp-data-context.png', direction: 'row' }],
 								children: null,
 							},
 						],
@@ -499,48 +476,63 @@ export const archiveProjectDetailData = [
 				],
 			},
 			{
-				id: 'teamstone-trouble-shooting-1-depth-1-3',
-				title: '해결 과정',
+				id: 'teamstone-trouble-shooting-2-depth-1-2',
+				title: 'UI 컴포넌트',
 				isImportant: false,
 				isOpen: true,
 				children: [
 					{
-						id: 'teamstone-trouble-shooting-1-depth-2-3',
-						title: '반응성($) 부여 시 필요한 값만 참조 할 수 있도록 조건을 설정해 렌더 시점 분리',
-						isImportant: true,
-						children: null,
-					},
-					{
-						id: 'teamstone-trouble-shooting-1-depth-2-3',
-						title: '하나의 객체로 관리되던 변수(상태) 중 반응성이 필요 없는 값은 컴포넌트 로컬 변수로 이동해 반응성 전파 범위 축소',
-						isImportant: true,
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: 'ui/comp-name.tsx 파일에 UI 컴포넌트 분리',
+						isOpen: true,
+						imgUrl: [{ id: 'srp-ui-comp', url: '/srp-ui-comp.png', direction: 'row' }],
+						isImportant: false,
 						children: null,
 					},
 				],
 			},
 			{
-				id: 'teamstone-trouble-shooting-1-depth-1-4',
-				title: '결과',
+				id: 'teamstone-trouble-shooting-2-depth-1-2',
+				title: '데이터 로직과 UI 책임을 분리한 이유',
 				isImportant: false,
 				isOpen: true,
 				children: [
 					{
-						id: 'teamstone-trouble-shooting-1-depth-2-4',
-						title: '대량 데이터 환경에서도 버벅임과 메모리 증가 완화, 변수(상태)의 선언을 컴포넌트 내부로 일부 옮겨 가독성 개선',
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: '유지보수를 용이하게 하고 데이터가 렌더 성능 제어가 비교적 쉬워짐',
+						isOpen: true,
+						isImportant: false,
 						children: null,
 					},
-				],
-			},
-			{
-				id: 'teamstone-trouble-shooting-1-depth-1-5',
-				title: '비고',
-				isImportant: false,
-				isOpen: true,
-				children: [
 					{
-						id: 'teamstone-trouble-shooting-1-depth-2-5',
-						title: '',
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: '데이터 혹은 UI를 각 단위로 테스트가 가능하다',
+						isOpen: true,
+						isImportant: false,
 						children: null,
+					},
+					{
+						id: 'teamstone-trouble-shooting-2-depth-2-2',
+						title: '확장성 증가',
+						isOpen: true,
+						isImportant: false,
+						children: [
+							{
+								id: 'teamstone-trouble-shooting-2-depth-2-2',
+								title: '데이터 레이어가 분리되어있으면 UI를 수정하지 않고 비교적 쉽게 컴포넌트 확장이 가능하다.',
+								isOpen: true,
+								isImportant: false,
+								children: [
+									{
+										id: 'teamstone-trouble-shooting-2-depth-2-2',
+										title: '(ex) 단일선택 프로바이더 → 다중선택 프로바이더 → 전체선택 프로바이더',
+										isOpen: true,
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+						],
 					},
 				],
 			},
