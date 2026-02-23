@@ -448,30 +448,30 @@ export const archiveProjectDetailData = [
 		project: 'hyewon-lab',
 		significant: [],
 		summary:
-			'데이터와 렌더 컴포넌트를 분리해 유지보수 효율을 높이고 나아가 메모이제이션을 활용한 렌더 개선 경험 기록',
+			'데이터 로직과 UI 컴포넌트를 분리하여 책임을 명확히 하고 유지보수성을 향상시키고, 메모이제이션을 통해 렌더링 성능을 개선한 경험',
 		main: [],
 	},
 	{
 		id: 'semaphore-architecture',
-		title: '세마포어를 이용한 \n 네트워크 성능 개선 사례',
+		title: '세마포어를 활용한 \n 네트워크 동시성 제어 사례',
 		detailUrl: null,
 		relativeTag: ['semaphore', 'api', 'network', 're-render'],
 		division: 'BugIcon',
 		project: 'MASH FE 파트',
 		significant: [],
-		summary:
-			'한번에 요청할 수 있는 네트워크 개수를 5개로 제한해 서버 과부하를 방지할 수 있도록 공부하고 적용한 트러블 슈팅',
+		summary: '세마포어 기반 동시성 제어 로직을 적용해 요청 수를 5개로 제한함으로써 서버 부하를 완화한 경험',
 		main: [],
 	},
 	{
 		id: 'seo',
-		title: '검색엔진 최적화를 적용해 \n 상단 노출 사례',
+		title: '검색엔진 최적화를 적용해 \n 서비스 상단 노출 사례',
 		detailUrl: null,
 		relativeTag: ['seo', 'google', 'meta', 'html'],
 		division: 'BlogIcon',
 		project: '아너드 프로젝트',
 		significant: [],
-		summary: '검색엔진 최적화를 공부하고 적용해 구글 검색시 상단 노출이 가능하도록 기여한 사례',
+		summary:
+			'SEO 전략을 스터디를 통해 학습 및 적용하여 메타 태그, 시맨틱 구조 개선 등을 통해 구글 검색 결과 상위 노출을 달성한 경험',
 		main: [],
 	},
 	{
@@ -482,7 +482,7 @@ export const archiveProjectDetailData = [
 		division: 'BugIcon',
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
-		summary: '불필요한 코드를 줄이고 디자인 및 테마 통일을 할 수 있도록 컬럼을 글로벌화 하여 적용 한 사례',
+		summary: '컬럼을 글로벌 레벨로 올려 정의하며 불필요한 중복 코드를 제거하고, 디자인·테마의 통일성을 강화한 사례',
 		main: [],
 	},
 	// {
