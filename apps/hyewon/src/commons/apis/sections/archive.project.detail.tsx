@@ -441,14 +441,14 @@ export const archiveProjectDetailData = [
 	},
 	{
 		id: 'srp-architecture',
-		title: '컴포넌트 책임 분리와 \n 유지보수 효과',
+		title: '컴포넌트 책임 분리와 \n 적용 효과',
 		detailUrl: null,
 		relativeTag: ['srp', 'components', 'react', 'JS'],
 		division: 'BlogIcon',
 		project: 'hyewon-lab',
 		significant: [],
 		summary:
-			'데이터 로직과 UI 컴포넌트를 분리하여 책임을 명확히해 유지보수성을 향상시키고, \n 메모이제이션을 통해 렌더링 성능을 개선한 경험',
+			'데이터 로직과 UI 컴포넌트를 분리하여 책임을 명확히해 유지보수성을 향상시키고, \n 메모이제이션을 통해 렌더 성능 제어 경험',
 		main: [
 			{
 				id: 'teamstone-trouble-shooting-2-depth-1-1',
