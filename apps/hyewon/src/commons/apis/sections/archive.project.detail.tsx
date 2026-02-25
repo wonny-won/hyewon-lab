@@ -563,7 +563,7 @@ export const archiveProjectDetailData = [
 		significant: [],
 		summary:
 			'SEO 전략을 스터디를 통해 학습 및 적용하여 메타 태그, 시맨틱 구조 개선 등을 통해 \n 구글 검색 결과 상위 노출을 달성한 경험',
-		main: [],
+		main: <WarnningInfo infoTxt={warnninData.commingSoon} />,
 	},
 	{
 		id: 'global-col',
@@ -575,7 +575,7 @@ export const archiveProjectDetailData = [
 		significant: [],
 		summary:
 			'컬럼을 글로벌 레벨로 올려 정의하며 \n 불필요한 중복 코드를 제거하고, 디자인·테마의 통일성을 강화한 사례',
-		main: [],
+		main: <WarnningInfo infoTxt={warnninData.commingSoon} />,
 	},
 	// {
 	// 	id: 'connect-sotore-trouble-shooting',
@@ -599,7 +599,7 @@ export const archiveProjectDetailData = [
 		project: '온튠 웹 프로젝트 - 모니터 컨피그 서비스 파트',
 		significant: [],
 		summary: '아너드 프로젝트에 모노레포를 도입하게 된 계기와 설계 사고 과정 기록',
-		main: [],
+		main: <WarnningInfo infoTxt={warnninData.commingSoon} />,
 	},
 	// {
 	// 	id: 'TCO',
