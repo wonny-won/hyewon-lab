@@ -1,5 +1,8 @@
 /** @format */
 
+import { warnninData } from '@/components/warnning-info/feature/warnning.data';
+import WarnningInfo from '@/components/warnning-info/ui/warnning-info';
+
 export interface ArchiveProjectDetailDataType {
 	id: string;
 	title?: string;
@@ -9,7 +12,7 @@ export interface ArchiveProjectDetailDataType {
 	project: string;
 	relativeTag?: string[] | null;
 	summary: string;
-	main: { id: string; title: string; children: any; isImportant: boolean }[];
+	main: { id: string; title: string; children: any; isImportant: boolean }[] | React.ReactNode;
 }
 [];
 
@@ -548,7 +551,7 @@ export const archiveProjectDetailData = [
 		significant: [],
 		summary:
 			'세마포어 기반 동시성 제어 로직을 적용해 \n 네트워크 요청 수를 5개로 제한함으로써 서버 부하를 완화한 경험',
-		main: [],
+		main: <WarnningInfo infoTxt={warnninData.commingSoon} />,
 	},
 	{
 		id: 'seo',

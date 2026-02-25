@@ -58,7 +58,11 @@ const ProjectDetailCardContent = () => {
 								</ul>
 							</div>
 							<ThinDiver />
-							<ListUI isNeedtitleIdx={true} direction='virtical' listMap={i.main} />
+							{Array.isArray(i.main) ? (
+								<ListUI isNeedtitleIdx={true} direction='virtical' listMap={i.main} />
+							) : (
+								i.main
+							)}
 						</Modal>
 					)}
 				</li>

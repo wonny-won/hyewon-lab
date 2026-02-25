@@ -20,6 +20,7 @@ import Close from './close';
 import GitBranchIcon from './git-branch';
 import TriangleLeft from './tirangle-left';
 import BugIcon from './bug';
+import InfoIcon from './info';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -48,6 +49,7 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	GitBranchIcon,
 	TriangleLeft,
 	BugIcon,
+	InfoIcon,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
