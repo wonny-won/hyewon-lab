@@ -3,6 +3,7 @@
 	"private": true,
 	"packageManager": "pnpm@9.0.0",
 	"scripts": {
+		"shak:dev": "pnpm --dir apps/shak exec -- next dev --experimental-https --port 3010",
 		"dev": "turbo run dev --parallel",
 		"build": "turbo run build",
 		"lint": "turbo run lint"
