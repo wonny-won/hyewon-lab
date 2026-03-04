@@ -4,9 +4,9 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
 	return {
 		id: '/',
-		name: 'shak',
-		short_name: 'shak',
-		description: '구매가를 반으로 샥-',
+		name: 'haejwo',
+		short_name: 'haejwo',
+		description: '우리 동네 심부름 매치',
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#ffffff',
