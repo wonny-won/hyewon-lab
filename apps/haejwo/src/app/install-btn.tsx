@@ -43,7 +43,7 @@ export default function InstallButton() {
 				border: '1px solid #ddd',
 				background: 'white',
 			}}>
-			Install shak
+			Install haejwo
 		</button>
 	);
 }
