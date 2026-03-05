@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/jeonghyewon/Desktop/hyewon-lab/apps/shak/app/register-sw.tsx"],"sourcesContent":["/** @format */\n\n'use client';\n\nimport { useEffect } from 'react';\n\nexport function RegisterSW() {\n\tuseEffect(() => {\n\t\tnavigator.serviceWorker.register('/sw.js');\n\t}, []);\n\n\treturn null;\n}\n"],"names":[],"mappings":";;;;AAIA;;AAJA,YAAY,GAEZ;;AAIO,SAAS;;IACf,IAAA,2UAAS;gCAAC;YACT,UAAU,aAAa,CAAC,QAAQ,CAAC;QAClC;+BAAG,EAAE;IAEL,OAAO;AACR;GANgB;KAAA"}}]
+}

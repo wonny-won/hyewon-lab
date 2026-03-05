@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///Users/jeonghyewon/Desktop/hyewon-lab/apps/haejwo/src/app/page.tsx"],"sourcesContent":["/** @format */\n\nimport { InputField } from '@hyewon/design-system';\nimport Image from 'next/image';\n\nexport default function Home() {\n\treturn (\n\t\t<div className='w-full flex justify-center font-sans dark:bg-black'>\n\t\t\t<InputField iconName='Search' />\n\t\t</div>\n\t);\n}\n"],"names":[],"mappings":";;;;;AAAA,YAAY,GAEZ;AAAA;;;AAGe,SAAS;IACvB,qBACC,+YAAC;QAAI,WAAU;kBACd,cAAA,+YAAC,wNAAU;YAAC,UAAS;;;;;;;;;;;AAGxB"}}]
+}

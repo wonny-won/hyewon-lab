@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/jeonghyewon/Desktop/hyewon-lab/apps/shak/app/layout.tsx"],"sourcesContent":["/** @format */\n\n'use client';\nimport { useEffect } from 'react';\n\nexport function RegisterSW() {\n\tuseEffect(() => {\n\t\tif ('serviceWorker' in navigator) {\n\t\t\tnavigator.serviceWorker.register('/sw.js', { scope: '/' });\n\t\t}\n\t}, []);\n\treturn null;\n}\n"],"names":[],"mappings":";;;;AAGA;;AAHA,YAAY,GAEZ;;AAGO,SAAS;;IACf,IAAA,2UAAS;gCAAC;YACT,IAAI,mBAAmB,WAAW;gBACjC,UAAU,aAAa,CAAC,QAAQ,CAAC,UAAU;oBAAE,OAAO;gBAAI;YACzD;QACD;+BAAG,EAAE;IACL,OAAO;AACR;GAPgB;KAAA"}}]
+}
