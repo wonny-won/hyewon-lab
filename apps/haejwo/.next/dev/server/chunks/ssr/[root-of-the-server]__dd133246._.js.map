@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/jeonghyewon/Desktop/hyewon-lab/apps/haejwo/src/app/page.tsx"],"sourcesContent":["/** @format */\n\nimport Image from 'next/image';\n\nexport default function Home() {\n\treturn <div className='flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black'>ddd</div>;\n}\n"],"names":[],"mappings":"AAAA,YAAY;;;;;;AAIG,SAAS;IACvB,qBAAO,+YAAC;QAAI,WAAU;kBAAmF;;;;;;AAC1G"}}]
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/jeonghyewon/Desktop/hyewon-lab/apps/haejwo/src/app/page.tsx"],"sourcesContent":["/** @format */\n\nimport { InputField } from '@hyewon/design-system';\nimport Image from 'next/image';\n\nexport default function Home() {\n\treturn (\n\t\t<div className='w-full flex justify-center font-sans dark:bg-black'>\n\t\t\t{/* <InputField iconName='Search' variants='default' placeholder='내위치 근처 심부름 검색' /> */}\n\t\t</div>\n\t);\n}\n"],"names":[],"mappings":"AAAA,YAAY;;;;;;AAKG,SAAS;IACvB,qBACC,+YAAC;QAAI,WAAU;;;;;;AAIjB"}}]
 }

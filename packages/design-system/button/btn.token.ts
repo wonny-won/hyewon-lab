@@ -8,7 +8,8 @@ export type btnVariants =
 	| 'outline'
 	| 'chips'
 	| 'chipsOutline'
-	| 'liquidChips';
+	| 'liquidChips'
+	| 'txtBtn';
 export type btnStatus = 'default' | 'active' | 'disabled';
 export type btnSize = 'xlarge' | 'large' | 'default' | 'small' | 'xsmall';
 
@@ -34,7 +35,7 @@ export const makeBtnFn = ({
 };
 
 export const btnSize = {
-	xlarge: 'px-6 text-label-xl h-13',
+	xlarge: 'px-6 text-label-xl',
 	large: 'px-5 text-label-l h-12',
 	default: 'px-4 text-label-m h-10',
 	small: 'px-2 text-label-s h-8',
@@ -68,9 +69,9 @@ export const btnBorder = {
 		disabled: 'rounded-[8px]',
 	},
 	outline: {
-		default: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
-		active: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
-		disabled: 'rounded-[8px] border-[1px] border-solid border-core-gray-200',
+		default: 'rounded-[12px] border-[1.2px] border-solid border-core-neutral-200',
+		active: 'rounded-[12px] border-[1.2px] border-solid border-core-blue-300',
+		disabled: 'rounded-[12px] border-[1.2px] border-solid border-core-neutral-300',
 	},
 	chips: {
 		default: 'rounded-[30px]',
@@ -87,6 +88,11 @@ export const btnBorder = {
 		default: 'rounded-[30px]',
 		active: 'rounded-[30px]',
 		disabled: 'rounded-[30px]',
+	},
+	txtBtn: {
+		default: '',
+		active: '',
+		disabled: '',
 	},
 };
 
@@ -138,6 +144,11 @@ export const btnColor = {
 		active: 'text-white',
 		disabled: 'text-typo-third',
 	},
+	txtBtn: {
+		default: 'currentColor',
+		active: 'currentColor',
+		disabled: 'currentColor',
+	},
 };
 
 export const btnBgColor = {
@@ -187,5 +198,10 @@ export const btnBgColor = {
 		active: 'overflow-hidden pointer-events-auto bg-[radial-gradient(180px_290px_at_-28%_-126%,rgba(10,180,255,1),transparent_38%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_5%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[5px] backdrop-brightness-[1.2]',
 		disabled:
 			'overflow-hidden pointer-events-auto bg-[radial-gradient(180px_290px_at_-28%_-126%,rgba(10,180,255,1),transparent_38%),radial-gradient(350px_450px_at_0%_10%,rgba(120,180,255,0.48),rgba(120,180,255,0)_60%),linear-gradient(90deg,rgba(10,180,255,0.48),transparent_1%),linear-gradient(180deg,rgba(10,180,255,0.48),transparent_5%)] [background-position:0%_0%,left,top] [background-size:auto,0px_100%,100%_5px] bg-no-repeat shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_5px_9px_rgba(0,0,0,0.35)] backdrop-blur-[5px] backdrop-brightness-[1.2]',
+	},
+	txtBtn: {
+		default: 'bg-transparent',
+		active: 'bg-transparent',
+		disabled: 'bg-transparent',
 	},
 };

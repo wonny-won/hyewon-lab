@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
 			<Header />
-			<main className='max-sm:px-5 max-sm:mt-[70px] px-25 mt-[70px]'>{children}</main>
+			<main className='max-sm:px-5 max-sm:mt-[80px] px-25 mt-[70px]'>{children}</main>
 			<Navigation />
 		</>
 	);

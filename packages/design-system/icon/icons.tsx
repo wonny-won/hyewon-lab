@@ -28,6 +28,12 @@ import Chatting from './chatting';
 import DownArrowList from './down-arrow-list';
 import Bell from './bell';
 import Search from './search';
+import PinInHouse from './pin-in-house';
+import FixLocation from './fix-location';
+import FootPrint from './footprint';
+import Dog from './dog';
+import Baby from './baby';
+import Ellipsis from './ellipsis';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -64,6 +70,12 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	DownArrowList,
 	Bell,
 	Search,
+	PinInHouse,
+	FixLocation,
+	FootPrint,
+	Dog,
+	Baby,
+	Ellipsis,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {

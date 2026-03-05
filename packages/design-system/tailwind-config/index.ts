@@ -49,6 +49,18 @@ const config: Config = {
 						choohyang: 'var(--color-core-korea-choohyang)',
 						gold: 'var(--color-core-five-gold)',
 					},
+					blue: {
+						900: 'var(--color-core-blue-900)',
+						800: 'var(--color-core-blue-800)',
+						700: 'var(--color-core-blue-700)',
+						600: 'var(--color-core-blue-600)',
+						500: 'var(--color-core-blue-500)',
+						400: 'var(--color-core-blue-400)',
+						300: 'var(--color-core-blue-300)',
+						200: 'var(--color-core-blue-200)',
+						100: 'var(--color-core-blue-100)',
+						50: 'var(--color-core-blue-50)',
+					},
 					green: {
 						900: 'var(--color-core-green-900)',
 						800: 'var(--color-core-green-800)',

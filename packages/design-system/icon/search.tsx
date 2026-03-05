@@ -2,7 +2,7 @@
 import React from 'react';
 import { BasicIconType } from './incon-type/type';
 
-const Search = ({ size, color, strokeWidth }: BasicIconType) => {
+const Search = ({ size, color, strokeWidth, className }: BasicIconType) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -14,7 +14,7 @@ const Search = ({ size, color, strokeWidth }: BasicIconType) => {
 			strokeWidth={strokeWidth ?? '2'}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className='lucide lucide-search-icon lucide-search'>
+			className={`lucide lucide-search-icon lucide-search ${className}`}>
 			<path d='m21 21-4.34-4.34' />
 			<circle cx='11' cy='11' r='8' />
 		</svg>

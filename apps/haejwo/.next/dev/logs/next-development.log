@@ -1,5 +1,186 @@
-[00:00:01.167] Server  WARN    ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
-[00:00:01.348] Server  LOG     ✓ Ready in 1006ms
-[00:00:05.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.923] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.252] Server  LOG     ✓ Ready in 927ms
+[00:00:03.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.525] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:06.258] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.418] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:09.350] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:27.673] Server  LOG     ✓ Compiled in 635ms
+[00:00:52.655] Server  LOG     ✓ Compiled in 112ms
+[00:01:04.359] Server  LOG     ✓ Compiled in 66ms
+[00:01:29.622] Server  LOG     ✓ Compiled in 101ms
+[00:02:05.031] Server  LOG     ✓ Compiled in 162ms
+[00:02:18.665] Server  LOG     ✓ Compiled in 476ms
+[00:02:30.114] Server  LOG     ✓ Compiled in 106ms
+[00:02:53.090] Server  LOG     ✓ Compiled in 68ms
+[00:04:07.611] Server  LOG     ✓ Compiled in 100ms
+[00:04:33.596] Server  LOG     ✓ Compiled in 72ms
+[00:04:49.284] Server  LOG     ✓ Compiled in 385ms
+[00:05:05.221] Server  LOG     ✓ Compiled in 83ms
+[00:05:18.194] Server  LOG     ✓ Compiled in 63ms
+[00:05:43.609] Server  LOG     ✓ Compiled in 116ms
+[00:06:51.205] Server  LOG     ✓ Compiled in 62ms
+[00:11:25.573] Server  LOG     ✓ Compiled in 66ms
+[00:11:40.482] Server  LOG     ✓ Compiled in 58ms
+[00:11:49.657] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:49.808] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:12:06.009] Server  LOG     ✓ Compiled in 63ms
+[00:12:17.751] Server  LOG     ✓ Compiled in 56ms
+[00:12:58.325] Server  LOG     ✓ Compiled in 77ms
+[00:13:14.139] Server  LOG     ✓ Compiled in 52ms
+[00:13:25.396] Server  LOG     ✓ Compiled in 58ms
+[00:13:35.701] Server  LOG     ✓ Compiled in 81ms
+[00:14:57.534] Server  LOG     ✓ Compiled in 461ms
+[00:26:50.271] Server  LOG     ✓ Compiled in 108ms
+[00:27:38.580] Server  LOG     ✓ Compiled in 267ms
+[00:27:54.109] Server  LOG     ✓ Compiled in 67ms
+[00:28:22.598] Server  LOG     ✓ Compiled in 114ms
+[00:29:09.889] Server  LOG     ✓ Compiled in 256ms
+[00:31:56.223] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:5:10
+Ecmascript file had an error
+  3 | import { Button, Icons, Typography } from '@hyewon/design-system';
+  4 | import { homeMenuList } from '../model/const';
+> 5 | import { useState } from 'react';
+    |          ^^^^^^^^
+  6 |
+  7 | const HomeMenu = () => {
+  8 | 	const [isActive, setIsActive] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:31:56.225] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:5:10
+Ecmascript file had an error
+  3 | import { Button, Icons, Typography } from '@hyewon/design-system';
+  4 | import { homeMenuList } from '../model/const';
+> 5 | import { useState } from 'react';
+    |          ^^^^^^^^
+  6 |
+  7 | const HomeMenu = () => {
+  8 | 	const [isActive, setIsActive] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:32:44.223] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:5:10
+Ecmascript file had an error
+  3 | import { Button, Icons, Typography } from '@hyewon/design-system';
+  4 | import { homeMenuList } from '../model/const';
+> 5 | import { useState } from 'react';
+    |          ^^^^^^^^
+  6 |
+  7 | const HomeMenu = () => {
+  8 | 	const [isActive, setIsActive] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:32:44.224] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:5:10
+Ecmascript file had an error
+  3 | import { Button, Icons, Typography } from '@hyewon/design-system';
+  4 | import { homeMenuList } from '../model/const';
+> 5 | import { useState } from 'react';
+    |          ^^^^^^^^
+  6 |
+  7 | const HomeMenu = () => {
+  8 | 	const [isActive, setIsActive] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:32:55.739] Server  LOG     ✓ Compiled in 152ms
+[00:37:53.212] Server  LOG     ✓ Compiled in 152ms
+[00:38:35.624] Server  LOG     ✓ Compiled in 77ms
+[00:39:12.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:12.345] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:39:35.959] Server  LOG     ✓ Compiled in 65ms
+[00:39:36.222] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:19:83
+Parsing ecmascript source code failed
+  17 | 						size='xlarge'
+  18 | 						className='flex flex-col gap-1.5 py-3'
+> 19 | 						onClick={() => 							setIsActiveId((prev) => (prev === i.id ? null : i.id));
+     | 						                                   							                                  ^
+  20 | 						}>
+  21 | 						<Typography as='p' variants='label-l' color='text-core-neutral-600'>
+  22 | 							{i.title}
+
+Expected '</', got ';'
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:39:36.223] Browser ERROR   ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx:19:83
+Parsing ecmascript source code failed
+  17 | 						size='xlarge'
+  18 | 						className='flex flex-col gap-1.5 py-3'
+> 19 | 						onClick={() => 							setIsActiveId((prev) => (prev === i.id ? null : i.id));
+     | 						                                   							                                  ^
+  20 | 						}>
+  21 | 						<Typography as='p' variants='label-l' color='text-core-neutral-600'>
+  22 | 							{i.title}
+
+Expected '</', got ';'
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/home-menu/ui/home-menu.tsx
+    ./apps/haejwo/src/app/page.tsx
+[00:39:40.907] Server  LOG     ✓ Compiled in 70ms
+[00:39:45.245] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:45.367] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:40:51.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:51.261] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:41:20.980] Server  LOG     ✓ Compiled in 79ms
+[00:41:33.247] Server  LOG     ✓ Compiled in 62ms
+[00:41:55.002] Server  LOG     ✓ Compiled in 52ms
+[00:43:22.704] Server  LOG     ✓ Compiled in 102ms
+[00:43:31.655] Server  LOG     ✓ Compiled in 109ms
+[00:43:44.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:44.272] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:43:58.113] Server  LOG     ✓ Compiled in 85ms
+[00:44:58.338] Server  LOG     ✓ Compiled in 69ms
+[00:45:02.124] Server  LOG     ✓ Compiled in 38ms
+[00:45:48.394] Server  LOG     ✓ Compiled in 68ms
+[00:45:49.657] Server  LOG     ✓ Compiled in 127ms
+[00:46:11.281] Server  LOG     ✓ Compiled in 47ms
+[00:46:39.937] Server  LOG     ✓ Compiled in 74ms
+[00:46:54.973] Server  LOG     ✓ Compiled in 72ms
+[00:47:19.563] Server  LOG     ✓ Compiled in 55ms
+[00:47:30.833] Server  LOG     ✓ Compiled in 110ms
+[00:47:44.172] Server  LOG     ✓ Compiled in 71ms
+[00:47:56.556] Server  LOG     ✓ Compiled in 275ms
+[00:48:05.411] Server  LOG     ✓ Compiled in 56ms
+[00:48:14.637] Server  LOG     ✓ Compiled in 95ms
+[00:48:39.390] Server  LOG     ✓ Compiled in 51ms
+[00:49:22.858] Server  LOG     ✓ Compiled in 79ms
+[00:50:10.261] Server  LOG     ✓ Compiled in 66ms
+[00:51:08.923] Server  LOG     ✓ Compiled in 79ms
