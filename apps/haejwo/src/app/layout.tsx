@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { RegisterSW } from './register-sw';
 import InstallButton from './install-btn';
+import Layout from '../shared/ui/layout';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -30,8 +31,10 @@ export default function RootLayout({
 		<html lang='ko'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<RegisterSW />
-				<InstallButton />
-				{children}
+				<Layout>
+					<InstallButton />
+					{children}
+				</Layout>
 			</body>
 		</html>
 	);

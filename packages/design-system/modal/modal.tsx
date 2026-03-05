@@ -1,11 +1,19 @@
 /** @format */
 
 import { createPortal } from 'react-dom';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import BackDrop from './modal-backdrop';
 import ModalPopup from './modal-popup';
 
-const Modal = ({ setIsOpen, title, iconName, iconColor, children }) => {
+interface ModalPropType {
+	setIsOpen: (open: any) => void;
+	title?: string;
+	iconName?: string;
+	iconColor?: string;
+	children?: ReactNode;
+}
+
+const Modal = ({ setIsOpen, title, iconName, iconColor, children }: ModalPropType) => {
 	if (typeof window === 'undefined') return null;
 
 	const el = document.getElementById('modal');
