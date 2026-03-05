@@ -10,3 +10,4 @@ export { default as Tooltip } from './tooltip/tooltip';
 export { default as VirticalDiver } from './diver/virtical-diver';
 export { default as Modal } from './modal/modal';
 export { default as SkeletonUI } from './skeleton-ui/skeleton';
+export { default as InputField } from './input-field/input-field';

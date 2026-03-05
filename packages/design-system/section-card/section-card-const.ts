@@ -132,7 +132,7 @@ export const openClassStyle = {
 
 export const notOpenClassStyle = {
 	sectionCardStyle: {
-		normaml: {
+		normal: {
 			record: `${commonStyle.sectionCardStyle.line.record} max-h-[300px] max-[1180px]:max-h-[350px] max-[440px]:max-h-[420px] max-[400px]:max-h-[450px]`,
 			about: `${commonStyle.sectionCardStyle.line.about} h-fit`,
 			default: `${commonStyle.sectionCardStyle.line.default} h-fit`,

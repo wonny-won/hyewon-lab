@@ -21,6 +21,13 @@ import GitBranchIcon from './git-branch';
 import TriangleLeft from './tirangle-left';
 import BugIcon from './bug';
 import InfoIcon from './info';
+import Home from './home';
+import Account from './account';
+import RectPlus from './rect-plus';
+import Chatting from './chatting';
+import DownArrowList from './down-arrow-list';
+import Bell from './bell';
+import Search from './search';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -50,6 +57,13 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	TriangleLeft,
 	BugIcon,
 	InfoIcon,
+	Home,
+	Account,
+	RectPlus,
+	Chatting,
+	DownArrowList,
+	Bell,
+	Search,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {

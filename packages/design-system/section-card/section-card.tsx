@@ -1,4 +1,5 @@
 /** @format */
+'use client';
 import React, { JSX, ReactNode, RefObject, useState } from 'react';
 import Typography from '../typography/typography';
 import { openClassStyle, notOpenClassStyle } from './section-card-const';
