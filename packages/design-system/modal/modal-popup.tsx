@@ -5,7 +5,7 @@ import Icons from '../icon/icons';
 import Typography from '../typography/typography';
 
 interface ModalPopupProps {
-	setIsOpen: (state) => void;
+	setIsOpen: (state: any) => void;
 	title?: string;
 	iconName?: string;
 	iconColor?: string;
@@ -35,7 +35,7 @@ const ModalPopup = ({ setIsOpen, title, iconName, iconColor, children }: ModalPo
 					<button
 						className='hover: cursor-pointer ml-auto'
 						onClick={() => {
-							setIsOpen((prev) => !prev);
+							setIsOpen((prev: any) => !prev);
 						}}>
 						<Icons iconName='Close' size='30px' />
 					</button>
