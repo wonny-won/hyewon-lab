@@ -1,13 +1,13 @@
 /** @format */
 
-import { InputField } from '@hyewon/design-system';
-import Image from 'next/image';
-import HomeMenu from '../features/home-menu/ui/home-menu';
+import HomeMenu from '../features/all-home-menu-section/ui/home-menu';
+import NearByMeHotErrand from '../features/nearby-me-hot-errand-section/ui/nearby-me-hot-errand';
 
 export default function Home() {
 	return (
-		<div className='w-full flex justify-center font-sans dark:bg-black'>
+		<section className='w-full flex flex-col'>
 			<HomeMenu />
-		</div>
+			<NearByMeHotErrand />
+		</section>
 	);
 }
