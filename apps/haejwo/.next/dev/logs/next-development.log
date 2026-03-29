@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [00:00:01.197] Server  LOG     ✓ Ready in 882ms
 [00:00:09.919] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
@@ -452,3 +453,12 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 >>>>>>> Stashed changes
 [00:01:59.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:01:59.353] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+=======
+[00:00:01.450] Server  LOG     ✓ Ready in 1075ms
+[00:00:25.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+>>>>>>> 375a958005dc105615c3d29af24da1de029dd6f5
+[00:06:47.650] Server  LOG     ✓ Compiled in 235ms
+[00:06:48.415] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:58.941] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:58.942] Browser WARN    Image with src "/no_thumbnail.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
