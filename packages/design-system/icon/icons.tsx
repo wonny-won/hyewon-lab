@@ -34,6 +34,7 @@ import FootPrint from './footprint';
 import Dog from './dog';
 import Baby from './baby';
 import Ellipsis from './ellipsis';
+import CircleAlert from './circle-alert';
 
 interface IconsProps extends React.HTMLAttributes<HTMLDivElement> {
 	iconName: string;
@@ -76,6 +77,7 @@ const iconComponents: { [key: string]: React.ComponentType<any> } = {
 	Dog,
 	Baby,
 	Ellipsis,
+	CircleAlert,
 };
 
 const Icons = ({ iconName, size = '24px', color, ...props }: IconsProps) => {
