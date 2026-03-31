@@ -148,6 +148,7 @@ Import trace:
 [48:21:07.877] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [48:21:07.877] Browser WARN    Image with src "/no_thumbnail.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+<<<<<<< Updated upstream
 [48:21:20.635] Server  LOG     ✓ Compiled in 12ms
 [48:21:53.455] Server  LOG     ✓ Compiled in 28ms
 [48:21:54.698] Server  LOG     ✓ Compiled in 3ms
@@ -192,3 +193,7 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [48:33:31.282] Server  LOG     ✓ Compiled in 149ms
 [48:33:32.225] Server  LOG     ✓ Compiled in 5ms
 [48:33:37.705] Server  LOG     ✓ Compiled in 21ms
+=======
+[48:34:21.979] Server  LOG     ✓ Compiled in 2.1s
+>>>>>>> Stashed changes
+[48:35:03.422] Server  LOG     ✓ Compiled in 1536ms
