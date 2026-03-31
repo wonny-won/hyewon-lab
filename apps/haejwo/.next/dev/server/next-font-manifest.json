@@ -1,5 +1,7 @@
 {
-  "app": {},
+  "app": {
+    "[project]/apps/haejwo/src/app/page": []
+  },
   "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false

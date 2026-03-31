@@ -7,7 +7,7 @@ __turbopack_load_page_chunks__("/_error", [
   "static/chunks/[next]_entry_page-loader_ts_01d15381._.js",
   "static/chunks/5e54f_react-dom_4d21b075._.js",
   "static/chunks/node_modules__pnpm_fd60bec7._.js",
-  "static/chunks/[root-of-the-server]__8456e41b._.js",
-  "static/chunks/apps_shak_pages__error_2da965e7._.js",
-  "static/chunks/turbopack-apps_shak_pages__error_31e254ad._.js"
+  "static/chunks/[root-of-the-server]__d21b9ab4._.js",
+  "static/chunks/apps_haejwo_pages__error_2da965e7._.js",
+  "static/chunks/turbopack-apps_haejwo_pages__error_6b2fec42._.js"
 ])
