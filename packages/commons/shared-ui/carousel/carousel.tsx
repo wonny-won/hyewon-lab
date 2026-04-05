@@ -33,21 +33,23 @@ export default function BasicCarousel({
 	};
 
 	return (
-		<Slider {...mergedSettings}>
-			{imgUrls.map((imgUrl) => (
-				<div key={imgUrl} className={sizeClass[size]}>
-					<Image
-						src={imgUrl}
-						alt='carousel'
-						width={100}
-						height={100}
-						className='object-cover w-full h-full'
-						style={{
-							borderRadius: '12px',
-						}}
-					/>
-				</div>
-			))}
-		</Slider>
+		<div className='mr-1'>
+			<Slider {...mergedSettings}>
+				{imgUrls.map((imgUrl) => (
+					<div key={imgUrl} className={sizeClass[size]}>
+						<Image
+							src={imgUrl}
+							alt='carousel'
+							width={100}
+							height={100}
+							className='object-cover w-full h-full'
+							style={{
+								borderRadius: '12px',
+							}}
+						/>
+					</div>
+				))}
+			</Slider>
+		</div>
 	);
 }

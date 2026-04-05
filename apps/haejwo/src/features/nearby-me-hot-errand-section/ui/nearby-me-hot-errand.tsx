@@ -1,5 +1,6 @@
 /** @format */
 
+import { nearByMeErrand } from '@/src/entities/nearby-me-errand/data-prototype';
 import { ProductCard, Typography } from '@hyewon/design-system';
 
 const NearByMeHotErrand = () => {
@@ -9,7 +10,19 @@ const NearByMeHotErrand = () => {
 				<Typography as='h1' variants='label-l'>
 					내 <span className='text-core-blue-400 font-bold'>근처 핫</span> 한 심부름 🔥
 				</Typography>
-				<ProductCard title='지금 약 사다주실 분' location='행신' locationFar={0.3} updateHour='2시간전' />
+				<ul className='pb-8'>
+					{nearByMeErrand.map((i) => (
+						<li key={i.id} className='list-none'>
+							<ProductCard
+								title={i.title}
+								location={i.location}
+								locationFar={i.locationFar}
+								updateHour={i.updateHour}
+								price={i.price}
+							/>
+						</li>
+					))}
+				</ul>
 			</div>
 		</section>
 	);
