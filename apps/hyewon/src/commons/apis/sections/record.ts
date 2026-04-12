@@ -19,7 +19,7 @@ export const recordData = [
 		period: '2026.03 ~ ing',
 		position: '개발팀 | 사원',
 		mainStack: ['TypeScript', 'Next.js', 'Nuxt.js', 'tanstack-query', 'pinia', 'tailwind'],
-		thumbnail: [{ size: 480, url: '/honored.png' }],
+		thumbnail: [{ size: 480, url: '/usimsa.jpg' }],
 		summary: [
 			{
 				id: 'gadget-summary-section',
@@ -28,7 +28,7 @@ export const recordData = [
 				children: [
 					{
 						id: 'gadget-summary-section-1',
-						title: '에어브릿지 - 유심사 프로젝트 연동',
+						title: 'Airbridge Web SDK 도입을 통해 웹 서비스 전반의 사용자 행동 데이터 수집 구조 설계 및 구축',
 						isImportant: false,
 						children: null,
 					},
