@@ -43,12 +43,13 @@ export const useRecordDataContext = () => {
  */
 const RecordDataContextProvider = ({ children }: RecordDataContextProvoderType) => {
 	const router = useRouter();
-	const { honoredRef, mayIRef, teamstoneRef, dingcoRef } = useScrollContext();
+	const { honoredRef, mayIRef, teamstoneRef, dingcoRef, gadgetKoreaRef } = useScrollContext();
 	const href = {
 		honored: 'honored-section',
 		mayI: 'mayI-section',
 		teamstone: 'teamstone-section',
 		dingco: 'dingco-section',
+		gadgetKorea: 'gadget-korea-section',
 	} as const;
 
 	const refByHash = {
@@ -56,6 +57,7 @@ const RecordDataContextProvider = ({ children }: RecordDataContextProvoderType) 
 		'mayI-section': mayIRef,
 		'teamstone-section': teamstoneRef,
 		'dingco-section': dingcoRef,
+		'gadget-korea-section': gadgetKoreaRef,
 	} as const;
 
 	useEffect(() => {

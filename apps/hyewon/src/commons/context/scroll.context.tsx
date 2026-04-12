@@ -27,6 +27,7 @@ interface ScrollContextType {
 	teamstoneTroubleShooting1Ref: RefObject<HTMLElement | null>;
 	teamstoneTroubleShooting2Ref: RefObject<HTMLElement | null>;
 	currNavId: number;
+	gadgetKoreaRef: RefObject<HTMLElement | null>;
 	setCurrNavId: Dispatch<SetStateAction<number>>;
 	handleNavClick: (id: number) => void;
 }
@@ -79,6 +80,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 	const teamstoneTroubleShooting1Ref = useRef<HTMLElement | null>(null);
 	const teamstoneTroubleShooting2Ref = useRef<HTMLElement | null>(null);
 	const intersectionStateRef = useRef<Record<number, { isIntersecting: boolean; ratio: number; top: number }>>({});
+	const gadgetKoreaRef = useRef<HTMLElement | null>(null);
 
 	const handleNavClick = (id: number) => {
 		const refNumObj = {
@@ -92,6 +94,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			8: 'dingco',
 			9: 'teamstone-trouble-shooting-1',
 			10: 'teamstone-trouble-shooting-2',
+			11: 'gadget-korea',
 		} as const;
 
 		const refObj = {
@@ -105,6 +108,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 			[refNumObj[8]]: teamstoneTroubleShooting1Ref,
 			[refNumObj[9]]: teamstoneTroubleShooting2Ref,
 			[refNumObj[10]]: dingcoRef,
+			[refNumObj[11]]: gadgetKoreaRef,
 		};
 
 		if (refObj[refNumObj?.[id]]?.current) {
@@ -152,7 +156,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 				root: null,
 				rootMargin: '-45% 0px -45% 0px',
 				threshold: [0, 0.15, 0.3, 0.6],
-			}
+			},
 		);
 
 		for (const s of sections) observer.observe(s.el);
@@ -174,6 +178,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
 				dingcoRef,
 				mayIRef,
 				currNavId,
+				gadgetKoreaRef,
 				setCurrNavId,
 				handleNavClick,
 			}}>

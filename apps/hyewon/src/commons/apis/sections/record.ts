@@ -13,12 +13,48 @@ export interface RecordDataType {
 
 export const recordData = [
 	{
+		id: 'gadget-korea',
+		company: '가제트 코리아',
+		companyExplain: 'eSIM 기반 데이터 로밍 플랫폼',
+		period: '2026.03 ~ ing',
+		position: '개발팀 | 사원',
+		mainStack: ['TypeScript', 'Next.js', 'Nuxt.js', 'tanstack-query', 'pinia', 'tailwind'],
+		thumbnail: [{ size: 480, url: '/honored.png' }],
+		summary: [
+			{
+				id: 'gadget-summary-section',
+				title: null,
+				isImportant: false,
+				children: [
+					{
+						id: 'gadget-summary-section-1',
+						title: '에어브릿지 - 유심사 프로젝트 연동',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'gadget-summary-section-2',
+						title: '품질보장 컨텐츠 제작 및 컨텐츠 SEO 최적화',
+						isImportant: false,
+						children: null,
+					},
+					{
+						id: 'gadget-summary-section-3',
+						title: '유심사 프로젝트 Nuxt to Next 마이그레이션',
+						isImportant: false,
+						children: null,
+					},
+				],
+			},
+		],
+	},
+	{
 		id: 'honored',
 		company: '(주) 포페런츠',
 		companyExplain: '액티브 시니어를 위한 여행 이커머스 서비스',
 		period: '2025.04 ⏤ 2025.09',
 		position: '개발팀 | 사원',
-		mainStack: ['TypeScript', 'Next.js', 'React-query', 'emotion', 'tailwind'],
+		mainStack: ['TypeScript', 'Next.js', 'tanstack-query', 'emotion', 'tailwind'],
 		thumbnail: [{ size: 480, url: '/honored.png' }],
 		summary: [
 			{
@@ -66,7 +102,7 @@ export const recordData = [
 		companyExplain: '대기업 고객사(LG전자, 현대백화점) 방문객 데이터 분석 서비스',
 		period: '2025.02 ⏤ 2025.04',
 		position: '개발팀 | 사원',
-		mainStack: ['TypeScript', 'React.js', 'React-query', 'styled-component'],
+		mainStack: ['TypeScript', 'React.js', 'tanstack-query', 'styled-component'],
 		thumbnail: [{ size: 480, url: '/may-i.png' }],
 		summary: [
 			{
