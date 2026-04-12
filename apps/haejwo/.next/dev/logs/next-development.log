@@ -382,3 +382,343 @@ Import trace:
 [72:29:45.591] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [72:29:53.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [72:29:53.649] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[168:24:10.247] Server  LOG     ✓ Compiled in 403ms
+[168:24:10.347] Browser ERROR   ./apps/haejwo/src/features/nearby-me-hot-errand-section/ui/nearby-me-hot-errand.tsx:5:1
+Ecmascript file had an error
+  3 | import { nearByMeErrand } from '@/src/entities/nearby-me-errand/data-prototype';
+  4 | import { ProductCard, Typography } from '@hyewon/design-system';
+> 5 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const NearByMeHotErrand = () => {
+  8 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/nearby-me-hot-errand-section/ui/nearby-me-hot-errand.tsx
+    ./apps/haejwo/src/app/page.tsx
+[168:24:11.266] Browser ERROR   ./apps/haejwo/src/features/nearby-me-hot-errand-section/ui/nearby-me-hot-errand.tsx:5:1
+Ecmascript file had an error
+  3 | import { nearByMeErrand } from '@/src/entities/nearby-me-errand/data-prototype';
+  4 | import { ProductCard, Typography } from '@hyewon/design-system';
+> 5 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const NearByMeHotErrand = () => {
+  8 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/nearby-me-hot-errand-section/ui/nearby-me-hot-errand.tsx
+    ./apps/haejwo/src/app/page.tsx
+[168:24:21.819] Server  LOG     ✓ Compiled in 327ms
+[168:24:22.470] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:24:23.266] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:01.935] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:25:01.936] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:25:01.952] Server  LOG     ✓ Compiled in 52ms
+[168:25:02.608] Server  ERROR   ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:02.644] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:02.644] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:03.204] Server  ERROR   ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:03.444] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:25:03.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:25:03.611] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:04.272] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:07.915] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:25:07.917] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:25:07.919] Server  LOG     ✓ Compiled in 103ms
+[168:25:08.364] Server  ERROR   ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:08.449] Server  ERROR   ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:08.647] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:25:08.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:25:08.874] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:09.266] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:36.977] Server  ERROR   ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:25:37.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:25:37.243] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[168:26:19.740] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:26:19.744] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:26:19.759] Server  LOG     ✓ Compiled in 132ms
+[168:26:20.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:26:20.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:26:22.113] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[168:26:22.114] Browser WARN    Image with src "/banner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:26:25.095] Browser WARN    Image with src "/no_thumbnail.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[168:26:25.097] Browser WARN    Image with src "/banner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:26:30.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:26:30.827] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:26:46.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:26:46.923] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:27:29.150] Server  LOG     ✓ Compiled in 475ms
+[168:27:29.203] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[168:27:29.216] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[168:27:30.598] Server  ERROR   ⨯ ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:30.603] Server  ERROR   ⨯ ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:30.883] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:30.952] Server  ERROR   ⨯ ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:30.955] Server  ERROR   ⨯ ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:31.191] Browser ERROR   uncaughtError: Error: ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:31.297] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:31.317] Browser ERROR   uncaughtError: Error: ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+
+
+[168:27:31.454] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:31.454] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:32.265] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:32.265] Browser ERROR   ./apps/haejwo/src/features/errand-detail/errand-detail.tsx:3:1
+Ecmascript file had an error
+  1 | /** @format */
+  2 |
+> 3 | import { useRouter } from 'next/router';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | const ErrandDetail = () => {
+  6 | 	const router = useRouter();
+
+You have a Server Component that imports next/router. Use next/navigation instead.
+Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
+
+Import trace:
+  Server Component:
+    ./apps/haejwo/src/features/errand-detail/errand-detail.tsx
+    ./apps/haejwo/src/app/errand-detail/[errandId]/page.tsx
+[168:27:40.110] Server  LOG     ✓ Compiled in 73ms
+[168:27:43.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:27:43.435] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:27:43.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:28:20.032] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:30:21.095] Server  LOG     ✓ Compiled in 204ms
+[168:30:21.814] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:21.814] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:21.814] Browser ERROR   uncaughtError: Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:22.267] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:22.267] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:22.267] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:22.267] Browser ERROR   uncaughtError: Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:29.903] Server  LOG     ✓ Compiled in 99ms
+[168:30:30.365] Server  ERROR   TypeError: Invalid URL
+[168:30:30.372] Server  ERROR   ⨯ Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:30.431] Server  ERROR   TypeError: Invalid URL
+[168:30:30.456] Server  ERROR   ⨯ Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:30.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:30:30.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:30:30.869] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:30.869] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:30.869] Browser ERROR   uncaughtError: Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:31.266] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:31.266] Browser ERROR   {"message":"Failed to construct 'URL': Invalid URL"}
+[168:30:31.266] Browser ERROR   uncaughtError: Error: Failed to parse src "dd" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)
+[168:30:45.106] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:30:45.107] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[168:30:45.139] Server  LOG     ✓ Compiled in 58ms
+[168:30:45.740] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/dd" "received" null
+[168:30:45.964] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/dd" "received" null
+[168:30:46.067] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:30:46.286] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[168:30:46.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:31:16.969] Server  LOG     ✓ Compiled in 146ms
+[168:31:17.161] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/dd" "received" null
+[168:31:17.200] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/dd" "received" null
+[168:31:57.931] Server  LOG     ✓ Compiled in 73ms
+[168:32:16.487] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
