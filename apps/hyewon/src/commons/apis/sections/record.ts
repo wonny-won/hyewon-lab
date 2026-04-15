@@ -44,6 +44,12 @@ export const recordData = [
 						isImportant: false,
 						children: null,
 					},
+					{
+						id: 'gadget-summary-section-3',
+						title: '유심사 프로젝트 hotfix 배포 및 운영',
+						isImportant: false,
+						children: null,
+					},
 				],
 			},
 		],

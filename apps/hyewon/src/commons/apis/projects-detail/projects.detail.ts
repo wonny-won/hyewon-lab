@@ -2,6 +2,132 @@
 
 export const projectDetailData = [
 	{
+		id: 'gadget-korea',
+		company: '가제트 코리아',
+		companyUrl: 'https://www.usimsa.com/',
+		period: '2026.03 ~ ing',
+		position: '개발팀 | 사원',
+		coreProject: '유심사 프로젝트 개발',
+		mainStack: ['TypeScript', 'Next.js', 'Nuxt.js', 'tanstack-query', 'pinia', 'tailwind'],
+		siteGif: [{ size: 420, url: '/usimsa.jpg' }],
+		contribute: [
+			{
+				id: 'gadgetKorea-contribute-section',
+				title: null,
+				isImportant: false,
+				imgUrl: null,
+				isOpen: true,
+				children: [
+					{
+						id: 'gadgetKorea-1-depth-2-1',
+						title: 'Airbridge Web SDK 도입을 통해 웹 서비스 전반의 사용자 행동 데이터 수집 구조 설계 및 구축',
+						isImportant: false,
+						imgUrl: null,
+						isOpen: true,
+						children: [
+							{
+								id: 'gadgetKorea-1-depth-3-1',
+								title: '회원가입, 로그인(소셜/자체), 홈뷰, 상품 상세, 결제(init checkout), 주문 완료, 환불 완료까지 전환 퍼널 전반의 이벤트 트래킹 시스템 구축',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'gadgetKorea-1-depth-3-2',
+								title: '마케팅 팀과 협업하여 데이터 텍소노미를 개선하고, 의미 없는 데이터 제거 및 이벤트 구조 재정의로 분석 가능 데이터 품질 향상',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+							{
+								id: 'gadgetKorea-1-depth-3-3',
+								title: 'Flutter WebView 기반 앱에서 웹 이벤트가 잘못 수집되는 문제를 분석하고, 웹뷰 실행 전 SDK 스크립트 주입 구조를 검증하여 앱/웹 트래킹 분리 문제 해결',
+								isImportant: false,
+								imgUrl: null,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'gadgetKorea-1-depth-2-2',
+						title: '품질보장 컨텐츠 제작 및 컨텐츠 SEO 최적화',
+						isImportant: true,
+						imgUrl: null,
+						isOpen: true,
+						children: [
+							{
+								id: 'gadgetKorea-1-depth-3-3-1',
+								title: '세마포어 기반으로 동시 요청 수 5개 제한',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+						],
+					},
+					{
+						id: 'gadgetKorea-1-depth-2-4',
+						title: '스카웃 제의로 이직 ',
+						isImportant: true,
+						imgUrl: null,
+						children: null,
+					},
+				],
+			},
+		],
+		commonDev: [
+			{
+				id: 'gadgetKorea-commonDev-section',
+				title: '서비스 품질 향상 및 안정화 주도',
+				isImportant: false,
+				imgUrl: null,
+				isOpen: true,
+				children: [
+					{
+						id: 'gadgetKorea-1-depth-3-3-1',
+						title: '정기 스터디를 통한 품질 향상 기여',
+						imgUrl: null,
+						isOpen: true,
+						isImportant: true,
+						children: [
+							{
+								id: 'gadgetKorea-1-depth-3-3-1',
+								title: '세마포어 스터디를 통한 네트워크 최적화 적용 및 품질 향상 기여',
+								imgUrl: null,
+								isImportant: true,
+								children: [
+									{
+										id: 'gadgetKorea-1-depth-3-3-1',
+										title: '[ ⚠️ 참고 ] 세마포어 적용은 라이브러리로 진행했으며, 이미 초석이 다져진 상태에서 진행되었습니다.',
+										imgUrl: null,
+										isImportant: false,
+										children: null,
+									},
+								],
+							},
+						],
+					},
+					{
+						id: 'gadgetKorea-1-depth-3-3-1',
+						title: '단일 책임 원리 적용으로 렌더 최적화 및 유지보수성 향상',
+						imgUrl: null,
+						isOpen: true,
+						isImportant: true,
+						children: [
+							{
+								id: 'gadgetKorea-1-depth-3-3-1',
+								title: '데이터 / UI 컴포넌트의 역할 분리로 유지보수성을 향상시키며 렌더의 범위를 축소해 최적화 진행',
+								imgUrl: null,
+								isImportant: true,
+								children: null,
+							},
+						],
+					},
+				],
+			},
+		],
+		troubleshooting: [],
+	},
+	{
 		id: 'honored',
 		company: '(주) 포페런츠',
 		companyUrl: 'https://honored.shop/shinhan/',
